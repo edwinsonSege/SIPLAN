@@ -1,0 +1,304 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="SIPLAN2._0.Site_Mobile" EnableSession="false" %>
+<%@ Register Assembly="DevExpress.Web.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Scripts/Alertify/alertify.min.css" rel="stylesheet" />
+    <link href="~/Scripts/Alertify/default.min.css" rel="stylesheet" />
+    <link href="~/Scripts/Alertify/semantic.min.css" rel="stylesheet" />    
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" /> 
+
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+
+    <script src="../Scripts/Alertify/alertify.min.js"></script>
+
+    <script src="../Scripts/bootstrap.min.js"></script>   
+      <style>
+          body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+.img-responsive {
+    
+    height: auto!important;
+    width:auto!important; 
+                text-align:center!important; 
+                padding:0px!important; 
+}
+Estas líneas de CSS las usaremos para dar estilo a la cabecera:
+
+#main-header {
+	background-color:#023a5f;
+	color: white;
+	height: 80px;
+}	
+	#main-header a {
+		color: white;
+	}
+
+
+#main-header .formHeader {
+  /* La magia de FLEX */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Alto de la barra, en tu caso sería 50px */
+  /*/height: 60px;*/
+  width:0%;
+  /* Color para el demo */
+  background-color: rgb(83, 33, 168);
+}
+
+
+
+#main-header .tituloTab {
+  color: white;
+}
+
+#logo-header {
+	float: left;
+	/*padding: 0px 0 0 0px;*/
+	text-decoration: none;
+    width:auto;
+}
+
+#logo-headerl {
+	float: right;
+	padding: 25px 0 0 20px;
+	text-decoration: none;
+}
+
+#logo-headerll {
+	float: left;
+	padding: 15px 0 0 0px;
+	text-decoration: none;
+}
+
+
+	#logo-header:hover {
+		color: #0b76a6;
+        
+	}
+	
+	#logo-headerl .site-name {
+		display: block;
+        width:100%;
+        height:auto;
+		font-weight: 500;
+		font-size: 1.2em;
+        vertical-align:middle;
+	}
+
+    
+	#logo-headerll .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 2em;
+        vertical-align:middle;
+	}
+	
+	#logo-headerl .site-desc {
+		display: block;
+		font-weight: 100;
+		font-size: 0.8em;
+		color: #999;
+        vertical-align:middle;
+	}
+	
+    #logo-headerll .site-desc {
+		display: block;
+		font-weight: 200;
+		font-size: 2em;
+		color: #999;
+        vertical-align:top;
+        text-align:center;
+        padding: 15px 0 0 0px;
+	}
+
+    label {
+  font-size:12px;
+  color:black;
+}
+/*
+ * Navegación
+ */
+nav {
+	display:flex;
+    float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+				}
+
+#main-content {
+	background: white;
+	width: 90%;
+	max-width: 800px;
+	margin: 800px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+	#main-content header,
+	#main-content .content {
+		padding: 40px;
+	}
+
+    #main-footer {
+	background-color:#023a5f;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
+
+    #main-header {
+	background-color:#023a5f;
+	color: white;
+	height: 80px;
+	
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+     
+        div .productHeader{
+            display:flex;
+            /*justify-content:flex-end;*/
+            align-items:center;
+        }
+  
+    
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+    <div>
+        
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+        <friendlyUrls:ViewSwitcher runat="server" />
+         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <header id="main-header">
+		<a id="logo-header" href="#">
+			<span class="img-responsive"><img src="../images/logo_vigente_qvalmehdgymytlk.jpg"   /></span>
+           
+		</a> <!-- / #logo-header -->
+            <a id="logo-headerl" href="#">
+			<span class="site-name"><asp:Label ID="lblUsuario" runat="server"></asp:Label></span>
+			<span class="site-desc"><asp:Label ID="lblInsto" runat="server"></asp:Label></span>
+		</a> <!-- / #logo-header -->
+		
+            <%--</a>--%> <!-- / #logo-header -->
+            <a id="logo-headerll" href="#">
+			<%--<span class="site-name">Sistema de Planes Institucionales</span>
+			<span class="site-desc">SIPLAN</span>--%>
+
+                <span class="site-name">Sistema de Planes Institucionales</span>
+			<span class="site-desc">>SIPLAN</span>
+
+		</a> <!-- / #logo-header -->
+
+      <%--  <nav>            
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Acerca de</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>--%>
+             <div style="float:left; display:block; padding: 20px 0 0 190px;" >
+          <%-- <a href="~/Documentos/oficio_circular_SPPD_DPST_003_2021.pdf" runat="server" id="pom" title="Ingreso y actualización de registros en SIPLAN 2,022"><img src="../images/descarga.png"  style="float:right; width:50px; height:50px; right:24%; top:26px;  padding:7px;"/></a>--%>
+          <%--<a href="~/Documentos/OFICIO_SOLICITUD_DE_INFORMES_CUATRIMESTRALES_INSTITUCIONES_2020.pdf" runat="server" id="oficioSolicitud" title="Oficio de solicitud de informes cuatrimestrales"><img src="../images/pdf.png"  style="float:right; width:50px; height:50px; right:21%; top:26px;  padding:7px;"/></a>--%>
+                 <asp:Button id="atencionUsuario" runat="server" Text="¡ATENCION USUARIO!"  OnClick="atencionUsuario_Click" CssClass="btn btn-danger" Style="float:right;left:5%;padding:9px;"></asp:Button>
+     <%--      <a href="~/Documentos/OFICIO_CIRCULAR_INSTITUCIONES_2023.pdf" runat="server" id="oficioSolicitud" title="Presentación de informes cuatrimestrales 2023"><img src="../images/descarga.png"  style="float:right; width:50px; height:50px; right:21%; top:26px;  padding:7px;"/></a>--%>
+            <%--<a href="~/Documentos/Oficio_Circular_SPPD_DASPP_01_2020_Modulo_Reprogramacion_SIPLAN.pdf" runat="server" id="oficioRepro" title="Oficio Circular SPPD-DASPP_01-2020 Modulo Reprogramación SIPLAN"><img src=".../images/descarga.png"  style="float:right; width:50px; height:50px; right:18%; top:26px;   padding:7px;"/></a>     --%>
+          <a href="~/Documentos/Oficio_circular_SPPD-DASP-01-2024_Ejecución cuatrimestral_2024_Instituciones.pdf" runat="server" id="manualrepro" title="Registro de planificación, programación y ejecución cuatrimestral en el año 2024"><img src="../images/manualReprogramaciones.png"  style="float:right; width:50px; height:50px; right:15%; top:26px;   padding:7px;"/></a>     
+            <a href="~/Documentos/MANUAL_DE_SIPLAN_2026.pdf" runat="server" id="manualusuario" title="Manual de Usuario"><img src="../images/manualUsuario.png"  style="float:right; width:33px; height:33px; right:13%; top:33px; background: #a4d2e0; border-radius:50% 50%; padding:9px;"/></a>           
+           <asp:ImageButton ID="informacion_usuariosss" ImageUrl="~/images/red_information.png"  AlternateText="No Image available" ToolTip="¡ATENCIÓN USUARIOS!" OnClick="atencionUsuario_Click" runat="server" style="width:35px;height:35px;position:absolute;right:18%;"/> 
+                 <a href="~/login/reset" runat="server" id="reset" title="Cambiar contraseña"><img src="../images/cambioContrasenia.png"  style="float:right; width:33px; height:33px; right:10%; top:33px; background: #a4d2e0; border-radius:50% 50%; padding:7px;"/></a>
+                </div>
+            
+            <div style="float:right; display:block; padding: 20px 0 0 0px;" >
+             
+           <a href="~/login/logout.aspx" runat="server" id="logout" class="btn btn-info">Cerrar Sesión</a>
+                </div>
+	</header>
+        <main>
+            <aside>
+            
+            </aside>
+            <article>            
+                <div>
+                      <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1" />
+                    <dx:ASPxPopupControl ID="popDocumento" runat="server" AllowDragging ="true" Width ="650px" Height="700px" HeaderText="Información importante,procesos para solicitud de nuevos usuarios y reinicio de contraseña" PopupHorizontalAlign="WindowCenter"  PopupVerticalAlign="WindowCenter"  CloseAction="CloseButton"  >
+                                <HeaderStyle Font-Bold="False" Font-Size="10"  HorizontalAlign="Left" />
+                               <ContentCollection>
+                                   <dx:PopupControlContentControl>
+              <iframe id="vstPrevia" runat="server"   Width ="900" Height="400" ></iframe>
+            </dx:PopupControlContentControl>
+                                   </ContentCollection>
+                           </dx:ASPxPopupControl>
+                </div>            
+            </article> 
+        </main>    
+        <footer id="main-footer">
+	 <p>&copy; Secretaría de Planificación y Programación de la Presidencia SEGEPLAN <asp:Label ID="anios" runat="server"></asp:Label></p>
+	</footer> <!-- / #main-footer -->
+    </div>
+    </form>
+</body>
+</html>
