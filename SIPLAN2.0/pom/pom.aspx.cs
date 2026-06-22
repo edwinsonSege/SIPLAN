@@ -1,5 +1,4 @@
 ﻿using DevExpress.Web;
-using DevExpress.XtraExport.Xls;
 using DevExpress.XtraRichEdit.Layout.Export;
 using SIPLAN2._0.DataAccess;
 using SIPLAN2._0.Rutas;
@@ -299,7 +298,7 @@ namespace SIPLAN2._0.pom
                         SPPO$ID_PERIODO
                         ,SPPO$ID_INSTITUCION
                         ,SPPO$ID_POM
-                        ,NOMBRE||'-'||SIGLA NOMBRE
+                        ,NOMBRE||'-'||SIGLAS NOMBRE
                         ,SPPO$INICIO
                         ,SPPO$FINAL
                         ,SPPO$PROPIETARIO
@@ -325,7 +324,7 @@ namespace SIPLAN2._0.pom
                         ,POM.SPPO$ID_INSTITUCION
                         ,POM.SPPO$ID_POM
                         ,CG.NOMBRE
-                        ,CG.SIGLA
+                        ,CG.SIGLAS
                         ,POM.SPPO$INICIO
                         ,POM.SPPO$FINAL
                         ,POM.SPPO$PROPIETARIO 
@@ -350,7 +349,7 @@ namespace SIPLAN2._0.pom
                         SPPO$ID_PERIODO
                         ,SPPO$ID_INSTITUCION
                         ,SPPO$ID_POM
-                        ,NOMBRE||'-'||SIGLA NOMBRE
+                        ,NOMBRE||'-'||SIGLAS NOMBRE
                         ,SPPO$INICIO
                         ,SPPO$FINAL
                         ,SPPO$PROPIETARIO 
@@ -376,7 +375,7 @@ namespace SIPLAN2._0.pom
                         ,POM.SPPO$ID_INSTITUCION
                         ,POM.SPPO$ID_POM
                         ,CG.NOMBRE
-                        ,NVL(CG.SIGLA,' ') SIGLA
+                        ,NVL(CG.SIGLAS,' ') SIGLAS
                         ,POM.SPPO$INICIO
                         ,POM.SPPO$FINAL
                         ,POM.SPPO$PROPIETARIO 
@@ -430,7 +429,7 @@ namespace SIPLAN2._0.pom
                     cbPeriodosPom.TextField = "VIGENCIA";
                     cbPeriodosPom.DataBind();
 
-                    sql = "SELECT CG.ENTIDAD, CG.NOMBRE||' '||CG.SIGLA INSTITUCION, CG.SECTOR FROM SINIP.CG_ENTIDADES CG WHERE ENTIDAD > 1000 AND CG.RESTRICTIVA = 'N' AND CG.NOMBRE NOT LIKE ('%MUNICIPALIDAD%%') AND CG.ENTIDAD NOT IN 777777 ORDER BY CG.NOMBRE ASC";
+                    sql = "SELECT CG.ENTIDAD, CG.NOMBRE||' '||CG.SIGLAS INSTITUCION, CG.SECTOR FROM SINIP.CG_ENTIDADES CG WHERE ENTIDAD > 1000 AND CG.RESTRICTIVA = 'N' AND CG.NOMBRE NOT LIKE ('%MUNICIPALIDAD%%') AND CG.ENTIDAD NOT IN 777777 ORDER BY CG.NOMBRE ASC";
                     estado = dao.consulta(sql);
                     if (estado == 0)
                     {
@@ -727,8 +726,6 @@ namespace SIPLAN2._0.pom
                     ,SCHE$SIPLAN20.FCN$BUSCA_ACCION(PO.SPPRO$RESULTADO2)ACCION
                     , PR.SPPRO$ID_PROGRAMA_PRESUPUESTO
                     ,PR.SPPRO$DESCRIPCION PROGRAMA_PRESUPUETARIO
-                    ,CASE WHEN PR.SPPRO$ES_ADMINISTRATIVO = 0 THEN 'PROGRAMAS SUSTANTIVOS' ELSE 'PROGRAMAS ADMINISTRATIVOS' END AS NATURALEZA
-                    ,PR.SPPRO$ES_ADMINISTRATIVO
                     ,PO.SPPRO$ID_PRODUCTO
                     ,PO.SPPRO$DESCRIPCION PRODUCTO
                     ,PO.SPPRO$ID_MEDIDA
@@ -821,7 +818,7 @@ namespace SIPLAN2._0.pom
                                     {
                                         for (int i = 0; i < resultado.Rows.Count; i++)
                                         {
-                                            sql = "INSERT INTO SCHE$SIPLAN20.SP20$RESULTADOS (SPRES$TIPO,SPRES$DESCRIPCION,SPRES$FECHA_INSERT, SPRES$POM, SPRES$INSTITUCION, SPRES$PROPIETARIO, SPRES$ID_ANTERIOR) VALUES (1,'" + resultado.Rows[i]["SPRES$DESCRIPCION"] + "','INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + pom + "," + insto + ",'" + Session["USUARIO"].ToString() + "', "+ resultado.Rows[i]["SPRES$ID_RESULTADO"] + ")";
+                                            sql = "INSERT INTO SCHE$SIPLAN20.SP20$RESULTADOS (SPRES$TIPO,SPRES$DESCRIPCION,SPRES$FECHA_INSERT, SPRES$POM, SPRES$INSTITUCION, SPRES$PROPIETARIO) VALUES (1,'" + resultado.Rows[i]["SPRES$DESCRIPCION"] + "','INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + pom + "," + insto + ",'" + Session["USUARIO"].ToString() + "')";
                                             estado = dao.comando(sql);
                                             if (estado == 0)
                                                 break;
@@ -908,7 +905,7 @@ namespace SIPLAN2._0.pom
                                             {
                                                 for (int i = 0; i < resultado.Rows.Count; i++)
                                                 {
-                                                    sql = "INSERT INTO SCHE$SIPLAN20.SP20$RESULTADOS (SPRES$TIPO,SPRES$COD_ESTRATEGICO,SPRES$FECHA_INSERT, SPRES$POM, SPRES$INSTITUCION, SPRES$PROPIETARIO,SPRES$ID_ANTERIOR) VALUES (2,'" + resultado.Rows[i]["SPRES$COD_ESTRATEGICO"] + "','INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + pom + "," + insto + ",'" + Session["USUARIO"].ToString() + "',"+ resultado.Rows[i]["SPRES$ID_RESULTADO"] + ")";
+                                                    sql = "INSERT INTO SCHE$SIPLAN20.SP20$RESULTADOS (SPRES$TIPO,SPRES$COD_ESTRATEGICO,SPRES$FECHA_INSERT, SPRES$POM, SPRES$INSTITUCION, SPRES$PROPIETARIO) VALUES (2,'" + resultado.Rows[i]["SPRES$COD_ESTRATEGICO"] + "','INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + pom + "," + insto + ",'" + Session["USUARIO"].ToString() + "')";
                                                     estado = dao.comando(sql);
                                                     if (estado == 0)
                                                         break;
@@ -965,20 +962,12 @@ namespace SIPLAN2._0.pom
                                     programas = dao.tabla;
                                     for (int i = 0; i < programas.Rows.Count; i++)
                                     {
-                                        sql = "INSERT INTO SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO (SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$ID_PROGRAMA_DEPENDE, SPPRO$DESCRIPCION, SPPRO$ID_POM, SPPRO$ID_INSTITUCION, SPPRO$FECHA_INSERT, SPPRO$PROPIETARIO, SPPRO$ID_PROGRA_ANTERIOR, SPPRO$POM_ANTERIOR, SPPRO$INSTO_ANTERIOR, SPPRO$DEPENDE_ANTERIOR) VALUES (" + programas.Rows[i]["SPPRO$ID_PROGRAMA_PRESUPUESTO"];
+                                        sql = "INSERT INTO SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO (SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$ID_PROGRAMA_DEPENDE, SPPRO$DESCRIPCION, SPPRO$ID_POM, SPPRO$ID_INSTITUCION, SPPRO$FECHA_INSERT, SPPRO$PROPIETARIO) VALUES (" + programas.Rows[i]["SPPRO$ID_PROGRAMA_PRESUPUESTO"];
                                         if (programas.Rows[i]["SPPRO$ID_PROGRAMA_DEPENDE"] == DBNull.Value)
                                             sql = sql + ",NULL";
                                         else
                                             sql = sql + "," + programas.Rows[i]["SPPRO$ID_PROGRAMA_DEPENDE"];
-                                        sql = sql + ",'" + programas.Rows[i]["SPPRO$DESCRIPCION"] + "'," + pom + "," + insto + ",'INSERT = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "','" + Session["USUARIO"].ToString() + "'," + programas.Rows[i]["SPPRO$ID_PROGRAMA_PRESUPUESTO"] + ", " + programas.Rows[i]["SPPRO$ID_POM"] + "," + programas.Rows[i]["SPPRO$ID_INSTITUCION"];
-
-
-                                        if (programas.Rows[i]["SPPRO$ID_PROGRAMA_DEPENDE"] == DBNull.Value)
-                                            sql = sql + ",NULL";
-                                        else
-                                            sql = sql + "," + programas.Rows[i]["SPPRO$ID_PROGRAMA_DEPENDE"];
-
-                                        sql=sql + ")";
+                                        sql = sql + ",'" + programas.Rows[i]["SPPRO$DESCRIPCION"] + "'," + pom + "," + insto + ",'INSERT = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "','" + Session["USUARIO"].ToString() + "')";
                                         estado = dao.comando(sql);
                                         if (estado == 0)
                                         {
@@ -1083,12 +1072,12 @@ namespace SIPLAN2._0.pom
                                         {
                                             for (int i = 0; i < resultado.Rows.Count; i++)
                                             {
-                                                sql = "INSERT INTO SCHE$SIPLAN20.SP20$RESULTADOS (SPRES$TIPO,SPRES$COD_ESTRATEGICO,SPRES$DESCRIPCION,SPRES$FECHA_INSERT, SPRES$POM, SPRES$INSTITUCION, SPRES$PROPIETARIO, SPRES$ID_ANTERIOR) VALUES (0," + resultado.Rows[i]["SPRES$COD_ESTRATEGICO"];
+                                                sql = "INSERT INTO SCHE$SIPLAN20.SP20$RESULTADOS (SPRES$TIPO,SPRES$COD_ESTRATEGICO,SPRES$DESCRIPCION,SPRES$FECHA_INSERT, SPRES$POM, SPRES$INSTITUCION, SPRES$PROPIETARIO) VALUES (0," + resultado.Rows[i]["SPRES$COD_ESTRATEGICO"];
                                                 if (resultado.Rows[i]["SPRES$DESCRIPCION"] != DBNull.Value)
                                                     sql = sql + ",'" + resultado.Rows[i]["SPRES$DESCRIPCION"] + "'";
                                                 else
                                                     sql = sql + ",NULL";
-                                                sql = sql + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + pom + "," + insto + ",'" + Session["USUARIO"].ToString() + "', "+ resultado.Rows[i]["SPRES$ID_RESULTADO"] + ")";
+                                                sql = sql + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + pom + "," + insto + ",'" + Session["USUARIO"].ToString() + "')";
                                                 estado = dao.comando(sql);
                                                 if (estado == 0)
                                                     break;
@@ -1779,21 +1768,21 @@ namespace SIPLAN2._0.pom
                 }
 
                 else
-                    graba_programa(1, Convert.ToDouble(txtCodPrograma.Text), txtPrograma.Text, Convert.ToDouble(cbPrograma.Value), Convert.ToInt32(cbComboProgrma.Value));
+                    graba_programa(1, Convert.ToDouble(txtCodPrograma.Text), txtPrograma.Text, Convert.ToDouble(cbPrograma.Value));
             }
 
             else if (selectProgra.SelectedIndex == 0)
-                graba_programa(0, Convert.ToDouble(txtCodPrograma.Text), txtPrograma.Text, 0, Convert.ToInt32(cbComboProgrma.Value));
+                graba_programa(0, Convert.ToDouble(txtCodPrograma.Text), txtPrograma.Text, 0);
 
         }
 
-        protected void graba_programa(int tipo, Double programa, string descripcion, Double sub, int administrativo)
+        protected void graba_programa(int tipo, Double programa, string descripcion, Double sub)
         {
             String codigo;
             if (tipo == 0)
-                sql = "INSERT INTO SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO (SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$DESCRIPCION, SPPRO$ID_POM, SPPRO$ID_INSTITUCION, SPPRO$FECHA_INSERT, SPPRO$PROPIETARIO, SPPRO$ES_ADMINISTRATIVO) VALUES (" + programa + ", '" + descripcion + "', " + Convert.ToInt32(Session["pom"]) + ", " + Convert.ToInt32(Session["insto"]) + ", 'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "', "+administrativo+" )";
+                sql = "INSERT INTO SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO (SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$DESCRIPCION, SPPRO$ID_POM, SPPRO$ID_INSTITUCION, SPPRO$FECHA_INSERT, SPPRO$PROPIETARIO) VALUES (" + programa + ", '" + descripcion + "', " + Convert.ToInt32(Session["pom"]) + ", " + Convert.ToInt32(Session["insto"]) + ", 'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "' )";
             else if (tipo == 1)
-                sql = "INSERT INTO SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO (SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$ID_PROGRAMA_DEPENDE, SPPRO$DESCRIPCION, SPPRO$ID_POM, SPPRO$ID_INSTITUCION, SPPRO$FECHA_INSERT, SPPRO$PROPIETARIO,SPPRO$ES_ADMINISTRATIVO) VALUES (" + programa + ", " + sub + ", '" + descripcion + "', " + Convert.ToInt32(Session["pom"]) + ", " + Convert.ToInt32(Session["insto"]) + ", 'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "',"+administrativo+" )";
+                sql = "INSERT INTO SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO (SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$ID_PROGRAMA_DEPENDE, SPPRO$DESCRIPCION, SPPRO$ID_POM, SPPRO$ID_INSTITUCION, SPPRO$FECHA_INSERT, SPPRO$PROPIETARIO) VALUES (" + programa + ", " + sub + ", '" + descripcion + "', " + Convert.ToInt32(Session["pom"]) + ", " + Convert.ToInt32(Session["insto"]) + ", 'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "' )";
             estado = dao.comando(sql);
             if (estado == 0)
             {
@@ -1802,9 +1791,9 @@ namespace SIPLAN2._0.pom
                 if (codigo == "ORA-00001")
                 {
                     if (tipo == 0)
-                        sql = "UPDATE SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO SET SPPRO$RESTRICTIVA = 'N', SPPRO$ID_PROGRAMA_DEPENDE = NULL, SPPRO$ES_ADMINISTRATIVO = "+administrativo+" WHERE SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND SPPRO$ID_POM = " + Convert.ToInt32(Session["pom"]) + " AND SPPRO$ID_INSTITUCION = " + Convert.ToInt32(Session["insto"]);
+                        sql = "UPDATE SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO SET SPPRO$RESTRICTIVA = 'N', SPPRO$ID_PROGRAMA_DEPENDE = NULL WHERE SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND SPPRO$ID_POM = " + Convert.ToInt32(Session["pom"]) + " AND SPPRO$ID_INSTITUCION = " + Convert.ToInt32(Session["insto"]);
                     else if (tipo == 1)
-                        sql = "UPDATE SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO SET SPPRO$RESTRICTIVA = 'N', SPPRO$ID_PROGRAMA_DEPENDE =" + cbPrograma.Value + ", SPPRO$ES_ADMINISTRATIVO = "+administrativo+" WHERE SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND SPPRO$ID_POM = " + Convert.ToInt32(Session["pom"]) + " AND SPPRO$ID_INSTITUCION = " + Convert.ToInt32(Session["insto"]);
+                        sql = "UPDATE SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO SET SPPRO$RESTRICTIVA = 'N', SPPRO$ID_PROGRAMA_DEPENDE =" + cbPrograma.Value + " WHERE SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND SPPRO$ID_POM = " + Convert.ToInt32(Session["pom"]) + " AND SPPRO$ID_INSTITUCION = " + Convert.ToInt32(Session["insto"]);
 
                     estado = dao.comando(sql);
                     if (estado == 0)
@@ -2038,7 +2027,6 @@ namespace SIPLAN2._0.pom
                     ,SPPRO$ID_PROGRAMA_PRESUPUESTO
                     ,SPPRO$ID_PROGRAMA_DEPENDE
                     ,ID_SUBPROGRAMA 
-                    ,SPPRO$ES_ADMINISTRATIVO
                     ,CASE WHEN TIPO = 0 THEN SPPRO$DESCRIPCION ELSE ' ' END AS SPPRO$DESCRIPCION
                     ,CASE WHEN TIPO = 1 AND SPPRO$ID_PROGRAMA_PRESUPUESTO = SPPRO$ID_PROGRAMA_DEPENDE THEN SPPRO$DESCRIPCION ELSE ' ' END AS SUBPROGRAMA_PRESUPUESTARIO
                     ,SPPRO$ID_POM   
@@ -2051,7 +2039,6 @@ namespace SIPLAN2._0.pom
                         ,SPPRO$ID_PROGRAMA_PRESUPUESTO
                         ,SPPRO$ID_PROGRAMA_DEPENDE
                         ,ID_SUBPROGRAMA
-                        ,SPPRO$ES_ADMINISTRATIVO
                         ,SPPRO$DESCRIPCION
                         ,SPPRO$ID_POM
                         ,SPPRO$ID_INSTITUCION
@@ -2062,7 +2049,6 @@ namespace SIPLAN2._0.pom
                             ,CASE WHEN P.SPPRO$ID_PROGRAMA_DEPENDE IS NULL THEN 0 ELSE 1 END AS TIPO
                             ,CASE WHEN P.SPPRO$ID_PROGRAMA_DEPENDE IS NULL THEN P.SPPRO$ID_PROGRAMA_PRESUPUESTO ELSE P.SPPRO$ID_PROGRAMA_DEPENDE END AS SPPRO$ID_PROGRAMA_PRESUPUESTO
                             ,CASE WHEN P.SPPRO$ID_PROGRAMA_DEPENDE IS NOT NULL THEN P.SPPRO$ID_PROGRAMA_PRESUPUESTO END AS ID_SUBPROGRAMA
-                            ,P.SPPRO$ES_ADMINISTRATIVO
                             ,P.SPPRO$DESCRIPCION
                             ,P.SPPRO$ID_PROGRAMA_DEPENDE
                             ,P.SPPRO$ID_POM
@@ -2154,10 +2140,9 @@ namespace SIPLAN2._0.pom
         {
             String sql, descripcion;
             Double sub, depende, programa;
-            int naturaleza = 0;
-            DataTable programas = new DataTable();
-            DataTable subsos = new DataTable();
 
+
+            DataTable programas = new DataTable();
             programas = (DataTable)Session["presupesto"];
 
             for (int i = 0; i <= programas.Rows.Count - 1; i++)
@@ -2169,39 +2154,10 @@ namespace SIPLAN2._0.pom
                     {
                         descripcion = e.NewValues["SPPRO$DESCRIPCION"].ToString();
 
-                        if (e.NewValues["SPPRO$ES_ADMINISTRATIVO"] != null)
-                        {
-                            naturaleza = Convert.ToInt32(e.NewValues["SPPRO$ES_ADMINISTRATIVO"].ToString());
-                        }
-                        else
-                        {
-                            naturaleza = Convert.ToInt32(e.OldValues["SPPRO$ES_ADMINISTRATIVO"]?.ToString());
-                        }
-
-
-                        if (naturaleza == 1)
-                        {
-                            sql = "SELECT SM.SPSM$ID_SUB FROM SCHE$SIPLAN20.SP20$SUB_MUNOS SM INNER JOIN SCHE$SIPLAN20.SP20$SUB_PRODUCTO S ON SM.SPSM$ID_SUB = S.SPPSUB$ID_SUBPRODUCTO AND SM.SPSM$RESTRICTIVA = 'N' AND S.SPPSUB$RESTRICTIVA = 'N' INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO P ON P.SPPRO$ID_PRODUCTO = S.SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N' AND S.SPPSUB$RESTRICTIVA = 'N' WHERE P.SPPRO$PRESUPUESTO =  " + Convert.ToDouble(programas.Rows[i]["SPPRO$ID_PROGRAMA_PRESUPUESTO"].ToString()) + " AND P.SPPRO$POM = " + Convert.ToInt32(Session["pom"]) + " AND P.SPPRO$INSTO = " + Convert.ToInt32(Session["insto"]) + " GROUP BY SM.SPSM$ID_SUB";
-                            estado = dao.consulta(sql);
-                            if (estado == 1)
-                            {
-                                subsos.Clear();
-                                subsos = dao.tabla;
-                                if (subsos.Rows.Count > 0)
-                                {
-                                    for (int c = 0; c < subsos.Rows.Count; c++)
-                                    {
-                                        sql = "UPDATE SCHE$SIPLAN20.SP20$SUB_MUNOS SET SPSM$RESTRICTIVA = 'S', SPSM$FECHA_ELIMINA = 'BORRA = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "' WHERE SPSM$ID_SUB = " + subsos.Rows[c]["SPSM$ID_SUB"];
-                                        estado = dao.comando(sql);
-                                    }
-                                }
-                            }
-                        }
-
 
                         if (programas.Rows[i]["SPPRO$ID_PROGRAMA_DEPENDE"] == DBNull.Value || Convert.ToDouble(programas.Rows[i]["SPPRO$ID_PROGRAMA_DEPENDE"]) == 0)
                         {
-                            sql = "UPDATE SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO SET SPPRO$DESCRIPCION = '" + descripcion + "', SPPRO$ID_PROGRAMA_DEPENDE = NULL, SPPRO$FECHA_UPDATE = 'UPDATE = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', SPPRO$ES_ADMINISTRATIVO = "+naturaleza+"  WHERE SPPRO$RESTRICTIVA = 'N' AND SPPRO$ID_PROGRAMA_PRESUPUESTO = " + Convert.ToDouble(programas.Rows[i]["SPPRO$ID_PROGRAMA_PRESUPUESTO"].ToString()) + " AND SPPRO$ID_POM = " + Convert.ToInt32(Session["pom"]) + " AND SPPRO$ID_INSTITUCION = " + Convert.ToInt32(Session["insto"]);
+                            sql = "UPDATE SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO SET SPPRO$DESCRIPCION = '" + descripcion + "', SPPRO$ID_PROGRAMA_DEPENDE = NULL, SPPRO$FECHA_UPDATE = 'UPDATE = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "' WHERE SPPRO$RESTRICTIVA = 'N' AND SPPRO$ID_PROGRAMA_PRESUPUESTO = " + Convert.ToDouble(programas.Rows[i]["SPPRO$ID_PROGRAMA_PRESUPUESTO"].ToString()) + " AND SPPRO$ID_POM = " + Convert.ToInt32(Session["pom"]) + " AND SPPRO$ID_INSTITUCION = " + Convert.ToInt32(Session["insto"]);
 
                         }
 
@@ -2223,11 +2179,9 @@ namespace SIPLAN2._0.pom
                             }
                             else
                             {
-                                
                                 descripcion = e.NewValues["SUBPROGRAMA_PRESUPUESTARIO"].ToString();
                                 sub = Convert.ToDouble(e.NewValues["ID_SUBPROGRAMA"]);
-
-                                sql = "UPDATE SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO SET SPPRO$DESCRIPCION = '" + descripcion + "', SPPRO$ID_PROGRAMA_DEPENDE = " + Convert.ToDouble(programas.Rows[i]["SPPRO$ID_PROGRAMA_PRESUPUESTO"].ToString()) + ", SPPRO$FECHA_UPDATE = 'UPDATE = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', SPPRO$ES_ADMINISTRATIVO = "+naturaleza+" WHERE SPPRO$RESTRICTIVA = 'N' AND SPPRO$ID_PROGRAMA_PRESUPUESTO = " + sub + " AND SPPRO$ID_POM = " + Convert.ToInt32(Session["pom"]) + " AND SPPRO$ID_INSTITUCION = " + Convert.ToInt32(Session["insto"]);
+                                sql = "UPDATE SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO SET SPPRO$DESCRIPCION = '" + descripcion + "', SPPRO$ID_PROGRAMA_DEPENDE = " + Convert.ToDouble(programas.Rows[i]["SPPRO$ID_PROGRAMA_PRESUPUESTO"].ToString()) + ", SPPRO$FECHA_UPDATE = 'UPDATE = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "' WHERE SPPRO$RESTRICTIVA = 'N' AND SPPRO$ID_PROGRAMA_PRESUPUESTO = " + sub + " AND SPPRO$ID_POM = " + Convert.ToInt32(Session["pom"]) + " AND SPPRO$ID_INSTITUCION = " + Convert.ToInt32(Session["insto"]);
                             }
 
 
@@ -2704,8 +2658,6 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                     ,SCHE$SIPLAN20.FCN$BUSCA_ACCION(PO.SPPRO$RESULTADO2) ACCION_ESTRATEGICA
                     ,PR.SPPRO$ID_PROGRAMA_PRESUPUESTO
                     ,PR.SPPRO$DESCRIPCION PRESUPUESTO
-                    ,CASE WHEN PR.SPPRO$ES_ADMINISTRATIVO = 0 THEN 'PROGRAMAS SUSTANTIVOS' ELSE 'PROGRAMAS ADMINISTRATIVOS' END AS NATURALEZA
-                    ,PR.SPPRO$ES_ADMINISTRATIVO
                     ,PO.SPPRO$ID_PRODUCTO
                     ,PO.SPPRO$DESCRIPCION PRODUCTO
                     ,PO.SPPRO$ID_MEDIDA
@@ -2719,7 +2671,6 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                     ,R.SPRES$COD_ESTRATEGICO    
                     ,R.SPRES$TIPO
                     ,PO.SPPRO$RESULTADO2
-                    
                     FROM SCHE$SIPLAN20.SP20$RESULTADOS R 
                     INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO PO ON R.SPRES$ID_RESULTADO = PO.SPPRO$ID_RESULTADO AND R.SPRES$POM = PO.SPPRO$POM AND R.SPRES$INSTITUCION = PO.SPPRO$INSTO AND R.SPRES$RESTRICTIVA = 'N' AND PO.SPPRO$RESTRICTIVA = 'N' 
                     INNER JOIN SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO PR ON PO.SPPRO$PRESUPUESTO = PR.SPPRO$ID_PROGRAMA_PRESUPUESTO AND PO.SPPRO$POM = PR.SPPRO$ID_POM AND PR.SPPRO$ID_INSTITUCION = PO.SPPRO$INSTO AND PR.SPPRO$RESTRICTIVA = 'N' AND PO.SPPRO$RESTRICTIVA = 'N' 
@@ -2736,8 +2687,6 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                   ,' ' ACCION_ESTRATEGICA
                   ,PR.SPPRO$ID_PROGRAMA_PRESUPUESTO
                   ,PR.SPPRO$DESCRIPCION PROGRAMA_PRESUPUETARIO
-                  ,CASE WHEN PR.SPPRO$ES_ADMINISTRATIVO = 0 THEN 'PROGRAMAS SUSTANTIVOS' ELSE 'PROGRAMAS ADMINISTRATIVOS' END AS NATURALEZA
-                  ,PR.SPPRO$ES_ADMINISTRATIVO
                   ,P.SPPRO$ID_PRODUCTO
                   ,P.SPPRO$DESCRIPCION PRODUCTO
                   ,P.SPPRO$ID_MEDIDA
@@ -2771,8 +2720,6 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
 ,R.SPPRES$CODIGO||'-'||R.SPPRES$DESCRIPCION ACCION_ESTRATEGICA
 ,PR.SPPRO$ID_PROGRAMA_PRESUPUESTO
                   ,PR.SPPRO$DESCRIPCION PROGRAMA_PRESUPUETARIO
-                ,CASE WHEN PR.SPPRO$ES_ADMINISTRATIVO = 0 THEN 'PROGRAMAS SUSTANTIVOS' ELSE 'PROGRAMAS ADMINISTRATIVOS' END AS NATURALEZA
-                  ,PR.SPPRO$ES_ADMINISTRATIVO
                   ,P.SPPRO$ID_PRODUCTO
                   ,P.SPPRO$DESCRIPCION PRODUCTO
                   ,P.SPPRO$ID_MEDIDA
@@ -2807,8 +2754,6 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
 ,R.SPPRES$CODIGO||'-'||R.SPPRES$DESCRIPCION ACCION_ESTRATEGICA
 ,PR.SPPRO$ID_PROGRAMA_PRESUPUESTO
                   ,PR.SPPRO$DESCRIPCION PROGRAMA_PRESUPUETARIO
-                  ,CASE WHEN PR.SPPRO$ES_ADMINISTRATIVO = 0 THEN 'PROGRAMAS SUSTANTIVOS' ELSE 'PROGRAMAS ADMINISTRATIVOS' END AS NATURALEZA
-                  ,PR.SPPRO$ES_ADMINISTRATIVO
                   ,P.SPPRO$ID_PRODUCTO
                   ,P.SPPRO$DESCRIPCION PRODUCTO
                   ,P.SPPRO$ID_MEDIDA
@@ -2843,8 +2788,6 @@ UNION
 ,' ' ACCION_ESTRATEGICA
 ,PR.SPPRO$ID_PROGRAMA_PRESUPUESTO
                   ,PR.SPPRO$DESCRIPCION PROGRAMA_PRESUPUETARIO
-                    ,CASE WHEN PR.SPPRO$ES_ADMINISTRATIVO = 0 THEN 'PROGRAMAS SUSTANTIVOS' ELSE 'PROGRAMAS ADMINISTRATIVOS' END AS NATURALEZA
-                  ,PR.SPPRO$ES_ADMINISTRATIVO
                   ,P.SPPRO$ID_PRODUCTO
                   ,P.SPPRO$DESCRIPCION PRODUCTO
                   ,P.SPPRO$ID_MEDIDA
@@ -2896,12 +2839,7 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
             DataTable resultado = new DataTable();
             DataTable producto = new DataTable();
             DataTable poms = new DataTable();
-            DataTable resultados = new DataTable();
             int orden = -1;
-            int resultado2 = -1;
-            int tipo = -1;
-
-
 
             sql = "SELECT P.SPP$ORDEN FROM SCHE$SIPLAN20.SP20$PERIODO P INNER JOIN SCHE$SIPLAN20.SP20$POM PO ON P.SPP$ID_PERIODO = PO.SPPO$ID_PERIODO AND P.SPP$RESTRICTIVA = 'N' AND PO.SPPO$RESTRICTIVA = 'N' WHERE PO.SPPO$ID_POM = " + pom + " AND PO.SPPO$ID_INSTITUCION = " + insto;
             estado = dao.consulta(sql);
@@ -2934,61 +2872,18 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                                             resultado = dao.tabla;
                                             if (resultado.Rows.Count > 0)
                                             {
-                                                if (Convert.ToInt32(producto.Rows[i]["SPPRO$RESULTADO2"]) != -1)
-                                                {
-                                                    sql = "SELECT * FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$ID_RESULTADO = " + producto.Rows[i]["SPPRO$RESULTADO2"] + " AND SPRES$RESTRICTIVA = 'N' AND SPRES$POM = " + producto.Rows[i]["SPPRO$POM"] + " AND SPRES$INSTITUCION = " + producto.Rows[i]["SPPRO$INSTO"];
-                                                    estado = dao.consulta(sql);
-                                                    if (estado == 1)
-                                                    {
-                                                        resultados = dao.tabla;
-                                                        if (resultados.Rows.Count > 0)
-                                                        {
-                                                            tipo = Convert.ToInt32(resultados.Rows[0]["SPRES$TIPO"]);
-                                                            sql = "SELECT * FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE ";
-                                                            if (tipo == 0)
-                                                                sql = sql + " SPRES$COD_ESTRATEGICO= " + resultados.Rows[0]["SPRES$COD_ESTRATEGICO"];
-                                                            else if (tipo == 1)
-                                                                sql = sql + " SPRES$DESCRIPCION = " + resultados.Rows[0]["SPRES$DESCRIPCION"];
-                                                            else if (tipo == 2)
-                                                                sql = sql + " SPRES$COD_ESTRATEGICO= " + resultados.Rows[0]["SPRES$COD_ESTRATEGICO"];
-                                                            sql = sql + " AND SPRES$RESTRICTIVA = 'N' AND SPRES$POM = " + pom + " AND SPRES$INSTITUCION = " + insto + " AND SPRES$TIPO = " + tipo;
-
-                                                            estado = dao.consulta(sql);
-                                                            if (estado == 1)
-                                                            {
-                                                                tabla = dao.tabla;
-                                                                if (tabla.Rows.Count > 0)
-                                                                    resultado2 = Convert.ToInt32(tabla.Rows[0]["SPRES$ID_RESULTADO"]);
-                                                                else
-                                                                    resultado2 = -1;
-
-                                                            }
-                                                            else
-                                                                resultado2 = -1;
-                                                        }
-                                                        else
-                                                            resultado2 = -1;
-                                                    }
-                                                    else
-
-                                                        resultado2 = -1;
-                                                }
-                                                else
-                                                    resultado2 = -1;
-
-
-                                                sql = "INSERT INTO SCHE$SIPLAN20.SP20$PRODUCTO (SPPRO$DESCRIPCION, SPPRO$ID_MEDIDA, SPPRO$OBJETIVO_CENTRAL, SPPRO$ACCION_ESTRATEGICA, SPPRO$ID_RESULTADO, SPPRO$FECHA_INSERTA, SPPRO$PRESUPUESTO, SPPRO$POM, SPPRO$INSTO,SPPRO$RESULTADO2, SPPRO$ID_ANTERIOR) VALUES ('" + producto.Rows[i]["SPPRO$DESCRIPCION"] + "'," + producto.Rows[i]["SPPRO$ID_MEDIDA"];
+                                                sql = "INSERT INTO SCHE$SIPLAN20.SP20$PRODUCTO (SPPRO$DESCRIPCION, SPPRO$ID_MEDIDA, SPPRO$OBJETIVO_CENTRAL, SPPRO$ACCION_ESTRATEGICA, SPPRO$ID_RESULTADO, SPPRO$FECHA_INSERTA, SPPRO$PRESUPUESTO, SPPRO$POM, SPPRO$INSTO,SPPRO$RESULTADO2) VALUES ('" + producto.Rows[i]["SPPRO$DESCRIPCION"] + "'," + producto.Rows[i]["SPPRO$ID_MEDIDA"];
                                                 if (producto.Rows[i]["SPPRO$OBJETIVO_CENTRAL"] == DBNull.Value)
                                                     sql = sql + ",NULL,NULL";
                                                 else
                                                     sql = sql + "," + producto.Rows[i]["SPPRO$OBJETIVO_CENTRAL"] + "," + producto.Rows[i]["SPPRO$ACCION_ESTRATEGICA"];
-                                                sql = sql + "," + resultado.Rows[0]["SPRES$ID_RESULTADO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + producto.Rows[i]["SPPRO$PRESUPUESTO"] + "," + pom + "," + insto + "," + resultado2 + "," + producto.Rows[i]["SPPRO$ID_PRODUCTO"] + ")";
+                                                sql = sql + "," + resultado.Rows[0]["SPRES$ID_RESULTADO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + producto.Rows[i]["SPPRO$PRESUPUESTO"] + "," + pom + "," + insto + "," + producto.Rows[i]["SPPRO$RESULTADO2"] + ")";
 
                                                 estado = dao.comando(sql);
                                                 if (estado == 0)
                                                     break;
                                             }
-                                           
+                                            
                                         }
                                     }
 
@@ -3104,15 +2999,15 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                                                                     tempo = dao.tabla;
                                                                     if (tempo.Rows.Count > 0)
                                                                     {
-                                                                        sql = "INSERT INTO SCHE$SIPLAN20.SP20$SUB_PRODUCTO (SPPSUB$DESCRIPCION, SPPSUB$ID_MEDIDA, SPPSUB$SNIP, SPPSUB$ID_PRODUCTO,SPPSUB$FECHA_INSERTA,SPPSUB$PROPIETARIO,SPPSUB$ID_ANTERIOR) VALUES (";
+                                                                        sql = "INSERT INTO SCHE$SIPLAN20.SP20$SUB_PRODUCTO (SPPSUB$DESCRIPCION, SPPSUB$ID_MEDIDA, SPPSUB$SNIP, SPPSUB$ID_PRODUCTO,SPPSUB$FECHA_INSERTA,SPPSUB$PROPIETARIO) VALUES (";
                                                                         if (subproductos.Rows[j]["SPPSUB$SNIP"] == DBNull.Value)
                                                                         {
-                                                                            sql = sql + "'" + subproductos.Rows[j]["SPPSUB$DESCRIPCION"] + "'," + subproductos.Rows[j]["SPPSUB$ID_MEDIDA"] + ",NULL," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "',"+ subproductos.Rows[j]["SPPSUB$ID_SUBPRODUCTO"] + ")";
+                                                                            sql = sql + "'" + subproductos.Rows[j]["SPPSUB$DESCRIPCION"] + "'," + subproductos.Rows[j]["SPPSUB$ID_MEDIDA"] + ",NULL," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "')";
                                                                         }
 
                                                                         else
                                                                         {
-                                                                            sql = sql + "NULL,NULL," + subproductos.Rows[j]["SPPSUB$SNIP"] + "," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "',"+ subproductos.Rows[j]["SPPSUB$ID_SUBPRODUCTO"] + ")";
+                                                                            sql = sql + "NULL,NULL," + subproductos.Rows[j]["SPPSUB$SNIP"] + "," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "')";
                                                                         }
 
                                                                         estado = dao.comando(sql);
@@ -3145,11 +3040,9 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
             DataTable poms = new DataTable();
             DataTable producto = new DataTable();
             DataTable resultado = new DataTable();
-            DataTable resultados = new DataTable();
             DataTable subproductos = new DataTable();
             DataTable tempo = new DataTable();
-            int tipo = -1;
-            int resultado2 = -1;
+
             sql = "SELECT P.SPP$ORDEN FROM SCHE$SIPLAN20.SP20$PERIODO P INNER JOIN SCHE$SIPLAN20.SP20$POM PO ON P.SPP$ID_PERIODO = PO.SPPO$ID_PERIODO AND P.SPP$RESTRICTIVA = 'N' AND PO.SPPO$RESTRICTIVA = 'N' WHERE PO.SPPO$ID_POM = " + pom + " AND PO.SPPO$ID_INSTITUCION = " + insto;
             estado = dao.consulta(sql);
             if (estado == 1)
@@ -3184,58 +3077,12 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                                                     resultado = dao.tabla;
                                                     if (resultado.Rows.Count > 0)
                                                     {
-
-                                                        if (Convert.ToInt32(producto.Rows[i]["SPPRO$RESULTADO2"]) != -1)
-                                                        {
-                                                            sql = "SELECT * FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$ID_RESULTADO = " + producto.Rows[i]["SPPRO$RESULTADO2"] + " AND SPRES$RESTRICTIVA = 'N' AND SPRES$POM = " + producto.Rows[i]["SPPRO$POM"] + " AND SPRES$INSTITUCION = " + producto.Rows[i]["SPPRO$INSTO"];
-                                                            estado = dao.consulta(sql);
-                                                            if (estado == 1)
-                                                            {
-                                                                resultados = dao.tabla;
-                                                                if (resultados.Rows.Count > 0)
-                                                                {
-                                                                    tipo = Convert.ToInt32(resultados.Rows[0]["SPRES$TIPO"]);
-                                                                    sql = "SELECT * FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE ";
-                                                                    if (tipo == 0)
-                                                                        sql = sql + " SPRES$COD_ESTRATEGICO= " + resultados.Rows[0]["SPRES$COD_ESTRATEGICO"];
-                                                                    else if (tipo == 1)
-                                                                        sql = sql + " SPRES$DESCRIPCION = " + resultados.Rows[0]["SPRES$DESCRIPCION"];
-                                                                    else if (tipo == 2)
-                                                                        sql = sql + " SPRES$COD_ESTRATEGICO= " + resultados.Rows[0]["SPRES$COD_ESTRATEGICO"];
-                                                                    sql = sql + " AND SPRES$RESTRICTIVA = 'N' AND SPRES$POM = " + pom + " AND SPRES$INSTITUCION = " + insto + " AND SPRES$TIPO = " + tipo;
-
-                                                                    estado = dao.consulta(sql);
-                                                                    if (estado == 1)
-                                                                    {
-                                                                        tabla = dao.tabla;
-                                                                        if (tabla.Rows.Count > 0)
-                                                                            resultado2 = Convert.ToInt32(tabla.Rows[0]["SPRES$ID_RESULTADO"]);
-                                                                        else
-                                                                            resultado2 = -1;
-
-                                                                    }
-                                                                    else
-                                                                        resultado2 = -1;
-                                                                }
-                                                                else
-                                                                    resultado2 = -1;
-                                                            }
-                                                            else
-
-                                                                resultado2 = -1;
-                                                        }
-                                                        else
-                                                            resultado2 = -1;
-
-
-
-
-                                                        sql = "INSERT INTO SCHE$SIPLAN20.SP20$PRODUCTO (SPPRO$DESCRIPCION, SPPRO$ID_MEDIDA, SPPRO$OBJETIVO_CENTRAL, SPPRO$ACCION_ESTRATEGICA, SPPRO$ID_RESULTADO, SPPRO$FECHA_INSERTA, SPPRO$PRESUPUESTO, SPPRO$POM, SPPRO$INSTO,SPPRO$RESULTADO2,SPPRO$ID_ANTERIOR) VALUES ('" + producto.Rows[i]["SPPRO$DESCRIPCION"] + "'," + producto.Rows[i]["SPPRO$ID_MEDIDA"];
+                                                        sql = "INSERT INTO SCHE$SIPLAN20.SP20$PRODUCTO (SPPRO$DESCRIPCION, SPPRO$ID_MEDIDA, SPPRO$OBJETIVO_CENTRAL, SPPRO$ACCION_ESTRATEGICA, SPPRO$ID_RESULTADO, SPPRO$FECHA_INSERTA, SPPRO$PRESUPUESTO, SPPRO$POM, SPPRO$INSTO,SPPRO$RESULTADO2) VALUES ('" + producto.Rows[i]["SPPRO$DESCRIPCION"] + "'," + producto.Rows[i]["SPPRO$ID_MEDIDA"];
                                                         if (producto.Rows[i]["SPPRO$OBJETIVO_CENTRAL"] == DBNull.Value)
                                                             sql = sql + ",NULL,NULL";
                                                         else
                                                             sql = sql + "," + producto.Rows[i]["SPPRO$OBJETIVO_CENTRAL"] + "," + producto.Rows[i]["SPPRO$ACCION_ESTRATEGICA"];
-                                                        sql = sql + "," + resultado.Rows[0]["SPRES$ID_RESULTADO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + producto.Rows[i]["SPPRO$PRESUPUESTO"] + "," + pom + "," + insto + "," + resultado2 + ","+ producto.Rows[i]["SPPRO$ID_PRODUCTO"] + ")";
+                                                        sql = sql + "," + resultado.Rows[0]["SPRES$ID_RESULTADO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + producto.Rows[i]["SPPRO$PRESUPUESTO"] + "," + pom + "," + insto + "," + producto.Rows[i]["SPPRO$RESULTADO2"] + ")";
                                                         estado = dao.comando(sql);
                                                         if (estado == 0)
                                                             break;
@@ -3284,15 +3131,15 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                                                                             tempo = dao.tabla;
                                                                             if (tempo.Rows.Count > 0)
                                                                             {
-                                                                                sql = "INSERT INTO SCHE$SIPLAN20.SP20$SUB_PRODUCTO (SPPSUB$DESCRIPCION, SPPSUB$ID_MEDIDA, SPPSUB$SNIP, SPPSUB$ID_PRODUCTO,SPPSUB$FECHA_INSERTA,SPPSUB$PROPIETARIO,SPPSUB$ID_ANTERIOR) VALUES (";
+                                                                                sql = "INSERT INTO SCHE$SIPLAN20.SP20$SUB_PRODUCTO (SPPSUB$DESCRIPCION, SPPSUB$ID_MEDIDA, SPPSUB$SNIP, SPPSUB$ID_PRODUCTO,SPPSUB$FECHA_INSERTA,SPPSUB$PROPIETARIO) VALUES (";
                                                                                 if (subproductos.Rows[j]["SPPSUB$SNIP"] == DBNull.Value)
                                                                                 {
-                                                                                    sql = sql + "'" + subproductos.Rows[j]["SPPSUB$DESCRIPCION"] + "'," + subproductos.Rows[j]["SPPSUB$ID_MEDIDA"] + ",NULL," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "',"+ subproductos.Rows[j]["SPPSUB$ID_SUBPRODUCTO"] + ")";
+                                                                                    sql = sql + "'" + subproductos.Rows[j]["SPPSUB$DESCRIPCION"] + "'," + subproductos.Rows[j]["SPPSUB$ID_MEDIDA"] + ",NULL," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "')";
                                                                                 }
 
                                                                                 else
                                                                                 {
-                                                                                    sql = sql + "NULL,NULL," + subproductos.Rows[j]["SPPSUB$SNIP"] + "," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "',"+ subproductos.Rows[j]["SPPSUB$ID_SUBPRODUCTO"] + ")";
+                                                                                    sql = sql + "NULL,NULL," + subproductos.Rows[j]["SPPSUB$SNIP"] + "," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "')";
                                                                                 }
 
                                                                                 estado = dao.comando(sql);
@@ -3330,11 +3177,8 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
             DataTable poms = new DataTable();
             DataTable producto = new DataTable();
             DataTable resultado = new DataTable();
-            DataTable resultados = new DataTable();
             DataTable subproductos = new DataTable();
             DataTable tempo = new DataTable();
-            int tipo = -1;
-            int resultado2 = -1;
 
             sql = "SELECT P.SPP$ORDEN FROM SCHE$SIPLAN20.SP20$PERIODO P INNER JOIN SCHE$SIPLAN20.SP20$POM PO ON P.SPP$ID_PERIODO = PO.SPPO$ID_PERIODO AND P.SPP$RESTRICTIVA = 'N' AND PO.SPPO$RESTRICTIVA = 'N' WHERE PO.SPPO$ID_POM = " + pom + " AND PO.SPPO$ID_INSTITUCION = " + insto;
             estado = dao.consulta(sql);
@@ -3371,56 +3215,12 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                                                     resultado = dao.tabla;
                                                     if (resultado.Rows.Count > 0)
                                                     {
-
-                                                        if (Convert.ToInt32(producto.Rows[i]["SPPRO$RESULTADO2"]) != -1)
-                                                        {
-                                                            sql = "SELECT * FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$ID_RESULTADO = " + producto.Rows[i]["SPPRO$RESULTADO2"] + " AND SPRES$RESTRICTIVA = 'N' AND SPRES$POM = " + producto.Rows[i]["SPPRO$POM"] + " AND SPRES$INSTITUCION = " + producto.Rows[i]["SPPRO$INSTO"];
-                                                            estado = dao.consulta(sql);
-                                                            if (estado == 1)
-                                                            {
-                                                                resultados = dao.tabla;
-                                                                if (resultados.Rows.Count > 0)
-                                                                {
-                                                                    tipo = Convert.ToInt32(resultados.Rows[0]["SPRES$TIPO"]);
-                                                                    sql = "SELECT * FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE ";
-                                                                    if (tipo == 0)
-                                                                        sql = sql + " SPRES$COD_ESTRATEGICO= " + resultados.Rows[0]["SPRES$COD_ESTRATEGICO"];
-                                                                    else if (tipo == 1)
-                                                                        sql = sql + " SPRES$DESCRIPCION = " + resultados.Rows[0]["SPRES$DESCRIPCION"];
-                                                                    else if (tipo == 2)
-                                                                        sql = sql + " SPRES$COD_ESTRATEGICO= " + resultados.Rows[0]["SPRES$COD_ESTRATEGICO"];
-                                                                    sql = sql + " AND SPRES$RESTRICTIVA = 'N' AND SPRES$POM = " + pom + " AND SPRES$INSTITUCION = " + insto + " AND SPRES$TIPO = " + tipo;
-
-                                                                    estado = dao.consulta(sql);
-                                                                    if (estado == 1)
-                                                                    {
-                                                                        tabla = dao.tabla;
-                                                                        if (tabla.Rows.Count > 0)
-                                                                            resultado2 = Convert.ToInt32(tabla.Rows[0]["SPRES$ID_RESULTADO"]);
-                                                                        else
-                                                                            resultado2 = -1;
-
-                                                                    }
-                                                                    else
-                                                                        resultado2 = -1;
-                                                                }
-                                                                else
-                                                                    resultado2 = -1;
-                                                            }
-                                                            else
-
-                                                                resultado2 = -1;
-                                                        }
-                                                        else
-                                                            resultado2 = -1;
-
-
-                                                        sql = "INSERT INTO SCHE$SIPLAN20.SP20$PRODUCTO (SPPRO$DESCRIPCION, SPPRO$ID_MEDIDA, SPPRO$OBJETIVO_CENTRAL, SPPRO$ACCION_ESTRATEGICA, SPPRO$ID_RESULTADO, SPPRO$FECHA_INSERTA, SPPRO$PRESUPUESTO, SPPRO$POM, SPPRO$INSTO,SPPRO$RESULTADO2,SPPRO$ID_ANTERIOR) VALUES ('" + producto.Rows[i]["SPPRO$DESCRIPCION"] + "'," + producto.Rows[i]["SPPRO$ID_MEDIDA"];
+                                                        sql = "INSERT INTO SCHE$SIPLAN20.SP20$PRODUCTO (SPPRO$DESCRIPCION, SPPRO$ID_MEDIDA, SPPRO$OBJETIVO_CENTRAL, SPPRO$ACCION_ESTRATEGICA, SPPRO$ID_RESULTADO, SPPRO$FECHA_INSERTA, SPPRO$PRESUPUESTO, SPPRO$POM, SPPRO$INSTO,SPPRO$RESULTADO2) VALUES ('" + producto.Rows[i]["SPPRO$DESCRIPCION"] + "'," + producto.Rows[i]["SPPRO$ID_MEDIDA"];
                                                         if (producto.Rows[i]["SPPRO$OBJETIVO_CENTRAL"] == DBNull.Value)
                                                             sql = sql + ",NULL,NULL";
                                                         else
                                                             sql = sql + "," + producto.Rows[i]["SPPRO$OBJETIVO_CENTRAL"] + "," + producto.Rows[i]["SPPRO$ACCION_ESTRATEGICA"];
-                                                        sql = sql + "," + resultado.Rows[0]["SPRES$ID_RESULTADO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + producto.Rows[i]["SPPRO$PRESUPUESTO"] + "," + pom + "," + insto + "," + resultado2 + ","+ producto.Rows[i]["SPPRO$ID_PRODUCTO"] + ")";
+                                                        sql = sql + "," + resultado.Rows[0]["SPRES$ID_RESULTADO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "'," + producto.Rows[i]["SPPRO$PRESUPUESTO"] + "," + pom + "," + insto + "," + producto.Rows[i]["SPPRO$RESULTADO2"] + ")";
                                                         estado = dao.comando(sql);
                                                         if (estado == 0)
                                                             break;
@@ -3469,15 +3269,15 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                                                                             tempo = dao.tabla;
                                                                             if (tempo.Rows.Count > 0)
                                                                             {
-                                                                                sql = "INSERT INTO SCHE$SIPLAN20.SP20$SUB_PRODUCTO (SPPSUB$DESCRIPCION, SPPSUB$ID_MEDIDA, SPPSUB$SNIP, SPPSUB$ID_PRODUCTO,SPPSUB$FECHA_INSERTA,SPPSUB$PROPIETARIO,SPPSUB$ID_ANTERIOR) VALUES (";
+                                                                                sql = "INSERT INTO SCHE$SIPLAN20.SP20$SUB_PRODUCTO (SPPSUB$DESCRIPCION, SPPSUB$ID_MEDIDA, SPPSUB$SNIP, SPPSUB$ID_PRODUCTO,SPPSUB$FECHA_INSERTA,SPPSUB$PROPIETARIO) VALUES (";
                                                                                 if (subproductos.Rows[j]["SPPSUB$SNIP"] == DBNull.Value)
                                                                                 {
-                                                                                    sql = sql + "'" + subproductos.Rows[j]["SPPSUB$DESCRIPCION"] + "'," + subproductos.Rows[j]["SPPSUB$ID_MEDIDA"] + ",NULL," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "',"+ subproductos.Rows[j]["SPPSUB$ID_SUBPRODUCTO"] + ")";
+                                                                                    sql = sql + "'" + subproductos.Rows[j]["SPPSUB$DESCRIPCION"] + "'," + subproductos.Rows[j]["SPPSUB$ID_MEDIDA"] + ",NULL," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "')";
                                                                                 }
 
                                                                                 else
                                                                                 {
-                                                                                    sql = sql + "NULL,NULL," + subproductos.Rows[j]["SPPSUB$SNIP"] + "," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "',"+ subproductos.Rows[j]["SPPSUB$ID_SUBPRODUCTO"] + ")";
+                                                                                    sql = sql + "NULL,NULL," + subproductos.Rows[j]["SPPSUB$SNIP"] + "," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "')";
                                                                                 }
 
                                                                                 estado = dao.comando(sql);
@@ -3596,7 +3396,6 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
         }
         protected void cbProgramaPresupuestario_ValueChanged(object sender, EventArgs e)
         {
-            DataTable esAdmino = new DataTable();
             sql = "SELECT  P.SPPRO$ID_PROGRAMA_PRESUPUESTO, P.SPPRO$ID_PROGRAMA_PRESUPUESTO||'-'||P.SPPRO$DESCRIPCION PROGRAMA FROM SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO P WHERE P.SPPRO$ID_PROGRAMA_DEPENDE = " + Convert.ToDouble(cbProgramaPresupuestario.Value) + " AND P.SPPRO$ID_POM = " + Convert.ToInt32(Session["pom"]) + " AND SPPRO$ID_INSTITUCION = " + Convert.ToInt32(Session["insto"]) + " AND P.SPPRO$RESTRICTIVA = 'N'";
             estado = dao.consulta(sql);
             if (estado == 0)
@@ -3607,46 +3406,15 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
             else
             {
                 tabla = dao.tabla;
-
-                sql = "SELECT SPPRO$ES_ADMINISTRATIVO FROM SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO WHERE SPPRO$ID_PROGRAMA_PRESUPUESTO = " + cbProgramaPresupuestario.Value + " AND SPPRO$ID_POM = " + Convert.ToInt32(Session["pom"]) + " AND SPPRO$ID_INSTITUCION = " + Convert.ToInt32(Session["insto"]) + " AND SPPRO$RESTRICTIVA = 'N'";
-                estado = dao.consulta(sql);
-                if (estado == 1)
+                cbSuProgramaPresupuestario.DataSource = tabla;
+                cbSuProgramaPresupuestario.ValueField = "SPPRO$ID_PROGRAMA_PRESUPUESTO";
+                cbSuProgramaPresupuestario.TextField = "PROGRAMA";
+                cbSuProgramaPresupuestario.DataBind();
+                if (cbSuprograma.SelectedIndex == 1)
                 {
-                    esAdmino = dao.tabla;
-                    if (esAdmino.Rows.Count > 0)
-                    {
-                        esProdAdministartivo.Value = esAdmino.Rows[0]["SPPRO$ES_ADMINISTRATIVO"].ToString();
-                        if (Convert.ToInt32(esProdAdministartivo.Value) == 1)
-                        {
-                            panPGGProductos.Style.Add("display", "none");
-                            cbPGG.SelectedIndex = -1;
-                            cbPGG.Enabled = true;
-                        }
-                        else if (Convert.ToInt32(esProdAdministartivo.Value) == 0)
-                        {
-                            cbPGG.SelectedIndex = 1;
-                            cbPGG.Enabled = false;
-                            panPGGProductos.Style.Add("display", "block");
-                        }
-
-                    }
+                    subProgramaPresupuestario.Style.Add("display", "block");
+                    cbSuProgramaPresupuestario.SelectedIndex = -1;
                 }
-
-              
-                if (tabla.Rows.Count > 0)
-                {
-                    cbSuProgramaPresupuestario.DataSource = tabla;                  
-                    cbSuProgramaPresupuestario.ValueField = "SPPRO$ID_PROGRAMA_PRESUPUESTO";
-                    cbSuProgramaPresupuestario.TextField = "PROGRAMA";
-                    cbSuProgramaPresupuestario.DataBind();
-                    if (cbSuprograma.SelectedIndex == 1)
-                    {
-                        subProgramaPresupuestario.Style.Add("display", "block");
-                        cbSuProgramaPresupuestario.SelectedIndex = -1;
-                    }
-
-                }
-                
                 //MultiView1.ActiveViewIndex = 4;
             }
         }
@@ -3865,6 +3633,7 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                         {
                             resulta2 = Convert.ToInt32(cbResultados.Value);
                             resulta1 = Convert.ToInt32(cbPilar.Value);
+                            
                         }
 
                         else if (cbAcciones.SelectedIndex != -1)
@@ -3919,14 +3688,7 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                         cbResultadoInsitucional.Focus();
                     }
                     */
-                    if (cbPGG.SelectedIndex == - 1)
-                    {
-                        mensaje = "Conteste la pregunta ¿Este producto estará vinculado a la PGG 2024-2028:? ";
-                        Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-                        cbPGG.Focus();
-
-                    }
-                    else if (cbProgramaPresupuestario.SelectedIndex == -1)
+                    if (cbProgramaPresupuestario.SelectedIndex == -1)
                     {
                         mensaje = "Seleccione el programa presupuestario";
                         Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
@@ -3960,13 +3722,13 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                         Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
                         cbUnidadMedida.Focus();
                     }
-                    else if (resulta1 == -1 || resulta2 == -1 && Convert.ToInt32(esProdAdministartivo.Value) == 0)
+                    else if (resulta1 == -1 && resulta2 == -1)
                     {
                         mensaje = "Debe vincular este producto a un Eje Estratégico/Meta Presidencial, como a un resultado institucional";
                         Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
                         cbUnidadMedida.Focus();
                     }
-
+                    
 
 
                     else
@@ -4391,7 +4153,7 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                         }
                         else
                         {
-
+                           
 
                             Session["CODIGO"] = null;
                             mensaje = "Producto registrado correctamente";
@@ -4626,19 +4388,14 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                         Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
                         cbRed.Focus();
                     }
-                    else if (cbPGG.SelectedIndex == 1 && cbPilar.SelectedIndex == -1 && cbAcciones.SelectedIndex == -1)
-                    {
-                        mensaje = "Seleccione el eje estratégico PGG/meta presidencial PGG a vincular";
-                        Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-                    }
                     /*
-            else if (cbResultadoInsitucional.SelectedIndex == -1)
-            {
-                mensaje = "Seleccione la Meta PGG";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-                cbResultadoInsitucional.Focus();
-            }
-            */
+                    else if (cbResultadoInsitucional.SelectedIndex == -1)
+                    {
+                        mensaje = "Seleccione la Meta PGG";
+                        Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
+                        cbResultadoInsitucional.Focus();
+                    }
+                    */
                     else if (cbProgramaPresupuestario.SelectedIndex == -1)
                     {
                         mensaje = "Seleccione el programa presupuestario";
@@ -4683,7 +4440,7 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                         cbUnidadMedida.Focus();
                     }
 
-
+                  
 
                     else if (rbaccion.SelectedIndex == 1)
                     {
@@ -4988,7 +4745,7 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                             {
 
 
-
+                                
 
                                 Session["CODIGO"] = null;
                                 mensaje = "EL producto se registró correctamente";
@@ -5178,12 +4935,11 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                                                     resultado = Convert.ToInt32(tabla.Rows[0]["SPRES$ID_RESULTADO"]);
                                                 else
                                                 {
-                                                    
-                                                    sql = "INSERT INTO SCHE$SIPLAN20.SP20$RESULTADOS(SPRES$TIPO, SPRES$COD_ESTRATEGICO, SPRES$POM, SPRES$INSTITUCION, SPRES$FECHA_INSERT, SPRES$PROPIETARIO) VALUES (0, " + resulta2 + ", " + Convert.ToInt32(Session["pom"]) + ", " + Convert.ToInt32(Session["insto"]) + ", 'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "')";
+                                                    sql = "INSERT INTO SCHE$SIPLAN20.SP20$RESULTADOS(SPRES$TIPO, SPRES$COD_ESTRATEGICO, SPRES$POM, SPRES$INSTITUCION, SPRES$FECHA_INSERT, SPRES$PROPIETARIO) VALUES (0, " + resulta1 + ", " + Convert.ToInt32(Session["pom"]) + ", " + Convert.ToInt32(Session["insto"]) + ", 'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "')";
                                                     estado = dao.comando(sql);
                                                     if (estado == 1)
                                                     {
-                                                        sql = "SELECT MAX(SPRES$ID_RESULTADO) ID FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$COD_ESTRATEGICO = " + resulta2 + " AND SPRES$RESTRICTIVA = 'N' AND SPRES$POM = " + Convert.ToInt32(Session["pom"]) + " AND SPRES$INSTITUCION = " + Convert.ToInt32(Session["insto"]) + " AND SPRES$TIPO = 0";
+                                                        sql = "SELECT MAX(SPRES$ID_RESULTADO) ID FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$COD_ESTRATEGICO = " + resulta1 + " AND SPRES$RESTRICTIVA = 'N' AND SPRES$POM = " + Convert.ToInt32(Session["pom"]) + " AND SPRES$INSTITUCION = " + Convert.ToInt32(Session["insto"]) + " AND SPRES$TIPO = 0";
                                                         estado = dao.consulta(sql);
                                                         if (estado == 1)
                                                         {
@@ -5614,10 +5370,7 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
             Session["CODIGO"] = -1;
             //cargaMunicipios(-1);
             int busca_responsables = -1;          
-            cbPGG.SelectedIndex = 1;
-            cbPGG.Enabled = false;
-            panPGGProductos.Style.Add("display", "block");
-            esProdAdministartivo.Value = "-1";
+            cbPGG.SelectedIndex = 0;
 
             if (rbProductos.SelectedIndex == 0)
             {
@@ -5644,7 +5397,7 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                 cbUnidadMedida.Enabled = true;
                 rbaccion.Enabled = false;
                 rbaccion.SelectedIndex = 0;
-                //cpPilarPGG.Enabled = true;
+                cpPilarPGG.Enabled = true;
 
                 cargaPilares(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), -1, busca_responsables);
                 cargaResultadoInsto(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), -1);
@@ -5660,7 +5413,7 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
             {
                 busca_responsables = busca_responsable(Convert.ToInt32(Session["insto"]));
                 panResultadoInstitucionales.Style.Add("display", "none");
-                //panPGGProductos.Style.Add("display", "none");
+                panPGGProductos.Style.Add("display", "none");
                 cargaPilares(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), -1, busca_responsables);
                 panRed.Style.Add("display", "block");
 
@@ -5759,7 +5512,6 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
             DataTable cod_estrategico = new DataTable();
             DataTable tabla_eje = new DataTable();
             int eje = -1;
-            int esAdmin = -1; 
 
             AccionEstrategica.Style.Add("display", "none");
             int responsable = -1;
@@ -5771,7 +5523,6 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                 {
                     nivel = gvProdInsto.GetRowLevel(gvProdInsto.FocusedRowIndex);
                     producto = gvProdInsto.GetRowValues(gvProdInsto.FocusedRowIndex, "PRODUCTO").ToString();
-                    esAdmin = Convert.ToInt32(gvProdInsto.GetRowValues(gvProdInsto.FocusedRowIndex, "SPPRO$ES_ADMINISTRATIVO").ToString());
                     if (nivel == 0)
                     {
                         //if ((gvProdInsto.GetRowValues(gvProdInsto.FocusedRowIndex, "SPPRO$PROPIETARIO").ToString() == Session["USUARIO"].ToString()) || Session["ROL"].ToString() == "ADMIN")
@@ -5811,33 +5562,17 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                                     }
                                     else
                                     {
-                                        if (esAdmin == 0)
-                                        {
-                                            cbPGG.SelectedIndex = 1;
-                                            cbPGG.Enabled = false;
-                                            cargaPilares(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), -1, responsable);
-                                            cbAcciones.DataSource = null;
-                                            cbAcciones.Enabled = false;
-                                            cbAcciones.Items.Clear();
-                                            panPGGProductos.Style.Add("display", "block");
-                                        }
-                                        else if (esAdmin == 1)
-                                        {
-                                            cbPGG.SelectedIndex = -1;
-                                            cbPGG.Enabled = true;
-                                            cargaPilares(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), -1, responsable);
-                                            cbAcciones.DataSource = null;
-                                            cbAcciones.Enabled = false;
-                                            cbAcciones.Items.Clear();
-                                            panPGGProductos.Style.Add("display", "none");
-                                        }
+                                        cbPGG.SelectedIndex = 0;
+                                        cargaPilares(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), -1, responsable);
+                                        cbAcciones.DataSource = null;
+                                        cbAcciones.Enabled = false;
+                                        cbAcciones.Items.Clear();
+                                        panPGGProductos.Style.Add("display", "none");
                                     }
-                                       
                                 }
 
                                 else
                                 {
-
                                     cbPGG.SelectedIndex = 1;
                                     panPGGProductos.Style.Add("display", "block");
                                     cargaPilares(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), Convert.ToInt32(gvProdInsto.GetRowValues(gvProdInsto.FocusedRowIndex, "SPRES$COD_ESTRATEGICO").ToString()), responsable);
@@ -5895,7 +5630,6 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                                     }
                                     else
                                     {
-                                      
                                         cbPGG.SelectedIndex = 0;
                                         cargaPilares(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), -1, responsable);
                                         panResultadoInstitucionales.Style.Add("display", "block");
@@ -6136,9 +5870,8 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
                     codresultado = Convert.ToInt32(gvProdEstrategicos.GetRowValues(gvProdEstrategicos.FocusedRowIndex, "ID_RESULTADO").ToString());
                     codRed = Convert.ToInt32(gvProdEstrategicos.GetRowValues(gvProdEstrategicos.FocusedRowIndex, "SPPRED$ID").ToString());
                     rbaccion.Enabled = false;
-                    cbPGG.SelectedIndex = 1;
                     panResultadoInstitucionales.Style.Add("display", "none");
-                    panPGGProductos.Style.Add("display", "block");
+                    panPGGProductos.Style.Add("display", "none");
 
                     panRed.Style.Add("display", "block");
                     responsable = busca_responsable_red(Convert.ToInt32(Session["insto"]));
@@ -6253,9 +5986,8 @@ FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R
 
                             else
                             {
-                                cbPGG.SelectedIndex = 1;
-                                cbPGG.Enabled = false;
-                                panPGGProductos.Style.Add("display", "block");
+                                cbPGG.SelectedIndex = 0;
+                                panPGGProductos.Style.Add("display", "none");
                                 cargaPilares(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), -1, responsable);
                             }
 
@@ -7735,18 +7467,12 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
             }
             else
             {
-                tabla = dao.tabla;                
+                tabla = dao.tabla;
                 cbSNIP.Items.Clear();
                 cbSNIP.DataSource = tabla;
                 cbSNIP.ValueField = "proyecto";
                 cbSNIP.TextField = "proyectoSNIP";
                 cbSNIP.DataBind();
-                /*
-                cbMunosPriorizados.SelectedIndex = 0;
-                cbMunosPriorizados.Enabled = false;
-                munoPriorizados.Attributes.Add("style", "display:none");
-                */
-
             }
         }
 
@@ -7784,7 +7510,6 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
             rbSNIP.SelectedIndex = -1;
             PanSNIP.Style.Add("display", "none");
             cargaSNIP(Convert.ToInt32(Session["insto"]));
-            rbSNIP.SelectedIndex = 0;
             cbSNIP.SelectedIndex = -1;
             txtSubproducto.Enabled = true;
             cbUnidadesSub.Enabled = true;
@@ -7794,23 +7519,9 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
             btnSubProducto.CssClass = "btn btn-primary";
             btnSubProducto.Text = "Nuevo subproducto";
             aspCod.Value = "-1";
-            if (Convert.ToInt32(hfNaturaleza.Value) == 0)
-            {
-                cbMunosPriorizados.SelectedIndex = 1;
-                cbMunosPriorizados.Enabled = false;
-                cbMunosPriorizados_SelectedIndexChanged(sender, e);
-                munoPriorizados.Attributes.Add("style", "display:block");
-            }
-            else
-            {
-                cbMunosPriorizados.SelectedIndex = 0;
-                cbMunosPriorizados.Enabled = false;
-                cbMunosPriorizados_SelectedIndexChanged(sender, e);
-                munoPriorizados.Attributes.Add("style", "display:none");
-
-            }
-
-                MultiView1.ActiveViewIndex = 7;
+            cbMunosPriorizados.SelectedIndex = 0;
+            munoPriorizados.Attributes.Add("style", "display:none");
+            MultiView1.ActiveViewIndex = 7;
         }
 
         protected void cbSNIP_ValueChanged(object sender, EventArgs e)
@@ -8180,7 +7891,6 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
                     txtSubproducto.Focus();
                 }
-
                 else if (rbSNIP.SelectedIndex == -1)
                 {
                     mensaje = "Conteste a la pregunta ¿Necesita vincular el subproducto a un proyecto SNIP?";
@@ -8188,14 +7898,6 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                     rbSNIP.Focus();
                 }
 
-
-                else if (rbSNIP.SelectedIndex == 0 && cbMunosPriorizados.SelectedIndex == 1 && gvTerritorio.Selection.Count == 0)
-                {
-
-                    mensaje = "Si el subproducto no esta vinculado a un proyecto SNIP, es obligatorio priorizar territorio, debe selecionar al menos un municipio en el listado de abajo";
-                    Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-                    gvTerritorio.Focus();
-                }
 
                 else if (cbUnidadesSub.SelectedIndex == -1)
                 {
@@ -8314,28 +8016,28 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                             if (Session["POLITICASSUB"] != null)
                             {
 
-
-                                codSuProducto = Convert.ToInt32(aspCod.Value);
-                                tabla.Clear();
-                                tabla = (DataTable)Session["POLITICASSUB"];
-                                if (tabla.Rows.Count > 0)
-                                {
-                                    for (int i = 0; i < tabla.Rows.Count; i++)
-                                    {
-                                        busca = buscaPoliticasub(Convert.ToInt32(tabla.Rows[i]["SPS$ID"]), codSuProducto);
-                                        if (busca == -1)
-                                            break;
-                                        else if (busca == 0)
+                                
+                                        codSuProducto = Convert.ToInt32(aspCod.Value);
+                                        tabla.Clear();
+                                        tabla = (DataTable)Session["POLITICASSUB"];
+                                        if (tabla.Rows.Count > 0)
                                         {
-                                            sql = "INSERT INTO SCHE$SIPLAN20.SP20$POLITICA_SUBPRODUCTO (SPS$POLITICA_LINEAMIENTO, SPS$SUBPRODCUTO, SPS$FECHA_INSERTA) VALUES (" + tabla.Rows[i]["SPS$ID"] + "," + codSuProducto + ",'INSERTA = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "')";
-                                            estado = dao.comando(sql);
-                                            if (estado == 0)
-                                                break;
+                                            for (int i = 0; i < tabla.Rows.Count; i++)
+                                            {
+                                                busca = buscaPoliticasub(Convert.ToInt32(tabla.Rows[i]["SPS$ID"]),codSuProducto);
+                                                if (busca == -1)
+                                                     break;
+                                                else if (busca == 0)
+                                                {
+                                                    sql = "INSERT INTO SCHE$SIPLAN20.SP20$POLITICA_SUBPRODUCTO (SPS$POLITICA_LINEAMIENTO, SPS$SUBPRODCUTO, SPS$FECHA_INSERTA) VALUES (" + tabla.Rows[i]["SPS$ID"] + "," + codSuProducto + ",'INSERTA = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "')";
+                                                    estado = dao.comando(sql);
+                                                    if (estado == 0)
+                                                    break;
+                                                }
+                                               
+                                            }
                                         }
-
-                                    }
-                                }
-
+                                                                    
                             }
 
                             if (Convert.ToInt32(cbMunosPriorizados.Value) == 1)
@@ -8386,7 +8088,7 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                             }
                             MultiView1.ActiveViewIndex = 6;
                         }
-
+                        
                     }
                 }
 
@@ -8418,16 +8120,10 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
             DataTable temp1 = new DataTable();
             //Session["tiposub"] = "subes";
             Session["tiposubopera"] = 21;
-
-            
-
-
-
-
+            cbMunosPriorizados.Enabled = true;
+            cbMunosPriorizados.SelectedIndex = 0;
             if (gvSubproductos.FocusedRowIndex != -1)
             {
-
-                
                 nivel = gvSubproductos.GetRowLevel(gvSubproductos.FocusedRowIndex);
                 if (Session["tiposub"].ToString() == "subins")
                 {
@@ -8448,23 +8144,6 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                 lblProducto.Style.Add("color", "#2d572c");
 
                 codSub = Convert.ToInt32(gvSubproductos.GetRowValues(gvSubproductos.FocusedRowIndex, "SPPSUB$ID_SUBPRODUCTO").ToString());
-
-                if (Convert.ToInt32(hfNaturaleza.Value) == 0)
-                {
-                    cbMunosPriorizados.Enabled = false;
-                    cbMunosPriorizados.SelectedIndex = 1;
-                    munoPriorizados.Attributes.Add("style", "display:block");
-
-
-                }
-                else
-                {
-                    cbMunosPriorizados.Enabled = false;
-                    cbMunosPriorizados.SelectedIndex = 0;
-                    munoPriorizados.Attributes.Add("style", "display:none");                 
-                }
-
-
 
 
                 if (nivel == 0)
@@ -8487,7 +8166,6 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                             {
                                 if (temp1.Rows[0]["SPPSUB$SNIP"] != DBNull.Value)
                                 {
-
                                     cargaSNIP(Convert.ToInt32(Session["insto"]));
                                     cbSNIP.Value = temp1.Rows[0]["SPPSUB$SNIP"].ToString();
                                     PanSNIP.Style.Add("display", "block");
@@ -8497,100 +8175,18 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                                     cbUnidadesSub.SelectedIndex = -1;
                                     cbMunosPriorizados.Enabled = false;
                                     cbMunosPriorizados.SelectedIndex = 0;
-                                    hfSNIP.Value = temp1.Rows[0]["SPPSUB$SNIP"].ToString();
                                 }
                                 else
                                 {
-                                    hfSNIP.Value = "-1";
                                     txtSubproducto.Text = temp1.Rows[0]["SPPSUB$DESCRIPCION"].ToString();
                                     cargaUnidadesSub();
                                     cbUnidadesSub.Value = temp1.Rows[0]["SPPSUB$ID_MEDIDA"].ToString();
                                     PanSNIP.Style.Add("display", "none");
                                     rbSNIP.SelectedIndex = 0;
                                     cargaSNIP(Convert.ToInt32(Session["insto"]));
-                                    cbSNIP.SelectedIndex = 1;
-                                    cbMunosPriorizados.Enabled = false;
-                                    //aqui poner la logica del municipio
-                                    cbMunosPriorizados.SelectedIndex = 1;
-                                    sql = "SELECT COUNT(*) CONTEO FROM SCHE$SIPLAN20.SP20$SUB_MUNOS WHERE SPSM$ID_SUB = " + codSub + " AND SPSM$RESTRICTIVA = 'N'";
-                                    estado = dao.consulta(sql);
-                                    if (estado == 1)
-                                    {
-                                        temp1 = dao.tabla;
-
-                                        if (Convert.ToInt32(hfNaturaleza.Value) == 1)
-                                        {
-                                            munoPriorizados.Attributes.Add("style", "display:none");
-                                            cbMunosPriorizados.Enabled = false;
-                                            cbMunosPriorizados.SelectedIndex = 0;
-                                        }
-
-                                        else
-                                        {
-                                            if (temp1.Rows.Count > 0)
-                                            {
-                                                if (Convert.ToInt32(temp1.Rows[0]["CONTEO"]) > 0)
-                                                {
-                                                    lblSubMunos.Text = temp1.Rows[0]["CONTEO"].ToString();
-                                                    munoPriorizados.Attributes.Add("style", "display:block");
-                                                    cbMunosPriorizados.SelectedIndex = 1;
-                                                    cargaMunicipios(codSub);
-                                                }
-                                                else
-                                                {
-                                                    if (Convert.ToInt32(hfNaturaleza.Value) == 0)
-                                                    {
-                                                        lblSubMunos.Text = "0";
-                                                        munoPriorizados.Attributes.Add("style", "display:block");
-                                                        cbMunosPriorizados.SelectedIndex = 1;
-                                                        cbMunosPriorizados.Enabled = false;
-                                                        aspCod.Value = "-1";
-                                                        cbMunosPriorizados_SelectedIndexChanged(sender, e);
-                                                        gvTerritorio.Selection.UnselectAll();
-
-                                                    }
-                                                    else
-                                                    {
-                                                        lblSubMunos.Text = "0";
-                                                        munoPriorizados.Attributes.Add("style", "display:none");
-                                                        cbMunosPriorizados.SelectedIndex = 0;
-                                                        cbMunosPriorizados.Enabled = false;
-                                                        aspCod.Value = "-1";
-                                                        cbMunosPriorizados_SelectedIndexChanged(sender, e);
-                                                        gvTerritorio.Selection.UnselectAll();
-
-                                                    }
-
-                                                       
-                                                }
-                                            }
-                                            else
-                                            {
-                                                lblSubMunos.Text = "0";
-                                                munoPriorizados.Attributes.Add("style", "display:none");
-                                                cbMunosPriorizados.Enabled = false;
-                                                gvTerritorio.Selection.UnselectAll();
-                                                cbMunosPriorizados.SelectedIndex = 0;
-
-
-                                            }
-
-                                        }
-                                    }
-                                    else
-                                    {
-                                        lblSubMunos.Text = "0";
-                                        mensaje = dao.mensaje;
-                                        cbMunosPriorizados.Enabled = false;
-                                        Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-                                        munoPriorizados.Attributes.Add("style", "display:none");
-                                        gvTerritorio.Selection.UnselectAll();
-
-                                    }
-
-
-
-
+                                    cbSNIP.SelectedIndex = -1;
+                                    cbMunosPriorizados.Enabled = true;
+                                    
 
                                 }
                                 txtSubproducto.Enabled = true;
@@ -8604,7 +8200,7 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                                 aspCod.Value = codSub.ToString();
                             }
 
-                            sql = "SELECT COUNT(*) CONTEO FROM SCHE$SIPLAN20.SP20$POLITICA_SUBPRODUCTO WHERE SPS$RESTRICTIVA = 'N' AND SPS$SUBPRODCUTO = " + codSub;
+                            sql = "SELECT COUNT(*) CONTEO FROM SCHE$SIPLAN20.SP20$POLITICA_SUBPRODUCTO WHERE SPS$RESTRICTIVA = 'N' AND SPS$SUBPRODCUTO = "+codSub;
                             estado = dao.consulta(sql);
                             if (estado == 1)
                             {
@@ -8620,16 +8216,16 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                                     numPoliticas.Text = "0";
                                     //cbMunosPriorizados.SelectedIndex = -1;
                                 }
-
+                                    
                             }
-
+                                
                             else
                             {
                                 mensaje = dao.mensaje;
                                 Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
                             }
 
-                            sql = "SELECT COUNT(*) CONTEO FROM SCHE$SIPLAN20.SP20$SUB_MUNOS WHERE SPSM$ID_SUB = " + codSub + " AND SPSM$RESTRICTIVA = 'N'";
+                            sql = "SELECT COUNT(*) CONTEO FROM SCHE$SIPLAN20.SP20$SUB_MUNOS WHERE SPSM$ID_SUB = "+codSub+" AND SPSM$RESTRICTIVA = 'N'";
                             estado = dao.consulta(sql);
                             if (estado == 1)
                             {
@@ -8643,55 +8239,20 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                                         cbMunosPriorizados.SelectedIndex = 1;
                                         cargaMunicipios(codSub);
                                     }
-                                    else if (Convert.ToInt32(hfSNIP.Value) > 0)
-                                    {
-                                        lblSubMunos.Text = "0";
-                                        munoPriorizados.Attributes.Add("style", "display:none");
-                                        cbMunosPriorizados.SelectedIndex = 0;
-                                        aspCod.Value = "-1";
-                                        cbMunosPriorizados.Enabled = false;
-                                        gvTerritorio.Selection.UnselectAll();
-                                    }
                                     else
                                     {
-                                        if (Convert.ToInt32(hfNaturaleza.Value) == 0)
-                                        {
-                                            lblSubMunos.Text = "0";
-                                            munoPriorizados.Attributes.Add("style", "display:block");
-                                            cbMunosPriorizados.SelectedIndex = 1;
-                                            cbMunosPriorizados.Enabled = false;
-                                            cargaMunicipios(-1);
-                                        }
-                                        else
-                                        {
-                                            lblSubMunos.Text = "0";
-                                            munoPriorizados.Attributes.Add("style", "display:none");
-                                            cbMunosPriorizados.SelectedIndex = 0;
-                                            cbMunosPriorizados.Enabled = false;
-                                            cargaMunicipios(-1);
-                                        }
-                                            
-
+                                        lblSubMunos.Text = "0";
+                                        munoPriorizados.Attributes.Add("style","display:none");
+                                        cbMunosPriorizados.SelectedIndex = 0;
+                                        gvTerritorio.Selection.UnselectAll();
                                     }
                                 }
                                 else
                                 {
-                                    if (Convert.ToInt32(hfNaturaleza.Value) == 0)
-                                    {
-                                        lblSubMunos.Text = "0";
-                                        munoPriorizados.Attributes.Add("style", "display:block");
-                                        gvTerritorio.Selection.UnselectAll();
-                                        cbMunosPriorizados.SelectedIndex = 1;
-                                    }
-                                    else
-                                    {
-                                        lblSubMunos.Text = "0";
-                                        munoPriorizados.Attributes.Add("style", "display:none");
-                                        gvTerritorio.Selection.UnselectAll();
-                                        cbMunosPriorizados.SelectedIndex = 0;
-
-                                    }
-                                       
+                                    lblSubMunos.Text = "0";
+                                    munoPriorizados.Attributes.Add("style", "display:none");
+                                    gvTerritorio.Selection.UnselectAll();
+                                    cbMunosPriorizados.SelectedIndex = 0;
                                 }
                             }
                             else
@@ -8703,7 +8264,7 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                                 gvTerritorio.Selection.UnselectAll();
 
                             }
-
+                               
 
                         }
                     }
@@ -8858,14 +8419,13 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
 
                     nivel = gvProdInsto.GetRowLevel(gvProdInsto.FocusedRowIndex);
                     producto = gvProdInsto.GetRowValues(gvProdInsto.FocusedRowIndex, "PRODUCTO").ToString();
-                    hfNaturaleza.Value = gvProdInsto.GetRowValues(gvProdInsto.FocusedRowIndex, "SPPRO$ES_ADMINISTRATIVO").ToString();
+
                     codproducto = Convert.ToInt32(gvProdInsto.GetRowValues(gvProdInsto.FocusedRowIndex, "SPPRO$ID_PRODUCTO").ToString());
                     Session["pom"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
                     Session["insto"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_INSTITUCION").ToString());
                     Session["abierto"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPP$ABIERTO").ToString());
 
-                    //responsable = buscaRespo_politica(Convert.ToInt32(Session["insto"]));
-                    responsable = true;
+                    responsable = buscaRespo_politica(Convert.ToInt32(Session["insto"]));
                     if (responsable == true)
                     {
                         btnPoliticas.Visible = true;
@@ -8950,14 +8510,13 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                 {
                     nivel = gvProdEstrategicos.GetRowLevel(gvProdEstrategicos.FocusedRowIndex);
                     producto = gvProdEstrategicos.GetRowValues(gvProdEstrategicos.FocusedRowIndex, "PRODUCTO").ToString();
-                    hfNaturaleza.Value = gvProdEstrategicos.GetRowValues(gvProdEstrategicos.FocusedRowIndex, "SPPRO$ES_ADMINISTRATIVO").ToString();
+
                     codproducto = Convert.ToInt32(gvProdEstrategicos.GetRowValues(gvProdEstrategicos.FocusedRowIndex, "SPPRO$ID_PRODUCTO").ToString());
                     Session["pom"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
                     Session["insto"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_INSTITUCION").ToString());
                     Session["abierto"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPP$ABIERTO").ToString());
 
-                    //responsable = buscaRespo_politica(Convert.ToInt32(Session["insto"]));
-                    responsable = true;
+                    responsable = buscaRespo_politica(Convert.ToInt32(Session["insto"]));
                     if (responsable == true)
                     {
                         btnPoliticas.Visible = true;
@@ -10486,7 +10045,7 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
             {
                 Session["pom"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
                 Session["insto"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_INSTITUCION").ToString());
-                sql = "SELECT TO_CHAR(SPFC$FECHA_CIERRE,'DD/MM/YYYY') SPFC$FECHA_CIERRE FROM SCHE$SIPLAN20.SP20$FECHAS_CIERRE WHERE SPFC$PERIODO_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_PERIODO").ToString()) + " AND SPFC$RESTRICTIVA = 'N' AND SPFC$TIPO_FECHA = 2 AND SPFC$EJERCICIO = " + fecha.Year + " AND SPFC$POM = -1 AND SPFC$INSTITUCION = -1";
+                sql = "SELECT TO_CHAR(SPFC$FECHA_CIERRE,'DD/MM/YYYY') SPFC$FECHA_CIERRE FROM SCHE$SIPLAN20.SP20$FECHAS_CIERRE WHERE SPFC$PERIODO_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_PERIODO").ToString())+ " AND SPFC$RESTRICTIVA = 'N' AND SPFC$TIPO_FECHA = 2 AND SPFC$EJERCICIO = "+fecha.Year+ " AND SPFC$POM = -1 AND SPFC$INSTITUCION = -1";
                 estado = dao.consulta(sql);
                 if (estado == 1)
                 {
@@ -10528,7 +10087,7 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                                 txtdateFecha.Date = DateTime.ParseExact(tabla.Rows[0]["SPFC$FECHA_CIERRE"].ToString(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
                                 txtdateFecha.Enabled = false;
 
-                                sql = "SELECT TO_CHAR(MAX(SPFC$FECHA_CIERRE),'DD/MM/YYYY') FECHA_PRORROGA FROM SCHE$SIPLAN20.SP20$FECHAS_CIERRE WHERE SPFC$RESTRICTIVA = 'N' AND SPFC$CUATRIMESTRE = 0 AND SPFC$EJERCICIO = " + fecha.Year + " AND SPFC$TIPO_FECHA = 2 AND SPFC$INSTITUCION = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_INSTITUCION").ToString()) + " AND SPFC$PERIODO_POM = " + gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_PERIODO").ToString() + " AND SPFC$POM = " + gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString();
+                                sql = "SELECT TO_CHAR(MAX(SPFC$FECHA_CIERRE),'DD/MM/YYYY') FECHA_PRORROGA FROM SCHE$SIPLAN20.SP20$FECHAS_CIERRE WHERE SPFC$RESTRICTIVA = 'N' AND SPFC$CUATRIMESTRE = 0 AND SPFC$EJERCICIO = "+fecha.Year+ " AND SPFC$TIPO_FECHA = 2 AND SPFC$INSTITUCION = "+ Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_INSTITUCION").ToString())+ " AND SPFC$PERIODO_POM = "+ gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_PERIODO").ToString()+ " AND SPFC$POM = "+ gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString();
 
                                 estado = dao.consulta(sql);
                                 if (estado == 1)
@@ -10565,7 +10124,7 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                                     txtFechaPorroga.Date = fecha;
                                 }
 
-
+                                
 
                                 periodoPOM.Text = gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$INICIO").ToString() + "-" + gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$FINAL").ToString();
                                 instoPOM.Text = gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "NOMBRE").ToString();
@@ -10575,9 +10134,9 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
 
                                 poProrroga.ShowOnPageLoad = true;
                             }
-                        }
-
-                        else
+                        }                           
+                        
+                         else
                         {
                             mensaje = "No es posible realizar una prorroga para esta programación, no se ha encontrado una fecha de cierra definida";
                             Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
@@ -10598,50 +10157,50 @@ FROM SCHE$SIPLAN20.SPPSVST$PGG2024_2028 WHERE ID_EJE = " + Convert.ToInt32(cbPil
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
                     cargaPOMS();
                 }
-                /* if (Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "CODESTADO").ToString()) == 1)
-                 {
+               /* if (Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "CODESTADO").ToString()) == 1)
+                {
 
-                     Session["pom"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
-                     Session["insto"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_INSTITUCION").ToString());
+                    Session["pom"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
+                    Session["insto"] = Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_INSTITUCION").ToString());
 
-                     sql = "UPDATE SCHE$SIPLAN20.SP20$POM SET SPPO$ESTADO = 'D', SPPO$FECHA_UPDATE = 'ABRE = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "'  WHERE SPPO$ID_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
-                     estado = dao.comando(sql);
-                     if (estado == 1)
-                     {
-                         sql = "UPDATE SCHE$SIPLAN20.SP20$POA SET SPOA$ESTADO = 'D', SPOA$FECHA_APROBACION = 'ABRE = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "'  WHERE SPOA$ID_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
-                         estado = dao.comando(sql);
-                         if (estado == 1)
-                         {
-                             mensaje = "La programación ha sido abierta para actualizaciones de metas fisicas y financieras";
-                             Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
-                             cargaPOMS();
-                         }
-                         else
-                         {
-                             mensaje = dao.mensaje;
-                             Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-                             cargaPOMS();
-                         }
+                    sql = "UPDATE SCHE$SIPLAN20.SP20$POM SET SPPO$ESTADO = 'D', SPPO$FECHA_UPDATE = 'ABRE = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "'  WHERE SPPO$ID_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
+                    estado = dao.comando(sql);
+                    if (estado == 1)
+                    {
+                        sql = "UPDATE SCHE$SIPLAN20.SP20$POA SET SPOA$ESTADO = 'D', SPOA$FECHA_APROBACION = 'ABRE = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "'  WHERE SPOA$ID_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
+                        estado = dao.comando(sql);
+                        if (estado == 1)
+                        {
+                            mensaje = "La programación ha sido abierta para actualizaciones de metas fisicas y financieras";
+                            Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
+                            cargaPOMS();
+                        }
+                        else
+                        {
+                            mensaje = dao.mensaje;
+                            Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
+                            cargaPOMS();
+                        }
 
-                     }
+                    }
 
-                     else
-                     {
-                         mensaje = dao.mensaje;
-                         Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-                         cargaPOMS();
-                     }
+                    else
+                    {
+                        mensaje = dao.mensaje;
+                        Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
+                        cargaPOMS();
+                    }
 
-                 }
+                }
 
-                 else
-                 {
-                     mensaje = "Esta programación ya se encuentra enviada, no es necesario habilitarla";
-                     Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
-                 }*/
+                else
+                {
+                    mensaje = "Esta programación ya se encuentra enviada, no es necesario habilitarla";
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
+                }*/
             }
 
-
+            
 
 
         }
@@ -11546,9 +11105,9 @@ FROM
             int rest1 = -1;
             int rest2 = -1;
 
-            if (cbResto1Eje.SelectedIndex == -1 || gv1eje.FocusedRowIndex == -1)
+            if (cbResto1Eje.SelectedIndex == -1)
             {
-                mensaje = "Es obligatorio seleccionar el resultado institucional y el eje estratégico";
+                mensaje = "Debe seleccionar al menos un resultado institucional";
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
             }
 
@@ -11578,7 +11137,7 @@ FROM
                                 {
                                     tabla = dao.tabla;
                                     if (tabla.Rows.Count > 0)
-                                        rest2 = Convert.ToInt32(tabla.Rows[0]["ID_RESULTADO"]);
+                                        rest2 = Convert.ToInt32(tabla.Rows[0]["ID_RESULTAOD"]);
 
                                 }
                             }
@@ -12074,14 +11633,6 @@ FROM
             int producto;
             int rest1 = -1;
             int rest2 = -1;
-
-            if (cbRed1EJE.SelectedIndex == -1 || gvRed1Eeje.FocusedRowIndex == -1)
-            {
-                mensaje = "Es obligatorio la vinculación a Eje de la PGG y el Resultado Estratégico";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-                return;
-            }
-
             sql = "SELECT * FROM SCHE$SIPLAN20.SP20$RESULTADOS R WHERE R.SPRES$POM = " + Convert.ToInt32(Session["pom"]) + " AND R.SPRES$INSTITUCION = " + Convert.ToInt32(Session["insto"]) + " AND R.SPRES$TIPO = 2 AND R.SPRES$COD_ESTRATEGICO = " + Convert.ToInt32(cbRed1EJE.Value) + " AND SPRES$RESTRICTIVA = 'N'";
             estado = dao.consulta(sql);
 
@@ -12186,7 +11737,7 @@ FROM
         {
             DataTable politicas = new DataTable();
            
-           /* sql = @"SELECT 
+            sql = @"SELECT 
                         PL.SPPLI$ID ID_LINEA_ACCION
                         ,PC.SPPLE$ID
                         ,PR.SPRP$INSTITUCION INSTO_RESPONSABLE
@@ -12200,24 +11751,6 @@ FROM
                         INNER JOIN SCHE$SIPLAN20.SP20$POLITICA_LINEAMIENTOS PL ON PL.SPPLI$ID_ENCABEZADO = PC.SPPLE$ID AND PL.SPPLI$RESTRICTIVA = 'N' AND PC.SPPLE$RESTRICTIVA = 'N'
                         INNER JOIN SCHE$SIPLAN20.SP20$RESPONSABLESPOLITICA PR ON PR.SPRP$POLITICA_LINEAMIENTO = PL.SPPLI$ID AND PR.SPRP$RESTRICTIVA = 'N' AND PL.SPPLI$RESTRICTIVA = 'N'
                         WHERE PC.SPPLE$RESTRICTIVA = 'N' AND PL.SPPLI$ARISTA = 1 AND PR.SPRP$INSTITUCION = "+insto+@"  
-                        ORDER BY PC.SPPLE$ORDEN, PL.SPPLI$ORDEN ASC";
-            */
-            sql = @"SELECT 
-                      
-                        PL.SPPLI$ID ID_LINEA_ACCION
-                        ,PC.SPPLE$ID
-                       ,-1  INSTO_RESPONSABLE
-                        ,P.SPC$DESCRIPCION POLITICA
-                        ,PC.SPPLE$CODIGO||' '||PC.SPPLE$DESCRIPCION LINEAMIENTO
-                        ,PL.SPPLI$CODIGO||' '||PL.SPPLI$DESCRIPCION LINEA_ACCION
-                        ,TO_NUMBER(PC.SPPLE$ORDEN) SPPLE$ORDEN  
-                        ,TO_NUMBER(PL.SPPLI$ORDEN) SPPLI$ORDEN
-                        
-                        FROM SCHE$SIPLAN20.SP20$POLITICA_LINEAMIENTO_ENCABEZA PC
-                        INNER JOIN SCHE$SIPLAN20.SP20$POLITICA_CUMPLIMIENTO P ON P.SPC$ID = PC.SPPLE$ID_POLITICA AND P.SPC$RESTRICTIVA = 'N' AND PC.SPPLE$RESTRICTIVA = 'N'
-                        INNER JOIN SCHE$SIPLAN20.SP20$POLITICA_LINEAMIENTOS PL ON PL.SPPLI$ID_ENCABEZADO = PC.SPPLE$ID AND PL.SPPLI$RESTRICTIVA = 'N' AND PC.SPPLE$RESTRICTIVA = 'N'
-                      
-                        WHERE PC.SPPLE$RESTRICTIVA = 'N' 
                         ORDER BY PC.SPPLE$ORDEN, PL.SPPLI$ORDEN ASC";
             estado = dao.consulta(sql);
             if (estado == 1)
@@ -12828,7 +12361,6 @@ FROM
             }
             else
             {
-                //ar tipo = aspCod.GetType;
                 munoPriorizados.Attributes.Add("style", "display:block;");
                 cargaMunicipios(Convert.ToInt32(aspCod.Value));
 
@@ -12839,26 +12371,8 @@ FROM
         {
             if (Convert.ToInt32(rbSNIP.Value) == 0)
             {
-                PanSNIP.Attributes.Add("style", "display:none");
-                if (Convert.ToInt32(hfNaturaleza.Value) == 0)
-                {
-                  
-                    cbMunosPriorizados.Enabled = false;
-                    cbMunosPriorizados.SelectedIndex = 1;
-                    munoPriorizados.Attributes.Add("style", "display:block");
-                    cargaMunicipios(Convert.ToInt32(aspCod.Value));
-                }
-                else
-                {
-                   
-                    cbMunosPriorizados.Enabled = false;
-                    cbMunosPriorizados.SelectedIndex = 0;
-                    munoPriorizados.Attributes.Add("style", "display:none");
-                    
-                }
-             
-
-
+                PanSNIP.Attributes.Add("style", "display:none");               
+                cbMunosPriorizados.Enabled = true;
             }
 
             else if (Convert.ToInt32(rbSNIP.Value) == 1)
@@ -12866,11 +12380,9 @@ FROM
                 PanSNIP.Attributes.Add("style", "display:block");
                 cbMunosPriorizados.SelectedIndex = 0;
                 cbMunosPriorizados.Enabled = false;
-                munoPriorizados.Attributes.Add("style", "display:none");
-
             }
 
-           }
+        }
 
         protected void gvTerritorio_SelectionChanged(object sender, EventArgs e)
         {
@@ -12952,22 +12464,56 @@ FROM
 
         protected void btnGuardaFecha_Click(object sender, EventArgs e)
         {
-            sql = "UPDATE SCHE$SIPLAN20.SP20$POM SET SPPO$ESTADO = 'D', SPPO$FECHA_UPDATE = 'PRORROGA = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "'  WHERE SPPO$ID_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
-            estado = dao.comando(sql);
-            if (estado == 1)
+
+            if (Convert.ToInt32(ABIERTO.Value) == 1)
             {
-                sql = "UPDATE SCHE$SIPLAN20.SP20$POA SET SPOA$ESTADO = 'D', SPOA$FECHA_APROBACION = 'PRORROGA = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "'  WHERE SPOA$ID_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
+                sql = "UPDATE SCHE$SIPLAN20.SP20$POM SET SPPO$ESTADO = 'D', SPPO$FECHA_UPDATE = 'HABILITADOS = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "'  WHERE SPPO$ID_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
                 estado = dao.comando(sql);
                 if (estado == 1)
                 {
-                    sql = "INSERT INTO SCHE$SIPLAN20.SP20$FECHAS_CIERRE(SPFC$FECHA_CIERRE,SPFC$CUATRIMESTRE,SPFC$INSERTA,SPFC$EJERCICIO,SPFC$TIPO_FECHA,SPFC$POM,SPFC$INSTITUCION,SPFC$PERIODO_POM) VALUES(TO_DATE('" + txtFechaPorroga.Text + "','DD/MM/YYYY'), 0, 'INSERTA = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "', " + fecha.Year + ", 2," + POM.Value + "," + INSTO.Value + "," + PERIODO.Value + ")";
+                    mensaje = "Programación habilitada correctamente";
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
+                    cargaPOMS();
+                    poProrroga.ShowOnPageLoad = false;
+                }
+                else
+                { 
+                    mensaje = dao.mensaje;
+                            Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
+                            cargaPOMS();
+                            poProrroga.ShowOnPageLoad = false;
+                
+                }
+
+            }
+            else if (Convert.ToInt32(ABIERTO.Value) == 0)
+            {
+
+                sql = "UPDATE SCHE$SIPLAN20.SP20$POM SET SPPO$ESTADO = 'D', SPPO$FECHA_UPDATE = 'PRORROGA = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "'  WHERE SPPO$ID_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
+                estado = dao.comando(sql);
+                if (estado == 1)
+                {
+                    sql = "UPDATE SCHE$SIPLAN20.SP20$POA SET SPOA$ESTADO = 'D', SPOA$FECHA_APROBACION = 'PRORROGA = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "'  WHERE SPOA$ID_POM  = " + Convert.ToInt32(gvPOMInsto.GetRowValues(gvPOMInsto.FocusedRowIndex, "SPPO$ID_POM").ToString());
                     estado = dao.comando(sql);
                     if (estado == 1)
                     {
-                        mensaje = "Fecha de prorroga registrada correctamente";
-                        Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
-                        cargaPOMS();
-                        poProrroga.ShowOnPageLoad = false;
+                        sql = "INSERT INTO SCHE$SIPLAN20.SP20$FECHAS_CIERRE(SPFC$FECHA_CIERRE,SPFC$CUATRIMESTRE,SPFC$INSERTA,SPFC$EJERCICIO,SPFC$TIPO_FECHA,SPFC$POM,SPFC$INSTITUCION,SPFC$PERIODO_POM) VALUES(TO_DATE('" + txtFechaPorroga.Text + "','DD/MM/YYYY'), 0, 'INSERTA = ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI') || ' ' || '" + Session["USUARIO"].ToString() + "', " + fecha.Year + ", 2," + POM.Value + "," + INSTO.Value + "," + PERIODO.Value + ")";
+                        estado = dao.comando(sql);
+                        if (estado == 1)
+                        {
+                            mensaje = "Fecha de prorroga registrada correctamente";
+                            Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
+                            cargaPOMS();
+                            poProrroga.ShowOnPageLoad = false;
+                        }
+                        else
+                        {
+                            mensaje = dao.mensaje;
+                            Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
+                            cargaPOMS();
+                            poProrroga.ShowOnPageLoad = false;
+
+                        }
                     }
                     else
                     {
@@ -12975,8 +12521,8 @@ FROM
                         Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
                         cargaPOMS();
                         poProrroga.ShowOnPageLoad = false;
-
                     }
+
                 }
                 else
                 {
@@ -12986,21 +12532,16 @@ FROM
                     poProrroga.ShowOnPageLoad = false;
                 }
 
+
             }
-            else
-            {
-                mensaje = dao.mensaje;
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-                cargaPOMS();
-                poProrroga.ShowOnPageLoad = false;
-            }
+             
         }
 
         protected bool buscaRespo_politica(int entidad)
         {
             bool reponsable = false;
-            //sql = "SELECT COUNT(*) CONTEO FROM SCHE$SIPLAN20.SP20$RESPONSABLESPOLITICA WHERE SPRP$RESTRICTIVA = 'N' AND SPRP$INSTITUCION = " + entidad;
-            sql = "SELECT COUNT(*) CONTEO FROM SCHE$SIPLAN20.SP20$RESPONSABLESPOLITICA WHERE SPRP$RESTRICTIVA = 'N'";
+            sql = "SELECT COUNT(*) CONTEO FROM SCHE$SIPLAN20.SP20$RESPONSABLESPOLITICA WHERE SPRP$RESTRICTIVA = 'N' AND SPRP$INSTITUCION = " + entidad;
+
             estado = dao.consulta(sql);
             if (estado == 1)
             {

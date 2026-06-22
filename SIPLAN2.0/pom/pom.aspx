@@ -846,26 +846,7 @@ function cambioPGG(s, e)
                         <label for="txtsubCod"aria-required="true"><font color="red">*</font>Programa presupuestario: </label>
                         <asp:TextBox ID="txtPrograma" runat="server" ValueType="System.String" PlaceHolder="Programa presupuestario" CssClass="form-control" onkeypress="return restringe(event)"></asp:TextBox>
                     </div>
-
-                <div class="form-group">
-    <label for="txtsubCod"aria-required="true"><font color="red">*</font>Seleccione la naturaleza del programa prespuestario: </label>
-   <dx:ASPxComboBox 
-    ID="cbComboProgrma" 
-    runat="server" 
-    ValueType="System.String" 
-    CssClass="form-control">
-
-    <Items>
-         <dx:ListEditItem Text="Programas Sustantivos" Value="0" Selected="True"/>
-        <dx:ListEditItem Text="Programas Administrativos" Value="1"  />
-       
-    </Items>
-
-</dx:ASPxComboBox>
-</div>
-                
-                
-
+                    
                 <div class ="form-group">
                     <label for="txtsubCod"aria-required="true"><font color="red">*</font>Seleccione el tipo de programa: </label>
                         <dx:ASPxRadioButtonList ID="selectProgra" runat="server"
@@ -955,22 +936,6 @@ function cambioPGG(s, e)
                 
                                   </dx:GridViewDataComboBoxColumn>
 
-
-                                 <dx:GridViewDataComboBoxColumn 
-    FieldName="SPPRO$ES_ADMINISTRATIVO" 
-    Name="SPPRO$ES_ADMINISTRATIVO" 
-    Caption="NATURALEZA DEL PROGRAMA" 
-    VisibleIndex="2">
-
-    <PropertiesComboBox ValueType="System.String">
-        <Items>
-             <dx:ListEditItem Text="Programas Sustantivos" Value="0"/>
-             <dx:ListEditItem Text="Programas Administrativos" Value="1"  />
-           
-        </Items>
-    </PropertiesComboBox>
-
-</dx:GridViewDataComboBoxColumn>
 
                                  <dx:GridViewDataTextColumn FieldName="SPPRO$ID_PROGRAMA_DEPENDE"  Name="SPPRO$ID_PROGRAMA_DEPENDE"  ReadOnly="true" Visible="false"  VisibleIndex="3">
                                      <HeaderStyle Wrap="True" />
@@ -1148,78 +1113,69 @@ function cambioPGG(s, e)
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                                  <dx:GridViewDataTextColumn FieldName="NATURALEZA"  Name="NATURALEZA"  Caption="NATURALEZA" ReadOnly="true"  Visible="true" VisibleIndex="9" Width="15%">
-     <HeaderStyle Wrap="True" />
-     <Settings />
-    </dx:GridViewDataTextColumn>
-                                                               <dx:GridViewDataTextColumn FieldName="SPPRO$ES_ADMINISTRATIVO"  Name="SPPRO$ES_ADMINISTRATIVO"  ReadOnly="true"  Visible="false" VisibleIndex="10" Width="15%">
- <HeaderStyle Wrap="True" />
- <Settings />
-</dx:GridViewDataTextColumn>
-                                 <dx:GridViewDataTextColumn FieldName="SPPRO$ID_PRODUCTO"  Name="SPPRO$ID_PRODUCTO"  ReadOnly="true"  Visible="false" VisibleIndex="11" Width="0%">
+                                 <dx:GridViewDataTextColumn FieldName="SPPRO$ID_PRODUCTO"  Name="SPPRO$ID_PRODUCTO"  ReadOnly="true"  Visible="false" VisibleIndex="9" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="PRODUCTO"  Name="PRODUCTO" Caption="PRODUCTO INSTITUCIONAL"  ReadOnly="true"  Visible="true" VisibleIndex="12" Width="50%">
+                                 <dx:GridViewDataTextColumn FieldName="PRODUCTO"  Name="PRODUCTO" Caption="PRODUCTO INSTITUCIONAL"  ReadOnly="true"  Visible="true" VisibleIndex="10" Width="50%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                  <dx:GridViewDataTextColumn FieldName="SPPRO$ID_MEDIDA"  Name="SPPRO$ID_MEDIDA"   ReadOnly="true"  Visible="false" VisibleIndex="13" Width="0">
+                                  <dx:GridViewDataTextColumn FieldName="SPPRO$ID_MEDIDA"  Name="SPPRO$ID_MEDIDA"   ReadOnly="true"  Visible="false" VisibleIndex="11" Width="0">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="SNCGUM$NOMBRE"  Name="SNCGUM$NOMBRE"   ReadOnly="true" Caption="UNIDAD DE MEDIDA" Visible="true" VisibleIndex="14" Width="40%">
+                                 <dx:GridViewDataTextColumn FieldName="SNCGUM$NOMBRE"  Name="SNCGUM$NOMBRE"   ReadOnly="true" Caption="UNIDAD DE MEDIDA" Visible="true" VisibleIndex="12" Width="40%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                  <dx:GridViewDataTextColumn FieldName="SPPRO$OBJETIVO_CENTRAL"  Name="SPPRO$OBJETIVO_CENTRAL"   ReadOnly="true"  Visible="false" VisibleIndex="15" Width="0%">
+                                  <dx:GridViewDataTextColumn FieldName="SPPRO$OBJETIVO_CENTRAL"  Name="SPPRO$OBJETIVO_CENTRAL"   ReadOnly="true"  Visible="false" VisibleIndex="13" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="SPPRO$ACCION_ESTRATEGICA"  Name="SPPRO$ACCION_ESTRATEGICA"   ReadOnly="true"  Visible="false" VisibleIndex="16" Width="0%">
+                                 <dx:GridViewDataTextColumn FieldName="SPPRO$ACCION_ESTRATEGICA"  Name="SPPRO$ACCION_ESTRATEGICA"   ReadOnly="true"  Visible="false" VisibleIndex="14" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="OBJETIVO_SECTORIAL"  Name="OBJETIVO_SECTORIAL"   Caption="OBJETIVO SECTORIAL" ReadOnly="true"  Visible="false" VisibleIndex="17" Width="30%">
+                                 <dx:GridViewDataTextColumn FieldName="OBJETIVO_SECTORIAL"  Name="OBJETIVO_SECTORIAL"   Caption="OBJETIVO SECTORIAL" ReadOnly="true"  Visible="false" VisibleIndex="15" Width="30%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="ACCCION_ESTRATEGICA"  Name="ACCCION_ESTRATEGICA"   Caption="ACCION ESTRATEGICA" ReadOnly="true"  Visible="false" VisibleIndex="18" Width="30%">
+                                 <dx:GridViewDataTextColumn FieldName="ACCCION_ESTRATEGICA"  Name="ACCCION_ESTRATEGICA"   Caption="ACCION ESTRATEGICA" ReadOnly="true"  Visible="false" VisibleIndex="16" Width="30%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="SPPRO$PROPIETARIO"  Name="SPPRO$PROPIETARIO"   ReadOnly="true"  Visible="false" VisibleIndex="19" Width="0">
+                                 <dx:GridViewDataTextColumn FieldName="SPPRO$PROPIETARIO"  Name="SPPRO$PROPIETARIO"   ReadOnly="true"  Visible="false" VisibleIndex="17" Width="0">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                   <dx:GridViewDataTextColumn FieldName="MUNICIPIOS"  Name="MUNICIPIOS"  Caption="MUNICIPIOS PRIORIZADOS" ReadOnly="true"  Visible="false" VisibleIndex="20" Width="30%">
+                                   <dx:GridViewDataTextColumn FieldName="MUNICIPIOS"  Name="MUNICIPIOS"  Caption="MUNICIPIOS PRIORIZADOS" ReadOnly="true"  Visible="false" VisibleIndex="18" Width="30%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                  <dx:GridViewDataTextColumn FieldName="SPRES$COD_ESTRATEGICO"  Name="SPRES$COD_ESTRATEGICO"   ReadOnly="true"  Visible="false" VisibleIndex="21" Width="30%">
+                                  <dx:GridViewDataTextColumn FieldName="SPRES$COD_ESTRATEGICO"  Name="SPRES$COD_ESTRATEGICO"   ReadOnly="true"  Visible="false" VisibleIndex="19" Width="30%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                                  <dx:GridViewDataTextColumn FieldName="SPRES$TIPO"  Name="SPRES$TIPO"   ReadOnly="true"  Visible="false" VisibleIndex="22" Width="30%">
+                                  <dx:GridViewDataTextColumn FieldName="SPRES$TIPO"  Name="SPRES$TIPO"   ReadOnly="true"  Visible="false" VisibleIndex="20" Width="30%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                     <dx:GridViewDataTextColumn FieldName="SPPRO$RESULTADO2"  Name="SPPRO$RESULTADO2"   ReadOnly="true"  Visible="false" VisibleIndex="23" Width="30%">
+                                     <dx:GridViewDataTextColumn FieldName="SPPRO$RESULTADO2"  Name="SPPRO$RESULTADO2"   ReadOnly="true"  Visible="false" VisibleIndex="21" Width="30%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                                 
 
                                  
                              </Columns>
@@ -1323,68 +1279,60 @@ function cambioPGG(s, e)
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                                                                   <dx:GridViewDataTextColumn FieldName="NATURALEZA"  Name="NATURALEZA"  Caption="NATURALEZA" ReadOnly="true"  Visible="true" VisibleIndex="7" Width="15%">
-     <HeaderStyle Wrap="True" />
-     <Settings />
-    </dx:GridViewDataTextColumn>
-                                                               <dx:GridViewDataTextColumn FieldName="SPPRO$ES_ADMINISTRATIVO"  Name="SPPRO$ES_ADMINISTRATIVO"  ReadOnly="true"  Visible="false" VisibleIndex="8" Width="15%">
- <HeaderStyle Wrap="True" />
- <Settings />
-</dx:GridViewDataTextColumn>
-                                 <dx:GridViewDataTextColumn FieldName="SPPRO$ID_PRODUCTO"  Name="SPPRO$ID_PRODUCTO"  ReadOnly="true"  Visible="false" VisibleIndex="9" Width="0">
+                                 <dx:GridViewDataTextColumn FieldName="SPPRO$ID_PRODUCTO"  Name="SPPRO$ID_PRODUCTO"  ReadOnly="true"  Visible="false" VisibleIndex="7" Width="0">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="PRODUCTO"  Name="PRODUCTO" Caption="PRODUCTO VINCULADO A RESULTADO ESTRÁTEGICO RE"  ReadOnly="true"  Visible="true" VisibleIndex="10" Width="10%">
+                                 <dx:GridViewDataTextColumn FieldName="PRODUCTO"  Name="PRODUCTO" Caption="PRODUCTO VINCULADO A RESULTADO ESTRÁTEGICO RE"  ReadOnly="true"  Visible="true" VisibleIndex="8" Width="10%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                  <dx:GridViewDataTextColumn FieldName="SPPRO$ID_MEDIDA"  Name="SPPRO$ID_MEDIDA"   ReadOnly="true"  Visible="false" VisibleIndex="11" Width="0">
+                                  <dx:GridViewDataTextColumn FieldName="SPPRO$ID_MEDIDA"  Name="SPPRO$ID_MEDIDA"   ReadOnly="true"  Visible="false" VisibleIndex="9" Width="0">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="SNCGUM$NOMBRE"  Name="SNCGUM$NOMBRE"   ReadOnly="true" Caption="UNIDAD DE MEDIDA" Visible="true" VisibleIndex="12" Width="10%">
+                                 <dx:GridViewDataTextColumn FieldName="SNCGUM$NOMBRE"  Name="SNCGUM$NOMBRE"   ReadOnly="true" Caption="UNIDAD DE MEDIDA" Visible="true" VisibleIndex="10" Width="10%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                  <dx:GridViewDataTextColumn FieldName="SPPRO$OBJETIVO_CENTRAL"  Name="SPPRO$OBJETIVO_CENTRAL"   ReadOnly="true"  Visible="false" VisibleIndex="13" Width="0%">
+                                  <dx:GridViewDataTextColumn FieldName="SPPRO$OBJETIVO_CENTRAL"  Name="SPPRO$OBJETIVO_CENTRAL"   ReadOnly="true"  Visible="false" VisibleIndex="11" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="SPPRO$ACCION_ESTRATEGICA"  Name="SPPRO$ACCION_ESTRATEGICA"   ReadOnly="true"  Visible="false" VisibleIndex="14" Width="0%">
+                                 <dx:GridViewDataTextColumn FieldName="SPPRO$ACCION_ESTRATEGICA"  Name="SPPRO$ACCION_ESTRATEGICA"   ReadOnly="true"  Visible="false" VisibleIndex="12" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="OBJETIVO_SECTORIAL"  Name="OBJETIVO_SECTORIAL"   Caption="OBJETIVO SECTORIAL" ReadOnly="true"  Visible="false" VisibleIndex="15" Width="10%">
+                                 <dx:GridViewDataTextColumn FieldName="OBJETIVO_SECTORIAL"  Name="OBJETIVO_SECTORIAL"   Caption="OBJETIVO SECTORIAL" ReadOnly="true"  Visible="false" VisibleIndex="13" Width="10%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="ACCCION_ESTRATEGICA"  Name="ACCCION_ESTRATEGICA"   Caption="ACCION ESTRATEGICA" ReadOnly="true"  Visible="false" VisibleIndex="16" Width="10%">
+                                 <dx:GridViewDataTextColumn FieldName="ACCCION_ESTRATEGICA"  Name="ACCCION_ESTRATEGICA"   Caption="ACCION ESTRATEGICA" ReadOnly="true"  Visible="false" VisibleIndex="14" Width="10%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                 <dx:GridViewDataTextColumn FieldName="SPPRO$PROPIETARIO"  Name="SPPRO$PROPIETARIO"   ReadOnly="true"  Visible="false" VisibleIndex="17" Width="0">
+                                 <dx:GridViewDataTextColumn FieldName="SPPRO$PROPIETARIO"  Name="SPPRO$PROPIETARIO"   ReadOnly="true"  Visible="false" VisibleIndex="15" Width="0">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                                 <dx:GridViewDataTextColumn FieldName="MUNICIPIOS"  Name="MUNICIPIOS"   Caption="MUNICIPIOS PRIORIZADOS" ReadOnly="true"  Visible="false" VisibleIndex="18" Width="30%">
+                                 <dx:GridViewDataTextColumn FieldName="MUNICIPIOS"  Name="MUNICIPIOS"   Caption="MUNICIPIOS PRIORIZADOS" ReadOnly="true"  Visible="false" VisibleIndex="16" Width="30%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                                   <dx:GridViewDataTextColumn FieldName="ID_RESULTADO"  Name="ID_RESULTADO"  ReadOnly="true"  Visible="false" VisibleIndex="19" Width="30%">
+                                   <dx:GridViewDataTextColumn FieldName="ID_RESULTADO"  Name="ID_RESULTADO"  ReadOnly="true"  Visible="false" VisibleIndex="17" Width="30%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                                   <dx:GridViewDataTextColumn FieldName="SPPRO$RESULTADO2"  Name="SPPRO$RESULTADO2"  ReadOnly="true"  Visible="false" VisibleIndex="20" Width="30%">
+                                   <dx:GridViewDataTextColumn FieldName="SPPRO$RESULTADO2"  Name="SPPRO$RESULTADO2"  ReadOnly="true"  Visible="false" VisibleIndex="18" Width="30%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
@@ -1406,47 +1354,8 @@ function cambioPGG(s, e)
             <h4><asp:Label ID="lblProducto" runat="server"></asp:Label></h4>
             <h4><asp:Label ID="lblPilar" runat="server"></asp:Label></h4>
             <h4><asp:Label ID="lblResultado" runat="server"></asp:Label></h4>
-            
                          <h5 style="color:red"><asp:Label ID="lblTipo" runat="server"></asp:Label>, por favor evite utilizar en sus descripciones caratecteres como ' "" (apostrofes y comillas) y así evitar errores de grabación</h5>
                          <h5>Campos marcados con <font color="red">*</font> son obligatorios </h5>
-              <asp:HiddenField ID="esProdAdministartivo" runat="server" />
-                                          <div class="form-group">
-               <label for="txtsubCod" aria-required="true"><font color="red">*</font>Programa presupuestario: </label>
-             <%--   <asp:UpdatePanel ID="UpdatePanel3" runat="server"> 
-        <ContentTemplate>--%>
-                                  <dx:ASPxComboBox ID="cbProgramaPresupuestario" runat="server" ValueType="System.String" NullText="Seleccione programa presupuestario" CssClass="form-control" OnValueChanged="cbProgramaPresupuestario_ValueChanged" AutoPostBack="true"></dx:ASPxComboBox>
-            <%--</ContentTemplate>
-                    </asp:UpdatePanel>--%>
-            </div> 
-
-<div class="form-group">
-               <label for="txtsubCod" aria-required="true"><font color="red">*</font>¿Necesita vincular el producto a un subprograma presupuestario:? </label>
-                  <dx:ASPxRadioButtonList ID="cbSuprograma" runat="server"
-                            ValueField="ID" TextField="Name2" RepeatColumns="2" RepeatLayout="Table"   Border-BorderStyle="None" ClientInstanceName="viviendas" >
-                           <ClientSideEvents SelectedIndexchanged="cambioSubprograma" />
-                             <CaptionSettings Position="Top" />
-                            <Items>
-                                <dx:ListEditItem Text="No" Value="0"   />
-                                <dx:ListEditItem Text="Sí" Value="1" />
-                             
-                            </Items>
-                      
-                           </dx:ASPxRadioButtonList>
-                  </div> 
-
-                             <asp:Panel ID="subProgramaPresupuestario" runat="server"  style="display:none">
-     <div class="form-group">
-               <label for="txtsubCod" aria-required="true"><font color="red">*</font>Subprograma presupuestario: </label>
-              <%-- <asp:UpdatePanel ID="UpdatePanel4" runat="server"> 
-        <ContentTemplate>--%>
-         <dx:ASPxComboBox ID="cbSuProgramaPresupuestario" runat="server" ValueType="System.String" NullText="Seleccione subprograma presupuestario" CssClass="form-control"></dx:ASPxComboBox>
-     <%--   </ContentTemplate>
-                   </asp:UpdatePanel>--%>
-            </div> 
-    
-    
-         </asp:Panel>
-
             <asp:Panel ID="panResultadoInstitucionales" runat="server" Style="display:none">       
             <p>Vinculación con resultados institucionales y PGG 2024-2028</p>
                <label for="txtsubCod" aria-required="true"><font color="red">*</font>Resultado institucional: </label>      
@@ -1501,7 +1410,7 @@ function cambioPGG(s, e)
 
                           
                            <label for="txtsubCod" aria-required="true"><font color="red">*</font></label>
-                        <label for="txtsubCod" aria-required="true"><font color="red">*</font>Metas presidenciales y acción estratégica (si este control permanece inactivo vincule solo el eje estratégico): </label>      
+                        <label for="txtsubCod" aria-required="true"><font color="red">*</font>Metas presidenciales y acción estratética (si este control permanece inactivo vincule solo el eje estratégico): </label>      
                         <asp:UpdatePanel ID="UpdatePanel2" runat="server"> 
                     <ContentTemplate>
                               <dx:ASPxComboBox ID="cbAcciones" runat="server" ValueType="System.String" NullText="Seleccione eje estratégico/acción estratégica" CssClass="form-control"></dx:ASPxComboBox>
@@ -1516,7 +1425,42 @@ function cambioPGG(s, e)
 
 
             <br />
+                                          <div class="form-group">
+                           <label for="txtsubCod" aria-required="true"><font color="red">*</font>Programa presupuestario: </label>
+                            <asp:UpdatePanel ID="UpdatePanel3" runat="server"> 
+                    <ContentTemplate>
+                                              <dx:ASPxComboBox ID="cbProgramaPresupuestario" runat="server" ValueType="System.String" NullText="Seleccione programa presupuestario" CssClass="form-control" OnValueChanged="cbProgramaPresupuestario_ValueChanged" AutoPostBack="true"></dx:ASPxComboBox>
+                        </ContentTemplate>
+                                </asp:UpdatePanel>
+                        </div> 
+
+            <div class="form-group">
+                           <label for="txtsubCod" aria-required="true"><font color="red">*</font>¿Necesita vincular el producto a un subprograma presupuestario:? </label>
+                              <dx:ASPxRadioButtonList ID="cbSuprograma" runat="server"
+                                        ValueField="ID" TextField="Name2" RepeatColumns="2" RepeatLayout="Table"   Border-BorderStyle="None" ClientInstanceName="viviendas" >
+                                       <ClientSideEvents SelectedIndexchanged="cambioSubprograma" />
+                                         <CaptionSettings Position="Top" />
+                                        <Items>
+                                            <dx:ListEditItem Text="No" Value="0"   />
+                                            <dx:ListEditItem Text="Sí" Value="1" />
                                          
+                                        </Items>
+                                  
+                                       </dx:ASPxRadioButtonList>
+                              </div> 
+
+                                         <asp:Panel ID="subProgramaPresupuestario" runat="server"  style="display:none">
+                 <div class="form-group">
+                           <label for="txtsubCod" aria-required="true"><font color="red">*</font>Subprograma presupuestario: </label>
+                           <asp:UpdatePanel ID="UpdatePanel4" runat="server"> 
+                    <ContentTemplate>
+                     <dx:ASPxComboBox ID="cbSuProgramaPresupuestario" runat="server" ValueType="System.String" NullText="Seleccione subprograma presupuestario" CssClass="form-control"></dx:ASPxComboBox>
+                    </ContentTemplate>
+                               </asp:UpdatePanel>
+                        </div> 
+    
+    
+                     </asp:Panel>
 
                                          <div class="form-group">
                            <label for="txtsubCod" aria-required="true"><font color="red">*</font>Descripción <asp:Label ID="lblTipoDescripcion" runat="server"></asp:Label>  (no use comillas y apostrofes): </label>
@@ -1592,7 +1536,7 @@ function cambioPGG(s, e)
                                     <asp:Button ID="btnDelSub" CssClass="btn btn-danger" runat="server" Text="Eliminar subproducto" OnClick="btnDelSub_Click" />
                                      <asp:Button ID="btnPoliticas" CssClass="btn btn-success" runat="server" Text="Vincular subproductos a políticas públicas" OnClick="btnPoliticas_Click"/>
                                       <asp:Button ID="btnRegresa" CssClass="btn " runat="server" Text="Regresar a productos"  OnClick="btnRegresa_Click" style="color:white;background-color:#2E9AFE"/>
-                                    <asp:HiddenField ID="hfNaturaleza" runat="server" />
+                                    
                                                      </div>
                                          </div>
             <h5><asp:Label ID="lbltitulo" runat="server" style="text-align: justify"></asp:Label></h5>
@@ -1818,7 +1762,6 @@ function cambioPGG(s, e)
             <h5><asp:Label ID="lblResub2" runat="server"></asp:Label></h5>
             <h5><asp:Label ID="lblProduEstra2" runat="server"></asp:Label></h5>
              <h5><asp:Label ID="lblSuproducto" runat="server"></asp:Label></h5>
-             <input type="hidden" id="hfSNIP" runat="server"/>
                          <h5 style="color:red"><asp:Label ID="lbldescsubs" runat="server"></asp:Label> Por favor evite utilizar en sus descripciones caratecteres como ' "" (apostrofes y comillas) y así evitar errores de grabación</h5>
                          <h5>Campos marcados con <font color="red">*</font> son obligatorios </h5>
             <div class="form-group">
@@ -2517,16 +2460,16 @@ function cambioPGG(s, e)
                                                     <dx:GridViewDataTextColumn FieldName="SPS$ID" Name="SPS$ID"   VisibleIndex="1" Visible="false">
                                        <HeaderStyle Wrap="True"></HeaderStyle>
                  </dx:GridViewDataTextColumn>
-                                                    <dx:GridViewDataTextColumn FieldName="POLITICA" Name="POLITICA" Caption="TIPO DE VINCULACIÓN"   VisibleIndex="2" Visible="true">
+                                                    <dx:GridViewDataTextColumn FieldName="POLITICA" Name="POLITICA" Caption="POLÍTICA"   VisibleIndex="2" Visible="true">
                                        <HeaderStyle Wrap="True"></HeaderStyle>
                  </dx:GridViewDataTextColumn>
-                                                     <dx:GridViewDataTextColumn FieldName="LINEAMIENTO" Name="LINEAMIENTO" Caption="SECTOR"   VisibleIndex="3" Visible="true">
+                                                     <dx:GridViewDataTextColumn FieldName="LINEAMIENTO" Name="LINEAMIENTO" Caption="LINEAMIENTO"   VisibleIndex="3" Visible="true">
                                        <HeaderStyle Wrap="True"></HeaderStyle>
                        <Settings AutoFilterCondition="Contains" />
                      <Settings />
                  </dx:GridViewDataTextColumn>
 
-                                                   <dx:GridViewDataTextColumn FieldName="LINEA_ACCION" Name="LINEA_ACCION" Caption="POLÍTICA PÚBLICA"   VisibleIndex="4" Visible="true">
+                                                   <dx:GridViewDataTextColumn FieldName="LINEA_ACCION" Name="LINEA_ACCION" Caption="LÍNEA DE ACCIÓN"   VisibleIndex="4" Visible="true">
                                        <HeaderStyle Wrap="True"></HeaderStyle>
                        <Settings AutoFilterCondition="Contains" />
                      <Settings />
@@ -2973,13 +2916,13 @@ function cambioPGG(s, e)
                 <dx:GridViewDataTextColumn FieldName="POLITICA" Name="POLITICA" Caption="POLÍTICA PÚBLICA"   VisibleIndex="2" Visible="true" GroupIndex="0" Width="10%">
                                        <HeaderStyle Wrap="True"></HeaderStyle>
                  </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="LINEAMIENTO" Name="LINEAMIENTO" Caption="TEMA"   VisibleIndex="3" Visible="true" GroupIndex="1" Width="10%">
+                <dx:GridViewDataTextColumn FieldName="LINEAMIENTO" Name="LINEAMIENTO" Caption="LINEAMIENTO"   VisibleIndex="3" Visible="true" GroupIndex="1" Width="10%">
                                        <HeaderStyle Wrap="True"></HeaderStyle>
                        <Settings AutoFilterCondition="Contains" />
                      <Settings />
                  </dx:GridViewDataTextColumn>
 
-                   <dx:GridViewDataTextColumn FieldName="LINEA_ACCION" Name="LINEA_ACCION" Caption="POLÍTICA PÚBLICA"   VisibleIndex="4" Visible="true" Width="60%">
+                   <dx:GridViewDataTextColumn FieldName="LINEA_ACCION" Name="LINEA_ACCION" Caption="LÍNEA DE ACCIÓN"   VisibleIndex="4" Visible="true" Width="60%">
                                        <HeaderStyle Wrap="True"></HeaderStyle>
                        <Settings AutoFilterCondition="Contains" />
                      <Settings />
@@ -3106,37 +3049,37 @@ function cambioPGG(s, e)
 
 
 
-            <dx:ASPxPopupControl ID="poProrroga" runat="server" AllowDragging ="true" Width ="550px" Height="250px" HeaderText="Prorroga para habilitar programación multianual" PopupHorizontalAlign="WindowCenter"  PopupVerticalAlign="WindowCenter"  CloseAction="CloseButton"  >
-                              <HeaderStyle Font-Bold="False" Font-Size="10"  HorizontalAlign="Left" />
-                             <ContentCollection>
-                                 <dx:PopupControlContentControl>       
-                                     <h3 style="color:#2d572c">Fecha de prorroga de cierre de la programación multianual</h3>               
-                         <label class="form-label">Periodo de programación POM: <asp:Label ID ="periodoPOM" runat ="server"></asp:Label> </label>
-                                     <br />
-                         <label class="form-label">Institución: <asp:Label ID ="instoPOM" runat ="server"></asp:Label> </label>
-                                     <br />
-                      <label class="form-label"><asp:Label ID ="lbAbierto" runat ="server"></asp:Label> </label>
-                                     <br />
-                                     <br /> 
-                         <label class="form-label">Fecha de cierre de periodo: <asp:Label ID ="cierrePeriodo" runat ="server"></asp:Label> </label>
-                        <asp:HiddenField id="PERIODO" runat="server"/>
-                         <asp:HiddenField id="POM" runat="server"/>
-                          <asp:HiddenField id="INSTO" runat="server"/>
-                          <asp:HiddenField id="ABIERTO" runat="server"/>
-                                     <br />
-                      <dx:ASPxDateEdit ID="txtdateFecha" runat="server" Culture="es-ES" CssClass="form-control" Width="60%"> </dx:ASPxDateEdit>
-                                     <br />
-                     <label class="form-label">Seleccione fecha de prorroga:</label>
-                                     <br />
-                     <dx:ASPxDateEdit ID="txtFechaPorroga" runat="server" Culture="es-ES" CssClass="form-control" Width="60%"> </dx:ASPxDateEdit>
-                                     <br />
-                                        
-                                    
-                      <asp:Button ID="btnGuardaFecha" runat="server" Text="Guardar fecha prorroga" CssClass="btn btn-primary" OnClick="btnGuardaFecha_Click"/>                                      
-                      <asp:Button ID="btnCancelaFecha" runat="server" Text="Cancelar" CssClass="btn btn-warning"  OnClick="btnCancelaFecha_Click"/>
-                                         
-          </dx:PopupControlContentControl>
-                                 </ContentCollection>
-                         </dx:ASPxPopupControl>
+        <dx:ASPxPopupControl ID="poProrroga" runat="server" AllowDragging ="true" Width ="550px" Height="250px" HeaderText="Prorroga para habilitar programación multianual" PopupHorizontalAlign="WindowCenter"  PopupVerticalAlign="WindowCenter"  CloseAction="CloseButton"  >
+                                <HeaderStyle Font-Bold="False" Font-Size="10"  HorizontalAlign="Left" />
+                               <ContentCollection>
+                                   <dx:PopupControlContentControl>       
+                                       <h3 style="color:#2d572c">Fecha de prorroga de cierre de la programación multianual</h3>               
+                           <label class="form-label">Periodo de programación POM: <asp:Label ID ="periodoPOM" runat ="server"></asp:Label> </label>
+                                       <br />
+                           <label class="form-label">Institución: <asp:Label ID ="instoPOM" runat ="server"></asp:Label> </label>
+                                       <br />
+                        <label class="form-label"><asp:Label ID ="lbAbierto" runat ="server"></asp:Label> </label>
+                                       <br />
+                                       <br /> 
+                           <label class="form-label">Fecha de cierre de periodo: <asp:Label ID ="cierrePeriodo" runat ="server"></asp:Label> </label>
+                          <asp:HiddenField id="PERIODO" runat="server"/>
+                           <asp:HiddenField id="POM" runat="server"/>
+                            <asp:HiddenField id="INSTO" runat="server"/>
+                            <asp:HiddenField id="ABIERTO" runat="server"/>
+                                       <br />
+                        <dx:ASPxDateEdit ID="txtdateFecha" runat="server" Culture="es-ES" CssClass="form-control" Width="60%"> </dx:ASPxDateEdit>
+                                       <br />
+                       <label class="form-label">Seleccione fecha de prorroga:</label>
+                                       <br />
+                       <dx:ASPxDateEdit ID="txtFechaPorroga" runat="server" Culture="es-ES" CssClass="form-control" Width="60%"> </dx:ASPxDateEdit>
+                                       <br />
+                                          
+                                      
+                        <asp:Button ID="btnGuardaFecha" runat="server" Text="Guardar fecha prorroga" CssClass="btn btn-primary" OnClick="btnGuardaFecha_Click"/>                                      
+                        <asp:Button ID="btnCancelaFecha" runat="server" Text="Cancelar" CssClass="btn btn-warning"  OnClick="btnCancelaFecha_Click"/>
+                                           
+            </dx:PopupControlContentControl>
+                                   </ContentCollection>
+                           </dx:ASPxPopupControl>
 
 </asp:Content>

@@ -2,35 +2,35 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <script>    
-        function Alerta(mensaje, tipo) {          
-            alertify.set('notifier', 'position', 'top-right'); 
+        function Alerta(mensaje, tipo) {
+            alertify.set('notifier', 'position', 'top-right');
             if (tipo == 1)
                 alertify.success(mensaje);
             if (tipo == 2)
-                alertify.error(mensaje);          
-        };  
+                alertify.error(mensaje);
+        };
 
-         /*function validapass(e) {
-            key = e.keyCode || e.which;
-            tecla = String.fromCharCode(key).toString();
-            //Se define todo lo que se quiere que se muestre
-            caracter = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            
-            especiales = [8, 37, 39, 46, 6];
+        /*function validapass(e) {
+           key = e.keyCode || e.which;
+           tecla = String.fromCharCode(key).toString();
+           //Se define todo lo que se quiere que se muestre
+           caracter = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+           
+           especiales = [8, 37, 39, 46, 6];
 
-            tecla_especial = false;
-            for (var i in especiales) {
-                if (key == especiales[i]) {
-                    tecla_especial = false;
-                    break;
-                }
-            }
-            if (caracter.indexOf(tecla) == -1 && !tecla_especial) {
-                alert('Tecla no aceptada');
-                return false;
-            }
-                       
-        }*/
+           tecla_especial = false;
+           for (var i in especiales) {
+               if (key == especiales[i]) {
+                   tecla_especial = false;
+                   break;
+               }
+           }
+           if (caracter.indexOf(tecla) == -1 && !tecla_especial) {
+               alert('Tecla no aceptada');
+               return false;
+           }
+                      
+       }*/
 
         function validapass(e) {
             var key = e.key;
@@ -42,24 +42,22 @@
             }
         }
 
-    //    $('#mostrar_contrasena').click(function () {
-    //if ($('#mostrar_contrasena').is(':checked')) {
-    //    //$('#MainContent_txtContrasena').attr('type', 'text');
-   
-    //} else {
-    //  $('#MainContent_txtContrasena').attr('type', 'password');
-    //}
-    //    });
+        //    $('#mostrar_contrasena').click(function () {
+        //if ($('#mostrar_contrasena').is(':checked')) {
+        //    //$('#MainContent_txtContrasena').attr('type', 'text');
 
-        function mostrar()
-        {
+        //} else {
+        //  $('#MainContent_txtContrasena').attr('type', 'password');
+        //}
+        //    });
+
+        function mostrar() {
             var checkBox = document.getElementById("mostrar_contrasena");
-            if (checkBox.checked == true){
+            if (checkBox.checked == true) {
                 $('#MainContent_txtContrasena').attr('type', 'text');
                 $('#MainContent_txtConfirme').attr('type', 'text');
             }
-            else
-            {
+            else {
                 $('#MainContent_txtContrasena').attr('type', 'password');
                 $('#MainContent_txtConfirme').attr('type', 'password');
             }
@@ -73,6 +71,7 @@
           
                  <div style="float:right">
           <h4 class="text-danger">         ATENCIÓN:
+                   Utilice esta pntalla para cambiar su contraseña por seguridad, cuando la contraseña haya sido comprometida o cuando el sistema se lo solicite.
                    Luego de grabar el cambio de contraseña, el sistema
                    pedirá de nuevo la conexión con la nueva contraseña.
                    Por favor atienda la siguentes recomendaciones para una contraseña segura.

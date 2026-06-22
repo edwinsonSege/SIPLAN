@@ -26,8 +26,8 @@ namespace SIPLAN2._0.pom
             if (Session["Usuario"].ToString() != "EDWINSON")
                 Response.Redirect("../login/logout.aspx");
             {
-                pom = 9708;
-                insto = 7000;
+                pom = 7460;
+                insto = 8000;
                 //cargaProductosResultadosInstitucionales(pom, insto);
                 cargaSubproducto(pom, insto);
             }
@@ -62,7 +62,7 @@ namespace SIPLAN2._0.pom
                             {
                                 if (poms.Rows.Count > 0)
                                 {
-                                    sql = "SELECT P.SPPRO$ID_PRODUCTO, R.SPRES$DESCRIPCION RESULTADO, P.SPPRO$DESCRIPCION, P.SPPRO$ID_MEDIDA, P.SPPRO$OBJETIVO_CENTRAL, P.SPPRO$ACCION_ESTRATEGICA, P.SPPRO$ID_RESULTADO, P.SPPRO$PRESUPUESTO, P.SPPRO$POM, P.SPPRO$INSTO, P.SPPRO$RESULTADO2 FROM SCHE$SIPLAN20.SP20$PRODUCTO P INNER JOIN SCHE$SIPLAN20.SP20$RESULTADOS R ON P.SPPRO$ID_RESULTADO = R.SPRES$ID_RESULTADO AND P.SPPRO$RESTRICTIVA = 'N' AND R.SPRES$RESTRICTIVA = 'N'  WHERE P.SPPRO$POM = " + poms.Rows[0]["SPPO$ID_POM"] + " AND P.SPPRO$INSTO = " + poms.Rows[0]["SPPO$ID_INSTITUCION"] + " AND SPPRO$ID_PRODUCTO IN (20063,20062,20069,20076,20058,20072,20061,20071,20078,20060,20067,20066,20073,20080)";
+                                    sql = "SELECT P.SPPRO$ID_PRODUCTO, R.SPRES$DESCRIPCION RESULTADO, P.SPPRO$DESCRIPCION, P.SPPRO$ID_MEDIDA, P.SPPRO$OBJETIVO_CENTRAL, P.SPPRO$ACCION_ESTRATEGICA, P.SPPRO$ID_RESULTADO, P.SPPRO$PRESUPUESTO, P.SPPRO$POM, P.SPPRO$INSTO, P.SPPRO$RESULTADO2 FROM SCHE$SIPLAN20.SP20$PRODUCTO P INNER JOIN SCHE$SIPLAN20.SP20$RESULTADOS R ON P.SPPRO$ID_RESULTADO = R.SPRES$ID_RESULTADO AND P.SPPRO$RESTRICTIVA = 'N' AND R.SPRES$RESTRICTIVA = 'N'  WHERE P.SPPRO$POM = " + poms.Rows[0]["SPPO$ID_POM"] + " AND P.SPPRO$INSTO = " + poms.Rows[0]["SPPO$ID_INSTITUCION"] + " AND R.SPRES$TIPO = 1 AND R.SPRES$ID_RESULTADO IN (6461)";
                                     estado = dao.consulta(sql);
                                     if (estado == 1)
                                     {
@@ -98,7 +98,7 @@ namespace SIPLAN2._0.pom
                                                 sql = sql + "(SELECT R.SPPRES$DESCRIPCION FROM SCHE$SIPLAN20.SP20$RESULTADOS_ESTRATEGICOS R WHERE R.SPPRES$RESTRICTIVA ='N' AND R.SPPRES$ID_RESULTADO = PO.SPPRO$ACCION_ESTRATEGICA AND R.SPPRES$NIVEL = 4) ACCCION_ESTRATEGICA, ";
                                                 sql = sql + "PO.SPPRO$PROPIETARIO, (SELECT CASE WHEN COUNT(M.NOMBRE) > 0 THEN 'SI' ELSE 'NO' END AS  MUNICIPIO FROM SINIP.CG_GEOGRAFICO M INNER JOIN SCHE$SIPLAN20.SP20$MUNOSPRIORIZADOS MP ON M.GEOGRAFICO = MP.GEOGRAFICO AND MP.RESTRICTIVA = 'N' WHERE MP.SPPRO$ID_PRODUCTO = PO.SPPRO$ID_PRODUCTO) MUNICIPIOS FROM SCHE$SIPLAN20.SP20$RESULTADOS R INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO PO ON R.SPRES$ID_RESULTADO = PO.SPPRO$ID_RESULTADO ";
                                                 sql = sql + " AND R.SPRES$POM = PO.SPPRO$POM AND R.SPRES$INSTITUCION = PO.SPPRO$INSTO AND R.SPRES$RESTRICTIVA = 'N' AND PO.SPPRO$RESTRICTIVA = 'N' INNER JOIN SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO PR ON PO.SPPRO$PRESUPUESTO = PR.SPPRO$ID_PROGRAMA_PRESUPUESTO AND PO.SPPRO$POM = PR.SPPRO$ID_POM AND PR.SPPRO$ID_INSTITUCION = PO.SPPRO$INSTO AND PR.SPPRO$RESTRICTIVA = 'N' AND PO.SPPRO$RESTRICTIVA = 'N'";
-                                                sql = sql + " INNER JOIN SINIP.SNTBCG$UNIDAD_MEDIDA UM ON PO.SPPRO$ID_MEDIDA = UM.SNCGUM$UNIDAD_MEDIDA WHERE R.SPRES$POM = " + pom + " AND R.SPRES$INSTITUCION = " + insto + " AND PO.SPPRO$ID_PRODUCTO IN (24020,24021,24022,24023,24024,24026,24027,24030,24031,24032,24033,24034,24035,24036)   ORDER BY R.SPRES$ID_RESULTADO, PR.SPPRO$ID_PROGRAMA_PRESUPUESTO, PO.SPPRO$ID_PRODUCTO ASC";
+                                                sql = sql + " INNER JOIN SINIP.SNTBCG$UNIDAD_MEDIDA UM ON PO.SPPRO$ID_MEDIDA = UM.SNCGUM$UNIDAD_MEDIDA WHERE R.SPRES$POM = " + pom + " AND R.SPRES$INSTITUCION = " + insto + " AND R.SPRES$TIPO = 1 AND R.SPRES$ID_RESULTADO IN (9832) ORDER BY R.SPRES$ID_RESULTADO, PR.SPPRO$ID_PROGRAMA_PRESUPUESTO, PO.SPPRO$ID_PRODUCTO ASC";
 
                                                 estado = dao.consulta(sql);
                                                 if (estado == 0)
@@ -132,15 +132,15 @@ namespace SIPLAN2._0.pom
                                                                             tempo = dao.tabla;
                                                                             if (tempo.Rows.Count > 0)
                                                                             {
-                                                                                sql = "INSERT INTO SCHE$SIPLAN20.SP20$SUB_PRODUCTO (SPPSUB$DESCRIPCION, SPPSUB$ID_MEDIDA, SPPSUB$SNIP, SPPSUB$ID_PRODUCTO,SPPSUB$FECHA_INSERTA,SPPSUB$PROPIETARIO, SPPSUB$ID_ANTERIOR) VALUES (";
+                                                                                sql = "INSERT INTO SCHE$SIPLAN20.SP20$SUB_PRODUCTO (SPPSUB$DESCRIPCION, SPPSUB$ID_MEDIDA, SPPSUB$SNIP, SPPSUB$ID_PRODUCTO,SPPSUB$FECHA_INSERTA,SPPSUB$PROPIETARIO) VALUES (";
                                                                                 if (subproductos.Rows[j]["SPPSUB$SNIP"] == DBNull.Value)
                                                                                 {
-                                                                                    sql = sql + "'" + subproductos.Rows[j]["SPPSUB$DESCRIPCION"] + "'," + subproductos.Rows[j]["SPPSUB$ID_MEDIDA"] + ",NULL," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "',"+ subproductos.Rows[j]["SPPSUB$ID_SUBPRODUCTO"] + ")";
+                                                                                    sql = sql + "'" + subproductos.Rows[j]["SPPSUB$DESCRIPCION"] + "'," + subproductos.Rows[j]["SPPSUB$ID_MEDIDA"] + ",NULL," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "')";
                                                                                 }
 
                                                                                 else
                                                                                 {
-                                                                                    sql = sql + "NULL,NULL," + subproductos.Rows[j]["SPPSUB$SNIP"] + "," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "', "+ subproductos.Rows[j]["SPPSUB$ID_SUBPRODUCTO"] + ")";
+                                                                                    sql = sql + "NULL,NULL," + subproductos.Rows[j]["SPPSUB$SNIP"] + "," + tempo.Rows[0]["SPPRO$ID_PRODUCTO"] + ",'INSERT = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH:MI')||' '||'" + Session["USUARIO"].ToString() + "', '" + Session["USUARIO"].ToString() + "')";
                                                                                 }
 
                                                                                 estado = dao.comando(sql);

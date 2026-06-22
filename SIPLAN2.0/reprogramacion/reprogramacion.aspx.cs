@@ -19,7 +19,8 @@ namespace SIPLAN2._0.reprogramacion
         string full_path = "";
         clsAccesoBBDD dao = new clsAccesoBBDD();
         Rutas.Rutas path = new Rutas.Rutas();
-        DataTable tabla = new DataTable();        
+        DataTable tabla = new DataTable();
+        DataTable tablaPeriodo = new DataTable();
         DateTime date1 = new DateTime();
         int anio;
         int numero_productos = 0;
@@ -37,6 +38,8 @@ namespace SIPLAN2._0.reprogramacion
                 }
                 else
                 {
+                  
+
                     if (Session["ROL"].ToString() == "ADMIN" || Session["ROL"].ToString() == "CAPA")
                         btnDesaprobar.Visible = true;
                     else
@@ -52,7 +55,8 @@ namespace SIPLAN2._0.reprogramacion
                         btnAprobar.Enabled = false;
                     }
 
-
+                   
+                        
                     if (Session["ROL"].ToString() == "ADMIN" || Convert.ToInt32(Session["Insto"]) == 54000)
                     {
                         btnFinancieraProd.Visible = true;
@@ -66,6 +70,9 @@ namespace SIPLAN2._0.reprogramacion
                         if (!IsPostBack)
                     {
                         cargaPeriodos();
+                        
+
+
                         sql = "SELECT * FROM SCHE$SIPLAN20.SP20$POM P WHERE P.SPPO$RESTRICTIVA ='N' AND P.SPPO$ID_INSTITUCION = " + Session["Insto"]+ " AND P.SPPO$ID_PERIODO ="+cbPeriodos.Value;
 
                         estado = dao.consulta(sql);
@@ -124,8 +131,45 @@ namespace SIPLAN2._0.reprogramacion
                         cargaReprogrogramaciones(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["poa"]));
                     }
 
-                    else
+                   else
                     {
+
+
+
+                        sql = "SELECT * FROM SCHE$SIPLAN20.SP20$PERIODO WHERE SPP$VIGENTE = 1 AND SPP$RESTRICTIVA = 'N' AND SPP$ID_PERIODO = " + cbPeriodos.Value;
+                        estado = dao.consulta(sql);
+                        if (estado == 1)
+                        {
+                            tablaPeriodo = dao.tabla;
+                            if (tablaPeriodo.Rows.Count > 0)
+                                Session["VIGENTE"] = 1;
+                            else
+                                Session["VIGENTE"] = null;
+                        }
+
+                        if (Session["VIGENTE"] == null || Convert.ToInt32(Session["VIGENTE"]) != 1)
+                        {
+                            btnNuevo.Enabled = false;
+                            btnEditar.Enabled = false;
+                            btnProd.Enabled = false;
+                            btnSubprod.Enabled = false;
+                            btnBorrar.Enabled = false;
+                            btnAprobar.Enabled = false;
+                        }
+
+                        else if (Convert.ToInt32(Session["VIGENTE"]) == 1 && Session["ROL"].ToString() != "ENTIDAD")
+                        {
+                            btnNuevo.Enabled = true;
+                            btnEditar.Enabled = true;
+                            btnProd.Enabled = true;
+                            btnSubprod.Enabled = true;
+                            btnBorrar.Enabled = true;
+                        }
+
+
+
+
+
                         sql = "SELECT * FROM SCHE$SIPLAN20.SP20$POM P WHERE P.SPPO$RESTRICTIVA ='N' AND P.SPPO$ID_INSTITUCION = " + cbInstituiciones.Value + " AND P.SPPO$ID_PERIODO =" + cbPeriodos.Value;
                         estado = dao.consulta(sql);
                         tabla = dao.tabla;
@@ -253,7 +297,7 @@ namespace SIPLAN2._0.reprogramacion
         protected void cargaCombos()
         {
            
-                    sql = "SELECT CG.ENTIDAD, CG.NOMBRE||' '||CG.SIGLA INSTITUCION, CG.SECTOR FROM SINIP.CG_ENTIDADES CG WHERE (ENTIDAD > 1000 OR ENTIDAD = 69 OR ENTIDAD = 20) AND CG.RESTRICTIVA = 'N' AND CG.NOMBRE NOT LIKE ('%MUNICIPALIDAD%%') AND CG.ENTIDAD NOT IN 777777 ORDER BY CG.NOMBRE ASC";
+                    sql = "SELECT CG.ENTIDAD, CG.NOMBRE||' '||CG.SIGLAS INSTITUCION, CG.SECTOR FROM SINIP.CG_ENTIDADES CG WHERE (ENTIDAD > 1000 OR ENTIDAD = 69 OR ENTIDAD = 20) AND CG.RESTRICTIVA = 'N' AND CG.NOMBRE NOT LIKE ('%MUNICIPALIDAD%%') AND CG.ENTIDAD NOT IN 777777 ORDER BY CG.NOMBRE ASC";
                     estado = dao.consulta(sql);
                     if (estado == 0)
                     {

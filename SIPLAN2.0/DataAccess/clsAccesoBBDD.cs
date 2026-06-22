@@ -101,7 +101,6 @@ namespace SIPLAN2._0.DataAccess
                 mensaje = "Operación correcta";
                 estado = 1;
                 con.Close();
-              
                 return estado;
             }
             catch (Exception e)
@@ -109,53 +108,8 @@ namespace SIPLAN2._0.DataAccess
                 mensajeestado = e.Message;
                 mensaje = mensajeestado.Replace("\r\n", reemplazo).Replace("\n", reemplazo).Replace("\r", reemplazo);
                 estado = 0;
-                con.Close();               
+                con.Close();
                 return estado;
-            }
-
-        }
-
-
-      
-
-        public bool comando3(string to, string from, string subject, string message)
-        {
-            OracleConnection con;
-            bool estados;
-            string reemplazo = "";
-            string mensajeestado;
-            string cad = ConfigurationManager.ConnectionStrings["cx"].ConnectionString;
-
-            con = new OracleConnection(cad);
-            con.Open();
-            cmd = new OracleCommand();
-            cmd.Connection = con;
-            cmd.CommandText = "SCHE$SISCO.SCCPGST$EMAIL.Enviar";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("prmTo", OracleDbType.Varchar2).Value = to;
-            cmd.Parameters.Add("prmFrom", OracleDbType.Varchar2).Value = from;
-            cmd.Parameters.Add("prmSubject", OracleDbType.Varchar2).Value = subject;
-            cmd.Parameters.Add("prmMessage", OracleDbType.Varchar2).Value = message;
-            cmd.Parameters.Add("prmSmtpHost", OracleDbType.Varchar2).Value = "segeplan-gob-gt.mail.protection.outlook.com";
-            cmd.Parameters.Add("prmSmtpPort", OracleDbType.Int32).Value = 25;
-
-            try
-            {
-                cmd.ExecuteNonQuery();
-                mensaje = "Operación correcta";
-                estados = true;
-                con.Close();
-                
-                return estados;
-            }
-            catch (Exception e)
-            {
-                mensajeestado = e.Message;
-                mensaje = mensajeestado.Replace("\r\n", reemplazo).Replace("\n", reemplazo).Replace("\r", reemplazo);
-                estados = false;
-                con.Close();
-                
-                return estados;
             }
 
         }

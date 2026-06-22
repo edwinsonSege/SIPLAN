@@ -208,121 +208,104 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
             <PropertiesSpinEdit DisplayFormatString="N2" />
         </dx:GridViewDataSpinEditColumn>
 
-                    
-                    <dx:GridViewDataSpinEditColumn FieldName="PRESUPUESTO2031" Width="10%" Caption="PRESUPUESTO 2,031" VisibleIndex="16" ReadOnly="false" Visible="true">
-            <PropertiesSpinEdit DisplayFormatString="N2" />
-        </dx:GridViewDataSpinEditColumn>
-
-
-
                      
-                    <dx:GridViewDataTextColumn FieldName="PROGRA2020"  Name="PROGRA2020"  ReadOnly="true" Visible="false" VisibleIndex="17" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="PROGRA2020"  Name="PROGRA2020"  ReadOnly="true" Visible="false" VisibleIndex="16" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataTextColumn FieldName="PROGRA2021"  Name="PROGRA2021" ReadOnly="true" Visible="false" VisibleIndex="18" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="PROGRA2021"  Name="PROGRA2021" ReadOnly="true" Visible="false" VisibleIndex="17" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataTextColumn FieldName="PROGRA2022"  Name="PROGRA2022"  ReadOnly="true" Visible="false" VisibleIndex="19" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="PROGRA2022"  Name="PROGRA2022"  ReadOnly="true" Visible="false" VisibleIndex="18" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataTextColumn FieldName="PROGRA2023"  Name="PROGRA2023"  ReadOnly="true" Visible="false" VisibleIndex="20" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="PROGRA2023"  Name="PROGRA2023"  ReadOnly="true" Visible="false" VisibleIndex="19" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataTextColumn FieldName="PROGRA2024"  Name="PROGRA2024"  ReadOnly="true" Visible="false" VisibleIndex="21" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="PROGRA2024"  Name="PROGRA2024"  ReadOnly="true" Visible="false" VisibleIndex="20" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                     <dx:GridViewDataTextColumn FieldName="PROGRA2025"  Name="PROGRA2025"  ReadOnly="true" Visible="false" VisibleIndex="22" Width="0%">
+                     <dx:GridViewDataTextColumn FieldName="PROGRA2025"  Name="PROGRA2025"  ReadOnly="true" Visible="false" VisibleIndex="21" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                     <dx:GridViewDataTextColumn FieldName="PROGRA2026"  Name="PROGRA2026"  ReadOnly="true" Visible="false" VisibleIndex="23" Width="0%">
-                                     <HeaderStyle Wrap="True" />
-                                     <Settings />
-                                    </dx:GridViewDataTextColumn>
-
-                           <dx:GridViewDataTextColumn FieldName="PROGRA2027"  Name="PROGRA2027"  ReadOnly="true" Visible="false" VisibleIndex="24" Width="0%">
+                     <dx:GridViewDataTextColumn FieldName="PROGRA2026"  Name="PROGRA2026"  ReadOnly="true" Visible="false" VisibleIndex="22" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                           <dx:GridViewDataTextColumn FieldName="PROGRA2028"  Name="PROGRA2028"  ReadOnly="true" Visible="false" VisibleIndex="25" Width="0%">
+                           <dx:GridViewDataTextColumn FieldName="PROGRA2027"  Name="PROGRA2027"  ReadOnly="true" Visible="false" VisibleIndex="21" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                      <dx:GridViewDataTextColumn FieldName="PROGRA2029"  Name="PROGRA2029"  ReadOnly="true" Visible="false" VisibleIndex="26" Width="0%">
+                           <dx:GridViewDataTextColumn FieldName="PROGRA2028"  Name="PROGRA2028"  ReadOnly="true" Visible="false" VisibleIndex="23" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                    <dx:GridViewDataTextColumn FieldName="PROGRA2030"  Name="PROGRA2030"  ReadOnly="true" Visible="false" VisibleIndex="27" Width="0%">
+                      <dx:GridViewDataTextColumn FieldName="PROGRA2029"  Name="PROGRA2029"  ReadOnly="true" Visible="false" VisibleIndex="24" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                       <dx:GridViewDataTextColumn FieldName="PROGRA2031"  Name="PROGRA2031"  ReadOnly="true" Visible="false" VisibleIndex="28" Width="0%">
-                    <HeaderStyle Wrap="True" />
-                    <Settings />
-                   </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="PROGRA2030"  Name="PROGRA2030"  ReadOnly="true" Visible="false" VisibleIndex="25" Width="0%">
+                                     <HeaderStyle Wrap="True" />
+                                     <Settings />
+                                    </dx:GridViewDataTextColumn>
                    
-                    <dx:GridViewDataTextColumn FieldName="POA2020"  Name="POA2020"  ReadOnly="true" Visible="false" VisibleIndex="29" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="POA2020"  Name="POA2020"  ReadOnly="true" Visible="false" VisibleIndex="26" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataTextColumn FieldName="POA2021"  Name="POA2021"  ReadOnly="true" Visible="false" VisibleIndex="30" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="POA2021"  Name="POA2021"  ReadOnly="true" Visible="false" VisibleIndex="27" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataTextColumn FieldName="POA2022"  Name="POA2022"  ReadOnly="true" Visible="false" VisibleIndex="31" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="POA2022"  Name="POA2022"  ReadOnly="true" Visible="false" VisibleIndex="28" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataTextColumn FieldName="POA2023"  Name="POA2023"  ReadOnly="true" Visible="false" VisibleIndex="32" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="POA2023"  Name="POA2023"  ReadOnly="true" Visible="false" VisibleIndex="29" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                     <dx:GridViewDataTextColumn FieldName="POA2024"  Name="POA2024"  ReadOnly="true" Visible="false" VisibleIndex="33" Width="0%">
+                     <dx:GridViewDataTextColumn FieldName="POA2024"  Name="POA2024"  ReadOnly="true" Visible="false" VisibleIndex="30" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataTextColumn FieldName="POA2025"  Name="POA2025"  ReadOnly="true" Visible="false" VisibleIndex="34" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="POA2025"  Name="POA2025"  ReadOnly="true" Visible="false" VisibleIndex="31" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                     <dx:GridViewDataTextColumn FieldName="POA2026"  Name="POA2026"  ReadOnly="true" Visible="false" VisibleIndex="35" Width="0%">
+                     <dx:GridViewDataTextColumn FieldName="POA2026"  Name="POA2026"  ReadOnly="true" Visible="false" VisibleIndex="32" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataTextColumn FieldName="POA2027"  Name="POA2027"  ReadOnly="true" Visible="false" VisibleIndex="36" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="POA2027"  Name="POA2027"  ReadOnly="true" Visible="false" VisibleIndex="33" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataTextColumn FieldName="POA2028"  Name="POA2028"  ReadOnly="true" Visible="false" VisibleIndex="37" Width="0%">
-                                     <HeaderStyle Wrap="True" />
-                                     <Settings />
-                                    </dx:GridViewDataTextColumn>
-
-                    <dx:GridViewDataTextColumn FieldName="POA2029"  Name="POA2029"  ReadOnly="true" Visible="false" VisibleIndex="38" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="POA2028"  Name="POA2028"  ReadOnly="true" Visible="false" VisibleIndex="34" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                     <dx:GridViewDataTextColumn FieldName="POA2030"  Name="POA2030"  ReadOnly="true" Visible="false" VisibleIndex="39" Width="0%">
+                    <dx:GridViewDataTextColumn FieldName="POA2029"  Name="POA2029"  ReadOnly="true" Visible="false" VisibleIndex="35" Width="0%">
                                      <HeaderStyle Wrap="True" />
                                      <Settings />
                                     </dx:GridViewDataTextColumn>
 
-                     <dx:GridViewDataTextColumn FieldName="POA2031"  Name="POA2031"  ReadOnly="true" Visible="false" VisibleIndex="40" Width="0%">
-                 <HeaderStyle Wrap="True" />
-                 <Settings />
-                </dx:GridViewDataTextColumn>
+                     <dx:GridViewDataTextColumn FieldName="POA2030"  Name="POA2030"  ReadOnly="true" Visible="false" VisibleIndex="36" Width="0%">
+                                     <HeaderStyle Wrap="True" />
+                                     <Settings />
+                                    </dx:GridViewDataTextColumn>
 
-                    <dx:GridViewCommandColumn ShowDeleteButton="false" ShowEditButton="true" ShowNewButtonInHeader="false" VisibleIndex="41">
+                    <dx:GridViewCommandColumn ShowDeleteButton="false" ShowEditButton="true" ShowNewButtonInHeader="false" VisibleIndex="37">
                      <HeaderStyle Wrap="True" />
                  </dx:GridViewCommandColumn>
 
@@ -341,7 +324,6 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
            <dx:ASPxSummaryItem FieldName="PRESUPUESTO2028" SummaryType="Sum" />
            <dx:ASPxSummaryItem FieldName="PRESUPUESTO2029" SummaryType="Sum" />
            <dx:ASPxSummaryItem FieldName="PRESUPUESTO2030" SummaryType="Sum" />
-             <dx:ASPxSummaryItem FieldName="PRESUPUESTO2031" SummaryType="Sum" />
         </TotalSummary>
 
                                   <GroupSummary>
@@ -356,7 +338,6 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
              <dx:ASPxSummaryItem FieldName="PRESUPUESTO2028" ShowInGroupFooterColumn="PRESUPUESTO2028" SummaryType="Sum" />
              <dx:ASPxSummaryItem FieldName="PRESUPUESTO2029" ShowInGroupFooterColumn="PRESUPUESTO2029" SummaryType="Sum" />
              <dx:ASPxSummaryItem FieldName="PRESUPUESTO2030" ShowInGroupFooterColumn="PRESUPUESTO2030" SummaryType="Sum" />
-             <dx:ASPxSummaryItem FieldName="PRESUPUESTO2031" ShowInGroupFooterColumn="PRESUPUESTO2031" SummaryType="Sum" />
         </GroupSummary>
                             </dx:ASPxGridView>
                               </ContentTemplate> 
@@ -368,8 +349,8 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
                      <div  style ="overflow:auto; width:100%; height:90%; padding: 1px 10px 1px 10px;   ">
                       <h4 style="color:#2d572c">Asignación de metas multianuales físicas y financieras para productos/subproductos</h4>
                   
-                         <!--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                          <ContentTemplate> -->   
+                         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                          <ContentTemplate>    
                          <dx:ASPxComboBox ID="cbTipoProduccion" runat="server" NullText="Seleccione el tipo productos que necesite desplegar" OnValueChanged="cbTipoProduccion_ValueChanged" AutoPostBack="True" SelectedIndex="0" Theme="Office2010Blue" CssClass="form-control" Width="400">
                            
                              <Items>
@@ -378,24 +359,24 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
                              </Items>
                            
                          </dx:ASPxComboBox>
-                         <!--</ContentTemplate>
-                             </asp:UpdatePanel>-->
+                         </ContentTemplate>
+                             </asp:UpdatePanel>
                         
                          
                               
 
-                          <!--<asp:UpdatePanel ID="upEstrategicos" runat="server">
-                          <ContentTemplate>-->     
+                          <asp:UpdatePanel ID="upEstrategicos" runat="server">
+                          <ContentTemplate>     
                               <h4><asp:Label ID="lblTipodeProduccion" runat="server" style="color:black"></asp:Label></h4>
                               <div class="form-group">
                                              <div class="btn-group" style="display:flex; justify-content:flex-start;">                                  
-                                              <%--   <asp:UpdatePanel ID="panBotonArchivos" runat="server">   
-                                                     <ContentTemplate>--%>
+                                                 <asp:UpdatePanel ID="panBotonArchivos" runat="server">   
+                                                     <ContentTemplate>
                                      <asp:Button ID="btnMetas" runat="server" Text="Actualizar montos"  CssClass="btn btn-primary"  OnClick="btnMetas_Click" />  
                                      <asp:Button ID="btnPOM" runat="server" Text="Reporte POM"  CssClass="btn btn-warning"  OnClick="btnPOM_Click" />  
                                         
-                                  <%-- </ContentTemplate>
-                                                         </asp:UpdatePanel>--%>
+                                   </ContentTemplate>
+                                                         </asp:UpdatePanel>
                                                      </div>
                                          </div>
                               <dx:ASPxGridView ID="gvProduccion" runat="server" KeyFieldName="SPPRO$ID_PROGRAMA_PRESUPUESTO"  AutoGenerateColumns="False"  Theme="Office2010Blue" Width="100%"  SettingsBehavior-AllowFocusedRow ="true" SettingsBehavior-ConfirmDelete="true"  SettingsDetail-AllowOnlyOneMasterRowExpanded="true"   OnDetailRowExpandedChanged="gvProduccion_DetailRowExpandedChanged"   ClientInstanceName="grid_resultados">
@@ -660,25 +641,6 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
 
                                               </Columns>
                                       </dx:GridViewBandColumn>
-
-
-                                          <dx:GridViewBandColumn Caption="2,031"  Name="CLASPRES2031" VisibleIndex="16" Visible="True">
-        <Columns>
-             <dx:GridViewDataTextColumn FieldName="PRESUPUESTO2031"  Name="PRESUPUESTO2031"  ReadOnly="true" Visible="true" VisibleIndex="1" Width="7%" Caption="Presupuesto">
-   <PropertiesTextEdit DisplayFormatString="{0:N2}">
-                          </PropertiesTextEdit>
-                          <FilterCellStyle HorizontalAlign="Center"/>
-                          <HeaderStyle Wrap="True" />
-</dx:GridViewDataTextColumn>
-            <dx:GridViewDataTextColumn FieldName="PR0GRAMADO2031"  Name="PR0GRAMADO2031"  ReadOnly="true" Visible="true" VisibleIndex="2" Width="7%" Caption="Asignado">
-  <PropertiesTextEdit DisplayFormatString="{0:N2}">
-                          </PropertiesTextEdit>
-                          <FilterCellStyle HorizontalAlign="Center"/>
-                          <HeaderStyle Wrap="True" />
-</dx:GridViewDataTextColumn>
-
-            </Columns>
-    </dx:GridViewBandColumn>
 
 
                                           </Columns>
@@ -979,23 +941,6 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-
-                                    <dx:GridViewBandColumn Caption="2031" VisibleIndex="15" Name="2031">
-                                        <Columns>
-                                            <dx:GridViewDataTextColumn FieldName="IDFP2031"  VisibleIndex="1" ReadOnly="true" Visible="false"></dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataTextColumn FieldName="TP2031"  VisibleIndex="2" ReadOnly="true" Visible="false"></dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MF2031" Width="8%" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
-                                                <PropertiesSpinEdit DisplayFormatString="N2" />
-                                            </dx:GridViewDataSpinEditColumn>                                            
-                                            <dx:GridViewDataTextColumn FieldName="MFIN2031"  Width="8%" ShowInCustomizationForm="True" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="true">
-                                                <PropertiesTextEdit DisplayFormatString="{0:N2}">
-                                                            </PropertiesTextEdit>
-                                                <CellStyle HorizontalAlign="Right"></CellStyle>
-                                            </dx:GridViewDataTextColumn>  
-                                            
-                                        </Columns>
-                                    </dx:GridViewBandColumn>
-
                                     </Columns>   
                                 <SettingsDetail ShowDetailRow="true" />
                                  <Templates>
@@ -1043,34 +988,16 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
                                     </dx:GridViewDataTextColumn>
                                     <dx:GridViewDataTextColumn FieldName="SPPSUB$ID_SUBPRODUCTO" VisibleIndex="1" Visible="false">
                                     </dx:GridViewDataTextColumn>
-                                    <dx:GridViewDataTextColumn FieldName="SUBPRODUCTO"  Caption="Subproducto" VisibleIndex="2" ReadOnly="true" Visible="true" Width="20%">
+                                    <dx:GridViewDataTextColumn FieldName="SUBPRODUCTO"  Caption="Subproducto" VisibleIndex="3" ReadOnly="true" Visible="true" Width="20%">
                                     </dx:GridViewDataTextColumn>
-                                    <dx:GridViewDataTextColumn Caption="Metas por territorio" VisibleIndex="3" Width="10%">
-    <DataItemTemplate>
-        <asp:Panel ID="pnlBtn" runat="server">
-          <dx:ASPxButton ID="btnMetasMuno" runat="server"
-    Text="Metas por territorio"
-    AutoPostBack="true"
-    UseSubmitBehavior="true"
-    CausesValidation="false"
-    CommandArgument='<%# Eval("SPPSUB$ID_SUBPRODUCTO") %>'
-    OnClick="btnMetasMuno_Click" />
-        </asp:Panel>
-    </DataItemTemplate>
-</dx:GridViewDataTextColumn>
-                                    <dx:GridViewDataTextColumn FieldName="MUNICIPIOS"  
-                                       Caption="Número de municipios<br/>priorizados" 
-                                        VisibleIndex="3" ReadOnly="true" Visible="true" Width="20%">
-                                         <HeaderStyle HorizontalAlign="Center" />
+                                    <dx:GridViewDataTextColumn FieldName="MEDIDA_SUBPRODUCTO" VisibleIndex="3" Caption="Medida" ReadOnly="true"  Width="8%" Visible="true">
                                     </dx:GridViewDataTextColumn>
-                                    <dx:GridViewDataTextColumn FieldName="MEDIDA_SUBPRODUCTO" VisibleIndex="4" Caption="Medida" ReadOnly="true"  Width="8%" Visible="true">
+                                    <dx:GridViewDataTextColumn FieldName="SPPSUB$SNIP" VisibleIndex="4" Caption="SNIP" ReadOnly="true"  Width="8%" Visible="true">
                                     </dx:GridViewDataTextColumn>
-                                    <dx:GridViewDataTextColumn FieldName="SPPSUB$SNIP" VisibleIndex="5" Caption="SNIP" ReadOnly="true"  Width="8%" Visible="true">
-                                    </dx:GridViewDataTextColumn>
-                                     <dx:GridViewCommandColumn ShowEditButton="True" Caption="Ingresar metas" VisibleIndex="6" Width="180">
+                                     <dx:GridViewCommandColumn ShowEditButton="True" Caption="Ingresar metas" VisibleIndex="4" Width="180">
                                         <HeaderStyle Wrap="True" />
                                     </dx:GridViewCommandColumn>
-                                    <dx:GridViewBandColumn Caption="2020" VisibleIndex="7" Name="2020">
+                                    <dx:GridViewBandColumn Caption="2020" VisibleIndex="5" Name="2020">
                                         <Columns>
                                             <dx:GridViewDataTextColumn FieldName="IDFISUB2020"  VisibleIndex="1" ReadOnly="true" Visible="false"></dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB2020" VisibleIndex="2"  ReadOnly="true" Visible="false"></dx:GridViewDataTextColumn>
@@ -1252,22 +1179,6 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-                                      <dx:GridViewBandColumn Caption="2031" VisibleIndex="14" Name="2031">
-    <Columns>
-       <dx:GridViewDataTextColumn FieldName="IDFISUB2031"  VisibleIndex="1" ReadOnly="true" Visible="false"></dx:GridViewDataTextColumn>
-        <dx:GridViewDataTextColumn FieldName="IDFINSUB2031" VisibleIndex="2"  ReadOnly="true" Visible="false"></dx:GridViewDataTextColumn>
-         <dx:GridViewDataTextColumn FieldName="TSF2031"  VisibleIndex="3" ReadOnly="true" Visible="false"></dx:GridViewDataTextColumn>
-         <dx:GridViewDataTextColumn FieldName="TSFIN2031"  VisibleIndex="4" ReadOnly="true" Visible="false"></dx:GridViewDataTextColumn>                                            
-        <dx:GridViewDataSpinEditColumn FieldName="MFSUB2031" Width="7%" Caption="FISICA" VisibleIndex="5" ReadOnly="false" Visible="true">
-            <PropertiesSpinEdit DisplayFormatString="N2" />
-        </dx:GridViewDataSpinEditColumn> 
-        <dx:GridViewDataSpinEditColumn FieldName="MFINSUB2031" Width="7%" Caption="FINANCIERA" VisibleIndex="6" ReadOnly="false" Visible="true">
-            <PropertiesSpinEdit DisplayFormatString="N2" />
-        </dx:GridViewDataSpinEditColumn> 
-        
-    </Columns>
-</dx:GridViewBandColumn>
-
                                             
                                     </Columns>
                                               </dx:ASPxGridView>
@@ -1282,8 +1193,8 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
                         </DetailRow>
                     </Templates>
                               </dx:ASPxGridView>
-                          <!-- </ContentTemplate>
-                          </asp:UpdatePanel>-->
+                           </ContentTemplate>
+                          </asp:UpdatePanel>
                          </div>
                  </asp:Panel>
 
@@ -1329,8 +1240,8 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
                                                          </asp:UpdatePanel>
                                                      </div>
                                          </div>
-                        <%-- <asp:UpdatePanel ID="upNT" runat="server">
-                             <ContentTemplate>--%>
+                         <asp:UpdatePanel ID="upNT" runat="server">
+                             <ContentTemplate>
                                  <dx:ASPxGridView ID="gvPOA" runat="server"  KeyFieldName="SPPRO$ID_PROGRAMA_PRESUPUESTO"  Theme="Office2010Blue" Width="100%"  SettingsBehavior-AllowFocusedRow ="true" SettingsBehavior-ConfirmDelete="true"  SettingsDetail-AllowOnlyOneMasterRowExpanded="true"   OnDetailRowExpandedChanged="gvPOA_DetailRowExpandedChanged" ClientInstanceName="grid_resultados_POA">
                                         <SettingsLoadingPanel Text="Cargando&amp;hellip;" />
 
@@ -1862,8 +1773,8 @@ document.getElementById("MainContent_popInsumo_VistaInsumos_lblCuatrimestre").in
                                     </div>
                               
                                     </div>
-                                              <dx:ASPxGridView ID="gvPOASubproductos"  runat="server"  SettingsBehavior-AllowFocusedRow ="true"     Theme="Office2010Blue" AutoGenerateColumns="false" OnCommandButtonInitialize="gvPOASubproductos_CommandButtonInitialize"  OnBeforePerformDataSelect="gvPOASubproductos_BeforePerformDataSelect"  KeyFieldName="SPPSUB$ID_SUBPRODUCTO" OnRowUpdating="gvPOASubproductos_RowUpdating"   OnCellEditorInitialize="gvPOASubproductos_CellEditorInitialize" OnHtmlDataCellPrepared="gvPOAsubProductos_HtmlDataCellPrepared" Width="100%" SettingsBehavior-ColumnResizeMode="Control">
-                                                  <Settings VerticalScrollableHeight="300" VerticalScrollBarMode="Visible" HorizontalScrollBarMode="Auto"  />
+                                              <dx:ASPxGridView ID="gvPOASubproductos"  runat="server"  SettingsBehavior-AllowFocusedRow ="true"     Theme="Office2010Blue" AutoGenerateColumns="true" OnCommandButtonInitialize="gvPOASubproductos_CommandButtonInitialize"  OnBeforePerformDataSelect="gvPOASubproductos_BeforePerformDataSelect"  KeyFieldName="SPPSUB$ID_SUBPRODUCTO" OnRowUpdating="gvPOASubproductos_RowUpdating"   OnCellEditorInitialize="gvPOASubproductos_CellEditorInitialize">
+                                                  <Settings VerticalScrollableHeight="300" VerticalScrollBarMode="Visible" HorizontalScrollBarMode="Visible"  />
                                                   <SettingsCommandButton DeleteButton-Text="Quitar" DeleteButton-ButtonType="Button">
                                         <UpdateButton ButtonType="Button" Text="Guardar">
                                             <Styles>
@@ -1922,32 +1833,11 @@ else if(s.cp3)
                                     </dx:GridViewDataTextColumn>
                                     <dx:GridViewDataTextColumn FieldName="SUBPRODUCTO"  Caption="Subproducto" VisibleIndex="2" ReadOnly="true" Visible="true" >
                                     </dx:GridViewDataTextColumn>
-
-
-                <dx:GridViewDataTextColumn Caption="Metas <br/>por territorio" VisibleIndex="3" Width="70">
-    <DataItemTemplate>
-        <asp:Panel ID="pnlBtn1" runat="server">
-          <dx:ASPxButton ID="btnMetasMuno1" runat="server"
-    Text="Territorio"
-    AutoPostBack="true"
-    UseSubmitBehavior="true"
-    CausesValidation="false"
-    CommandArgument='<%# Eval("SPPSUB$ID_SUBPRODUCTO") %>'
-    OnClick="btnMetasMuno1_Click" />
-        </asp:Panel>
-    </DataItemTemplate>
-</dx:GridViewDataTextColumn>
-                                    <dx:GridViewDataTextColumn FieldName="MUNICIPIOS"  
-                                       Caption="Número de municipios<br/>priorizados" 
-                                        VisibleIndex="4" ReadOnly="true" Visible="true" Width="90">
-                                         <HeaderStyle HorizontalAlign="Center" />
+                                    <dx:GridViewDataTextColumn FieldName="MEDIDA_SUBPRODUCTO" VisibleIndex="3" Caption="Medida" ReadOnly="true"  Visible="true">
                                     </dx:GridViewDataTextColumn>
-
-                                    <dx:GridViewDataTextColumn FieldName="MEDIDA_SUBPRODUCTO" VisibleIndex="5" Caption="Medida" ReadOnly="true"  Visible="true">
+                                    <dx:GridViewDataTextColumn FieldName="SPPSUB$SNIP" VisibleIndex="4" Caption="SNIP" ReadOnly="true"  Visible="true">
                                     </dx:GridViewDataTextColumn>
-                                    <dx:GridViewDataTextColumn FieldName="SPPSUB$SNIP" VisibleIndex="6" Caption="SNIP" ReadOnly="true"  Visible="true">
-                                    </dx:GridViewDataTextColumn>
-               <dx:GridViewBandColumn Caption="Metas anuales" VisibleIndex="7">
+               <dx:GridViewBandColumn Caption="Metas anuales" VisibleIndex="5">
                                         <Columns>                                         
                                                                                    
                                             <dx:GridViewDataTextColumn FieldName="ANUALFISICO"   ShowInCustomizationForm="True" Caption="FISICA" VisibleIndex="1" ReadOnly="true">
@@ -1964,7 +1854,7 @@ else if(s.cp3)
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-                <dx:GridViewBandColumn Caption="Operaciones" VisibleIndex="8">
+                <dx:GridViewBandColumn Caption="Operaciones" VisibleIndex="6">
                     <Columns>
                          <dx:GridViewDataTextColumn Caption="Insumos" VisibleIndex="0" Width="90" Visible="true">
                             <DataItemTemplate>
@@ -1972,82 +1862,81 @@ else if(s.cp3)
                             </DataItemTemplate>
                         </dx:GridViewDataTextColumn>
 
-                                     <dx:GridViewCommandColumn ShowEditButton="True" Caption="Metas" VisibleIndex="1" Width="150">
+                                     <dx:GridViewCommandColumn ShowEditButton="True" Caption="Metas" VisibleIndex="1" Width="80">
                                         <HeaderStyle Wrap="True" />
                                     </dx:GridViewCommandColumn>
                         </Columns>
                     </dx:GridViewBandColumn>
 
-                <dx:GridViewBandColumn Caption="Enero" VisibleIndex="9">
+                <dx:GridViewBandColumn Caption="Enero" VisibleIndex="7">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB1" Name="IDFISUB1"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB1" Name="IDFINSUB1"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB1" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
-
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB1" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB1" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB1" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-               <dx:GridViewBandColumn Caption="Febrero" VisibleIndex="10">
+               <dx:GridViewBandColumn Caption="Febrero" VisibleIndex="8">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB2" Name="IDFISUB2"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB2" Name="IDFINSUB2"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB2" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB2" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB2" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB2" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-               <dx:GridViewBandColumn Caption="Marzo" VisibleIndex="11">
+               <dx:GridViewBandColumn Caption="Marzo" VisibleIndex="9">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB3" Name="IDFISUB3"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB3" Name="IDFINSUB3"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB3" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB3" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB3" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB3" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-               <dx:GridViewBandColumn Caption="Abril" VisibleIndex="12">
+               <dx:GridViewBandColumn Caption="Abril" VisibleIndex="10">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB4" Name="IDFISUB4"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB4" Name="IDFINSUB4"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB4" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB4" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB4" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB4" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-               <dx:GridViewBandColumn Caption="1er Cuatrimestre" VisibleIndex="13">
+               <dx:GridViewBandColumn Caption="1er Cuatrimestre" VisibleIndex="11">
                                         <Columns>                                         
-                                                             <dx:GridViewDataTextColumn FieldName="MFCUA1" Name="MFCUA1" Caption="FISICA"  VisibleIndex="1" ReadOnly="true"  Visible="true" Width="90">
+                                                             <dx:GridViewDataTextColumn FieldName="MFCUA1" Name="MFCUA1" Caption="FISICA"  VisibleIndex="1" ReadOnly="true"  Visible="true">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataTextColumn FieldName="MFINCUA1" Name="MFINCUA1"  ReadOnly="true" Caption="FINANCIERA"  VisibleIndex="2" Visible="true" Width="90">
+                                            <dx:GridViewDataTextColumn FieldName="MFINCUA1" Name="MFINCUA1"  ReadOnly="true" Caption="FINANCIERA"  VisibleIndex="2" Visible="true">
                                                                  </dx:GridViewDataTextColumn>
                                            
                                             
@@ -2055,147 +1944,147 @@ else if(s.cp3)
                                     </dx:GridViewBandColumn>
 
 
-               <dx:GridViewBandColumn Caption="Mayo" VisibleIndex="14">
+               <dx:GridViewBandColumn Caption="Mayo" VisibleIndex="12">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB5" Name="IDFISUB5"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB5" Name="IDFINSUB5"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB5" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB5" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB5" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB5" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-               <dx:GridViewBandColumn Caption="Junio" VisibleIndex="15">
+               <dx:GridViewBandColumn Caption="Junio" VisibleIndex="13">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB6" Name="IDFISUB6"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB6" Name="IDFINSUB6"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB6" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB6" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB6" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB6" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-               <dx:GridViewBandColumn Caption="Julio" VisibleIndex="16">
+               <dx:GridViewBandColumn Caption="Julio" VisibleIndex="14">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB7" Name="IDFISUB7"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB7" Name="IDFINSUB7"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB7" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB7" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB7" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB7" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
-               <dx:GridViewBandColumn Caption="Agosto" VisibleIndex="17">
+               <dx:GridViewBandColumn Caption="Agosto" VisibleIndex="15">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB8" Name="IDFISUB8"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB8" Name="IDFINSUB8"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB8" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB8" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB8" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB8" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
-                <dx:GridViewBandColumn Caption="2do Cuatrimestre" VisibleIndex="18">
+                <dx:GridViewBandColumn Caption="2do Cuatrimestre" VisibleIndex="16">
                                         <Columns>                                         
-                                                             <dx:GridViewDataTextColumn FieldName="MFCUA2" Name="MFCUA2"  Caption="FISICA" VisibleIndex="1" ReadOnly="true"  Visible="true" Width="90">
+                                                             <dx:GridViewDataTextColumn FieldName="MFCUA2" Name="MFCUA2"  Caption="FISICA" VisibleIndex="1" ReadOnly="true"  Visible="true">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataTextColumn FieldName="MFINCUA2" Name="MFINCUA2"  ReadOnly="true"  Caption="FINANCIERA" VisibleIndex="2" Visible="true" Width="90">
+                                            <dx:GridViewDataTextColumn FieldName="MFINCUA2" Name="MFINCUA2"  ReadOnly="true"  Caption="FINANCIERA" VisibleIndex="2" Visible="true">
                                                                  </dx:GridViewDataTextColumn>
                                            
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
-               <dx:GridViewBandColumn Caption="Septiembre" VisibleIndex="19">
+               <dx:GridViewBandColumn Caption="Septiembre" VisibleIndex="17">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB9" Name="IDFISUB9"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB9" Name="IDFINSUB9"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB9" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB9" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB9" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB9" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-               <dx:GridViewBandColumn Caption="Octubre" VisibleIndex="20">
+               <dx:GridViewBandColumn Caption="Octubre" VisibleIndex="18">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB10" Name="IDFISUB10"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB10" Name="IDFINSUB10"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB10" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB10" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB10" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB10" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-               <dx:GridViewBandColumn Caption="Noviembre" VisibleIndex="21">
+               <dx:GridViewBandColumn Caption="Noviembre" VisibleIndex="19">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB11" Name="IDFISUB11"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB11" Name="IDFINSUB11"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB11" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB11" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB11" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB11" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
 
-               <dx:GridViewBandColumn Caption="Diciembre" VisibleIndex="22">
+               <dx:GridViewBandColumn Caption="Diciembre" VisibleIndex="20">
                                         <Columns>                                         
                                                              <dx:GridViewDataTextColumn FieldName="IDFISUB12" Name="IDFISUB12"  VisibleIndex="1" ReadOnly="true"  Visible="false">
                                                                  </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="IDFINSUB12" Name="IDFINSUB12"  ReadOnly="true"  VisibleIndex="2" Visible="false">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB12" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true" Width="90">
+                                            <dx:GridViewDataSpinEditColumn FieldName="MFSUB12" Caption="FISICA" VisibleIndex="3" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn> 
-                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB12" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true" Width="90">
+                                           <dx:GridViewDataSpinEditColumn FieldName="MFINSUB12" Caption="FINANCIERA" VisibleIndex="4" ReadOnly="false" Visible="true">
                                                 <PropertiesSpinEdit DisplayFormatString="N2" />
                                             </dx:GridViewDataSpinEditColumn>
                                             
                                         </Columns>
                                     </dx:GridViewBandColumn>
                
-                <dx:GridViewBandColumn Caption="3er Cuatrimestre" VisibleIndex="23">
+                <dx:GridViewBandColumn Caption="3er Cuatrimestre" VisibleIndex="21">
                                         <Columns>                                         
-                                                             <dx:GridViewDataTextColumn FieldName="MFCUA3" Name="MFCUA3"  Caption="FISICA"  VisibleIndex="1" ReadOnly="true"  Visible="true" Width="90" >
+                                                             <dx:GridViewDataTextColumn FieldName="MFCUA3" Name="MFCUA3"  Caption="FISICA"  VisibleIndex="1" ReadOnly="true"  Visible="true" Width="50">
                                                                  </dx:GridViewDataTextColumn>
-                                            <dx:GridViewDataTextColumn FieldName="MFINCUA3" Name="MFINCUA3"  ReadOnly="true" Caption="FINANCIERA"  VisibleIndex="2" Visible="true" Width="90">
+                                            <dx:GridViewDataTextColumn FieldName="MFINCUA3" Name="MFINCUA3"  ReadOnly="true" Caption="FINANCIERA"  VisibleIndex="2" Visible="true" Width="50">
                                                                  </dx:GridViewDataTextColumn>
                                            
                                             
@@ -2228,633 +2117,16 @@ else if(s.cp3)
                                           </DetailRow>
                                          </Templates>
                                  </dx:ASPxGridView>
-                           <%--    </ContentTemplate>
-                         </asp:UpdatePanel>--%>
+                               </ContentTemplate>
+                         </asp:UpdatePanel>
 
                         <%-- </div>--%>
                          </asp:Panel>
             
             
             </asp:View>
-              <%--Vista de registro de metas de municipios--%>
 
-            <asp:View runat="server" ID="vstMetasMunicipio">
-              <asp:Panel ID="panMetaMunos" runat="server">
-                   <div  style ="overflow:auto; width:100%; height:90%; padding: 1px 10px 1px 10px;   ">
-                   <h4 style="color:#2d572c">Programación de metas multianuales por municipio</h4>
-                  
-                       <div class="row">
-    <div class="col-md-4">
-        <asp:HiddenField ID="hfIDSubProducto" runat="server" />
-        <asp:HiddenField ID="HfIDPom" runat="server" /> 
-
-        <label><b>Año POM:</b></label>
-        <dx:ASPxComboBox ID="cbComboAnioMuno" runat="server"
-            Width="400"
-            AutoPostBack="True"
-            Theme="Office2010Blue"
-            CssClass="form-control" 
-            OnValueChanged="cbComboAnioMuno_ValueChanged" />
-    </div>
-
-    <div class="col-md-8">
-        <div class="pull-right" style="margin-top:25px;">
-               <asp:Button ID="BtnRegresaPantalla" runat="server"
-       Text="Regresar"
-       CssClass="btn btn-danger btn-sm"
-       OnClick="BtnRegresaPantalla_Click" />
-
-            <asp:Button ID="btnTodoExcel" runat="server"
-                Text="Excel todos los municipios priorizados"
-                CssClass="btn btn-primary btn-sm"
-                OnClick="btnTodoExcel_Click" />
-
-            <asp:Button ID="BtnUno" runat="server"
-                Text="Excel de municipios de este subproducto"
-                CssClass="btn btn-success btn-sm"
-                OnClick="BtnUno_Click" />
-
-         
-        </div>
-    </div>
-</div>
-<div class="well well-sm" style="margin-top:10px;">
-    <div class="row">
-
-        <div class="col-md-2"><b>Periodo</b><br /><asp:Label ID="periodoMuno" runat="server" /></div>
-        <div class="col-md-3"><b>Subproducto</b><br /><asp:Label ID="SubproductoMuno" runat="server" /></div>
-        <div class="col-md-2"><b>Medida</b><br /><asp:Label ID="MedidaMuno" runat="server" /></div>
-        <div class="col-md-2"><b>Física</b><br /><asp:Label ID="FisicaMuno" runat="server" /></div>
-        <div class="col-md-3"><b>Financiera</b><br /><asp:Label ID="FinanceraMuno" runat="server" /></div>
-
-    </div>
-</div>
-
-
-                       <div class="row">
-    <div class="col-md-6">
-        <div class="form-inline">
-            <span class="text-muted">
-     Suba el archivo Excel para cargar metas automáticamente
- </span>
-
-            <asp:FileUpload ID="fuExcel" runat="server" class="form-control" />
-
-            <asp:Button ID="btnSubir" runat="server"
-                Text="Subir"
-                CssClass="btn btn-primary btn-sm"
-                OnClick="btnSubir_Click" />
-        </div>
-    </div>
-
-   
-</div>
-                       
-                  
-                 
-                       <div style="margin-top:10px;">
-
-                       <dx:ASPxGridView ID="gvMunosMetas" runat="server"  KeyFieldName="NUMERO;ID_MUNO_MUNICIPIO;ID_METAS_MUNICIPIO;REGISTRA_FISICA;REGISTRA_FINANCIERA;POA;ANIO;FISICA_MUNICIPIO;FINANCIERA_MUNICIPIO"  Theme="Office2010Blue" Width="100%"  SettingsBehavior-AllowFocusedRow ="true"   ClientInstanceName="gvMunosMetas" OnCellEditorInitialize="gvMunosMetas_CellEditorInitialize" OnBatchUpdate="gvMunosMetas_BatchUpdate">
-                            <Settings ShowFilterRow="True"/>
-                           <SettingsPager Mode="ShowAllRecords" />
-                            <SettingsEditing Mode="Batch">      
-                            <BatchEditSettings EditMode="Cell" />
-                            </SettingsEditing>
-                           <ClientSideEvents EndCallback="function(s,e)
-{
-   if(s.cpError)
-   {
-       //alert(s.cpError);
-       alertify.success(s.cpError);
-       s.batchEditApi.EndEdit(); // limpia estado batch
-       s.PerformCallback();
-       delete s.cpError;
-   }             
-}           
-" />
-                           <SettingsCommandButton>                                  
-                                    <UpdateButton Text="Guardar metas" Styles-Style-CssClass="btn btn-primary btn-xs"></UpdateButton>
-                                    <CancelButton Text="Cancelar" Styles-Style-CssClass="btn btn-primary btn-xs"></CancelButton>
-                                </SettingsCommandButton>
-                            <Columns>
-                                          <dx:GridViewDataTextColumn FieldName="NUMERO"     
-                                            VisibleIndex="0"
-                                            ReadOnly="True" 
-                                            Visible ="false"  />
-                                <dx:GridViewDataTextColumn FieldName="POA"     
-                                VisibleIndex="1"
-                                ReadOnly="True" 
-                                Visible ="false"/>
-
-                               <dx:GridViewDataTextColumn FieldName="SPPO$ID_PERIODO"     
-                                VisibleIndex="2"
-                                ReadOnly="True" 
-                                Visible ="false"/>
-
-                                 <dx:GridViewDataTextColumn FieldName="PERIODO"     
-                                VisibleIndex="3"
-                                ReadOnly="True" 
-                                Visible ="false"  />
-
-                                <dx:GridViewDataTextColumn FieldName="ID_MUNO_MUNICIPIO"     
-                                VisibleIndex="4"
-                                ReadOnly="True" 
-                                Visible ="false"  />
-
-                                <dx:GridViewDataTextColumn FieldName="DEPTO"     
-VisibleIndex="5"
-ReadOnly="True" 
-Visible ="false"  />
-                                 <dx:GridViewDataTextColumn FieldName="SPSM$GEOGRAFICO"     
-VisibleIndex="6"
-ReadOnly="True" 
-Visible ="false"  />
-
-                                 <dx:GridViewDataTextColumn FieldName="SPPSUB$ID_SUBPRODUCTO"     
-VisibleIndex="7"
-ReadOnly="True" 
-Visible ="false"  />
-                                <dx:GridViewDataTextColumn FieldName="ID_METAS_MUNICIPIO"     
-VisibleIndex="8"
-ReadOnly="True" 
-Visible ="false"  />
-                          <dx:GridViewDataTextColumn FieldName="SUBPRODUCTO"     
-VisibleIndex="9"
-ReadOnly="True" 
-Visible ="false"  />
-             <dx:GridViewDataTextColumn FieldName="MEDIDA"     
-VisibleIndex="10"
-ReadOnly="True" 
-Visible ="false"  />
-             <dx:GridViewDataTextColumn FieldName="DEPARTAMENTO"     
-VisibleIndex="11" Caption="Departamento"
-ReadOnly="True" 
-Visible ="True"  />   
-
-                                             <dx:GridViewDataTextColumn FieldName="MUNICIPIO"     
-VisibleIndex="12" Caption="Municipio"
-ReadOnly="True" 
-Visible ="True"  />   
-        
-
-<dx:GridViewDataSpinEditColumn
-    FieldName="FISICA_MUNICIPIO"
-    Caption="Total meta física"
-    ReadOnly="True" 
-    VisibleIndex="13">
-
-    <PropertiesSpinEdit
-        NumberType="Float"
-        DisplayFormatString="n2"
-        MinValue="0">
-    </PropertiesSpinEdit>
-
-</dx:GridViewDataSpinEditColumn>
-
-                <dx:GridViewDataTextColumn FieldName="FINANCIERA_MUNICIPIO" 
-             Caption="Total meta financiera"
-VisibleIndex="14"
-ReadOnly="True" 
-Visible ="True"  />
-
-                                <dx:GridViewDataSpinEditColumn
-    FieldName="REGISTRA_FISICA"
-    Caption="Ingresar meta física"
-    VisibleIndex="15">
-
-    <PropertiesSpinEdit
-        NumberType="Float"
-        DisplayFormatString="n2"
-        MinValue="0">
-    </PropertiesSpinEdit>
-
-</dx:GridViewDataSpinEditColumn>
-
-                                                                <dx:GridViewDataSpinEditColumn
-    FieldName="REGISTRA_FINANCIERA"
-    Caption="Ingresar meta financiera"
-    VisibleIndex="16">
-
-    <PropertiesSpinEdit
-        NumberType="Float"
-        DisplayFormatString="n2"
-        MinValue="0">
-    </PropertiesSpinEdit>
-
-</dx:GridViewDataSpinEditColumn>
-
-                                                                             <dx:GridViewDataTextColumn FieldName="RN"     
-VisibleIndex="17" 
-ReadOnly="True" 
-Visible ="false"  />   
-
-                            </columns>
-                                <Settings ShowGroupPanel="true" ShowFooter="true" ShowGroupFooter="VisibleIfExpanded" />
-                           <TotalSummary>
-                               <dx:ASPxSummaryItem FieldName="FISICA_MUNICIPIO" SummaryType="Sum" />
-                               <dx:ASPxSummaryItem FieldName="FINANCIERA_MUNICIPIO" SummaryType="Sum" />
-                                <dx:ASPxSummaryItem FieldName="REGISTRA_FISICA" SummaryType="Sum" />
-                               <dx:ASPxSummaryItem FieldName="REGISTRA_FINANCIERA" SummaryType="Sum" />
-                           </TotalSummary>
-                       </dx:ASPxGridView>
-                   
-             </div>
-
-                        </div>
-              </asp:Panel>
-               
-            </asp:View>
-
-
-
-                      <!--vista de municipio-->
-                      <asp:View runat="server" ID="ViewMunoPOA">
-              <asp:Panel ID="Panel1" runat="server">
-                   <div  style ="overflow:auto; width:100%; height:90%; padding: 1px 10px 1px 10px;   ">
-                   <h4 style="color:#2d572c">Registros de POA de metas mensuales por municipio</h4>
-                   
-                       <div class="row">
-    <div class="col-md-6">
-        <h4 style="margin:0; color:#2d572c;">
-            POA de metas por municipio
-             <asp:HiddenField ID="hfIDSubProducto1" runat="server" />
-        </h4>
-    </div>
-
-    <div class="col-md-6">
-        <div class="pull-right">
-            <asp:Button ID="BtnRegresaPantalla1" runat="server"
-                Text="Regresar"
-                CssClass="btn btn-danger btn-sm"
-                OnClick="BtnRegresaPantalla1_Click"
-                />
-
-            <asp:Button ID="btnTodoExcel1" runat="server"
-                Text="Excel todos los municipios priorizados"
-                CssClass="btn btn-primary btn-sm"
-                OnClick="btnTodoExcel1_Click"
-                 />
-
-            <asp:Button ID="BtnUno1" runat="server"
-                Text="Excel de municipios de este subproducto"
-                CssClass="btn btn-success btn-sm"
-                OnClick="BtnUno1_Click"
-                 />
-        </div>
-    </div>
-</div>
-
-                       <div class="well well-sm" style="margin-top:10px;">
-
-    <div class="row">
-
-        <div class="col-md-2">
-            <b>Año</b><br />
-            <asp:Label ID="lblAnioRegistroMuno" runat="server" />
-        </div>
-
-        <div class="col-md-3">
-            <b>Subproducto</b><br />
-            <asp:Label ID="SubproductoPOAMuno" runat="server" />
-        </div>
-
-        <div class="col-md-2">
-            <b>Medida</b><br />
-            <asp:Label ID="MedidaMunoPOA" runat="server" />
-        </div>
-
-        <div class="col-md-2">
-            <b>Física</b><br />
-            <asp:Label ID="FisicaMunoPOA" runat="server" />
-        </div>
-
-        <div class="col-md-3">
-            <b>Financiera</b><br />
-            <asp:Label ID="FinanceraMunoPOA" runat="server" />
-        </div>
-
-    </div>
-
-</div>
-
-               <div class="row">
-    <div class="col-md-6">
-        <div class="form-inline">
-            <span class="text-muted">
-    Carga masiva desde Excel
-</span>
-            <asp:FileUpload ID="fuExcel1" runat="server" class="form-control" />
-
-            <asp:Button ID="btnSubir1" runat="server"
-                Text="Subir"
-                CssClass="btn btn-primary btn-sm"
-                OnClick="btnSubir1_Click"
-                 />
-        </div>
-    </div>
-
-         
-
-                  
-
-                      <!-- <asp:UpdatePanel ID="UpdatePanel6" runat="server">
-    <ContentTemplate>-->
-                   <div style="margin-top:10px;">
-                       <dx:ASPxGridView ID="gvPOAMUNO" runat="server"  KeyFieldName="ID_UNICO"  Theme="Office2010Blue" Width="100%"  SettingsBehavior-AllowFocusedRow ="true"   ClientInstanceName="gvPoaMunosMetas" OnBatchUpdate="gvPOAMUNO_BatchUpdate">
-                            <Settings ShowFilterRow="True" ShowGroupPanel="True" />
-                           <SettingsPager Mode="ShowAllRecords" />
-                            <SettingsEditing Mode="Batch">      
-                            <BatchEditSettings EditMode="Cell" />
-                            </SettingsEditing>
-                           <ClientSideEvents EndCallback="function(s,e)
-{
-   if(s.cpError)
-   {
-       //alert(s.cpError);
-       alertify.success(s.cpError);
-       delete s.cpError;
-   }             
-}           
-" />
-                           <SettingsCommandButton>                                  
-                                    <UpdateButton Text="Guardar metas" Styles-Style-CssClass="btn btn-primary btn-xs"></UpdateButton>
-                                    <CancelButton Text="Cancelar" Styles-Style-CssClass="btn btn-primary btn-xs"></CancelButton>
-                                </SettingsCommandButton>
-                            <Columns>
-                                          
-              <dx:GridViewDataTextColumn FieldName="ID_UNICO" VisibleIndex="0" ReadOnly="True" Visible ="false"/>  
-              <dx:GridViewDataTextColumn FieldName="POA" VisibleIndex="1" ReadOnly="True" Visible ="false"/>                    
-
-             <dx:GridViewDataTextColumn FieldName="ANIO" Caption ="Año" VisibleIndex="2" ReadOnly="True" Visible ="True"/>
-
-             <dx:GridViewDataTextColumn FieldName="SPPSUB$ID_SUBPRODUCTO"   VisibleIndex="3" ReadOnly="True" Visible ="false"/>
-
-              <dx:GridViewDataTextColumn FieldName="ID_MUNOS"  VisibleIndex="4"  ReadOnly="True"  Visible ="false"  />
-
-               <dx:GridViewDataTextColumn FieldName="ID_METAS" VisibleIndex="5" ReadOnly="True" Visible ="false"  />
-
-               <dx:GridViewDataTextColumn FieldName="ID_EJECUCION" VisibleIndex="6" ReadOnly="True"  Visible ="false"  />
-
-               <dx:GridViewDataTextColumn FieldName="SUBPRODUCTO" VisibleIndex="7" ReadOnly="True" Visible ="False"  />
-
-              <dx:GridViewDataTextColumn FieldName="MEDIDA" VisibleIndex="8" ReadOnly="True" Visible ="False"  />                               
-                                                   
-              <dx:GridViewDataTextColumn FieldName="METAFISICA_ANUAL"  VisibleIndex="9" ReadOnly="True" Visible ="False"  />
-                                 
-              <dx:GridViewDataTextColumn FieldName="METAFINANCIERA_ANUAL" VisibleIndex="10" ReadOnly="True" Visible ="False"  />
-             
-             <dx:GridViewDataTextColumn FieldName="DEPARTAMENTO" VisibleIndex="11" Caption="Departamento" ReadOnly="True" Visible ="True"  />   
-
-             <dx:GridViewDataTextColumn FieldName="MUNICIPIO"  VisibleIndex="12" Caption="Municipio" ReadOnly="True" Visible ="True"  />   
-
-              <dx:GridViewBandColumn Caption="Metas anuales de municipio" VisibleIndex="13">
-                <Columns>
-                    <dx:GridViewDataTextColumn FieldName="METAFISCA_MUNO" ShowInCustomizationForm="True" Caption="Meta física" VisibleIndex="8" ReadOnly="true">
-                    <PropertiesTextEdit DisplayFormatString="{0:N2}"></PropertiesTextEdit>
-                    <CellStyle HorizontalAlign="Right"></CellStyle>
-                    </dx:GridViewDataTextColumn>  
-
-                    <dx:GridViewDataTextColumn FieldName="METAFINANCIERA_MUNO" ShowInCustomizationForm="True" Caption="Meta financiera" VisibleIndex="9" ReadOnly="true">
-                    <PropertiesTextEdit DisplayFormatString="{0:N2}"></PropertiesTextEdit>
-                    <CellStyle HorizontalAlign="Right"></CellStyle>
-                    </dx:GridViewDataTextColumn>  
-                </Columns>                                          
-        </dx:GridViewBandColumn>
-
-           <dx:GridViewBandColumn Caption="Total de programación de de metas" VisibleIndex="14">
-                    <Columns>
-                    <dx:GridViewDataTextColumn FieldName="ANUAL_FISICO" ShowInCustomizationForm="True" Caption="Totales meta mensual física" VisibleIndex="1" ReadOnly="true">
-                    <PropertiesTextEdit DisplayFormatString="{0:N2}"></PropertiesTextEdit>
-                    <CellStyle HorizontalAlign="Right"></CellStyle>
-                </dx:GridViewDataTextColumn>  
-
-                 
-
-            <dx:GridViewDataTextColumn FieldName="ANUAL_FINANCIERO" ShowInCustomizationForm="True" Caption="Totales meta mensual financiera" VisibleIndex="3" ReadOnly="true">
-    <PropertiesTextEdit DisplayFormatString="{0:N2}"></PropertiesTextEdit>
-    <CellStyle HorizontalAlign="Right"></CellStyle>
-</dx:GridViewDataTextColumn>  
-
-                                      </Columns>
-                                          
-        </dx:GridViewBandColumn>
-
-<dx:GridViewBandColumn Caption="ENERO" VisibleIndex="15">
-    <Columns>
-                                    
-               <dx:GridViewDataSpinEditColumn FieldName="ENE_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-              <dx:GridViewDataSpinEditColumn FieldName="ENE_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-
-                                <dx:GridViewBandColumn Caption="FEBRERO" VisibleIndex="16">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="FEB_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="FEB_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-                                
-                                <dx:GridViewBandColumn Caption="MARZO" VisibleIndex="17">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="MAR_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="MAR_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-                  <dx:GridViewBandColumn Caption="ABRIL" VisibleIndex="18">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="ABR_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="ABR_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-             <dx:GridViewBandColumn Caption="MAYO" VisibleIndex="19">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="MAY_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="MAY_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-  <dx:GridViewBandColumn Caption="JUNIO" VisibleIndex="20">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="JUN_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="JUN_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-      <dx:GridViewBandColumn Caption="JULIO" VisibleIndex="21">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="JUL_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="JUL_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-              <dx:GridViewBandColumn Caption="AGOSTO" VisibleIndex="22">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="AGO_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="AGO_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-                      <dx:GridViewBandColumn Caption="SEPTIEMBRE" VisibleIndex="23">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="SEP_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="SEP_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-                      <dx:GridViewBandColumn Caption="OCTUBRE" VisibleIndex="24">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="OCT_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="OCT_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-                              <dx:GridViewBandColumn Caption="NOVIEMBRE" VisibleIndex="25">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="NOV_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="NOV_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-                                      <dx:GridViewBandColumn Caption="DICIEMBRE" VisibleIndex="26">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="DIC_FIS"  Caption="FISICO" VisibleIndex="1" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="DIC_FIN"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="false" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-
-                                  <dx:GridViewBandColumn Caption="1ER CUAT" VisibleIndex="27">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="CUAFIS1"  Caption="FISICO" VisibleIndex="1" ReadOnly="true" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="CUAFIN1"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="true" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-                                          <dx:GridViewBandColumn Caption="2DO CUAT" VisibleIndex="28">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="CUAFIS2"  Caption="FISICO" VisibleIndex="1" ReadOnly="true" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="CUAFIN2"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="true" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-
-                                                          <dx:GridViewBandColumn Caption="3DO CUAT" VisibleIndex="29">
-    <Columns>
-                                    
-                                    <dx:GridViewDataSpinEditColumn FieldName="CUAFIS3"  Caption="FISICO" VisibleIndex="1" ReadOnly="true" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                    <dx:GridViewDataSpinEditColumn FieldName="CUAFIN3"  Caption="FINANCIERO" VisibleIndex="2" ReadOnly="true" Visible="true">
-    <PropertiesSpinEdit DisplayFormatString="N2" />
-</dx:GridViewDataSpinEditColumn>
-                                </Columns>
-
-        </dx:GridViewBandColumn>
-                                 
-
-                            </columns>
-                                <Settings ShowGroupPanel="true" ShowFooter="true" ShowGroupFooter="VisibleIfExpanded" />
-                           
-                       </dx:ASPxGridView>
-                       </div>
-                   
-             <!--</ContentTemplate>
-              </asp:UpdatePanel>-->
-
-                        </div>
-              </asp:Panel>
-               
-            </asp:View>
-
-
-          <!--vista de municipio-->
-
+            
         </asp:MultiView>
         
           <asp:UpdatePanel ID="UpdatePanel3" runat="server">
@@ -3145,7 +2417,8 @@ Visible ="false"  />
                         
                     </dx:ContentControl>
                 </ContentCollection>
-            </dx:TabPage>                       
+            </dx:TabPage>
+           
         </TabPages>
     </dx:ASPxPageControl>
 </asp:Panel>
@@ -3158,8 +2431,8 @@ Visible ="false"  />
         
 
 
-         <%--   <asp:UpdatePanel ID="UpdatePanel4" runat="server">
-        <ContentTemplate>--%>
+            <asp:UpdatePanel ID="UpdatePanel4" runat="server">
+        <ContentTemplate>
             <dx:ASPxPopupControl ID="popReportePOM" runat="server" CssClass="pop" AllowDragging="true" Width="500px" Height="350" PopupHorizontalAlign="WindowCenter" HeaderText="Generar reporte POM" PopupVerticalAlign="WindowCenter" AllowResize="true" Modal="true">
                 <HeaderStyle Font-Bold="true" Font-Size="X-Large" ForeColor="#003399" HorizontalAlign="Center" />
                 <ContentCollection>
@@ -3202,8 +2475,8 @@ Visible ="false"  />
                     </dx:PopupControlContentControl>
                 </ContentCollection>
             </dx:ASPxPopupControl>            
-       <%-- </ContentTemplate>
-    </asp:UpdatePanel>--%>
+        </ContentTemplate>
+    </asp:UpdatePanel>
 
 
         <asp:UpdatePanel ID="UpdatePanel5" runat="server">

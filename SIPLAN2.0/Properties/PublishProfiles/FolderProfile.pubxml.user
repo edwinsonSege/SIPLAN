@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\Users\edwin.son\Documents\Publicacion\SIPLAN</_PublishTargetUrl>
-    <History>True|2026-06-09T15:52:50.7105797Z||;True|2026-05-27T16:46:47.6468653-06:00||;True|2026-05-22T15:15:54.4105423-06:00||;True|2026-05-22T15:15:44.5501967-06:00||;True|2026-05-13T15:48:01.5195326-06:00||;True|2026-05-12T14:18:02.4430318-06:00||;True|2026-05-11T12:45:04.7351754-06:00||;True|2026-04-30T16:47:41.4147023-06:00||;True|2026-04-30T16:40:21.4713877-06:00||;True|2026-04-29T13:02:05.4014932-06:00||;True|2026-04-29T00:14:21.7286570-06:00||;True|2026-04-28T16:44:55.0951330-06:00||;True|2026-04-24T22:37:08.5029410-06:00||;True|2026-04-23T17:44:10.1334109-06:00||;True|2026-04-13T17:11:28.8561004-06:00||;True|2026-03-25T15:58:20.2047200-06:00||;True|2026-03-25T15:01:18.3605552-06:00||;True|2026-03-19T17:00:32.6585853-06:00||;True|2026-03-19T17:00:17.7201456-06:00||;True|2026-03-19T16:59:28.1829127-06:00||;True|2026-01-29T14:56:42.8884426-06:00||;True|2025-06-03T11:07:02.3772580-06:00||;True|2025-06-03T10:45:51.6513792-06:00||;True|2025-05-09T10:53:04.5188836-06:00||;True|2025-05-09T10:28:11.9043185-06:00||;True|2025-05-06T16:24:24.6574594-06:00||;True|2025-04-30T16:11:10.9995662-06:00||;True|2025-04-30T15:55:21.8555039-06:00||;True|2025-04-30T10:37:07.2279642-06:00||;True|2025-04-29T14:55:10.9035301-06:00||;True|2025-04-29T14:32:36.7379004-06:00||;True|2025-04-28T12:22:10.4961623-06:00||;True|2025-04-25T11:10:04.4510875-06:00||;True|2025-04-24T14:30:23.1618856-06:00||;True|2025-04-24T12:22:28.8998479-06:00||;True|2025-04-23T17:01:00.7092579-06:00||;True|2025-04-23T16:54:13.7863540-06:00||;True|2025-04-23T12:51:00.5821785-06:00||;True|2025-04-23T12:43:32.6737792-06:00||;True|2025-04-11T11:56:28.9973214-06:00||;</History>
+    <History>True|2026-04-29T06:48:54.3754206Z||;True|2026-04-29T00:47:19.5477972-06:00||;True|2026-04-28T00:53:43.1339848-06:00||;True|2026-04-21T23:45:38.9562808-06:00||;True|2026-03-11T16:16:00.8913698-06:00||;True|2026-03-11T16:15:31.5816977-06:00||;True|2026-03-04T12:37:41.0626003-06:00||;True|2026-03-04T12:37:01.5506409-06:00||;True|2026-03-03T10:32:41.8132131-06:00||;True|2026-02-27T14:10:53.1488987-06:00||;True|2026-02-19T17:44:21.3866348-06:00||;True|2025-06-03T11:07:02.3772580-06:00||;True|2025-06-03T10:45:51.6513792-06:00||;True|2025-05-09T10:53:04.5188836-06:00||;True|2025-05-09T10:28:11.9043185-06:00||;True|2025-05-06T16:24:24.6574594-06:00||;True|2025-04-30T16:11:10.9995662-06:00||;True|2025-04-30T15:55:21.8555039-06:00||;True|2025-04-30T10:37:07.2279642-06:00||;True|2025-04-29T14:55:10.9035301-06:00||;True|2025-04-29T14:32:36.7379004-06:00||;True|2025-04-28T12:22:10.4961623-06:00||;True|2025-04-25T11:10:04.4510875-06:00||;True|2025-04-24T14:30:23.1618856-06:00||;True|2025-04-24T12:22:28.8998479-06:00||;True|2025-04-23T17:01:00.7092579-06:00||;True|2025-04-23T16:54:13.7863540-06:00||;True|2025-04-23T12:51:00.5821785-06:00||;True|2025-04-23T12:43:32.6737792-06:00||;True|2025-04-11T11:56:28.9973214-06:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -85,9 +85,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/DevExpress.Web.v17.2.dll">
       <publishTime>02/21/2025 11:57:22</publishTime>
-    </File>
-    <File Include="bin/EPPlusFree.dll">
-      <publishTime>05/22/2020 04:46:30</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Data.v17.2.resources.dll">
       <publishTime>02/21/2025 11:57:27</publishTime>
@@ -354,10 +351,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/21/2025 11:57:22</publishTime>
     </File>
     <File Include="bin/SIPLAN2.0.dll">
-      <publishTime>06/09/2026 09:52:34</publishTime>
+      <publishTime>04/29/2026 00:48:42</publishTime>
     </File>
     <File Include="bin/SIPLAN2.0.pdb">
-      <publishTime>06/09/2026 09:52:34</publishTime>
+      <publishTime>04/29/2026 00:48:42</publishTime>
     </File>
     <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
       <publishTime>07/19/2017 10:01:30</publishTime>
@@ -420,7 +417,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/09/2020 15:43:26</publishTime>
     </File>
     <File Include="ejecucion/frmEjecucionPOA.aspx">
-      <publishTime>05/06/2026 17:19:07</publishTime>
+      <publishTime>04/22/2025 16:47:33</publishTime>
     </File>
     <File Include="error/Error.aspx">
       <publishTime>04/24/2020 12:04:52</publishTime>
@@ -530,32 +527,26 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="images/SNIP.png">
       <publishTime>01/04/2021 10:59:40</publishTime>
     </File>
-    <File Include="login/Contrasenia.aspx">
-      <publishTime>04/13/2026 17:08:54</publishTime>
-    </File>
     <File Include="login/login.aspx">
-      <publishTime>04/14/2026 14:11:29</publishTime>
+      <publishTime>03/31/2026 16:23:29</publishTime>
     </File>
     <File Include="login/logout.aspx">
       <publishTime>03/10/2020 14:44:41</publishTime>
     </File>
-    <File Include="login/reincia.aspx">
-      <publishTime>04/22/2026 10:49:42</publishTime>
-    </File>
     <File Include="login/reset.aspx">
-      <publishTime>04/29/2026 00:03:16</publishTime>
+      <publishTime>04/29/2026 00:48:34</publishTime>
     </File>
     <File Include="modulos/frmModulos.aspx">
       <publishTime>04/24/2025 14:29:08</publishTime>
     </File>
     <File Include="poa/poa.aspx">
-      <publishTime>05/13/2026 15:44:33</publishTime>
+      <publishTime>04/29/2025 14:28:57</publishTime>
     </File>
     <File Include="pom/correcciones.aspx">
       <publishTime>01/23/2025 15:37:41</publishTime>
     </File>
     <File Include="pom/pom.aspx">
-      <publishTime>05/06/2026 14:47:12</publishTime>
+      <publishTime>03/11/2026 15:30:56</publishTime>
     </File>
     <File Include="procesos/procesos.aspx">
       <publishTime>03/15/2021 08:43:40</publishTime>
@@ -687,16 +678,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/09/2020 14:31:07</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>05/27/2026 16:46:03</publishTime>
+      <publishTime>05/06/2025 10:29:00</publishTime>
     </File>
     <File Include="Site.Mobile.Master">
-      <publishTime>05/27/2026 16:46:04</publishTime>
+      <publishTime>05/06/2025 10:29:00</publishTime>
     </File>
     <File Include="ViewSwitcher.ascx">
       <publishTime>03/09/2020 14:31:09</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/09/2026 09:52:49</publishTime>
+      <publishTime>04/29/2026 00:48:53</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -128,7 +128,7 @@ namespace SIPLAN2._0.Reportes
         protected void cargaCombos()
         {
 
-            sql = "SELECT CG.ENTIDAD, CG.NOMBRE||' '||CG.SIGLA INSTITUCION, CG.SECTOR FROM SINIP.CG_ENTIDADES CG WHERE (ENTIDAD > 1000 OR ENTIDAD = 69 OR ENTIDAD = 20) AND CG.RESTRICTIVA = 'N' AND CG.NOMBRE NOT LIKE ('%MUNICIPALIDAD%%') AND CG.ENTIDAD NOT IN 777777 ORDER BY CG.NOMBRE ASC";
+            sql = "SELECT CG.ENTIDAD, CG.NOMBRE||' '||CG.SIGLAS INSTITUCION, CG.SECTOR FROM SINIP.CG_ENTIDADES CG WHERE (ENTIDAD > 1000 OR ENTIDAD = 69 OR ENTIDAD = 20) AND CG.RESTRICTIVA = 'N' AND CG.NOMBRE NOT LIKE ('%MUNICIPALIDAD%%') AND CG.ENTIDAD NOT IN 777777 ORDER BY CG.NOMBRE ASC";
             estado = dao.consulta(sql);
             if (estado == 0)
             {
@@ -1298,7 +1298,7 @@ WHERE  POA.SPOA$ANIO = 2020 AND PE.SPP$ID_PERIODO = 0 AND VES.SPRES$INSTITUCION 
                             ,SECTOR
                    FROM
                     (SELECT CG.ENTIDAD
-                          , CG.NOMBRE || ' ' || CG.SIGLA INSTITUCION
+                          , CG.NOMBRE || ' ' || CG.SIGLAS INSTITUCION
                           , CG.SECTOR
                           FROM SINIP.CG_ENTIDADES CG WHERE(ENTIDAD > 1000 OR ENTIDAD = 69 OR ENTIDAD = 20) AND CG.RESTRICTIVA = 'N'
                           AND CG.NOMBRE NOT LIKE('%MUNICIPALIDAD%%')

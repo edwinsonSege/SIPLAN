@@ -465,15 +465,6 @@ namespace SIPLAN2._0.pom
         protected global::System.Web.UI.WebControls.TextBox txtPrograma;
 
         /// <summary>
-        /// Control cbComboProgrma.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox cbComboProgrma;
-
-        /// <summary>
         /// Control selectProgra.
         /// </summary>
         /// <remarks>
@@ -717,51 +708,6 @@ namespace SIPLAN2._0.pom
         protected global::System.Web.UI.WebControls.Label lblTipo;
 
         /// <summary>
-        /// Control esProdAdministartivo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField esProdAdministartivo;
-
-        /// <summary>
-        /// Control cbProgramaPresupuestario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox cbProgramaPresupuestario;
-
-        /// <summary>
-        /// Control cbSuprograma.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxRadioButtonList cbSuprograma;
-
-        /// <summary>
-        /// Control subProgramaPresupuestario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel subProgramaPresupuestario;
-
-        /// <summary>
-        /// Control cbSuProgramaPresupuestario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox cbSuProgramaPresupuestario;
-
-        /// <summary>
         /// Control panResultadoInstitucionales.
         /// </summary>
         /// <remarks>
@@ -868,6 +814,60 @@ namespace SIPLAN2._0.pom
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::DevExpress.Web.ASPxComboBox cbAcciones;
+
+        /// <summary>
+        /// Control UpdatePanel3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel3;
+
+        /// <summary>
+        /// Control cbProgramaPresupuestario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox cbProgramaPresupuestario;
+
+        /// <summary>
+        /// Control cbSuprograma.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxRadioButtonList cbSuprograma;
+
+        /// <summary>
+        /// Control subProgramaPresupuestario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel subProgramaPresupuestario;
+
+        /// <summary>
+        /// Control UpdatePanel4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel4;
+
+        /// <summary>
+        /// Control cbSuProgramaPresupuestario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox cbSuProgramaPresupuestario;
 
         /// <summary>
         /// Control lblTipoDescripcion.
@@ -1041,15 +1041,6 @@ namespace SIPLAN2._0.pom
         protected global::System.Web.UI.WebControls.Button btnRegresa;
 
         /// <summary>
-        /// Control hfNaturaleza.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfNaturaleza;
-
-        /// <summary>
         /// Control lbltitulo.
         /// </summary>
         /// <remarks>
@@ -1138,15 +1129,6 @@ namespace SIPLAN2._0.pom
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSuproducto;
-
-        /// <summary>
-        /// Control hfSNIP.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden hfSNIP;
 
         /// <summary>
         /// Control lbldescsubs.

@@ -78,7 +78,7 @@ namespace SIPLAN2._0.modulos
 
                 if (Session["cambiar"] != null)
                     {
-                        if (Convert.ToInt32(Session["cambiar"]) == 0 && Session["Usuario"].ToString() != "EDWINSON")
+                        if (Convert.ToInt32(Session["cambiar"]) == 0)
                         {
                             mensaje = "<p>Esta iniciando sesión con una contraseña generica. Para mejorar la seguridad en el uso de nuestros sistemas le recomendamos que cambie su contraseña.</p><p>presione el boton Cambiar contraseña, ubicado en el encabezado del sistema</p><p>¿Desea cambiarla ahora?, presione ACEPTAR para cambiar, presione CANCELAR para cerrar esta ventana y continuar el uso del sistema con sus mismas credenciales</p>";
                             Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',3);", true);

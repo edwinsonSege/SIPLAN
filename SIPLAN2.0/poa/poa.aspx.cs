@@ -1,19 +1,12 @@
-﻿using DevExpress.ClipboardSource.SpreadsheetML;
-using DevExpress.Web;
-using DevExpress.XtraRichEdit.Model;
+﻿using DevExpress.Web;
 using SIPLAN2._0.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using OfficeOpenXml;
-using OfficeOpenXml.Style;
-using System.IO;
-using System.Windows.Media.Media3D;
 
 namespace SIPLAN2._0.poa
 {
@@ -163,13 +156,6 @@ namespace SIPLAN2._0.poa
                             bandCol6.Visible = false;
 
 
-                            gvProgramas.Columns["PRESUPUESTO2031"].Visible = false;
-                            gvProduccion.Columns["PR0GRAMADO2031"].Visible = false;
-                            gvProduccion.Columns["PRESUPUESTO2031"].Visible = false;
-                            GridViewBandColumn bandCol7 = gvProduccion.Columns["CLASPRES2031"] as GridViewBandColumn;
-                            bandCol7.Visible = false;
-
-
                         }
 
                         else
@@ -213,11 +199,6 @@ namespace SIPLAN2._0.poa
                                 GridViewBandColumn bandCol6 = gvProduccion.Columns["CLASPRES2030"] as GridViewBandColumn;
                                 bandCol6.Visible = false;
 
-                                gvProgramas.Columns["PRESUPUESTO2031"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2031"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2031"].Visible = false;
-                                GridViewBandColumn bandCol7 = gvProduccion.Columns["CLASPRES2031"] as GridViewBandColumn;
-                                bandCol7.Visible = false;
                             }
 
                             else if (Convert.ToInt32(periodo.Rows[0]["SPP$ID_PERIODO"]) == 21)
@@ -259,12 +240,6 @@ namespace SIPLAN2._0.poa
                                 gvProduccion.Columns["PRESUPUESTO2030"].Visible = false;
                                 GridViewBandColumn bandCol6 = gvProduccion.Columns["CLASPRES2030"] as GridViewBandColumn;
                                 bandCol6.Visible = false;
-
-                                gvProgramas.Columns["PRESUPUESTO2031"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2031"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2031"].Visible = false;
-                                GridViewBandColumn bandCol7 = gvProduccion.Columns["CLASPRES2031"] as GridViewBandColumn;
-                                bandCol7.Visible = false;
 
                             }
 
@@ -308,15 +283,7 @@ namespace SIPLAN2._0.poa
                                 GridViewBandColumn bandCol6 = gvProduccion.Columns["CLASPRES2030"] as GridViewBandColumn;
                                 bandCol6.Visible = false;
 
-                                gvProgramas.Columns["PRESUPUESTO2031"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2031"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2031"].Visible = false;
-                                GridViewBandColumn bandCol7 = gvProduccion.Columns["CLASPRES2031"] as GridViewBandColumn;
-                                bandCol7.Visible = false;
-
                             }
-
-
 
                             else if (Convert.ToInt32(periodo.Rows[0]["SPP$ID_PERIODO"]) == 23)
                             {
@@ -382,13 +349,7 @@ namespace SIPLAN2._0.poa
                                 gvProduccion.Columns["PR0GRAMADO2030"].Visible = false;
                                 gvProduccion.Columns["PRESUPUESTO2030"].Visible = false;
                                 GridViewBandColumn bandCol6 = gvProduccion.Columns["CLASPRES2030"] as GridViewBandColumn;
-                                bandCol6.Visible = false;
-
-                                gvProgramas.Columns["PRESUPUESTO2031"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2031"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2031"].Visible = false;
-                                GridViewBandColumn bandCol7 = gvProduccion.Columns["CLASPRES2031"] as GridViewBandColumn;
-                                bandCol7.Visible = false;
+                                bandCol5.Visible = false;
 
                             }
 
@@ -458,12 +419,6 @@ namespace SIPLAN2._0.poa
                                 gvProduccion.Columns["PRESUPUESTO2030"].Visible = false;
                                 GridViewBandColumn bandCol6 = gvProduccion.Columns["CLASPRES2030"] as GridViewBandColumn;
                                 bandCol6.Visible = false;
-
-                                gvProgramas.Columns["PRESUPUESTO2031"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2031"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2031"].Visible = false;
-                                GridViewBandColumn bandCol7 = gvProduccion.Columns["CLASPRES2031"] as GridViewBandColumn;
-                                bandCol7.Visible = false;
 
                             }
 
@@ -535,89 +490,7 @@ namespace SIPLAN2._0.poa
                                 GridViewBandColumn bandCol6 = gvProduccion.Columns["CLASPRES2025"] as GridViewBandColumn;
                                 bandCol6.Visible = false;
 
-                                gvProgramas.Columns["PRESUPUESTO2031"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2031"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2031"].Visible = false;
-                                GridViewBandColumn bandCol7 = gvProduccion.Columns["CLASPRES2031"] as GridViewBandColumn;
-                                bandCol7.Visible = false;
-
                             }
-
-
-                            else if (Convert.ToInt32(periodo.Rows[0]["SPP$ID_PERIODO"]) == 26)
-                            {
-
-                                sql = @"SELECT count(*) conteo                          
-                                                    from SCHE$SIPLAN20.SP20$SUB_MUNOS SM
-                                                    INNER JOIN SCHE$SIPLAN20.SP20$SUB_PRODUCTO S ON S.SPPSUB$ID_SUBPRODUCTO = SM.SPSM$ID_SUB AND S.SPPSUB$RESTRICTIVA = 'N' AND SM.SPSM$RESTRICTIVA = 'N'
-                                                    INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO P ON P.SPPRO$ID_PRODUCTO = S.SPPSUB$ID_PRODUCTO  AND S.SPPSUB$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N'
-                                                    INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON POM.SPPO$ID_POM = P.SPPRO$POM AND POM.SPPO$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N'
-                                                    WHERE SM.SPSM$RESTRICTIVA = 'N' AND POM.SPPO$ID_POM = "+ Convert.ToInt32(Session["pom"]) + " AND POM.SPPO$ID_PERIODO = "+ Convert.ToInt32(periodo.Rows[0]["SPP$ID_PERIODO"]);
-
-                                estado = dao.consulta(sql);
-
-                                if (estado == 1)
-                                    tabla = dao.tabla;
-
-                                if (tabla.Rows.Count > 0)
-                                    numero_productos = Convert.ToInt32(tabla.Rows[0]["CONTEO"]);
-                                else numero_productos = 0;
-
-                                if (numero_productos <= 0)
-                                {
-                                   //Session["VINCULADOS"] = numero_productos;
-                                    mensaje = "No se ha encontrado ningun municipio priorizado en los subproductos registrados de la programación, para el este periodo es obligatorio la vinculación de territorio en los subproductos";
-                                    Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',3);", true);
-                                }
-
-
-                                gvProgramas.Columns["PRESUPUESTO2020"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2020"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2020"].Visible = false;
-                                GridViewBandColumn bandCol = gvProduccion.Columns["CLASPRES2020"] as GridViewBandColumn;
-                                bandCol.Visible = false;
-
-
-                                gvProgramas.Columns["PRESUPUESTO2021"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2021"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2021"].Visible = false;
-                                GridViewBandColumn bandCol2 = gvProduccion.Columns["CLASPRES2021"] as GridViewBandColumn;
-                                bandCol2.Visible = false;
-
-                                gvProgramas.Columns["PRESUPUESTO2022"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2022"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2022"].Visible = false;
-                                GridViewBandColumn bandCol3 = gvProduccion.Columns["CLASPRES2022"] as GridViewBandColumn;
-                                bandCol3.Visible = false;
-
-                                gvProgramas.Columns["PRESUPUESTO2023"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2023"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2023"].Visible = false;
-                                GridViewBandColumn bandCol4 = gvProduccion.Columns["CLASPRES2023"] as GridViewBandColumn;
-                                bandCol4.Visible = false;
-
-                                gvProgramas.Columns["PRESUPUESTO2024"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2024"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2024"].Visible = false;
-                                GridViewBandColumn bandCol5 = gvProduccion.Columns["CLASPRES2024"] as GridViewBandColumn;
-                                bandCol5.Visible = false;
-
-
-                                gvProgramas.Columns["PRESUPUESTO2025"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2025"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2025"].Visible = false;
-                                GridViewBandColumn bandCol6 = gvProduccion.Columns["CLASPRES2025"] as GridViewBandColumn;
-                                bandCol6.Visible = false;
-
-                                gvProgramas.Columns["PRESUPUESTO2026"].Visible = false;
-                                gvProduccion.Columns["PR0GRAMADO2026"].Visible = false;
-                                gvProduccion.Columns["PRESUPUESTO2026"].Visible = false;
-                                GridViewBandColumn bandCol7 = gvProduccion.Columns["CLASPRES2026"] as GridViewBandColumn;
-                                bandCol7.Visible = false;
-
-                            }
-
-
 
 
                             lblTitulo.Text = Session["institucion"].ToString() + " " + "periodo: " + periodo.Rows[0]["SPP$INICIO"] + " - " + periodo.Rows[0]["SPP$FINAL"] + " " + periodo.Rows[0]["ESTADO"];
@@ -642,32 +515,6 @@ namespace SIPLAN2._0.poa
 
                                 }
                             }
-                           
-
-
-                        }
-                        else
-                        {
-                            if (!Page.IsCallback)
-                            {
-                                if (Session["MUNOS"] != null)
-                                {
-                                    gvMunosMetas.DataSource = (DataTable)Session["MUNOS"];
-                                    gvMunosMetas.DataBind();
-                                }
-
-                                if (Session["MUNOSPOA"] != null)
-                                {
-                                    gvPOAMUNO.DataSource = (DataTable)Session["MUNOSPOA"];
-                                    gvPOAMUNO.DataBind();
-                                }
-
-
-
-                            }
-
-                           
-
                         }
 
 
@@ -1182,91 +1029,6 @@ namespace SIPLAN2._0.poa
                     }
 
                     //fin periodo 2026-2030
-
-
-
-
-                    //inicio periodo 2027-2031
-
-                    else if (Convert.ToInt32(Session["periodo"]) == 26)
-                    {
-
-                        sql = "SELECT * FROM SCHE$SIPLAN20.SP20$PROGRA_PRESUPUESTO WHERE SPRES$POM = " + tabla.Rows[0]["SPOA$ID_POM"] + " AND SPRES$INSTO = " + tabla.Rows[0]["SPOA$ID_INSTITUCION"] + " AND SPPRES$RESTRICTIVA = 'N'";
-                        estado = dao.consulta(sql);
-                        if (estado == 1)
-                            tablas = dao.tabla;
-                        if (tablas.Rows.Count > 0)
-                        {
-                            sql = "SELECT NOPROGRAMA, PROGRAMA,ESSUBPROGRAMADE, SPPRO$ID_POM, SPPRO$ID_INSTITUCION, NULL POA2020, NULL PROGRA2020, NULL PRESUPUESTO2020 , NULL POA2021, NULL PROGRA2021, NULL PRESUPUESTO2021, NULL POA2022, NULL PROGRA2022, NULL PRESUPUESTO2022, NULL POA2023, NULL PROGRA2023, NULL PRESUPUESTO2023, NULL POA2024, NULL PROGRA2024, NULL PRESUPUESTO2024, NULL POA2025, NULL PROGRA2025, NULL PRESUPUESTO2025,   NULL POA2026, NULL PROGRA2026, NULL PRESUPUESTO2026,  POA2027, PROGRA2027, PRESUPUESTO2027, POA2028,  PROGRA2028, PRESUPUESTO2028,POA2029,PROGRA2029,PRESUPUESTO2029,  POA2030,PROGRA2030,PRESUPUESTO2030,  POA2031,PROGRA2031,PRESUPUESTO2031  ,SPPRO$RESTRICTIVA  FROM (SELECT P.SPPRO$ID_PROGRAMA_PRESUPUESTO NOPROGRAMA, P.SPPRO$DESCRIPCION PROGRAMA, CASE WHEN P.SPPRO$ID_PROGRAMA_DEPENDE IS NULL THEN P.SPPRO$ID_PROGRAMA_PRESUPUESTO ELSE P.SPPRO$ID_PROGRAMA_DEPENDE END AS ESSUBPROGRAMADE, P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION, ";
-                            for (int i = 0; i < tabla.Rows.Count; i++)
-                            {
-                                sql = sql + "SCHE$SIPLAN20.FNC$POA(P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") POA" + tabla.Rows[i]["SPOA$ANIO"] + ",SCHE$SIPLAN20.FNC$PROGRAPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PROGRA" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", ";
-                            }
-
-                            sql = sql + "P.SPPRO$RESTRICTIVA FROM SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO P WHERE P.SPPRO$ID_PROGRAMA_DEPENDE IS NULL AND P.SPPRO$RESTRICTIVA = 'N' UNION ";
-                            sql = sql + "SELECT P.SPPRO$ID_PROGRAMA_PRESUPUESTO NOPROGRAMA, P.SPPRO$DESCRIPCION PROGRAMA, P.SPPRO$ID_PROGRAMA_DEPENDE ESSUBPROGRAMADE,  P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION, ";
-                            for (int i = 0; i < tabla.Rows.Count; i++)
-                            {
-                                sql = sql + "SCHE$SIPLAN20.FNC$POA(P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") POA" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$PROGRAPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PROGRA" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", ";
-                            }
-                            sql = sql + "P.SPPRO$RESTRICTIVA FROM SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO P WHERE P.SPPRO$ID_PROGRAMA_DEPENDE IS NOT NULL AND P.SPPRO$RESTRICTIVA = 'N') WHERE SPPRO$ID_POM = " + Session["pom"] + "  AND SPPRO$ID_INSTITUCION = " + Session["insto"] + " ORDER BY NOPROGRAMA ASC ";
-                        }
-                        else
-                        {
-                            sql = "SELECT (SELECT SPOA$ID_POA FROM SCHE$SIPLAN20.SP20$POA POA WHERE POA.SPOA$ID_POM = " + tabla.Rows[0]["SPOA$ID_POM"] + " AND POA.SPOA$ID_INSTITUCION = " + tabla.Rows[0]["SPOA$ID_INSTITUCION"] + " AND SPOA$RESTRICTIVA = 'N' AND SPOA$ANIO = SPPRES$ANIO) POA, PR.SPPRES$ID_PROGRAMA_PRESUPUESTO,PR.SPPRES$ANIO,PR.SPPRES$PRESUPUESTO, PR.SPPRES$PRESUPUESTO_VIGENTE FROM SCHE$SIPLAN20.SP20$PROGRA_PRESUPUESTO PR INNER JOIN SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO PO ON PR.SPRES$POM = PO.SPPRO$ID_POM AND PR.SPRES$INSTO = PO.SPPRO$ID_INSTITUCION AND PR.SPPRES$RESTRICTIVA = 'N' AND PO.SPPRO$RESTRICTIVA = 'N' INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON POM.SPPO$ID_POM = PO.SPPRO$ID_POM AND POM.SPPO$ID_INSTITUCION = PO.SPPRO$ID_INSTITUCION AND POM.SPPO$RESTRICTIVA = 'N' AND PO.SPPRO$RESTRICTIVA = 'N' INNER JOIN SCHE$SIPLAN20.SP20$PERIODO P ON P.SPP$ID_PERIODO = POM.SPPO$ID_PERIODO AND P.SPP$RESTRICTIVA = 'N' AND POM.SPPO$RESTRICTIVA = 'N' WHERE P.SPP$ORDEN = " + (Convert.ToInt32(tabla.Rows[0]["SPP$ORDEN"]) - 1) + " AND POM.SPPO$ID_INSTITUCION = " + tabla.Rows[0]["SPOA$ID_INSTITUCION"] + " AND PR.SPPRES$ANIO BETWEEN " + Convert.ToInt32(tabla.Rows[0]["SPP$INICIO"]) + " AND " + (Convert.ToInt32(tabla.Rows[0]["SPP$FINAL"]) - 1) + " GROUP BY PR.SPPRES$ID_PROGRAMA_PRESUPUESTO,PR.SPPRES$ANIO,PR.SPPRES$PRESUPUESTO, PR.SPPRES$PRESUPUESTO_VIGENTE order by PR.SPPRES$ID_PROGRAMA_PRESUPUESTO asc";
-                            estado = dao.consulta(sql);
-                            if (estado == 1)
-                                tablas2 = dao.tabla;
-                            if (tablas2.Rows.Count > 0)
-                            {
-                                for (int i = 0; i < tablas2.Rows.Count; i++)
-                                {
-                                    estado = insertaPresupuesto(Convert.ToDouble(tablas2.Rows[i]["SPPRES$PRESUPUESTO"]), Convert.ToDouble(tablas2.Rows[i]["SPPRES$ID_PROGRAMA_PRESUPUESTO"].ToString()), Convert.ToInt32(tablas2.Rows[i]["POA"].ToString()), Convert.ToInt32(tablas2.Rows[i]["SPPRES$ANIO"].ToString()), Convert.ToInt32(tabla.Rows[0]["SPOA$ID_POM"].ToString()), Convert.ToInt32(tabla.Rows[0]["SPOA$ID_INSTITUCION"].ToString()));
-                                    //if (estado == 0)
-                                    //  break;
-                                }
-
-
-                                sql = "SELECT NOPROGRAMA, PROGRAMA,ESSUBPROGRAMADE, SPPRO$ID_POM, SPPRO$ID_INSTITUCION, NULL POA2020, NULL PROGRA2020, NULL PRESUPUESTO2020 ,NULL POA2021, NULL PROGRA2021, NULL PRESUPUESTO2021, NULL POA2022, NULL PROGRA2022, NULL PRESUPUESTO2022, NULL POA2023, NULL PROGRA2023, NULL PRESUPUESTO2023, NULL POA2024, NULL PROGRA2024, NULL PRESUPUESTO2024, NULL POA2025, NULL PROGRA2025, NULL PRESUPUESTO2025, NULL POA2026, NULL PROGRA2026, NULL PRESUPUESTO2026,   POA2027, PROGRA2027, PRESUPUESTO2027, POA2028,  PROGRA2028, PRESUPUESTO2028, POA2029, PROGRA2029,PRESUPUESTO2029, POA2030, PROGRA2030,PRESUPUESTO2030,  POA2031, PROGRA2031,PRESUPUESTO2031,   SPPRO$RESTRICTIVA  FROM (SELECT P.SPPRO$ID_PROGRAMA_PRESUPUESTO NOPROGRAMA, P.SPPRO$DESCRIPCION PROGRAMA, CASE WHEN P.SPPRO$ID_PROGRAMA_DEPENDE IS NULL THEN P.SPPRO$ID_PROGRAMA_PRESUPUESTO ELSE P.SPPRO$ID_PROGRAMA_DEPENDE END AS ESSUBPROGRAMADE, P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION, ";
-                                for (int i = 0; i < tabla.Rows.Count; i++)
-                                {
-                                    sql = sql + "SCHE$SIPLAN20.FNC$POA(P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") POA" + tabla.Rows[i]["SPOA$ANIO"] + ",SCHE$SIPLAN20.FNC$PROGRAPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PROGRA" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", ";
-                                }
-
-                                sql = sql + "P.SPPRO$RESTRICTIVA FROM SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO P WHERE P.SPPRO$ID_PROGRAMA_DEPENDE IS NULL AND P.SPPRO$RESTRICTIVA = 'N' UNION ";
-                                sql = sql + "SELECT P.SPPRO$ID_PROGRAMA_PRESUPUESTO NOPROGRAMA, P.SPPRO$DESCRIPCION PROGRAMA, P.SPPRO$ID_PROGRAMA_DEPENDE ESSUBPROGRAMADE,  P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION, ";
-                                for (int i = 0; i < tabla.Rows.Count; i++)
-                                {
-                                    sql = sql + "SCHE$SIPLAN20.FNC$POA(P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") POA" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$PROGRAPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PROGRA" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", ";
-                                }
-                                sql = sql + "P.SPPRO$RESTRICTIVA FROM SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO P WHERE P.SPPRO$ID_PROGRAMA_DEPENDE IS NOT NULL AND P.SPPRO$RESTRICTIVA = 'N') WHERE SPPRO$ID_POM = " + Session["pom"] + "  AND SPPRO$ID_INSTITUCION = " + Session["insto"] + " ORDER BY NOPROGRAMA ASC ";
-
-                            }
-
-                            else
-                            {
-                                sql = "SELECT NOPROGRAMA, PROGRAMA,ESSUBPROGRAMADE, SPPRO$ID_POM, SPPRO$ID_INSTITUCION, NULL POA2020, NULL PROGRA2020, NULL PRESUPUESTO2020 ,NULL POA2021, NULL PROGRA2021, NULL PRESUPUESTO2021, NULL POA2022, NULL PROGRA2022, NULL PRESUPUESTO2022, NULL POA2023, NULL PROGRA2023, NULL PRESUPUESTO2023, NULL POA2024, NULL PROGRA2024, NULL PRESUPUESTO2024, NULL POA2025, NULL PROGRA2025, NULL PRESUPUESTO2025,  NULL POA2026, NULL PROGRA2026, NULL PRESUPUESTO2026, POA2027, PROGRA2027, PRESUPUESTO2027, POA2028, PROGRA2028, PRESUPUESTO2028, POA2029, PROGRA2029, PRESUPUESTO2029, POA2030, PROGRA2030, PRESUPUESTO2030, POA2031, PROGRA2031, PRESUPUESTO2031, SPPRO$RESTRICTIVA  FROM (SELECT P.SPPRO$ID_PROGRAMA_PRESUPUESTO NOPROGRAMA, P.SPPRO$DESCRIPCION PROGRAMA, CASE WHEN P.SPPRO$ID_PROGRAMA_DEPENDE IS NULL THEN P.SPPRO$ID_PROGRAMA_PRESUPUESTO ELSE P.SPPRO$ID_PROGRAMA_DEPENDE END AS ESSUBPROGRAMADE, P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION, ";
-                                for (int i = 0; i < tabla.Rows.Count; i++)
-                                {
-                                    sql = sql + "SCHE$SIPLAN20.FNC$POA(P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") POA" + tabla.Rows[i]["SPOA$ANIO"] + ",SCHE$SIPLAN20.FNC$PROGRAPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PROGRA" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", ";
-                                }
-
-                                sql = sql + "P.SPPRO$RESTRICTIVA FROM SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO P WHERE P.SPPRO$ID_PROGRAMA_DEPENDE IS NULL AND P.SPPRO$RESTRICTIVA = 'N' UNION ";
-                                sql = sql + "SELECT P.SPPRO$ID_PROGRAMA_PRESUPUESTO NOPROGRAMA, P.SPPRO$DESCRIPCION PROGRAMA, P.SPPRO$ID_PROGRAMA_DEPENDE ESSUBPROGRAMADE,  P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION, ";
-                                for (int i = 0; i < tabla.Rows.Count; i++)
-                                {
-                                    sql = sql + "SCHE$SIPLAN20.FNC$POA(P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") POA" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$PROGRAPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PROGRA" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(P.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + " ," + tabla.Rows[i]["SPOA$ANIO"] + ", P.SPPRO$ID_POM, P.SPPRO$ID_INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", ";
-                                }
-                                sql = sql + "P.SPPRO$RESTRICTIVA FROM SCHE$SIPLAN20.SP20$PROGRAMA_PRESUPUESTARIO P WHERE P.SPPRO$ID_PROGRAMA_DEPENDE IS NOT NULL AND P.SPPRO$RESTRICTIVA = 'N') WHERE SPPRO$ID_POM = " + Session["pom"] + "  AND SPPRO$ID_INSTITUCION = " + Session["insto"] + " ORDER BY NOPROGRAMA ASC ";
-
-                            }
-
-
-                        }
-
-                    }
-
-                    //fin periodo 2027-2031
 
 
                     else
@@ -1830,6 +1592,8 @@ namespace SIPLAN2._0.poa
 
 
 
+
+
                 else if (Convert.ToInt32(Session["periodo"]) == 23)
                 {
                     if (programas.Rows[i]["NOPROGRAMA"].ToString() == e.Keys["NOPROGRAMA"].ToString()) //inicio
@@ -2346,187 +2110,8 @@ namespace SIPLAN2._0.poa
 
                 }
 
+
                 //FIN PERIODO 2026-2030
-
-
-
-
-
-                //INICIO PERIODO 2027-2031
-
-                else if (Convert.ToInt32(Session["periodo"]) == 26)
-                {
-                    if (programas.Rows[i]["NOPROGRAMA"].ToString() == e.Keys["NOPROGRAMA"].ToString()) //inicio
-                    {
-
-
-                        if (programas.Rows[i]["PROGRA2027"] == DBNull.Value)
-                        {
-                            estado = insertaPresupuesto(Convert.ToDouble(e.NewValues["PRESUPUESTO2027"]), Convert.ToDouble(programas.Rows[i]["NOPROGRAMA"].ToString()), Convert.ToInt32(programas.Rows[i]["POA2027"].ToString()), 2027, Convert.ToInt32(programas.Rows[i]["SPPRO$ID_POM"].ToString()), Convert.ToInt32(programas.Rows[i]["SPPRO$ID_INSTITUCION"].ToString()));
-                            if (estado == 0)
-                            {
-                                mensaje = dao.mensaje;
-                                gvProgramas.JSProperties["cpError"] = "Ocurrio un error " + mensaje;
-                                e.Cancel = true;
-                                gvProgramas.CancelEdit();
-                                cargaprogramas();
-                                break;
-                            }
-
-                        }
-                        else
-                        {
-                            estado = ActualizaPresupuesto(Convert.ToDouble(e.NewValues["PRESUPUESTO2027"]), Convert.ToDouble(programas.Rows[i]["NOPROGRAMA"].ToString()), Convert.ToInt32(programas.Rows[i]["POA2027"].ToString()), 2027, Convert.ToInt32(programas.Rows[i]["SPPRO$ID_POM"].ToString()), Convert.ToInt32(programas.Rows[i]["SPPRO$ID_INSTITUCION"].ToString()), Convert.ToInt32(programas.Rows[i]["PROGRA2027"].ToString()));
-                            if (estado == 0)
-                            {
-                                mensaje = dao.mensaje;
-                                gvProgramas.JSProperties["cpError"] = "Ocurrio un error " + mensaje;
-                                e.Cancel = true;
-                                gvProgramas.CancelEdit();
-                                cargaprogramas();
-                                break;
-                            }
-
-                        }
-
-
-                        if (programas.Rows[i]["PROGRA2028"] == DBNull.Value)
-                        {
-                            estado = insertaPresupuesto(Convert.ToDouble(e.NewValues["PRESUPUESTO2028"]), Convert.ToDouble(programas.Rows[i]["NOPROGRAMA"].ToString()), Convert.ToInt32(programas.Rows[i]["POA2028"].ToString()), 2028, Convert.ToInt32(programas.Rows[i]["SPPRO$ID_POM"].ToString()), Convert.ToInt32(programas.Rows[i]["SPPRO$ID_INSTITUCION"].ToString()));
-                            if (estado == 0)
-                            {
-                                mensaje = dao.mensaje;
-                                gvProgramas.JSProperties["cpError"] = "Ocurrio un error " + mensaje;
-                                e.Cancel = true;
-                                gvProgramas.CancelEdit();
-                                cargaprogramas();
-                                break;
-                            }
-
-                        }
-                        else
-                        {
-                            estado = ActualizaPresupuesto(Convert.ToDouble(e.NewValues["PRESUPUESTO2028"]), Convert.ToDouble(programas.Rows[i]["NOPROGRAMA"].ToString()), Convert.ToInt32(programas.Rows[i]["POA2028"].ToString()), 2028, Convert.ToInt32(programas.Rows[i]["SPPRO$ID_POM"].ToString()), Convert.ToInt32(programas.Rows[i]["SPPRO$ID_INSTITUCION"].ToString()), Convert.ToInt32(programas.Rows[i]["PROGRA2028"].ToString()));
-                            if (estado == 0)
-                            {
-                                mensaje = dao.mensaje;
-                                gvProgramas.JSProperties["cpError"] = "Ocurrio un error " + mensaje;
-                                e.Cancel = true;
-                                gvProgramas.CancelEdit();
-                                cargaprogramas();
-                                break;
-                            }
-
-                        }
-
-
-                        if (programas.Rows[i]["PROGRA2029"] == DBNull.Value)
-                        {
-                            estado = insertaPresupuesto(Convert.ToDouble(e.NewValues["PRESUPUESTO2029"]), Convert.ToDouble(programas.Rows[i]["NOPROGRAMA"].ToString()), Convert.ToInt32(programas.Rows[i]["POA2029"].ToString()), 2029, Convert.ToInt32(programas.Rows[i]["SPPRO$ID_POM"].ToString()), Convert.ToInt32(programas.Rows[i]["SPPRO$ID_INSTITUCION"].ToString()));
-                            if (estado == 0)
-                            {
-                                mensaje = dao.mensaje;
-                                gvProgramas.JSProperties["cpError"] = "Ocurrio un error " + mensaje;
-                                e.Cancel = true;
-                                gvProgramas.CancelEdit();
-                                cargaprogramas();
-                                break;
-                            }
-
-                        }
-                        else
-                        {
-                            estado = ActualizaPresupuesto(Convert.ToDouble(e.NewValues["PRESUPUESTO2029"]), Convert.ToDouble(programas.Rows[i]["NOPROGRAMA"].ToString()), Convert.ToInt32(programas.Rows[i]["POA2029"].ToString()), 2029, Convert.ToInt32(programas.Rows[i]["SPPRO$ID_POM"].ToString()), Convert.ToInt32(programas.Rows[i]["SPPRO$ID_INSTITUCION"].ToString()), Convert.ToInt32(programas.Rows[i]["PROGRA2029"].ToString()));
-                            if (estado == 0)
-                            {
-                                mensaje = dao.mensaje;
-                                gvProgramas.JSProperties["cpError"] = "Ocurrio un error " + mensaje;
-                                e.Cancel = true;
-                                gvProgramas.CancelEdit();
-                                cargaprogramas();
-                                break;
-                            }
-
-                        }
-
-
-
-                        if (programas.Rows[i]["PROGRA2030"] == DBNull.Value)
-                        {
-                            estado = insertaPresupuesto(Convert.ToDouble(e.NewValues["PRESUPUESTO2030"]), Convert.ToDouble(programas.Rows[i]["NOPROGRAMA"].ToString()), Convert.ToInt32(programas.Rows[i]["POA2030"].ToString()), 2030, Convert.ToInt32(programas.Rows[i]["SPPRO$ID_POM"].ToString()), Convert.ToInt32(programas.Rows[i]["SPPRO$ID_INSTITUCION"].ToString()));
-                            if (estado == 0)
-                            {
-                                mensaje = dao.mensaje;
-                                gvProgramas.JSProperties["cpError"] = "Ocurrio un error " + mensaje;
-                                e.Cancel = true;
-                                gvProgramas.CancelEdit();
-                                cargaprogramas();
-                                break;
-                            }
-
-                        }
-                        else
-                        {
-                            estado = ActualizaPresupuesto(Convert.ToDouble(e.NewValues["PRESUPUESTO2030"]), Convert.ToDouble(programas.Rows[i]["NOPROGRAMA"].ToString()), Convert.ToInt32(programas.Rows[i]["POA2030"].ToString()), 2030, Convert.ToInt32(programas.Rows[i]["SPPRO$ID_POM"].ToString()), Convert.ToInt32(programas.Rows[i]["SPPRO$ID_INSTITUCION"].ToString()), Convert.ToInt32(programas.Rows[i]["PROGRA2030"].ToString()));
-                            if (estado == 0)
-                            {
-                                mensaje = dao.mensaje;
-                                gvProgramas.JSProperties["cpError"] = "Ocurrio un error " + mensaje;
-                                e.Cancel = true;
-                                gvProgramas.CancelEdit();
-                                cargaprogramas();
-                                break;
-                            }
-
-                        }
-
-
-                        if (programas.Rows[i]["PROGRA2031"] == DBNull.Value)
-                        {
-                            estado = insertaPresupuesto(Convert.ToDouble(e.NewValues["PRESUPUESTO2031"]), Convert.ToDouble(programas.Rows[i]["NOPROGRAMA"].ToString()), Convert.ToInt32(programas.Rows[i]["POA2031"].ToString()), 2031, Convert.ToInt32(programas.Rows[i]["SPPRO$ID_POM"].ToString()), Convert.ToInt32(programas.Rows[i]["SPPRO$ID_INSTITUCION"].ToString()));
-                            if (estado == 0)
-                            {
-                                mensaje = dao.mensaje;
-                                gvProgramas.JSProperties["cpError"] = "Ocurrio un error " + mensaje;
-                                e.Cancel = true;
-                                gvProgramas.CancelEdit();
-                                cargaprogramas();
-                                break;
-                            }
-
-                        }
-                        else
-                        {
-                            estado = ActualizaPresupuesto(Convert.ToDouble(e.NewValues["PRESUPUESTO2031"]), Convert.ToDouble(programas.Rows[i]["NOPROGRAMA"].ToString()), Convert.ToInt32(programas.Rows[i]["POA2031"].ToString()), 2031, Convert.ToInt32(programas.Rows[i]["SPPRO$ID_POM"].ToString()), Convert.ToInt32(programas.Rows[i]["SPPRO$ID_INSTITUCION"].ToString()), Convert.ToInt32(programas.Rows[i]["PROGRA2031"].ToString()));
-                            if (estado == 0)
-                            {
-                                mensaje = dao.mensaje;
-                                gvProgramas.JSProperties["cpError"] = "Ocurrio un error " + mensaje;
-                                e.Cancel = true;
-                                gvProgramas.CancelEdit();
-                                cargaprogramas();
-                                break;
-                            }
-
-                        }
-
-                        if (estado == 1)
-                        {
-                            mensaje = "Presupuestos registrados correctamente";
-                            gvProgramas.JSProperties["cpError"] = "Información: " + mensaje;
-                            e.Cancel = true;
-                            gvProgramas.CancelEdit();
-                            cargaprogramas();
-                            break;
-                        }
-
-                    }
-
-                }
-
-                //FIN PERIODO 2027-2031
-
-
 
                 else
                 {
@@ -3097,50 +2682,6 @@ namespace SIPLAN2._0.poa
                     }
 
                     //fin 2026-2030
-
-
-
-
-
-                    //inicio 2027-2031
-
-                    else if (Convert.ToInt32(Session["periodo"]) == 26)
-                    {
-                        if (tipo == 0)
-                        {
-                            sql = "SELECT SPPRO$ID_PROGRAMA_PRESUPUESTO, PROGRAMA, NULL P0A2020, NULL PRESUPUESTO2020, NULL PR0GRAMADO2020, NULL P0A2021,  NULL PRESUPUESTO2021, NULL PR0GRAMADO2021, NULL P0A2022, NULL PRESUPUESTO2022, NULL PR0GRAMADO2022, NULL P0A2023, NULL PRESUPUESTO2023, NULL PR0GRAMADO2023, NULL P0A2024, NULL PRESUPUESTO2024, NULL PR0GRAMADO2024, NULL P0A2025, NULL PRESUPUESTO2025,  NULL PR0GRAMADO2025, NULL P0A2026, NULL PRESUPUESTO2026,  NULL PR0GRAMADO2026, P0A2027, PRESUPUESTO2027,  PR0GRAMADO2027    , P0A2028, PRESUPUESTO2028,  PR0GRAMADO2028, P0A2029, PRESUPUESTO2029,  PR0GRAMADO2029, P0A2030, PRESUPUESTO2030,  PR0GRAMADO2030, P0A2031, PRESUPUESTO2031,  PR0GRAMADO2031  FROM (SELECT VES.ID_RESULTADO, VES.RESULTADO,VES.SPPRO$ID_PROGRAMA_PRESUPUESTO, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO||'-'||VES.PROGRAMA PROGRAMA";
-                            for (int i = 0; i < tabla.Rows.Count; i++)
-                            {
-                                sql = sql + " ,SCHE$SIPLAN20.FNC$POA(VES.SPRES$POM,VES.SPRES$INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") P0A" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(VES.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ",VES.SPRES$POM, VES.SPRES$INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPROGRAMADO(VES.SPRES$POM, " + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ", VES.SPRES$INSTITUCION, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO) PR0GRAMADO" + tabla.Rows[i]["SPOA$ANIO"];
-                            }
-
-
-                            sql = sql + " ,VES.SPPSUB$PROPIETARIO ";
-                            sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.SPRES$POM = " + Session["pom"] + " AND VES.SPRES$INSTITUCION = " + Session["insto"] + ") GROUP BY  SPPRO$ID_PROGRAMA_PRESUPUESTO, PROGRAMA, P0A2027, PRESUPUESTO2027, PR0GRAMADO2027, P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029, P0A2030, PRESUPUESTO2030, PR0GRAMADO2030, P0A2031, PRESUPUESTO2031, PR0GRAMADO2031 ORDER BY  SPPRO$ID_PROGRAMA_PRESUPUESTO ASC";
-                            lblTipodeProduccion.Text = "PRODUCTOS INSTITUCIONALES";
-                        }
-
-
-                        else if (tipo == 1)
-                        {
-                            sql = "SELECT  SPPRO$ID_PROGRAMA_PRESUPUESTO, PROGRAMA, NULL P0A2020, NULL PRESUPUESTO2020, NULL PR0GRAMADO2020, NULL P0A2021, NULL PRESUPUESTO2021, NULL PR0GRAMADO2021, NULL P0A2022, NULL PRESUPUESTO2022, NULL PR0GRAMADO2022, NULL P0A2023, NULL PRESUPUESTO2023, NULL PR0GRAMADO2023, NULL P0A2024, NULL PRESUPUESTO2024, NULL PR0GRAMADO2024, NULL P0A2025, NULL PRESUPUESTO2025,  NULL PR0GRAMADO2025, NULL P0A2026, NULL PRESUPUESTO2026,  NULL PR0GRAMADO2026, P0A2027, PRESUPUESTO2027, PR0GRAMADO2027, P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029, P0A2030, PRESUPUESTO2030, PR0GRAMADO2030, P0A2031, PRESUPUESTO2031, PR0GRAMADO2031 FROM  (SELECT VES.ID_RESULTADO, VES.RED,VES.SPPRO$ID_PROGRAMA_PRESUPUESTO, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO||'-'||VES.PROGRAMA PROGRAMA";
-                            for (int i = 0; i < tabla.Rows.Count; i++)
-                            {
-                                sql = sql + " ,SCHE$SIPLAN20.FNC$POA(VES.SPRES$POM,VES.SPRES$INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") P0A" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(VES.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ",VES.SPRES$POM, VES.SPRES$INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPROGRAMADO(VES.SPRES$POM, " + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ", VES.SPRES$INSTITUCION, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO) PR0GRAMADO" + tabla.Rows[i]["SPOA$ANIO"];
-                            }
-
-                            sql = sql + " ,VES.SPPSUB$PROPIETARIO";
-                            sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.SPRES$POM = " + Session["pom"] + " AND VES.SPRES$INSTITUCION = " + Session["insto"] + ") GROUP BY  SPPRO$ID_PROGRAMA_PRESUPUESTO,PROGRAMA, P0A2027, PRESUPUESTO2027, PR0GRAMADO2027, P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029, P0A2030, PRESUPUESTO2030, PR0GRAMADO2030, P0A2031, PRESUPUESTO2031, PR0GRAMADO2031 ORDER BY  SPPRO$ID_PROGRAMA_PRESUPUESTO ASC";
-                            lblTipodeProduccion.Text = "PRODUCTOS VINCULADOS A RED";
-                        }
-
-
-                    }
-
-                    //fin 2027-2031
-
-
-
                     //NUEVA PGG
 
                 }
@@ -3152,7 +2693,7 @@ namespace SIPLAN2._0.poa
                      sql = sql + ",M.SPPMFS$ANIO, M.SPPMFS$META, M.SPPMF$TPROGRA, M.SPPMF$TIPO FROM SCHE$SIPLAN20.SP20$PRODUCTO P INNER JOIN SCHE$SIPLAN20.SP20$PROGRAMACION_MFPRODUCTO M ON M.SPPMFS$ID_PRODUCTO = P.SPPRO$ID_PRODUCTO AND M.SPPMFS$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N' INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON P.SPPRO$POM = POM.SPPO$ID_POM AND P.SPPRO$INSTO = POM.SPPO$ID_INSTITUCION AND P.SPPRO$RESTRICTIVA = 'N' AND POM.SPPO$RESTRICTIVA = 'N' ";
                      sql = sql +" INNER JOIN SCHE$SIPLAN20.SP20$PERIODO PE ON PE.SPP$ID_PERIODO = POM.SPPO$ID_PERIODO AND PE.SPP$RESTRICTIVA = 'N' AND POM.SPPO$RESTRICTIVA = 'N' WHERE P.SPPRO$RESTRICTIVA = 'N' AND PE.SPP$ORDEN = "+ (Convert.ToInt32(Session["SPP$ORDEN"]) -1)+" AND POM.SPPO$ID_INSTITUCION = "+ Session["SPPO$ID_INSTITUCION"] + " AND M.SPPMFS$ANIO IN(SELECT SPOA$ANIO FROM SCHE$SIPLAN20.SP20$POA WHERE SPOA$ID_POM = "+ Session["SPPO$ID_POM"] + " AND SPOA$ID_INSTITUCION = "+ Session["SPPO$ID_INSTITUCION"] + " AND SPOA$RESTRICTIVA = 'N')  ORDER BY P.SPPRO$ID_PRODUCTO, M.SPPMFS$ANIO ASC";*/
 
-                    /*sql = @"SELECT SPPRO$POM
+                    sql = @"SELECT SPPRO$POM
 ,SPPRO$INSTO
 ,(SELECT SPPRO$ID_PRODUCTO FROM SCHE$SIPLAN20.SP20$PRODUCTO WHERE SPPRO$RESTRICTIVA = 'N' AND SPPRO$DESCRIPCION = PRODUCTO AND SPPRO$PRESUPUESTO = PRESUPUESTO AND SPPRO$ID_RESULTADO = CODRESULTADO  AND SPPRO$POM = " + Session["SPPO$ID_POM"] + @" AND SPPRO$INSTO = " + Session["SPPO$ID_INSTITUCION"] + @") IDPRODUCTO 
 ,SPPRO$ID_PRODUCTO
@@ -3196,68 +2737,7 @@ SCHE$SIPLAN20.SP20$PRODUCTO P
 INNER JOIN SCHE$SIPLAN20.SP20$PROGRAMACION_MFPRODUCTO M ON M.SPPMFS$ID_PRODUCTO = P.SPPRO$ID_PRODUCTO AND M.SPPMFS$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N' 
 INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON P.SPPRO$POM = POM.SPPO$ID_POM AND P.SPPRO$INSTO = POM.SPPO$ID_INSTITUCION AND P.SPPRO$RESTRICTIVA = 'N' AND POM.SPPO$RESTRICTIVA = 'N'  
 INNER JOIN SCHE$SIPLAN20.SP20$PERIODO PE ON PE.SPP$ID_PERIODO = POM.SPPO$ID_PERIODO AND PE.SPP$RESTRICTIVA = 'N' AND POM.SPPO$RESTRICTIVA = 'N' WHERE P.SPPRO$RESTRICTIVA = 'N' AND PE.SPP$ORDEN = " + (Convert.ToInt32(Session["SPP$ORDEN"]) - 1) + @" AND POM.SPPO$ID_INSTITUCION = " + Session["SPPO$ID_INSTITUCION"] + @" 
-AND M.SPPMFS$ANIO IN(SELECT SPOA$ANIO FROM SCHE$SIPLAN20.SP20$POA WHERE SPOA$ID_POM = " + Session["SPPO$ID_POM"] + " AND SPOA$ID_INSTITUCION = " + Session["SPPO$ID_INSTITUCION"] + " AND SPOA$RESTRICTIVA = 'N')  ORDER BY P.SPPRO$ID_PRODUCTO, M.SPPMFS$ANIO ASC))";*/
-
-                 
-                            sql = @"SELECT 
-SPPRO$ID_PRODUCTO
-,IDPRODUCTO
-,PRODUCTO SPPRO$DESCRIPCION
-,PRESUPUESTO SPPRO$PRESUPUESTO
-,SPPRO$POM
-,SPPRO$INSTO
-,SPPSUB$ID_SUBPRODUCTO
-,SPPSUB$DESCRIPCION
-,SPPSUB$SNIP
-,POA
-,SPPMFS$ANIO
-,SPPMFS$META
-,SPPMFS$VIGENTE
-,SPPMFS$TPROGRA
-,SPPMFS$TIPO_PROGRAMACION
-FROM 
-(SELECT 
-TO_NUMBER(SPPRO$ID_PRODUCTO) SPPRO$ID_PRODUCTO
-,IDPRODUCTO
-,CASE WHEN RESULTADO IS NULL THEN (SELECT SPRES$ID_RESULTADO FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$COD_ESTRATEGICO = CODIGO AND SPRES$POM = 9708 AND SPRES$INSTITUCION = 7000 AND SPRES$RESTRICTIVA = 'N') ELSE (SELECT SPRES$ID_RESULTADO FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$DESCRIPCION = RESULTADO AND SPRES$POM = 9708 AND SPRES$INSTITUCION = 7000  AND SPRES$RESTRICTIVA = 'N') END AS CODRESULTADO
-,SPPRO$DESCRIPCION PRODUCTO
-,SPPRO$PRESUPUESTO PRESUPUESTO
-,SPPRO$POM
-,SPPRO$INSTO
-,SPPSUB$ID_SUBPRODUCTO
-,SPPSUB$DESCRIPCION
-,SPPSUB$SNIP
-,POA
-,SPPMFS$ANIO
-,SPPMFS$META
-,SPPMFS$VIGENTE
-,SPPMFS$TPROGRA
-,SPPMFS$TIPO_PROGRAMACION
-FROM 
-
-(SELECT P.SPPRO$ID_PRODUCTO
-,(SELECT PO.SPPRO$ID_PRODUCTO FROM SCHE$SIPLAN20.SP20$PRODUCTO PO WHERE  TO_NUMBER(PO.SPPRO$ID_ANTERIOR)  = P.SPPRO$ID_PRODUCTO) IDPRODUCTO
-,(SELECT SPRES$DESCRIPCION FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$ID_RESULTADO = P.SPPRO$ID_RESULTADO AND SPRES$POM = P.SPPRO$POM AND SPRES$INSTITUCION = P.SPPRO$INSTO AND SPRES$RESTRICTIVA = 'N') RESULTADO
-,(SELECT SPRES$COD_ESTRATEGICO FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$ID_RESULTADO = P.SPPRO$ID_RESULTADO AND SPRES$POM = P.SPPRO$POM AND SPRES$INSTITUCION = P.SPPRO$INSTO AND SPRES$RESTRICTIVA = 'N') CODIGO
- ,P.SPPRO$DESCRIPCION
- ,P.SPPRO$PRESUPUESTO
- ,P.SPPRO$POM
- ,P.SPPRO$INSTO
- ,S.SPPSUB$ID_SUBPRODUCTO
- ,S.SPPSUB$DESCRIPCION
- ,S.SPPSUB$SNIP
- ,(SELECT SPOA$ID_POA FROM SCHE$SIPLAN20.SP20$POA WHERE SPOA$RESTRICTIVA = 'N' AND SPOA$ID_POM = 9708 AND SPOA$ID_INSTITUCION = 7000 AND SPOA$ANIO = PFF.SPPMFS$ANIO) POA
- ,PFF.SPPMFS$ANIO
- ,PFF.SPPMFS$META
- ,PFF.SPPMFS$VIGENTE
- ,PFF.SPPMFS$TPROGRA
- ,PFF.SPPMFS$TIPO_PROGRAMACION  FROM SCHE$SIPLAN20.SP20$PRODUCTO P 
- INNER JOIN SCHE$SIPLAN20.SP20$SUB_PRODUCTO S ON P.SPPRO$ID_PRODUCTO = S.SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N' AND S.SPPSUB$RESTRICTIVA = 'N' 
- INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON P.SPPRO$POM = POM.SPPO$ID_POM AND P.SPPRO$INSTO = POM.SPPO$ID_INSTITUCION AND P.SPPRO$RESTRICTIVA = 'N' AND POM.SPPO$RESTRICTIVA = 'N' 
- INNER JOIN SCHE$SIPLAN20.SP20$PERIODO PE ON POM.SPPO$ID_PERIODO = PE.SPP$ID_PERIODO AND POM.SPPO$RESTRICTIVA = 'N' AND PE.SPP$RESTRICTIVA = 'N' 
- INNER JOIN SCHE$SIPLAN20.SP20$POA POA ON POA.SPOA$ID_POM = POM.SPPO$ID_POM AND POA.SPOA$ID_INSTITUCION = POM.SPPO$ID_INSTITUCION 
- INNER JOIN SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB PFF ON POA.SPOA$ID_POA = PFF.SPPMFS$ID_POA AND POA.SPOA$ANIO = PFF.SPPMFS$ANIO AND PFF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND PFF.SPPMFS$RESTRICTIVA = 'N' AND S.SPPSUB$RESTRICTIVA = 'N'  
- WHERE POM.SPPO$ID_INSTITUCION = 7000 AND PE.SPP$ORDEN = 7 AND POA.SPOA$ANIO BETWEEN 2027 AND 2031))";
+AND M.SPPMFS$ANIO IN(SELECT SPOA$ANIO FROM SCHE$SIPLAN20.SP20$POA WHERE SPOA$ID_POM = " + Session["SPPO$ID_POM"] + " AND SPOA$ID_INSTITUCION = " + Session["SPPO$ID_INSTITUCION"] + " AND SPOA$RESTRICTIVA = 'N')  ORDER BY P.SPPRO$ID_PRODUCTO, M.SPPMFS$ANIO ASC))";
                     estado = dao.consulta(sql);
 
                     if (estado == 1)
@@ -3280,7 +2760,7 @@ FROM
                             /*sql = "SELECT P.SPPRO$ID_PRODUCTO,(SELECT SPPRO$ID_PRODUCTO FROM SCHE$SIPLAN20.SP20$PRODUCTO WHERE SPPRO$RESTRICTIVA = 'N' AND SPPRO$DESCRIPCION = P.SPPRO$DESCRIPCION AND SPPRO$PRESUPUESTO = P.SPPRO$PRESUPUESTO AND SPPRO$POM = " + Session["SPPO$ID_POM"] + " AND SPPRO$INSTO = " + Session["SPPO$ID_INSTITUCION"] + ") IDPRODUCTO, P.SPPRO$DESCRIPCION, P.SPPRO$PRESUPUESTO, P.SPPRO$POM, P.SPPRO$INSTO,S.SPPSUB$ID_SUBPRODUCTO, S.SPPSUB$DESCRIPCION, S.SPPSUB$SNIP, (SELECT SPOA$ID_POA FROM SCHE$SIPLAN20.SP20$POA WHERE SPOA$RESTRICTIVA = 'N' AND SPOA$ID_POM = " + Session["SPPO$ID_POM"] + " AND SPOA$ID_INSTITUCION = " + Session["SPPO$ID_INSTITUCION"] + " AND SPOA$ANIO = PFF.SPPMFS$ANIO) POA, PFF.SPPMFS$ANIO, PFF.SPPMFS$META, PFF.SPPMFS$VIGENTE, PFF.SPPMFS$TPROGRA, PFF.SPPMFS$TIPO_PROGRAMACION ";
                             sql = sql+" FROM SCHE$SIPLAN20.SP20$PRODUCTO P INNER JOIN SCHE$SIPLAN20.SP20$SUB_PRODUCTO S ON P.SPPRO$ID_PRODUCTO = S.SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N' AND S.SPPSUB$RESTRICTIVA = 'N' INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON P.SPPRO$POM = POM.SPPO$ID_POM AND P.SPPRO$INSTO = POM.SPPO$ID_INSTITUCION AND P.SPPRO$RESTRICTIVA = 'N' AND POM.SPPO$RESTRICTIVA = 'N' INNER JOIN SCHE$SIPLAN20.SP20$PERIODO PE ON POM.SPPO$ID_PERIODO = PE.SPP$ID_PERIODO AND POM.SPPO$RESTRICTIVA = 'N' AND PE.SPP$RESTRICTIVA = 'N' INNER JOIN SCHE$SIPLAN20.SP20$POA POA ON POA.SPOA$ID_POM = POM.SPPO$ID_POM AND POA.SPOA$ID_INSTITUCION = POM.SPPO$ID_INSTITUCION INNER JOIN SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB PFF ON POA.SPOA$ID_POA = PFF.SPPMFS$ID_POA AND POA.SPOA$ANIO = PFF.SPPMFS$ANIO AND PFF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND PFF.SPPMFS$RESTRICTIVA = 'N' AND S.SPPSUB$RESTRICTIVA = 'N' ";
                             sql = sql+" WHERE POM.SPPO$ID_INSTITUCION = "+ Session["SPPO$ID_INSTITUCION"] + " AND PE.SPP$ORDEN = "+(Convert.ToInt32(Session["SPP$ORDEN"]) -1)+" AND POA.SPOA$ANIO BETWEEN "+ Session["INICIO"] + " AND "+ Session["FINAL"];*/
-                            /*sql = @"SELECT 
+                            sql = @"SELECT 
 SPPRO$ID_PRODUCTO
 ,(SELECT SPPRO$ID_PRODUCTO FROM SCHE$SIPLAN20.SP20$PRODUCTO WHERE SPPRO$RESTRICTIVA = 'N' AND SPPRO$DESCRIPCION = PRODUCTO AND SPPRO$PRESUPUESTO = PRESUPUESTO AND SPPRO$ID_RESULTADO = CODRESULTADO AND SPPRO$POM = " + Session["SPPO$ID_POM"] + @" AND SPPRO$INSTO = " + Session["SPPO$ID_INSTITUCION"] + @") IDPRODUCTO
 ,PRODUCTO SPPRO$DESCRIPCION
@@ -3336,68 +2816,7 @@ FROM
  INNER JOIN SCHE$SIPLAN20.SP20$PERIODO PE ON POM.SPPO$ID_PERIODO = PE.SPP$ID_PERIODO AND POM.SPPO$RESTRICTIVA = 'N' AND PE.SPP$RESTRICTIVA = 'N' 
  INNER JOIN SCHE$SIPLAN20.SP20$POA POA ON POA.SPOA$ID_POM = POM.SPPO$ID_POM AND POA.SPOA$ID_INSTITUCION = POM.SPPO$ID_INSTITUCION 
  INNER JOIN SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB PFF ON POA.SPOA$ID_POA = PFF.SPPMFS$ID_POA AND POA.SPOA$ANIO = PFF.SPPMFS$ANIO AND PFF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND PFF.SPPMFS$RESTRICTIVA = 'N' AND S.SPPSUB$RESTRICTIVA = 'N'  
- WHERE POM.SPPO$ID_INSTITUCION = " + Session["SPPO$ID_INSTITUCION"] + " AND PE.SPP$ORDEN = " + (Convert.ToInt32(Session["SPP$ORDEN"]) - 1) + " AND POA.SPOA$ANIO BETWEEN " + Session["INICIO"] + " AND " + Session["FINAL"] + "))";*/
-
-                            sql = @"SELECT 
-SPPRO$ID_PRODUCTO
-,IDPRODUCTO
-,PRODUCTO SPPRO$DESCRIPCION
-,PRESUPUESTO SPPRO$PRESUPUESTO
-,SPPRO$POM
-,SPPRO$INSTO
-,SPPSUB$ID_SUBPRODUCTO
-,SPPSUB$DESCRIPCION
-,SPPSUB$SNIP
-,POA
-,SPPMFS$ANIO
-,SPPMFS$META
-,SPPMFS$VIGENTE
-,SPPMFS$TPROGRA
-,SPPMFS$TIPO_PROGRAMACION
-FROM 
-(SELECT 
-SPPRO$ID_PRODUCTO
-,IDPRODUCTO
-,CASE WHEN RESULTADO IS NULL THEN (SELECT SPRES$ID_RESULTADO FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$COD_ESTRATEGICO = CODIGO AND SPRES$POM = 9708 AND SPRES$INSTITUCION = 7000 AND SPRES$RESTRICTIVA = 'N') ELSE (SELECT SPRES$ID_RESULTADO FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$DESCRIPCION = RESULTADO AND SPRES$POM = 9708 AND SPRES$INSTITUCION = 7000  AND SPRES$RESTRICTIVA = 'N') END AS CODRESULTADO
-,SPPRO$DESCRIPCION PRODUCTO
-,SPPRO$PRESUPUESTO PRESUPUESTO
-,SPPRO$POM
-,SPPRO$INSTO
-,SPPSUB$ID_SUBPRODUCTO
-,SPPSUB$DESCRIPCION
-,SPPSUB$SNIP
-,POA
-,SPPMFS$ANIO
-,SPPMFS$META
-,SPPMFS$VIGENTE
-,SPPMFS$TPROGRA
-,SPPMFS$TIPO_PROGRAMACION
-FROM 
-
-(SELECT P.SPPRO$ID_PRODUCTO
-,(SELECT PO.SPPRO$ID_PRODUCTO FROM SCHE$SIPLAN20.SP20$PRODUCTO PO WHERE  TO_NUMBER(PO.SPPRO$ID_ANTERIOR)  = P.SPPRO$ID_PRODUCTO) IDPRODUCTO
-,(SELECT SPRES$DESCRIPCION FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$ID_RESULTADO = P.SPPRO$ID_RESULTADO AND SPRES$POM = P.SPPRO$POM AND SPRES$INSTITUCION = P.SPPRO$INSTO AND SPRES$RESTRICTIVA = 'N') RESULTADO
-,(SELECT SPRES$COD_ESTRATEGICO FROM SCHE$SIPLAN20.SP20$RESULTADOS WHERE SPRES$ID_RESULTADO = P.SPPRO$ID_RESULTADO AND SPRES$POM = P.SPPRO$POM AND SPRES$INSTITUCION = P.SPPRO$INSTO AND SPRES$RESTRICTIVA = 'N') CODIGO
- ,P.SPPRO$DESCRIPCION
- ,P.SPPRO$PRESUPUESTO
- ,P.SPPRO$POM
- ,P.SPPRO$INSTO
- ,S.SPPSUB$ID_SUBPRODUCTO
- ,S.SPPSUB$DESCRIPCION
- ,S.SPPSUB$SNIP
- ,(SELECT SPOA$ID_POA FROM SCHE$SIPLAN20.SP20$POA WHERE SPOA$RESTRICTIVA = 'N' AND SPOA$ID_POM = 9708 AND SPOA$ID_INSTITUCION = 7000 AND SPOA$ANIO = PFF.SPPMFS$ANIO) POA
- ,PFF.SPPMFS$ANIO
- ,PFF.SPPMFS$META
- ,PFF.SPPMFS$VIGENTE
- ,PFF.SPPMFS$TPROGRA
- ,PFF.SPPMFS$TIPO_PROGRAMACION  FROM SCHE$SIPLAN20.SP20$PRODUCTO P 
- INNER JOIN SCHE$SIPLAN20.SP20$SUB_PRODUCTO S ON P.SPPRO$ID_PRODUCTO = S.SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N' AND S.SPPSUB$RESTRICTIVA = 'N' 
- INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON P.SPPRO$POM = POM.SPPO$ID_POM AND P.SPPRO$INSTO = POM.SPPO$ID_INSTITUCION AND P.SPPRO$RESTRICTIVA = 'N' AND POM.SPPO$RESTRICTIVA = 'N' 
- INNER JOIN SCHE$SIPLAN20.SP20$PERIODO PE ON POM.SPPO$ID_PERIODO = PE.SPP$ID_PERIODO AND POM.SPPO$RESTRICTIVA = 'N' AND PE.SPP$RESTRICTIVA = 'N' 
- INNER JOIN SCHE$SIPLAN20.SP20$POA POA ON POA.SPOA$ID_POM = POM.SPPO$ID_POM AND POA.SPOA$ID_INSTITUCION = POM.SPPO$ID_INSTITUCION 
- INNER JOIN SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB PFF ON POA.SPOA$ID_POA = PFF.SPPMFS$ID_POA AND POA.SPOA$ANIO = PFF.SPPMFS$ANIO AND PFF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND PFF.SPPMFS$RESTRICTIVA = 'N' AND S.SPPSUB$RESTRICTIVA = 'N'  
- WHERE POM.SPPO$ID_INSTITUCION = 7000 AND PE.SPP$ORDEN = 7 AND POA.SPOA$ANIO BETWEEN 2027 AND 2031))";
-
+ WHERE POM.SPPO$ID_INSTITUCION = " + Session["SPPO$ID_INSTITUCION"] + " AND PE.SPP$ORDEN = " + (Convert.ToInt32(Session["SPP$ORDEN"]) - 1) + " AND POA.SPOA$ANIO BETWEEN " + Session["INICIO"] + " AND " + Session["FINAL"] + "))";
                             estado = dao.consulta(sql);
                             if (estado == 1)
                                 productos = dao.tabla;
@@ -3647,45 +3066,8 @@ FROM
 
                         }
 
-                        //FIN 2026-2030
 
-
-
-                        //INICIO 2027-2031 
-                        else if (Convert.ToInt32(Session["periodo"]) == 26)
-                        {
-                            if (tipo == 0)
-                            {
-                                sql = "SELECT SPPRO$ID_PROGRAMA_PRESUPUESTO, PROGRAMA, NULL P0A2020, NULL PRESUPUESTO2020, NULL PR0GRAMADO2020, NULL P0A2021, NULL PRESUPUESTO2021, NULL PR0GRAMADO2021, NULL P0A2022, NULL PRESUPUESTO2022, NULL PR0GRAMADO2022, NULL P0A2023, NULL PRESUPUESTO2023, NULL PR0GRAMADO2023, NULL P0A2024, NULL PRESUPUESTO2024, NULL PR0GRAMADO2024, NULL P0A2025, NULL PRESUPUESTO2025,  NULL PR0GRAMADO2025, NULL P0A2026, NULL PRESUPUESTO2026,  NULL PR0GRAMADO2026, P0A2027,  PRESUPUESTO2027, PR0GRAMADO2027, P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029,   P0A2030, PRESUPUESTO2030, PR0GRAMADO2030, P0A2031, PRESUPUESTO2031, PR0GRAMADO2031  FROM (SELECT VES.ID_RESULTADO, VES.RESULTADO,VES.SPPRO$ID_PROGRAMA_PRESUPUESTO, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO||'-'||VES.PROGRAMA PROGRAMA";
-                                for (int i = 0; i < tabla.Rows.Count; i++)
-                                {
-                                    sql = sql + " ,SCHE$SIPLAN20.FNC$POA(VES.SPRES$POM,VES.SPRES$INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") P0A" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(VES.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ",VES.SPRES$POM, VES.SPRES$INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPROGRAMADO(VES.SPRES$POM, " + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ", VES.SPRES$INSTITUCION, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO) PR0GRAMADO" + tabla.Rows[i]["SPOA$ANIO"];
-                                }
-
-
-                                sql = sql + " ,VES.SPPSUB$PROPIETARIO ";
-                                sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.SPRES$POM = " + Session["pom"] + " AND VES.SPRES$INSTITUCION = " + Session["insto"] + ") GROUP BY  SPPRO$ID_PROGRAMA_PRESUPUESTO, PROGRAMA, P0A2027, PRESUPUESTO2027, PR0GRAMADO2027, P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029,  P0A2030, PRESUPUESTO2030, PR0GRAMADO2030,  P0A2031, PRESUPUESTO2031, PR0GRAMADO2031 ORDER BY  SPPRO$ID_PROGRAMA_PRESUPUESTO ASC";
-                                lblTipodeProduccion.Text = "PRODUCTOS INSTITUCIONALES";
-                            }
-
-
-                            else if (tipo == 1)
-                            {
-                                sql = "SELECT  SPPRO$ID_PROGRAMA_PRESUPUESTO, PROGRAMA, NULL P0A2020, NULL PRESUPUESTO2020, NULL PR0GRAMADO2020, NULL P0A2021, NULL PRESUPUESTO2021, NULL PR0GRAMADO2021, NULL P0A2022, NULL PRESUPUESTO2022, NULL PR0GRAMADO2022, NULL P0A2023, NULL PRESUPUESTO2023, NULL PR0GRAMADO2023, NULL P0A2024, NULL PRESUPUESTO2024, NULL PR0GRAMADO2024, NULL P0A2025, NULL PRESUPUESTO2025,  NULL PR0GRAMADO2025, NULL P0A2026, NULL PRESUPUESTO2026,  NULL PR0GRAMADO2026, P0A2027, PRESUPUESTO2027,  PR0GRAMADO2027  , P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029,   P0A2030, PRESUPUESTO2030, PR0GRAMADO2030,  P0A2031, PRESUPUESTO2031, PR0GRAMADO2031 FROM  (SELECT VES.ID_RESULTADO, VES.RED,VES.SPPRO$ID_PROGRAMA_PRESUPUESTO, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO||'-'||VES.PROGRAMA PROGRAMA";
-                                for (int i = 0; i < tabla.Rows.Count; i++)
-                                {
-                                    sql = sql + " ,SCHE$SIPLAN20.FNC$POA(VES.SPRES$POM,VES.SPRES$INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") P0A" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(VES.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ",VES.SPRES$POM, VES.SPRES$INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPROGRAMADO(VES.SPRES$POM, " + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ", VES.SPRES$INSTITUCION, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO) PR0GRAMADO" + tabla.Rows[i]["SPOA$ANIO"];
-                                }
-
-                                sql = sql + " ,VES.SPPSUB$PROPIETARIO";
-                                sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.SPRES$POM = " + Session["pom"] + " AND VES.SPRES$INSTITUCION = " + Session["insto"] + ") GROUP BY  SPPRO$ID_PROGRAMA_PRESUPUESTO,PROGRAMA, P0A2027, PRESUPUESTO2027, PR0GRAMADO2027, P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029, P0A2030, PRESUPUESTO2030, PR0GRAMADO2030,  P0A2031, PRESUPUESTO2031, PR0GRAMADO2031 ORDER BY  SPPRO$ID_PROGRAMA_PRESUPUESTO ASC";
-                                lblTipodeProduccion.Text = "PRODUCTOS VINCULADOS A RED";
-                            }
-
-
-                        }
-
-                        //FIN 2027-2031 
+                        //FIN 2026-2030 
 
 
                     }
@@ -3897,44 +3279,6 @@ FROM
 
 
 
-
-                        //INICIO 2027-2031
-                        else if (Convert.ToInt32(Session["periodo"]) == 26)
-                        {
-                            if (tipo == 0)
-                            {
-                                sql = "SELECT SPPRO$ID_PROGRAMA_PRESUPUESTO, PROGRAMA, NULL P0A2020, NULL PRESUPUESTO2020, NULL PR0GRAMADO2020, NULL P0A2021, NULL PRESUPUESTO2021, NULL PR0GRAMADO2021, NULL P0A2022, NULL PRESUPUESTO2022, NULL PR0GRAMADO2022, NULL P0A2023, NULL PRESUPUESTO2023, NULL PR0GRAMADO2023, NULL P0A2024, NULL PRESUPUESTO2024, NULL PR0GRAMADO2024, NULL P0A2025, NULL PRESUPUESTO2025,  NULL PR0GRAMADO2025, NULL P0A2026,  NULL PRESUPUESTO2026,  NULL PR0GRAMADO2026, P0A2027, PRESUPUESTO2027,  PR0GRAMADO2027, P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029,  P0A2030, PRESUPUESTO2030, PR0GRAMADO2030, P0A2031, PRESUPUESTO2031, PR0GRAMADO2031  FROM (SELECT VES.ID_RESULTADO, VES.RESULTADO,VES.SPPRO$ID_PROGRAMA_PRESUPUESTO, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO||'-'||VES.PROGRAMA PROGRAMA";
-                                for (int i = 0; i < tabla.Rows.Count; i++)
-                                {
-                                    sql = sql + " ,SCHE$SIPLAN20.FNC$POA(VES.SPRES$POM,VES.SPRES$INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") P0A" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(VES.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ",VES.SPRES$POM, VES.SPRES$INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPROGRAMADO(VES.SPRES$POM, " + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ", VES.SPRES$INSTITUCION, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO) PR0GRAMADO" + tabla.Rows[i]["SPOA$ANIO"];
-                                }
-
-
-                                sql = sql + " ,VES.SPPSUB$PROPIETARIO ";
-                                sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.SPRES$POM = " + Session["pom"] + " AND VES.SPRES$INSTITUCION = " + Session["insto"] + ") GROUP BY  SPPRO$ID_PROGRAMA_PRESUPUESTO, PROGRAMA, P0A2027, PRESUPUESTO2027, PR0GRAMADO2027,  P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029,  P0A2030, PRESUPUESTO2030, PR0GRAMADO2030, P0A2031, PRESUPUESTO2031, PR0GRAMADO2031 ORDER BY  SPPRO$ID_PROGRAMA_PRESUPUESTO ASC";
-                                lblTipodeProduccion.Text = "PRODUCTOS INSTITUCIONALES";
-                            }
-
-
-                            else if (tipo == 1)
-                            {
-                                sql = "SELECT  SPPRO$ID_PROGRAMA_PRESUPUESTO, PROGRAMA, NULL P0A2020, NULL PRESUPUESTO2020, NULL PR0GRAMADO2020, NULL P0A2021, NULL PRESUPUESTO2021, NULL PR0GRAMADO2021, NULL P0A2022, NULL PRESUPUESTO2022, NULL PR0GRAMADO2022, NULL P0A2023, NULL PRESUPUESTO2023, NULL PR0GRAMADO2023, NULL P0A2024, NULL PRESUPUESTO2024, NULL PR0GRAMADO2024, NULL P0A2025, NULL PRESUPUESTO2025,  NULL PR0GRAMADO2025,  NULL P0A2026, NULL PRESUPUESTO2026,  NULL PR0GRAMADO2026,  P0A2027, PRESUPUESTO2027,  PR0GRAMADO2027, P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029,  P0A2030, PRESUPUESTO2030, PR0GRAMADO2030, P0A2031, PRESUPUESTO2031, PR0GRAMADO2031 FROM  (SELECT VES.ID_RESULTADO, VES.RED,VES.SPPRO$ID_PROGRAMA_PRESUPUESTO, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO||'-'||VES.PROGRAMA PROGRAMA";
-                                for (int i = 0; i < tabla.Rows.Count; i++)
-                                {
-                                    sql = sql + " ,SCHE$SIPLAN20.FNC$POA(VES.SPRES$POM,VES.SPRES$INSTITUCION," + tabla.Rows[i]["SPOA$ANIO"] + ") P0A" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPRESUPUESTO(VES.SPPRO$ID_PROGRAMA_PRESUPUESTO," + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ",VES.SPRES$POM, VES.SPRES$INSTITUCION) PRESUPUESTO" + tabla.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEPROGRAMADO(VES.SPRES$POM, " + tabla.Rows[i]["SPOA$ID_POA"] + ", " + tabla.Rows[i]["SPOA$ANIO"] + ", VES.SPRES$INSTITUCION, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO) PR0GRAMADO" + tabla.Rows[i]["SPOA$ANIO"];
-                                }
-
-                                sql = sql + " ,VES.SPPSUB$PROPIETARIO";
-                                sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.SPRES$POM = " + Session["pom"] + " AND VES.SPRES$INSTITUCION = " + Session["insto"] + ") GROUP BY  SPPRO$ID_PROGRAMA_PRESUPUESTO, PROGRAMA, P0A2027, PRESUPUESTO2027, PR0GRAMADO2027, P0A2028, PRESUPUESTO2028, PR0GRAMADO2028, P0A2029, PRESUPUESTO2029, PR0GRAMADO2029,  P0A2030, PRESUPUESTO2030, PR0GRAMADO2030, P0A2031, PRESUPUESTO2031, PR0GRAMADO2031 ORDER BY  SPPRO$ID_PROGRAMA_PRESUPUESTO ASC";
-                                lblTipodeProduccion.Text = "PRODUCTOS VINCULADOS A RED";
-                            }
-
-                        }
-
-                        //FIN 2027-2031
-
-
-
                     }
 
 
@@ -4056,8 +3400,8 @@ FROM
                 if (estado == 0)
                 {
                     mensaje = dao.mensaje;
-                     Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-                    //ScriptManager.RegisterStartupScript(this.upNT, GetType(), "script", "Alerta('" + mensaje + " <br/>',2);", true);
+                    // Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
+                    ScriptManager.RegisterStartupScript(this.upNT, GetType(), "script", "Alerta('" + mensaje + " <br/>',2);", true);
                 }
                 else
                 {
@@ -4855,12 +4199,7 @@ FROM
                 gvDetail.Columns["MF2030"].Visible = false;
                 gvDetail.Columns["MFIN2030"].Visible = false;
                 GridViewBandColumn bandCol6 = gvDetail.Columns["2030"] as GridViewBandColumn;
-                bandCol6.Visible = false;
-
-                gvDetail.Columns["MF2031"].Visible = false;
-                gvDetail.Columns["MFIN2031"].Visible = false;
-                GridViewBandColumn bandCol7 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol7.Visible = false;
+                bandCol5.Visible = false;
 
 
             }
@@ -4899,12 +4238,6 @@ FROM
                 bandCol5.Visible = false;
 
 
-                gvDetail.Columns["MF2031"].Visible = false;
-                gvDetail.Columns["MFIN2031"].Visible = false;
-                GridViewBandColumn bandCol7 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol7.Visible = false;
-
-
             }
 
 
@@ -4939,12 +4272,6 @@ FROM
                 gvDetail.Columns["MFIN2030"].Visible = false;
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2030"] as GridViewBandColumn;
                 bandCol5.Visible = false;
-
-
-                gvDetail.Columns["MF2031"].Visible = false;
-                gvDetail.Columns["MFIN2031"].Visible = false;
-                GridViewBandColumn bandCol7 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol7.Visible = false;
 
 
             }
@@ -4984,11 +4311,6 @@ FROM
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2030"] as GridViewBandColumn;
                 bandCol5.Visible = false;
 
-                gvDetail.Columns["MF2031"].Visible = false;
-                gvDetail.Columns["MFIN2031"].Visible = false;
-                GridViewBandColumn bandCol7 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol7.Visible = false;
-
             }
 
 
@@ -5024,11 +4346,6 @@ FROM
                 gvDetail.Columns["MFIN2030"].Visible = false;
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2030"] as GridViewBandColumn;
                 bandCol5.Visible = false;
-
-                gvDetail.Columns["MF2031"].Visible = false;
-                gvDetail.Columns["MFIN2031"].Visible = false;
-                GridViewBandColumn bandCol7 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol7.Visible = false;
 
             }
 
@@ -5067,12 +4384,6 @@ FROM
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2030"] as GridViewBandColumn;
                 bandCol5.Visible = false;
 
-
-                gvDetail.Columns["MF2031"].Visible = false;
-                gvDetail.Columns["MFIN2031"].Visible = false;
-                GridViewBandColumn bandCol7 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol7.Visible = false;
-
             }
 
 
@@ -5109,55 +4420,10 @@ FROM
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2025"] as GridViewBandColumn;
                 bandCol5.Visible = false;
 
-                gvDetail.Columns["MF2031"].Visible = false;
-                gvDetail.Columns["MFIN2031"].Visible = false;
-                GridViewBandColumn bandCol7 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol7.Visible = false;
-
             }
 
 
-
-            else if (Convert.ToInt32(Session["periodo"]) == 26)
-            {
-                gvDetail.Columns["MF2020"].Visible = false;
-                gvDetail.Columns["MFIN2020"].Visible = false;
-                GridViewBandColumn bandCol = gvDetail.Columns["2020"] as GridViewBandColumn;
-                bandCol.Visible = false;
-
-                gvDetail.Columns["MF2021"].Visible = false;
-                gvDetail.Columns["MFIN2021"].Visible = false;
-                GridViewBandColumn bandCol1 = gvDetail.Columns["2021"] as GridViewBandColumn;
-                bandCol1.Visible = false;
-
-                gvDetail.Columns["MF2022"].Visible = false;
-                gvDetail.Columns["MFIN2022"].Visible = false;
-                GridViewBandColumn bandCol2 = gvDetail.Columns["2022"] as GridViewBandColumn;
-                bandCol2.Visible = false;
-
-
-                gvDetail.Columns["MF2023"].Visible = false;
-                gvDetail.Columns["MFIN2023"].Visible = false;
-                GridViewBandColumn bandCol3 = gvDetail.Columns["2023"] as GridViewBandColumn;
-                bandCol3.Visible = false;
-
-                gvDetail.Columns["MF2024"].Visible = false;
-                gvDetail.Columns["MFIN2024"].Visible = false;
-                GridViewBandColumn bandCol4 = gvDetail.Columns["2024"] as GridViewBandColumn;
-                bandCol4.Visible = false;
-
-                gvDetail.Columns["MF2025"].Visible = false;
-                gvDetail.Columns["MFIN2025"].Visible = false;
-                GridViewBandColumn bandCol5 = gvDetail.Columns["2025"] as GridViewBandColumn;
-                bandCol5.Visible = false;
-
-                gvDetail.Columns["MF2026"].Visible = false;
-                gvDetail.Columns["MFIN2026"].Visible = false;
-                GridViewBandColumn bandCol7 = gvDetail.Columns["2026"] as GridViewBandColumn;
-                bandCol7.Visible = false;
-            }
-
-                if (Session["poa"] != null)
+            if (Session["poa"] != null)
             {
                 productos = cargaProductos((DataTable)Session["poa"], Convert.ToInt32(cbTipoProduccion.Value), resultado, programa, Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), resultado2);
                 Session["mfproductos"] = productos;
@@ -5482,61 +4748,6 @@ FROM
             }
             //FIN 2026 - 2030
 
-
-
-
-            //INICIO 2027-2031
-            else if (Convert.ToInt32(Session["periodo"]) == 26)
-            {
-                if (tipo == 0)
-                {
-                    sql = "SELECT ID_RESULTADO, SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$ID_PRODUCTO, PRODUCTO, SPPRO$ID_MEDIDA, MEDIDA_PRODUCTO,  NULL IDFP2020, NULL MF2020, NULL MFIN2020, NULL TP2020,  NULL IDFP2021, NULL MF2021, NULL MFIN2021, NULL TP2021,    NULL IDFP2022, NULL MF2022, NULL MFIN2022, NULL TP2022, NULL IDFP2023, NULL MF2023, NULL MFIN2023, NULL TP2023, NULL IDFP2024, NULL MF2024, NULL MFIN2024, NULL TP2024, NULL IDFP2025, NULL MF2025, NULL MFIN2025, NULL TP2025, NULL IDFP2026, NULL MF2026, NULL MFIN2026, NULL TP2026";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",IDFP" + temp.Rows[i]["SPOA$ANIO"] + ", MF" + temp.Rows[i]["SPOA$ANIO"] + ", MFIN" + temp.Rows[i]["SPOA$ANIO"] + ", TP" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-                    sql = sql + ",SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.ID_RESULTADO, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO, VES.SPPRO$ID_PRODUCTO, VES.PRODUCTO, VES.SPPRO$ID_MEDIDA, VES.MEDIDA_PRODUCTO";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",SCHE$SIPLAN20.FNC$OBTIENEIDMETAFISICAPRO(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPRO$ID_PRODUCTO) IDFP" + temp.Rows[i]["SPOA$ANIO"] + ",SCHE$SIPLAN20.FNC$OBTIENEMETAFISICAPRO(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPRO$ID_PRODUCTO) MF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFINACIERAPROD(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPRO$ID_PRODUCTO,0) MFIN" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENETIPOPROGRA(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPRO$ID_PRODUCTO) TP" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-
-
-                    sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$RESULTADO2 = " + resultado2 + ") GROUP BY  ID_RESULTADO, SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$ID_PRODUCTO, PRODUCTO, SPPRO$ID_MEDIDA, MEDIDA_PRODUCTO ";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",IDFP" + temp.Rows[i]["SPOA$ANIO"] + ", MF" + temp.Rows[i]["SPOA$ANIO"] + ", MFIN" + temp.Rows[i]["SPOA$ANIO"] + ", TP" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-                    sql = sql + " ,SPRES$POM ORDER BY SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$ID_PRODUCTO ASC";
-                }
-                else if (tipo == 1)
-                {
-                    sql = " SELECT ID_RESULTADO, SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$ID_PRODUCTO, PRODUCTO, SPPRO$ID_MEDIDA, MEDIDA_PRODUCTO, NULL IDFP2020, NULL MF2020, NULL MFIN2020, NULL TP2020 ,NULL IDFP2021, NULL MF2021, NULL MFIN2021, NULL TP2021, NULL IDFP2022, NULL MF2022, NULL MFIN2022, NULL TP2022, NULL IDFP2023, NULL MF2023, NULL MFIN2023, NULL TP2023,  NULL IDFP2024, NULL MF2024, NULL MFIN2024, NULL TP2024, NULL IDFP2025, NULL MF2025, NULL MFIN2025, NULL TP2025,   NULL IDFP2026, NULL MF2026, NULL MFIN2026, NULL TP2026";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",IDFP" + temp.Rows[i]["SPOA$ANIO"] + ", MF" + temp.Rows[i]["SPOA$ANIO"] + ", MFIN" + temp.Rows[i]["SPOA$ANIO"] + ", TP" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-                    sql = sql + " ,SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.ID_RESULTADO, VES.SPPRO$ID_PROGRAMA_PRESUPUESTO, VES.SPPRO$ID_PRODUCTO, VES.PRODUCTO, VES.SPPRO$ID_MEDIDA, VES.MEDIDA_PRODUCTO";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",SCHE$SIPLAN20.FNC$OBTIENEIDMETAFISICAPRO(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPRO$ID_PRODUCTO) IDFP" + temp.Rows[i]["SPOA$ANIO"] + ",SCHE$SIPLAN20.FNC$OBTIENEMETAFISICAPRO(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPRO$ID_PRODUCTO) MF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFINACIERAPROD(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPRO$ID_PRODUCTO,0) MFIN" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENETIPOPROGRA(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPRO$ID_PRODUCTO) TP" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-
-
-                    sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$RESULTADO2 = " + resultado2 + ") GROUP BY ID_RESULTADO, SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$ID_PRODUCTO, PRODUCTO, SPPRO$ID_MEDIDA, MEDIDA_PRODUCTO ";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",IDFP" + temp.Rows[i]["SPOA$ANIO"] + ", MF" + temp.Rows[i]["SPOA$ANIO"] + ", MFIN" + temp.Rows[i]["SPOA$ANIO"] + ", TP" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-                    sql = sql + " ,SPRES$POM ORDER BY SPPRO$ID_PROGRAMA_PRESUPUESTO, SPPRO$ID_PRODUCTO ASC";
-                }
-            }
-            //FIN 2027 - 2031
-
             else
             {
                 if (tipo == 0)
@@ -5655,11 +4866,6 @@ FROM
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2030"] as GridViewBandColumn;
                 bandCol5.Visible = false;
 
-                gvDetail.Columns["MFSUB2031"].Visible = false;
-                gvDetail.Columns["MFINSUB2031"].Visible = false;
-                GridViewBandColumn bandCol6 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol6.Visible = false;
-
             }
 
 
@@ -5696,10 +4902,6 @@ FROM
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2030"] as GridViewBandColumn;
                 bandCol5.Visible = false;
 
-                gvDetail.Columns["MFSUB2031"].Visible = false;
-                gvDetail.Columns["MFINSUB2031"].Visible = false;
-                GridViewBandColumn bandCol6 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol6.Visible = false;
 
             }
 
@@ -5739,11 +4941,6 @@ FROM
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2030"] as GridViewBandColumn;
                 bandCol5.Visible = false;
 
-                gvDetail.Columns["MFSUB2031"].Visible = false;
-                gvDetail.Columns["MFINSUB2031"].Visible = false;
-                GridViewBandColumn bandCol6 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol6.Visible = false;
-
             }
 
 
@@ -5781,12 +4978,6 @@ FROM
                 gvDetail.Columns["MFINSUB2030"].Visible = false;
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2030"] as GridViewBandColumn;
                 bandCol5.Visible = false;
-
-                gvDetail.Columns["MFSUB2031"].Visible = false;
-                gvDetail.Columns["MFINSUB2031"].Visible = false;
-                GridViewBandColumn bandCol6 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol6.Visible = false;
-
             }
 
 
@@ -5823,11 +5014,6 @@ FROM
                 gvDetail.Columns["MFINSUB2030"].Visible = false;
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2030"] as GridViewBandColumn;
                 bandCol5.Visible = false;
-
-                gvDetail.Columns["MFSUB2031"].Visible = false;
-                gvDetail.Columns["MFINSUB2031"].Visible = false;
-                GridViewBandColumn bandCol6 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol6.Visible = false;
             }
 
 
@@ -5866,11 +5052,6 @@ FROM
                 gvDetail.Columns["MFINSUB2030"].Visible = false;
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2030"] as GridViewBandColumn;
                 bandCol5.Visible = false;
-
-                gvDetail.Columns["MFSUB2031"].Visible = false;
-                gvDetail.Columns["MFINSUB2031"].Visible = false;
-                GridViewBandColumn bandCol6 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol6.Visible = false;
             }
 
 
@@ -5908,59 +5089,8 @@ FROM
                 gvDetail.Columns["MFINSUB2025"].Visible = false;
                 GridViewBandColumn bandCol5 = gvDetail.Columns["2025"] as GridViewBandColumn;
                 bandCol5.Visible = false;
-
-                gvDetail.Columns["MFSUB2031"].Visible = false;
-                gvDetail.Columns["MFINSUB2031"].Visible = false;
-                GridViewBandColumn bandCol6 = gvDetail.Columns["2031"] as GridViewBandColumn;
-                bandCol6.Visible = false;
-
-
             }
 
-
-
-            else if (Convert.ToInt32(Session["periodo"]) == 26)
-            {
-                gvDetail.Columns["MFSUB2020"].Visible = false;
-                gvDetail.Columns["MFINSUB2020"].Visible = false;
-                GridViewBandColumn bandCol = gvDetail.Columns["2020"] as GridViewBandColumn;
-                bandCol.Visible = false;
-
-                gvDetail.Columns["MFSUB2021"].Visible = false;
-                gvDetail.Columns["MFINSUB2021"].Visible = false;
-                GridViewBandColumn bandCol1 = gvDetail.Columns["2021"] as GridViewBandColumn;
-                bandCol1.Visible = false;
-
-
-                gvDetail.Columns["MFSUB2022"].Visible = false;
-                gvDetail.Columns["MFINSUB2022"].Visible = false;
-                GridViewBandColumn bandCol2 = gvDetail.Columns["2022"] as GridViewBandColumn;
-                bandCol2.Visible = false;
-
-                gvDetail.Columns["MFSUB2023"].Visible = false;
-                gvDetail.Columns["MFINSUB2023"].Visible = false;
-                GridViewBandColumn bandCol3 = gvDetail.Columns["2023"] as GridViewBandColumn;
-                bandCol3.Visible = false;
-
-
-                gvDetail.Columns["MFSUB2024"].Visible = false;
-                gvDetail.Columns["MFINSUB2024"].Visible = false;
-                GridViewBandColumn bandCol4 = gvDetail.Columns["2024"] as GridViewBandColumn;
-                bandCol4.Visible = false;
-
-
-                gvDetail.Columns["MFSUB2025"].Visible = false;
-                gvDetail.Columns["MFINSUB2025"].Visible = false;
-                GridViewBandColumn bandCol5 = gvDetail.Columns["2025"] as GridViewBandColumn;
-                bandCol5.Visible = false;
-
-                gvDetail.Columns["MFSUB2026"].Visible = false;
-                gvDetail.Columns["MFSUB2026"].Visible = false;
-                GridViewBandColumn bandCol6 = gvDetail.Columns["2026"] as GridViewBandColumn;
-                bandCol6.Visible = false;
-
-
-            }
             gvDetail.DataSource = productos;
 
             //gvProductos_FocusedRowChanged(sender, e);
@@ -5976,19 +5106,19 @@ FROM
             {
                 if (tipo == 0)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020 ";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020 ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ",TSF" + temp.Rows[i]["SPOA$ANIO"] + ",TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,NULL IDFISUB2026, NULL IDFINSUB2026, NULL MFSUB2026, NULL MFINSUB2026, NULL TSF2026, NULL TSFIN2026  ,NULL IDFISUB2027, NULL IDFINSUB2027, NULL MFSUB2027, NULL MFINSUB2027, NULL TSF2027, NULL TSFIN2027  ,NULL IDFISUB2028, NULL IDFINSUB2028, NULL MFSUB2028, NULL MFINSUB2028, NULL TSF2028, NULL TSFIN2028,  SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS,  SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -5997,19 +5127,19 @@ FROM
                 }
                 else if (tipo == 1)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020 ";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020 ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,NULL IDFISUB2026, NULL IDFINSUB2026, NULL MFSUB2026, NULL MFINSUB2026, NULL TSF2026, NULL TSFIN2026  ,NULL IDFISUB2027, NULL IDFINSUB2027, NULL MFSUB2027, NULL MFINSUB2027, NULL TSF2027, NULL TSFIN2027  ,NULL IDFISUB2028, NULL IDFINSUB2028, NULL MFSUB2028, NULL MFINSUB2028, NULL TSF2028, NULL TSFIN2028, SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS,  SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6023,19 +5153,19 @@ FROM
             {
                 if (tipo == 0)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021 ";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021 ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ",TSF" + temp.Rows[i]["SPOA$ANIO"] + ",TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,NULL IDFISUB2027, NULL IDFINSUB2027, NULL MFSUB2027, NULL MFINSUB2027, NULL TSF2027, NULL TSFIN2027  ,NULL IDFISUB2028, NULL IDFINSUB2028, NULL MFSUB2028, NULL MFINSUB2028, NULL TSF2028, NULL TSFIN2028,  SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS,  SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6044,19 +5174,19 @@ FROM
                 }
                 else if (tipo == 1)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021 ";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021 ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + ",NULL IDFISUB2027, NULL IDFINSUB2027, NULL MFSUB2027, NULL MFINSUB2027, NULL TSF2027, NULL TSFIN2027,NULL IDFISUB2028, NULL IDFINSUB2028, NULL MFSUB2028, NULL MFINSUB2028, NULL TSF2028, NULL TSFIN2028,SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS,  SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6070,19 +5200,19 @@ FROM
             {
                 if (tipo == 0)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,     NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022 ";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,     NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022 ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ",TSF" + temp.Rows[i]["SPOA$ANIO"] + ",TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + ",NULL IDFISUB2028, NULL IDFINSUB2028, NULL MFSUB2028, NULL MFINSUB2028, NULL TSF2028, NULL TSFIN2028,SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS,  SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6091,19 +5221,19 @@ FROM
                 }
                 else if (tipo == 1)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,    NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022 ";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,    NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022 ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + ",NULL IDFISUB2028, NULL IDFINSUB2028, NULL MFSUB2028, NULL MFINSUB2028, NULL TSF2028, NULL TSFIN2028,SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6118,19 +5248,19 @@ FROM
             {
                 if (tipo == 0)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021, NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022,NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021, NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022,NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ",TSF" + temp.Rows[i]["SPOA$ANIO"] + ",TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + ",SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6139,19 +5269,19 @@ FROM
                 }
                 else if (tipo == 1)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,    NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022, NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023 ";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,    NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022, NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023 ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + ",SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6165,19 +5295,19 @@ FROM
             {
                 if (tipo == 0)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021, NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022,NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023,  NULL IDFISUB2024, NULL IDFINSUB2024, NULL MFSUB2024, NULL MFINSUB2024, NULL TSF2024, NULL TSFIN2024";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021, NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022,NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023,  NULL IDFISUB2024, NULL IDFINSUB2024, NULL MFSUB2024, NULL MFINSUB2024, NULL TSF2024, NULL TSFIN2024";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ",TSF" + temp.Rows[i]["SPOA$ANIO"] + ",TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + ",SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6186,19 +5316,19 @@ FROM
                 }
                 else if (tipo == 1)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,    NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022, NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023, NULL IDFISUB2024, NULL IDFINSUB2024, NULL MFSUB2024, NULL MFINSUB2024, NULL TSF2024, NULL TSFIN2024";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,    NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022, NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023, NULL IDFISUB2024, NULL IDFINSUB2024, NULL MFSUB2024, NULL MFINSUB2024, NULL TSF2024, NULL TSFIN2024";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + ",SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS,  VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6212,19 +5342,19 @@ FROM
             {
                 if (tipo == 0)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021, NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022,NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023,  NULL IDFISUB2024, NULL IDFINSUB2024, NULL MFSUB2024, NULL MFINSUB2024, NULL TSF2024, NULL TSFIN2024,   NULL IDFISUB2025, NULL IDFINSUB2025, NULL MFSUB2025, NULL MFINSUB2025, NULL TSF2025, NULL TSFIN2025";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021, NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022,NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023,  NULL IDFISUB2024, NULL IDFINSUB2024, NULL MFSUB2024, NULL MFINSUB2024, NULL TSF2024, NULL TSFIN2024,   NULL IDFISUB2025, NULL IDFINSUB2025, NULL MFSUB2025, NULL MFINSUB2025, NULL TSF2025, NULL TSFIN2025";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ",TSF" + temp.Rows[i]["SPOA$ANIO"] + ",TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + ",SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6233,67 +5363,19 @@ FROM
                 }
                 else if (tipo == 1)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,    NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022, NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023, NULL IDFISUB2024, NULL IDFINSUB2024, NULL MFSUB2024, NULL MFINSUB2024, NULL TSF2024, NULL TSFIN2024,   NULL IDFISUB2025, NULL IDFINSUB2025, NULL MFSUB2025, NULL MFINSUB2025, NULL TSF2025, NULL TSFIN2025";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,    NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022, NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023, NULL IDFISUB2024, NULL IDFINSUB2024, NULL MFSUB2024, NULL MFINSUB2024, NULL TSF2024, NULL TSFIN2024,   NULL IDFISUB2025, NULL IDFINSUB2025, NULL MFSUB2025, NULL MFINSUB2025, NULL TSF2025, NULL TSFIN2025";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + ",SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-                    sql = sql + " ,SPRES$POM ORDER BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO ASC";
-                }
-            }
-
-
-
-            else if (Convert.ToInt32(Session["periodo"]) == 26)
-            {
-                if (tipo == 0)
-                {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021, NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022,NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023,  NULL IDFISUB2024, NULL IDFINSUB2024, NULL MFSUB2024, NULL MFINSUB2024, NULL TSF2024, NULL TSFIN2024,   NULL IDFISUB2025, NULL IDFINSUB2025, NULL MFSUB2025, NULL MFINSUB2025, NULL TSF2025, NULL TSFIN2025, NULL IDFISUB2026, NULL IDFINSUB2026, NULL MFSUB2026, NULL MFINSUB2026, NULL TSF2026, NULL TSFIN2026";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ",TSF" + temp.Rows[i]["SPOA$ANIO"] + ",TSFIN" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-                    sql = sql + ",SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-                    sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-                    sql = sql + " ,SPRES$POM ORDER BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO ASC";
-                }
-                else if (tipo == 1)
-                {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, NULL IDFISUB2020, NULL IDFINSUB2020, NULL MFSUB2020, NULL MFINSUB2020, NULL TSF2020, NULL TSFIN2020,  NULL IDFISUB2021, NULL IDFINSUB2021, NULL MFSUB2021, NULL MFINSUB2021, NULL TSF2021, NULL TSFIN2021,    NULL IDFISUB2022, NULL IDFINSUB2022, NULL MFSUB2022, NULL MFINSUB2022, NULL TSF2022, NULL TSFIN2022, NULL IDFISUB2023, NULL IDFINSUB2023, NULL MFSUB2023, NULL MFINSUB2023, NULL TSF2023, NULL TSFIN2023, NULL IDFISUB2024, NULL IDFINSUB2024, NULL MFSUB2024, NULL MFINSUB2024, NULL TSF2024, NULL TSFIN2024,   NULL IDFISUB2025, NULL IDFINSUB2025, NULL MFSUB2025, NULL MFINSUB2025, NULL TSF2025, NULL TSFIN2025, NULL IDFISUB2026, NULL IDFINSUB2026, NULL MFSUB2026, NULL MFINSUB2026, NULL TSF2026, NULL TSFIN2026";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-                    sql = sql + ",SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
-                    for (int i = 0; i < temp.Rows.Count; i++)
-                    {
-                        sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
-                    }
-                    sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS,  SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6307,19 +5389,19 @@ FROM
             {
                 if (tipo == 0)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ",TSF" + temp.Rows[i]["SPOA$ANIO"] + ",TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,NULL IDFINSUB2025, NULL MFSUB2025, NULL MFINSUB2025, NULL TSF2025, NULL TSFIN2025  ,NULL IDFINSUB2026, NULL MFSUB2026, NULL MFINSUB2026, NULL TSF2026, NULL TSFIN2026,    ,NULL IDFINSUB2027, NULL MFSUB2027, NULL MFINSUB2027, NULL TSF2027, NULL TSFIN2027,    SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6328,19 +5410,19 @@ FROM
                 }
                 else if (tipo == 1)
                 {
-                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = "SELECT SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + ",NULL IDFINSUB2025, NULL MFSUB2025, NULL MFINSUB2025, NULL TSF2025, NULL TSFIN2025,  NULL IDFINSUB2026, NULL MFSUB2026, NULL MFINSUB2026, NULL TSF2026, NULL TSFIN2026,     ,NULL IDFINSUB2027, NULL MFSUB2027, NULL MFINSUB2027, NULL TSF2027, NULL TSFIN2027,     SPRES$POM FROM (";
-                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.MUNICIPIOS, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
+                    sql = sql + "SELECT VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$IDMETAFISUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$IDMETAFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO) IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO,0)  MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ",  SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO,0) MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFISSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSF" + temp.Rows[i]["SPOA$ANIO"] + ", SCHE$SIPLAN20.FNC$TPFINSUB(" + temp.Rows[i]["SPOA$ID_POA"] + ", " + temp.Rows[i]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO) TSFIN" + temp.Rows[i]["SPOA$ANIO"];
                     }
                     sql = sql + " ,VES.SPRES$POM ";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, MUNICIPIOS, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 0; i < temp.Rows.Count; i++)
                     {
                         sql = sql + ",IDFISUB" + temp.Rows[i]["SPOA$ANIO"] + ", IDFINSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFSUB" + temp.Rows[i]["SPOA$ANIO"] + ", MFINSUB" + temp.Rows[i]["SPOA$ANIO"] + " ,TSF" + temp.Rows[i]["SPOA$ANIO"] + " ,TSFIN" + temp.Rows[i]["SPOA$ANIO"];
@@ -6368,19 +5450,19 @@ FROM
             {
                 if (tipo == 0)
                 {
-                    sql = "SELECT ID_RESULTADO, SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, MUNICIPIOS ";
+                    sql = "SELECT ID_RESULTADO, SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 1; i <= 12; i++)
                     {
                         sql = sql + ",IDFISUB" + i + ", IDFINSUB" + i + ", MFSUB" + i + ", MFINSUB" + i;
                     }
                     sql = sql + " ,SPRES$POM, ANUALFISICO, MFCUA1, MFCUA2, MFCUA3, ANUALFINANCIERO, MFINCUA1, MFINCUA2, MFINCUA3, ESTADOFISICO, ESTADOFINANCIERO FROM (";
-                    sql = sql + "SELECT VES.ID_RESULTADO, VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP, VES.MUNICIPIOS ";
+                    sql = sql + "SELECT VES.ID_RESULTADO, VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 1; i <= 12; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$POAIDMETAFISSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO, " + i + ") IDFISUB" + i + ", SCHE$SIPLAN20.FNC$POAIDMETAFINSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO," + i + ") IDFINSUB" + i + ", SCHE$SIPLAN20.FNC$POAMETAFISSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO, " + i + ")  MFSUB" + i + ",  SCHE$SIPLAN20.FNC$POAMETAFINMENSUALSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO, " + i + ") MFINSUB" + i;
                     }
                     sql = sql + " ,VES.SPRES$POM, SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO,0) ANUALFISICO, SCHE$SIPLAN20.FNC$POAMETAFISCUATRIMESTRAL(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 1, 4) MFCUA1,  SCHE$SIPLAN20.FNC$POAMETAFISCUATRIMESTRAL(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 5, 8) MFCUA2, SCHE$SIPLAN20.FNC$POAMETAFISCUATRIMESTRAL(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 9, 12) MFCUA3, SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO,0) ANUALFINANCIERO, SCHE$SIPLAN20.FNC$POAMETAFINCUATSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 1, 4) MFINCUA1, SCHE$SIPLAN20.FNC$POAMETAFINCUATSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 5, 8) MFINCUA2, SCHE$SIPLAN20.FNC$POAMETAFINCUATSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 9, 12) MFINCUA3, SCHE$SIPLAN20.FNC$POAESTADOSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 1, 0) ESTADOFISICO,  SCHE$SIPLAN20.FNC$POAESTADOSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 1, 1) ESTADOFINANCIERO";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY ID_RESULTADO, SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, MUNICIPIOS ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPVST$SUBESTRATEGICOV2 VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY ID_RESULTADO, SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 1; i <= 12; i++)
                     {
                         sql = sql + ",IDFISUB" + i + ", IDFINSUB" + i + ", MFSUB" + i + ", MFINSUB" + i;
@@ -6390,19 +5472,19 @@ FROM
 
                 else if (tipo == 1)
                 {
-                    sql = "SELECT ID_RESULTADO, SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, MUNICIPIOS ";
+                    sql = "SELECT ID_RESULTADO, SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 1; i <= 12; i++)
                     {
                         sql = sql + ",IDFISUB" + i + ", IDFINSUB" + i + ", MFSUB" + i + ", MFINSUB" + i;
                     }
                     sql = sql + " ,SPRES$POM, ANUALFISICO, MFCUA1, MFCUA2, MFCUA3, ANUALFINANCIERO, MFINCUA1, MFINCUA2, MFINCUA3, ESTADOFISICO, ESTADOFINANCIERO FROM (";
-                    sql = sql + "SELECT VES.ID_RESULTADO, VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP, VES.MUNICIPIOS ";
+                    sql = sql + "SELECT VES.ID_RESULTADO, VES.SPPRO$ID_PRODUCTO, VES.SPPSUB$ID_SUBPRODUCTO, VES.SUBPRODUCTO, VES.MEDIDA_SUBPRODUCTO, VES.SPPSUB$SNIP ";
                     for (int i = 1; i <= 12; i++)
                     {
                         sql = sql + ",SCHE$SIPLAN20.FNC$POAIDMETAFISSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO, " + i + ") IDFISUB" + i + ", SCHE$SIPLAN20.FNC$POAIDMETAFINSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",VES.SPPSUB$ID_SUBPRODUCTO," + i + ") IDFINSUB" + i + ", SCHE$SIPLAN20.FNC$POAMETAFISSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",  VES.SPPSUB$ID_SUBPRODUCTO, " + i + ")  MFSUB" + i + ",  SCHE$SIPLAN20.FNC$POAMETAFINMENSUALSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ", VES.SPPSUB$ID_SUBPRODUCTO, " + i + ") MFINSUB" + i;
                     }
                     sql = sql + " ,VES.SPRES$POM, SCHE$SIPLAN20.FNC$OBTIENEMETAFISICASUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO,0) ANUALFISICO, SCHE$SIPLAN20.FNC$POAMETAFISCUATRIMESTRAL(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 1, 4) MFCUA1,  SCHE$SIPLAN20.FNC$POAMETAFISCUATRIMESTRAL(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 5, 8) MFCUA2, SCHE$SIPLAN20.FNC$POAMETAFISCUATRIMESTRAL(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 9, 12) MFCUA3, SCHE$SIPLAN20.FNC$METAFINANCIERASUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO,0) ANUALFINANCIERO, SCHE$SIPLAN20.FNC$POAMETAFINCUATSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 1, 4) MFINCUA1, SCHE$SIPLAN20.FNC$POAMETAFINCUATSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 5, 8) MFINCUA2, SCHE$SIPLAN20.FNC$POAMETAFINCUATSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 9, 12) MFINCUA3, SCHE$SIPLAN20.FNC$POAESTADOSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 1, 0) ESTADOFISICO,  SCHE$SIPLAN20.FNC$POAESTADOSUB(" + poa.Rows[0]["SPOA$ID_POA"] + ", " + poa.Rows[0]["SPOA$ANIO"] + ",   VES.SPPSUB$ID_SUBPRODUCTO, 1, 1) ESTADOFINANCIERO";
-                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY ID_RESULTADO, SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP, MUNICIPIOS ";
+                    sql = sql + " FROM SCHE$SIPLAN20.SPPSVT$RED_INSTITUCIONAL VES WHERE VES.ID_RESULTADO =" + resultado + "  AND VES.SPPRO$ID_PROGRAMA_PRESUPUESTO = " + programa + " AND  VES.SPRES$POM = " + pom + " AND  VES.SPRES$INSTITUCION =  " + insto + " AND VES.SPPRO$ID_PRODUCTO =" + producto + ") GROUP BY ID_RESULTADO, SPPRO$ID_PRODUCTO, SPPSUB$ID_SUBPRODUCTO, SUBPRODUCTO, MEDIDA_SUBPRODUCTO, SPPSUB$SNIP ";
                     for (int i = 1; i <= 12; i++)
                     {
                         sql = sql + ",IDFISUB" + i + ", IDFINSUB" + i + ", MFSUB" + i + ", MFINSUB" + i;
@@ -7723,227 +6805,6 @@ FROM
                         //FIN 2026-2030
 
 
-
-                        //INICIO 2027-2031
-
-                        //NUEVA PGG
-                        else if (Convert.ToInt32(Session["periodo"]) == 26)
-                        {
-                            if (metas.Rows[i]["SPPRO$ID_PRODUCTO"].ToString() == e.Keys["SPPRO$ID_PRODUCTO"].ToString())
-                            {
-
-                                //INICIO 2027
-                                if (metas.Rows[i]["IDFP2027"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToInt32(e.NewValues["MF2024"]) != 0)
-                                    if (e.NewValues["MF2027"] != DBNull.Value)
-
-                                    {
-                                        poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2027);
-                                        estado = insertaMetaFisica(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MF2027"]));
-                                        if (estado == 0)
-                                        {
-                                            fallos++;
-                                            mensajesFisico = mensajesFisico + " 2027 ";
-                                        }
-                                    }
-                                }
-                                else
-                                {
-                                    poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2027);
-                                    //if (Convert.ToInt32(e.NewValues["MF2024"]) == 0)
-                                    if (e.NewValues["MF2027"] == DBNull.Value)
-                                    {
-                                        estado = eliminaMetafisica(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFP2027"]));
-                                    }
-                                    else
-                                    {
-                                        estado = AcualizametafiscaProd(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MF2027"]), Convert.ToInt32(metas.Rows[i]["IDFP2027"]));
-                                    }
-
-                                    if (estado == 0)
-                                    {
-                                        fallos++;
-                                        mensajesFisico = mensajesFisico + " 2027 ";
-                                    }
-                                }
-                                //FIN 2027
-
-                                //INICIO 2028
-                                if (metas.Rows[i]["IDFP2028"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToInt32(e.NewValues["MF2025"]) != 0)
-                                    if (e.NewValues["MF2028"] != DBNull.Value)
-                                    {
-                                        poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2028);
-                                        estado = insertaMetaFisica(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MF2028"]));
-                                        if (estado == 0)
-                                        {
-                                            fallos++;
-                                            mensajesFisico = mensajesFisico + " 2028 ";
-                                        }
-                                    }
-                                }
-                                else
-                                {
-                                    poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2028);
-                                    //if (Convert.ToInt32(e.NewValues["MF2025"]) == 0)
-                                    if (e.NewValues["MF2028"] == DBNull.Value)
-                                    {
-                                        estado = eliminaMetafisica(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFP2028"]));
-                                    }
-                                    else
-                                    {
-                                        estado = AcualizametafiscaProd(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MF2028"]), Convert.ToInt32(metas.Rows[i]["IDFP2028"]));
-                                    }
-
-                                    if (estado == 0)
-                                    {
-                                        fallos++;
-                                        mensajesFisico = mensajesFisico + " 2028 ";
-                                    }
-                                }
-                                //FIN 2028
-
-                                //INICIO 2028
-                                if (metas.Rows[i]["IDFP2029"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToInt32(e.NewValues["MF2026"]) != 0)
-                                    if (e.NewValues["MF2029"] != DBNull.Value)
-                                    {
-                                        poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2029);
-                                        estado = insertaMetaFisica(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MF2029"]));
-                                        if (estado == 0)
-                                        {
-                                            fallos++;
-                                            mensajesFisico = mensajesFisico + " 2029 ";
-                                        }
-                                    }
-                                }
-                                else
-                                {
-                                    poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2029);
-                                    //if (Convert.ToInt32(e.NewValues["MF2026"]) == 0)
-                                    if (e.NewValues["MF2029"] == DBNull.Value)
-                                    {
-                                        estado = eliminaMetafisica(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFP2029"]));
-                                    }
-                                    else
-                                    {
-                                        estado = AcualizametafiscaProd(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MF2029"]), Convert.ToInt32(metas.Rows[i]["IDFP2029"]));
-                                    }
-
-                                    if (estado == 0)
-                                    {
-                                        fallos++;
-                                        mensajesFisico = mensajesFisico + " 2029 ";
-                                    }
-                                }
-                                //FIN 2029
-
-
-
-
-                                if (metas.Rows[i]["IDFP2030"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToInt32(e.NewValues["MF2022"]) != 0)
-                                    if (e.NewValues["MF2030"] != DBNull.Value)
-                                    {
-                                        poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2030);
-                                        estado = insertaMetaFisica(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MF2030"]));
-                                        if (estado == 0)
-                                        {
-                                            fallos++;
-                                            mensajesFisico = mensajesFisico + " 2030 ";
-                                        }
-
-                                    }
-                                }
-                                else
-                                {
-                                    poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2030);
-
-                                    //if (Convert.ToInt32(e.NewValues["MF2022"]) == 0)
-                                    if (e.NewValues["MF2030"] == DBNull.Value)
-                                    {
-                                        estado = eliminaMetafisica(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFP2030"]));
-                                    }
-                                    else
-                                    {
-                                        estado = AcualizametafiscaProd(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MF2030"]), Convert.ToInt32(metas.Rows[i]["IDFP2030"]));
-                                    }
-
-                                    if (estado == 0)
-                                    {
-                                        fallos++;
-                                        mensajesFisico = mensajesFisico + " 2030 ";
-                                    }
-                                }
-
-
-
-                                if (metas.Rows[i]["IDFP2031"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToInt32(e.NewValues["MF2023"]) != 0)
-                                    if (e.NewValues["MF2031"] != DBNull.Value)
-                                    {
-                                        poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2031);
-                                        estado = insertaMetaFisica(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MF2031"]));
-                                        if (estado == 0)
-                                        {
-                                            fallos++;
-                                            mensajesFisico = mensajesFisico + " 2031 ";
-                                        }
-
-
-                                    }
-                                }
-                                else
-                                {
-                                    poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2031);
-                                    //if (Convert.ToInt32(e.NewValues["MF2023"]) == 0)
-                                    if (e.NewValues["MF2031"] == DBNull.Value)
-                                    {
-                                        estado = eliminaMetafisica(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFP2031"]));
-                                    }
-                                    else
-                                    {
-                                        estado = AcualizametafiscaProd(Convert.ToInt32(e.Keys["SPPRO$ID_PRODUCTO"]), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MF2031"]), Convert.ToInt32(metas.Rows[i]["IDFP2031"]));
-                                    }
-
-                                    if (estado == 0)
-                                    {
-                                        fallos++;
-                                        mensajesFisico = mensajesFisico + " 2031 ";
-                                    }
-                                }
-                                //FIN 2031
-
-
-
-                                if (fallos > 0)
-                                {
-                                    mensaje = "Error en la grabación de metas de los años: " + mensajesFisico;
-                                    grid.JSProperties["cpError"] = "Información " + mensaje;
-                                    e.Cancel = true;
-                                    grid.CancelEdit();
-                                    break;
-                                }
-
-                                else
-                                {
-                                    mensaje = "Metas guardadas correctamente";
-                                    grid.JSProperties["cpError"] = "Información " + mensaje;
-                                    e.Cancel = true;
-                                    grid.CancelEdit();
-                                    break;
-                                }
-                            }
-                        }
-
-                        //FIN 2027-2031
-
-
                         else
                         {
                             if (metas.Rows[i]["SPPRO$ID_PRODUCTO"].ToString() == e.Keys["SPPRO$ID_PRODUCTO"].ToString())
@@ -8200,7 +7061,6 @@ FROM
             double programa2028;
             double programa2029;
             double programa2030;
-            double programa2031;
             double pre2020;
             double pre2021;
             double pre2022;
@@ -8212,7 +7072,6 @@ FROM
             double pre2028;
             double pre2029;
             double pre2030;
-            double pre2031;
 
             if (Session["subproductos"] != null)
             {
@@ -11392,541 +10251,6 @@ FROM
                         //FIN 2026-2030
 
 
-                                                //INICIO 2027-2031
-                        if (Convert.ToInt32(Session["periodo"]) == 26)
-                        {
-                            if (metas.Rows[i]["SPPSUB$ID_SUBPRODUCTO"].ToString() == e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString())
-                            {
-
-
-                                
-                                if (programas.Rows[0]["PRESUPUESTO2027"] == DBNull.Value)
-                                    programa2027 = 0;
-                                else
-                                    programa2027 = Convert.ToDouble(programas.Rows[0]["PRESUPUESTO2027"]);
-
-
-                                if (programas.Rows[0]["PRESUPUESTO2028"] == DBNull.Value)
-                                    programa2028 = 0;
-                                else
-                                    programa2028 = Convert.ToDouble(programas.Rows[0]["PRESUPUESTO2027"]);
-
-
-                                if (programas.Rows[0]["PRESUPUESTO2029"] == DBNull.Value)
-                                    programa2029 = 0;
-                                else
-                                    programa2029 = Convert.ToDouble(programas.Rows[0]["PRESUPUESTO2029"]);
-
-
-
-                                if (programas.Rows[0]["PRESUPUESTO2030"] == DBNull.Value)
-                                    programa2030 = 0;
-                                else
-                                    programa2030 = Convert.ToDouble(programas.Rows[0]["PRESUPUESTO2030"]);
-
-
-                                if (programas.Rows[0]["PRESUPUESTO2031"] == DBNull.Value)
-                                    programa2031 = 0;
-                                else
-                                    programa2031 = Convert.ToDouble(programas.Rows[0]["PRESUPUESTO2031"]);
-
-
-
-
-                               
-
-                                if ((programas.Rows[0]["PR0GRAMADO2027"] == DBNull.Value))
-                                    pre2027 = 0;
-                                else
-                                    pre2027 = Convert.ToDouble(programas.Rows[0]["PR0GRAMADO2027"]);
-
-
-                                if (programas.Rows[0]["PR0GRAMADO2028"] == DBNull.Value)
-                                    pre2028 = 0;
-                                else
-                                    pre2028 = Convert.ToDouble(programas.Rows[0]["PR0GRAMADO2028"]);
-
-
-                                if ((programas.Rows[0]["PR0GRAMADO2029"] == DBNull.Value))
-                                    pre2029 = 0;
-                                else
-                                    pre2029 = Convert.ToDouble(programas.Rows[0]["PR0GRAMADO2029"]);
-
-
-                                if ((programas.Rows[0]["PR0GRAMADO2030"] == DBNull.Value))
-                                    pre2030 = 0;
-                                else
-                                    pre2030 = Convert.ToDouble(programas.Rows[0]["PR0GRAMADO2030"]);
-
-
-                                if ((programas.Rows[0]["PR0GRAMADO2031"] == DBNull.Value))
-                                    pre2031 = 0;
-                                else
-                                    pre2031 = Convert.ToDouble(programas.Rows[0]["PR0GRAMADO2031"]);
-
-
-
-
-
-                                //fin financiero
-
-
-
-                                if ((programas.Rows[0]["PR0GRAMADO2027"] == DBNull.Value))
-                                    pre2027 = 0;
-                                else
-                                    pre2027 = Convert.ToDouble(programas.Rows[0]["PR0GRAMADO2027"]);
-
-
-
-                                if (programas.Rows[0]["PR0GRAMADO2028"] == DBNull.Value)
-                                    pre2028 = 0;
-                                else
-                                    pre2028 = Convert.ToDouble(programas.Rows[0]["PR0GRAMADO2028"]);
-
-
-                                if ((programas.Rows[0]["PR0GRAMADO2029"] == DBNull.Value))
-                                    pre2029 = 0;
-                                else
-                                    pre2029 = Convert.ToDouble(programas.Rows[0]["PR0GRAMADO2029"]);
-
-
-                                if ((programas.Rows[0]["PR0GRAMADO2030"] == DBNull.Value))
-                                    pre2030 = 0;
-                                else
-                                    pre2030 = Convert.ToDouble(programas.Rows[0]["PR0GRAMADO2030"]);
-
-
-                                if ((programas.Rows[0]["PR0GRAMADO2031"] == DBNull.Value))
-                                    pre2031 = 0;
-                                else
-                                    pre2031 = Convert.ToDouble(programas.Rows[0]["PR0GRAMADO2031"]);
-
-
-
-                                                                
-                                poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2027);
-                                //inicio 2027
-                                if (metas.Rows[i]["IDFISUB2027"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFSUB2026"]) != 0)
-                                    if (e.NewValues["MFSUB2027"] != DBNull.Value)
-                                    {
-                                        estado = insertaFisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFSUB2027"]));
-                                        if (estado == 0)
-                                        {
-                                            mensajesFisico = mensajesFisico + " 2027 ";
-                                            fallofisico++;
-                                        }
-                                    }
-
-                                }
-
-                                else
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFSUB2026"]) != 0)
-                                    if (e.NewValues["MFSUB2027"] != DBNull.Value)
-
-
-                                        estado = Acualizametafisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFSUB2027"]), Convert.ToInt32(metas.Rows[i]["IDFISUB2027"]));
-                                    else
-                                        estado = Eliminafisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFISUB2027"]));
-
-                                    if (estado == 0)
-                                    {
-                                        mensaje = mensaje + " 2027 ";
-                                        fallofisico++;
-                                    }
-                                }
-
-                                //fin 2027
-
-                                poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2028);
-                                //inicio 2028
-                                if (metas.Rows[i]["IDFISUB2028"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFSUB2022"]) != 0)
-                                    if (e.NewValues["MFSUB2028"] != DBNull.Value)
-                                    {
-                                        estado = insertaFisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFSUB2028"]));
-                                        if (estado == 0)
-                                        {
-                                            mensajesFisico = mensajesFisico + " 2028 ";
-                                            fallofisico++;
-                                        }
-                                    }
-
-
-                                }
-
-                                else
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFSUB2022"]) != 0)
-                                    if (e.NewValues["MFSUB2028"] != DBNull.Value)
-
-                                        estado = Acualizametafisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFSUB2028"]), Convert.ToInt32(metas.Rows[i]["IDFISUB2028"]));
-                                    else
-                                        estado = Eliminafisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFISUB2028"]));
-
-                                    if (estado == 0)
-                                    {
-                                        mensajesFisico = mensajesFisico + " 2028 ";
-                                        fallofisico++;
-                                    }
-                                }
-
-                                //fin 2028
-
-
-
-
-                                poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2029);
-                                //inicio 2029
-                                if (metas.Rows[i]["IDFISUB2029"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFSUB2023"]) != 0)
-                                    if (e.NewValues["MFSUB2029"] != DBNull.Value)
-                                    {
-                                        estado = insertaFisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFSUB2029"]));
-                                        if (estado == 0)
-                                        {
-                                            mensajesFisico = mensajesFisico + " 2029 ";
-                                            fallofisico++;
-                                        }
-                                    }
-
-                                }
-
-                                else
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFSUB2023"]) != 0)
-                                    if (e.NewValues["MFSUB2029"] != DBNull.Value)
-                                        estado = Acualizametafisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFSUB2029"]), Convert.ToInt32(metas.Rows[i]["IDFISUB2029"]));
-                                    else
-                                        estado = Eliminafisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFISUB2029"]));
-
-
-                                    if (estado == 0)
-                                    {
-                                        mensajesFisico = mensajesFisico + " 2029 ";
-                                        fallofisico++;
-                                    }
-                                }
-
-                                //fin 2029
-
-                                poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2030);
-                                //inicio 2030
-                                if (metas.Rows[i]["IDFISUB2030"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFSUB2024"]) != 0)
-                                    if (e.NewValues["MFSUB2030"] != DBNull.Value)
-                                    {
-                                        estado = insertaFisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFSUB2030"]));
-                                        if (estado == 0)
-                                        {
-                                            mensajesFisico = mensajesFisico + " 2030 ";
-                                            fallofisico++;
-                                        }
-                                    }
-
-                                }
-
-                                else
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFSUB2024"]) != 0)
-                                    if (e.NewValues["MFSUB2030"] != DBNull.Value)
-                                        estado = Acualizametafisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFSUB2030"]), Convert.ToInt32(metas.Rows[i]["IDFISUB2030"]));
-                                    else
-                                        estado = Eliminafisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFISUB2030"]));
-
-                                    if (estado == 0)
-                                    {
-                                        mensajesFisico = mensajesFisico + " 2030 ";
-                                        fallofisico++;
-                                    }
-                                }
-
-
-
-
-                                poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2031);
-                                //inicio 2026
-                                if (metas.Rows[i]["IDFISUB2031"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFSUB2025"]) != 0)
-                                    if (e.NewValues["MFSUB2031"] != DBNull.Value)
-                                    {
-                                        estado = insertaFisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFSUB2031"]));
-                                        if (estado == 0)
-                                        {
-                                            mensajesFisico = mensajesFisico + " 2031 ";
-                                            fallofisico++;
-                                        }
-                                    }
-
-                                }
-
-                                else
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFSUB2025"]) != 0)
-                                    if (e.NewValues["MFSUB2031"] != DBNull.Value)
-
-                                        estado = Acualizametafisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFSUB2031"]), Convert.ToInt32(metas.Rows[i]["IDFISUB2031"]));
-                                    else
-                                        estado = Eliminafisicasub(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFISUB2031"]));
-
-                                    if (estado == 0)
-                                    {
-                                        mensajesFisico = mensajesFisico + " 2031 ";
-                                        fallofisico++;
-                                    }
-                                }
-
-                                //fin 2031
-
-
-
-
-                                
-
-                                //inicio 2027
-                                if (metas.Rows[i]["MFINSUB2027"] == DBNull.Value || e.NewValues["MFINSUB2027"] == DBNull.Value)
-                                    pre2027 = 0;
-                                else if ((metas.Rows[i]["MFINSUB2027"] != DBNull.Value && e.NewValues["MFINSUB2027"] != DBNull.Value) && (Convert.ToDouble(metas.Rows[i]["MFINSUB2027"]) == Convert.ToDouble(e.NewValues["MFINSUB2027"])))
-                                    pre2027 = 0;
-                                else if (Convert.ToDouble(metas.Rows[i]["MFINSUB2027"]) > Convert.ToDouble(e.NewValues["MFINSUB2027"]))
-                                {
-                                    pre2027 = pre2027 + Convert.ToDouble(e.NewValues["MFINSUB2027"]);
-                                    pre2027 = Convert.ToDouble(e.NewValues["MFINSUB2027"]) - Convert.ToDouble(metas.Rows[i]["MFINSUB2027"]);
-                                    pre2027 = pre2027 + Convert.ToDouble(metas.Rows[i]["MFINSUB2027"]);
-                                }
-
-                                else
-                                {
-                                    pre2027 = Convert.ToDouble(e.NewValues["MFINSUB2027"]) - Convert.ToDouble(metas.Rows[i]["MFINSUB2027"]);
-                                    pre2027 = pre2027 + Convert.ToDouble(metas.Rows[i]["MFINSUB2027"]);
-                                }
-                                
-                                poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2027);
-                                if (metas.Rows[i]["IDFINSUB2027"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFINSUB2026"]) != 0)
-                                    if (e.NewValues["MFINSUB2027"] != DBNull.Value)
-                                        estado = insertaFinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFINSUB2027"]));
-                                }
-                                else
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFINSUB2026"]) != 0)
-                                    if (e.NewValues["MFINSUB2027"] != DBNull.Value)
-                                        estado = Acualizametafinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFINSUB2027"]), Convert.ToInt32(metas.Rows[i]["IDFINSUB2027"]));
-                                    else
-                                        estado = Eliminametafinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFINSUB2027"]));
-                                }
-                                //}
-
-
-
-                                //inicio 2027
-
-                                if (metas.Rows[i]["MFINSUB2028"] == DBNull.Value || e.NewValues["MFINSUB2027"] == DBNull.Value)
-                                    pre2028 = 0;
-                                else if ((metas.Rows[i]["MFINSUB2028"] != DBNull.Value && e.NewValues["MFINSUB2027"] != DBNull.Value) && (Convert.ToDouble(metas.Rows[i]["MFINSUB2028"]) == Convert.ToDouble(e.NewValues["MFINSUB2028"])))
-                                    pre2028 = 0;
-                                else if (Convert.ToDouble(metas.Rows[i]["MFINSUB2028"]) > Convert.ToDouble(e.NewValues["MFINSUB2028"]))
-                                {
-                                    pre2028 = pre2028 + Convert.ToDouble(e.NewValues["MFINSUB2028"]);
-                                    pre2028 = Convert.ToDouble(e.NewValues["MFINSUB2028"]) - Convert.ToDouble(metas.Rows[i]["MFINSUB2028"]);
-                                    pre2028 = pre2028 + Convert.ToDouble(metas.Rows[i]["MFINSUB2028"]);
-                                }
-
-                                else
-                                {
-                                    pre2028 = Convert.ToDouble(e.NewValues["MFINSUB2028"]) - Convert.ToDouble(metas.Rows[i]["MFINSUB2028"]);
-                                    pre2028 = pre2028 + Convert.ToDouble(metas.Rows[i]["MFINSUB2028"]);
-                                }
-
-                                //if (pre2021 > programa2021)
-                                //{
-                                //    mensajesfinanciero = mensajesfinanciero + " 2021 ";
-                                //    //fallosfinanciero++;
-                                //}
-                                //else
-                                //{
-                                poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2028);
-                                if (metas.Rows[i]["IDFINSUB2028"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFINSUB2022"]) != 0)
-                                    if (e.NewValues["MFINSUB2028"] != DBNull.Value)
-                                        estado = insertaFinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFINSUB2028"]));
-                                }
-                                else
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFINSUB2022"]) != 0)
-                                    if (e.NewValues["MFINSUB2028"] != DBNull.Value)
-                                        estado = Acualizametafinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFINSUB2028"]), Convert.ToInt32(metas.Rows[i]["IDFINSUB2028"]));
-                                    else
-                                        estado = Eliminametafinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFINSUB2028"]));
-                                }
-                                //}
-                                //fin 2027
-
-
-
-
-                                //inicio 2028
-                                if (metas.Rows[i]["MFINSUB2029"] == DBNull.Value || e.NewValues["MFINSUB2029"] == DBNull.Value)
-                                    pre2029 = 0;
-                                else if ((metas.Rows[i]["MFINSUB2029"] != DBNull.Value && e.NewValues["MFINSUB2029"] != DBNull.Value) && (Convert.ToDouble(metas.Rows[i]["MFINSUB2029"]) == Convert.ToDouble(e.NewValues["MFINSUB2029"])))
-                                    pre2029 = 0;
-                                else if (Convert.ToDouble(metas.Rows[i]["MFINSUB2029"]) > Convert.ToDouble(e.NewValues["MFINSUB2029"]))
-                                {
-                                    pre2029 = pre2029 + Convert.ToDouble(e.NewValues["MFINSUB2029"]);
-                                    pre2029 = Convert.ToDouble(e.NewValues["MFINSUB2029"]) - Convert.ToDouble(metas.Rows[i]["MFINSUB2029"]);
-                                    pre2029 = pre2029 + Convert.ToDouble(metas.Rows[i]["MFINSUB2029"]);
-                                }
-
-                                else
-                                {
-                                    pre2029 = Convert.ToDouble(e.NewValues["MFINSUB2029"]) - Convert.ToDouble(metas.Rows[i]["MFINSUB2029"]);
-                                    pre2029 = pre2029 + Convert.ToDouble(metas.Rows[i]["MFINSUB2029"]);
-                                }
-
-                                //pre2021 = pre2021 + Convert.ToDouble(e.NewValues["FIN2021"]);
-                                //if (pre2021 > programa2021)
-                                //{
-                                //    mensajesfinanciero = mensajesfinanciero + " 2021 ";
-                                //    fallosfinanciero++;
-                                //}
-                                //else
-                                //{
-                                poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2029);
-                                if (metas.Rows[i]["IDFINSUB2029"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFINSUB2023"]) != 0)
-                                    if (e.NewValues["MFINSUB2029"] != DBNull.Value)
-                                        estado = insertaFinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFINSUB2029"]));
-                                }
-                                else
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFINSUB2023"]) != 0)
-                                    if (e.NewValues["MFINSUB2029"] != DBNull.Value)
-                                        estado = estado = Acualizametafinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFINSUB2029"]), Convert.ToInt32(metas.Rows[i]["IDFINSUB2029"]));
-                                    else
-                                        estado = Eliminametafinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFINSUB2029"]));
-                                }
-                                //}
-                                //fin 2028
-
-
-
-                                //INICIO 2030
-
-                                if (metas.Rows[i]["MFSUB2030"] == DBNull.Value || e.NewValues["MFSUB2030"] == DBNull.Value)
-                                    pre2030 = 0;
-                                else if ((metas.Rows[i]["MFSUB2030"] != DBNull.Value && e.NewValues["MFSUB2030"] != DBNull.Value) && (Convert.ToDouble(metas.Rows[i]["MFSUB2030"]) == Convert.ToDouble(e.NewValues["MFSUB2030"])))
-                                    pre2030 = 0;
-                                else if (Convert.ToDouble(metas.Rows[i]["MFSUB2030"]) > Convert.ToDouble(e.NewValues["MFSUB2030"]))
-                                {
-                                    pre2030 = pre2030 + Convert.ToDouble(e.NewValues["MFSUB2030"]);
-                                    pre2030 = Convert.ToDouble(e.NewValues["MFSUB2030"]) - Convert.ToDouble(metas.Rows[i]["MFSUB2030"]);
-                                    pre2030 = pre2030 + Convert.ToDouble(metas.Rows[i]["MFSUB2030"]);
-                                }
-
-                                else
-                                {
-                                    pre2030 = Convert.ToDouble(e.NewValues["MFSUB2030"]) - Convert.ToDouble(metas.Rows[i]["MFSUB2030"]);
-                                    pre2030 = pre2030 + Convert.ToDouble(metas.Rows[i]["MFSUB2030"]);
-                                }
-
-                                poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2030);
-                                if (metas.Rows[i]["IDFINSUB2030"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFINSUB2024"]) != 0)
-                                    if (e.NewValues["MFINSUB2030"] != DBNull.Value)
-                                        estado = insertaFinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFINSUB2030"]));
-                                }
-                                else
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFINSUB2024"]) != 0)
-                                    if (e.NewValues["MFINSUB2030"] != DBNull.Value)
-                                        estado = Acualizametafinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFINSUB2030"]), Convert.ToInt32(metas.Rows[i]["IDFINSUB2030"]));
-                                    else
-                                        estado = Eliminametafinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFINSUB2030"]));
-                                }
-
-                                //FIN 2030
-
-
-
-                                //inicio 2031
-                                if (metas.Rows[i]["MFINSUB2031"] == DBNull.Value || e.NewValues["MFINSUB2031"] == DBNull.Value)
-                                    pre2031 = 0;
-                                else if ((metas.Rows[i]["MFINSUB2031"] != DBNull.Value && e.NewValues["MFINSUB2031"] != DBNull.Value) && (Convert.ToDouble(metas.Rows[i]["MFINSUB2031"]) == Convert.ToDouble(e.NewValues["MFINSUB2031"])))
-                                    pre2031 = 0;
-                                else if (Convert.ToDouble(metas.Rows[i]["MFINSUB2031"]) > Convert.ToDouble(e.NewValues["MFINSUB2031"]))
-                                {
-                                    pre2031 = pre2031 + Convert.ToDouble(e.NewValues["MFINSUB2031"]);
-                                    pre2031 = Convert.ToDouble(e.NewValues["MFINSUB2031"]) - Convert.ToDouble(metas.Rows[i]["MFINSUB2031"]);
-                                    pre2031 = pre2031 + Convert.ToDouble(metas.Rows[i]["MFINSUB2031"]);
-                                }
-
-                                else
-                                {
-                                    pre2031 = Convert.ToDouble(e.NewValues["MFINSUB2031"]) - Convert.ToDouble(metas.Rows[i]["MFINSUB2031"]);
-                                    pre2031 = pre2031 + Convert.ToDouble(metas.Rows[i]["MFINSUB2031"]);
-                                }
-                                //pre2023 = pre2023 + Convert.ToDouble(e.NewValues["FIN2023"]);
-                                //if (pre2023 > programa2023)
-                                //{
-                                //    mensajesfinanciero = mensajesfinanciero + " 2023 ";
-                                //    fallosfinanciero++;
-
-                                //}
-                                //else
-                                //{
-                                poas = obtienepoa(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2031);
-                                if (metas.Rows[i]["IDFINSUB2031"] == DBNull.Value)
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFINSUB2025"]) != 0)
-                                    if (e.NewValues["MFINSUB2031"] != DBNull.Value)
-                                        estado = insertaFinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFINSUB2031"]));
-                                }
-                                else
-                                {
-                                    //if (Convert.ToDouble(e.NewValues["MFINSUB2025"]) != 0)
-                                    if (e.NewValues["MFINSUB2031"] != DBNull.Value)
-                                        estado = Acualizametafinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToDouble(e.NewValues["MFINSUB2031"]), Convert.ToInt32(metas.Rows[i]["IDFINSUB2031"]));
-                                    else
-                                        estado = Eliminametafinanciera(Convert.ToInt32(e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString()), Convert.ToInt32(poas.Rows[0]["SPOA$ID_POA"]), Convert.ToInt32(poas.Rows[0]["SPOA$ANIO"]), Convert.ToInt32(metas.Rows[i]["IDFINSUB2031"]));
-                                }
-                                //}
-                                //fin 2031
-
-
-
-
-
-                                if (fallofisico > 0)
-                                    mensaje = "Las metas de los años " + mensajesFisico + ", no pudieron ser guardadas por posibles fallos en el sistema, intententelo mas tarde o contacte al administrador";
-                                if (fallosfinanciero > 0)
-                                    mensaje = mensaje + " Las metas financieras de los años " + mensajesfinanciero + ", no pudieron ser guardadas al estar programando una cantidad mayor, a la cantidad asignada  a su programa, por favor revise las cantidades en los años descritos";
-                                if (fallofisico == 0 & fallosfinanciero == 0)
-                                    mensaje = "Metas guardadas correctamente";
-
-                                grid.JSProperties["cpError"] = "Información " + mensaje;
-                                e.Cancel = true;
-                                grid.CancelEdit();
-                                break;
-
-
-                            }
-
-                        }
-
-                        //FIN 2027-2031
-
-
                         else
                         {
                             if (metas.Rows[i]["SPPSUB$ID_SUBPRODUCTO"].ToString() == e.Keys["SPPSUB$ID_SUBPRODUCTO"].ToString())
@@ -13887,54 +12211,6 @@ FROM
             }
         }
 
-
-        protected void gvPOAsubProductos_HtmlDataCellPrepared(object sender, ASPxGridViewTableDataCellEventArgs e)
-        {
-            Session["carga"] = 1;
-            ASPxGridView grid = sender as ASPxGridView;
-
-            if (e.DataColumn.Caption == "Metas por territorio")
-            {
-                int municipios = 0;
-
-                if (e.GetValue("MUNICIPIOS") != DBNull.Value)
-                    municipios = Convert.ToInt32(e.GetValue("MUNICIPIOS"));
-
-                var panel = grid.FindRowCellTemplateControl(
-                    e.VisibleIndex,
-                    e.DataColumn,
-                    "pnlBtn1"
-                ) as Panel;
-
-                if (panel != null)
-                {
-                    panel.Visible = municipios > 0;
-                    ASPxButton btn = grid.FindRowCellTemplateControl(
-                            e.VisibleIndex,
-                            e.DataColumn,
-                            "btnMetasMuno1"
-                    ) as ASPxButton;
-
-                    if (btn != null)
-                    {
-                        // 🔥 CLAVE
-                        btn.UseSubmitBehavior = true;
-                        btn.AutoPostBack = true;
-
-                        ScriptManager.GetCurrent(this).RegisterPostBackControl(btn);
-                    }
-
-                }
-
-
-            }
-
-            
-
-
-        }
-
-
         protected void bntEnviar_Click(object sender, EventArgs e)
         {
 
@@ -14203,7 +12479,7 @@ FROM
                 }
 
 
-                else if (maiden != 22 && maiden != 23 && maiden != 24 && maiden != 25 && maiden != 26)
+                else if (maiden != 22 && maiden != 23 && maiden != 24 && maiden != 25)
                 {
 
                     e.Editor.ClientEnabled = false;
@@ -14231,7 +12507,7 @@ FROM
                 }
 
 
-                else if (Convert.ToInt32(Session["periodo"]) != 23 && Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25 && Convert.ToInt32(Session["periodo"]) != 26)
+                else if (Convert.ToInt32(Session["periodo"]) != 23 && Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25)
                 {
 
                     e.Editor.ClientEnabled = false;
@@ -14258,8 +12534,10 @@ FROM
                 }
 
 
-                if (Convert.ToInt32(Session["periodo"]) <= 23)              
+                if (Convert.ToInt32(Session["periodo"]) == 24 || Convert.ToInt32(Session["periodo"]) == 25)               
 
+                    e.Editor.ClientEnabled = true;                
+                else
                     e.Editor.ClientEnabled = false;
 
             }
@@ -14280,7 +12558,7 @@ FROM
                 }
 
 
-                if (Convert.ToInt32(Session["periodo"]) != 25 && Convert.ToInt32(Session["periodo"]) != 26)
+                if (Convert.ToInt32(Session["periodo"]) != 25)
                 {
 
                     e.Editor.ClientEnabled = false;
@@ -14289,35 +12567,6 @@ FROM
 
                 }
             }
-
-
-
-            if (e.Column.FieldName == "MF2031")
-            {
-                if (grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TP2031") != DBNull.Value)
-                {
-                    int valor = Convert.ToInt32(grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TP2031").ToString());
-                    if (valor == 1)
-                    {
-                        e.Editor.ClientEnabled = false;
-                        e.Editor.BackColor = System.Drawing.Color.Blue;
-                        e.Editor.ForeColor = System.Drawing.Color.White;
-                        e.Editor.Font.Bold = true;
-                    }
-
-                }
-
-
-                if (Convert.ToInt32(Session["periodo"]) != 26)
-                {
-
-                    e.Editor.ClientEnabled = false;
-
-
-
-                }
-            }
-
 
             if (e.Column.FieldName == "MFIN2025")
             {
@@ -14383,19 +12632,6 @@ FROM
             if (e.Column.FieldName == "MFIN2030")
             {
                 if (Convert.ToInt32(Session["periodo"]) != 25)
-                {
-
-                    e.Editor.ClientEnabled = false;
-
-
-
-                }
-            }
-
-
-            if (e.Column.FieldName == "MFIN2031")
-            {
-                if (Convert.ToInt32(Session["periodo"]) != 26)
                 {
 
                     e.Editor.ClientEnabled = false;
@@ -14849,65 +13085,12 @@ FROM
 
             }
 
-
-            if (e.DataColumn.FieldName == "MF2031")
-            {
-                if (grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TP2031") != DBNull.Value)
-                {
-                    int valor = Convert.ToInt32(grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TP2031").ToString());
-                    if (valor == 1)
-                    {
-                        e.Cell.BackColor = System.Drawing.Color.Green;
-                        e.Cell.ForeColor = System.Drawing.Color.White;
-                    }
-
-                }
-
-            }
-
         }
 
         protected void gvsubProductos_HtmlDataCellPrepared(object sender, ASPxGridViewTableDataCellEventArgs e)
         {
             Session["carga"] = 1;
             ASPxGridView grid = sender as ASPxGridView;
-
-            if (e.DataColumn.Caption == "Metas por territorio")
-            {
-                int municipios = 0;
-
-                if (e.GetValue("MUNICIPIOS") != DBNull.Value)
-                    municipios = Convert.ToInt32(e.GetValue("MUNICIPIOS"));
-
-                var panel =grid.FindRowCellTemplateControl(
-                    e.VisibleIndex,
-                    e.DataColumn,
-                    "pnlBtn"
-                ) as Panel;
-
-                if (panel != null)
-                {
-                    panel.Visible = municipios > 0;
-                    ASPxButton btn = grid.FindRowCellTemplateControl(
-                            e.VisibleIndex,
-                            e.DataColumn,
-                            "btnMetasMuno"
-                    ) as ASPxButton;
-
-                    if (btn != null)
-                    {
-                        // 🔥 CLAVE
-                        btn.UseSubmitBehavior = true;
-                        btn.AutoPostBack = true;
-
-                        ScriptManager.GetCurrent(this).RegisterPostBackControl(btn);
-                    }
-
-                }
-
-
-            }
-
             if (e.DataColumn.FieldName == "MFSUB2020")
             {
                 if (grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TSF2020") != DBNull.Value)
@@ -15259,39 +13442,6 @@ FROM
             }
 
 
-
-            /////////
-            if (e.DataColumn.FieldName == "MFSUB2031")
-            {
-                if (grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TSF2031") != DBNull.Value)
-                {
-                    int valor = Convert.ToInt32(grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TSF2031").ToString());
-                    if (valor == 1)
-                    {
-                        e.Cell.BackColor = System.Drawing.Color.Green;
-                        e.Cell.ForeColor = System.Drawing.Color.White;
-                    }
-
-                }
-
-            }
-
-            if (e.DataColumn.FieldName == "MFINSUB2031")
-            {
-                if (grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TSFIN2031") != DBNull.Value)
-                {
-                    int valor = Convert.ToInt32(grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TSFIN2031").ToString());
-                    if (valor == 1)
-                    {
-                        e.Cell.BackColor = System.Drawing.Color.Green;
-                        e.Cell.ForeColor = System.Drawing.Color.White;
-                    }
-
-                }
-
-            }
-
-
         }
 
         protected void gvsubProductos_CellEditorInitialize(object sender, ASPxGridViewEditorEventArgs e)
@@ -15610,7 +13760,7 @@ FROM
 
                 }
 
-                else if (Convert.ToInt32(Session["periodo"]) != 22 && Convert.ToInt32(Session["periodo"]) != 23 && Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25 && Convert.ToInt32(Session["periodo"]) != 26)
+                else if (Convert.ToInt32(Session["periodo"]) != 22 && Convert.ToInt32(Session["periodo"]) != 23 && Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25)
                 {
                     e.Editor.ClientEnabled = false;
                 }
@@ -15631,7 +13781,7 @@ FROM
 
                 }
 
-                else if (Convert.ToInt32(Session["periodo"]) != 22 && Convert.ToInt32(Session["periodo"]) != 23 && Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25 && Convert.ToInt32(Session["periodo"]) != 26)
+                else if (Convert.ToInt32(Session["periodo"]) != 22 && Convert.ToInt32(Session["periodo"]) != 23 && Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25)
                 {
                     e.Editor.ClientEnabled = false;
                 }
@@ -15655,7 +13805,7 @@ FROM
 
                 }
 
-                else if (Convert.ToInt32(Session["periodo"]) != 23 && Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25 && Convert.ToInt32(Session["periodo"]) != 26)
+                else if (Convert.ToInt32(Session["periodo"]) != 23 && Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25)
                 {
                     e.Editor.ClientEnabled = false;
                 }
@@ -15676,7 +13826,7 @@ FROM
 
                 }
 
-                else if (Convert.ToInt32(Session["periodo"]) != 23 && Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25 && Convert.ToInt32(Session["periodo"]) != 26)
+                else if (Convert.ToInt32(Session["periodo"]) != 23 && Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25)
                 {
                     e.Editor.ClientEnabled = false;
                 }
@@ -15698,7 +13848,7 @@ FROM
 
                 }
 
-                else if (Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25 && Convert.ToInt32(Session["periodo"]) != 26)
+                else if (Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25)
                 {
                     e.Editor.ClientEnabled = false;
                 }
@@ -15719,7 +13869,7 @@ FROM
 
                 }
 
-                else if (Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25 && Convert.ToInt32(Session["periodo"]) != 26)
+                else if (Convert.ToInt32(Session["periodo"]) != 24 && Convert.ToInt32(Session["periodo"]) != 25)
                 {
                     e.Editor.ClientEnabled = false;
                 }
@@ -15741,31 +13891,7 @@ FROM
 
                 }
 
-                else if (Convert.ToInt32(Session["periodo"]) != 25 && Convert.ToInt32(Session["periodo"]) != 26)
-                {
-                    e.Editor.ClientEnabled = false;
-                }
-            }
-
-
-
-
-            if (e.Column.FieldName == "MFINSUB2031")
-            {
-                if (grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TSFIN2031") != DBNull.Value)
-                {
-                    int valor = Convert.ToInt32(grid.GetRowValues(Convert.ToInt32(e.VisibleIndex), "TSFIN2031").ToString());
-                    if (valor == 1)
-                    {
-                        e.Editor.ClientEnabled = false;
-                        e.Editor.BackColor = System.Drawing.Color.Green;
-                        e.Editor.ForeColor = System.Drawing.Color.White;
-                        e.Editor.Font.Bold = true;
-                    }
-
-                }
-
-                else if (Convert.ToInt32(Session["periodo"]) != 26)
+                else if (Convert.ToInt32(Session["periodo"]) != 25)
                 {
                     e.Editor.ClientEnabled = false;
                 }
@@ -16317,7 +14443,9 @@ FROM
 
 
             String link;
-            
+
+
+
 
             sql = "UPDATE SCHE$SIPLAN20.SP20$POM SET ";
             if (txtAutoridad1.Text != "")
@@ -16339,64 +14467,63 @@ FROM
                 ScriptManager.RegisterStartupScript(this.upEstrategicos, GetType(), "script", "Alerta('" + mensaje + " <br/>',2);", true);
             }
 
-            sql = "SELECT SPPER$ENLACE1, SPPER$ENLACE2 FROM SCHE$SIPLAN20.SP20$ENLACES_REPORTES WHERE SPPER$TIPO = 0 AND SPPER$REPORTE_VIGENTE = 1 AND SPPER$PERIODO_POM = "+ Convert.ToInt32(Session["periodo"]);
+
+            /* if (Convert.ToInt32(Session["periodo"]) == 21)
+             {
+                 //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANDESA&reportUnit=%2Freports%2FSIPLANDESA%2FPOM2226_RESULTADOS&standAlone=true&output=pdf&userLocale=es_GT";
+                 link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLAN&reportUnit=%2Freports%2FSIPLAN%2FPOM2226_RESULTADOS&standAlone=true&output=pdf&userLocale=es_GT";
+                 ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
+             }
+
+             else if (Convert.ToInt32(Session["periodo"]) == 22)
+             {
+                 //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANDESA&reportUnit=%2Freports%2FSIPLANDESA%2FPOMResultados20232027&standAlone=true&output=pdf&userLocale=es_GT";
+                 link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLAN&reportUnit=%2Freports%2FSIPLAN%2FPOMResultados20232027&standAlone=true&output=pdf&userLocale=es_GT";
+                 ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
+             }
+
+             else if (Convert.ToInt32(Session["periodo"]) == 23)
+             {
+                 //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANDESA&reportUnit=%2Freports%2FSIPLANDESA%2FPOMResultados20242028&standAlone=true&output=pdf&userLocale=es_GT";
+                 link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLAN&reportUnit=%2Freports%2FSIPLAN%2FPOMResultados20242028&standAlone=true&output=pdf&userLocale=es_GT";
+                 ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
+             }
+
+             else if (Convert.ToInt32(Session["periodo"]) == 24)
+             {
+                 //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANDESA&reportUnit=%2Freports%2FSIPLANDESA%2FPOMResultados20252029&standAlone=true&output=pdf&userLocale=es_GT";
+                 link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLAN&reportUnit=%2Freports%2FSIPLAN%2FPOMResultados20252029&standAlone=true&output=pdf&userLocale=es_GT";
+                 ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
+             }
+
+             else if (Convert.ToInt32(Session["periodo"]) == 25)
+             {
+                 //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANDESA&reportUnit=%2Freports%2FSIPLANDESA%2FPOMResultados20262028&standAlone=true&output=pdf&userLocale=es_GT";
+                 link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLAN&reportUnit=%2Freports%2FSIPLAN%2FPOMResultados20262028&standAlone=true&output=pdf&userLocale=es_GT";
+                 ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
+             }*/
+
+            sql = "SELECT SPPER$ENLACE1, SPPER$ENLACE2 FROM SCHE$SIPLAN20.SP20$ENLACES_REPORTES WHERE SPPER$TIPO = 0 AND SPPER$REPORTE_VIGENTE = 1 AND SPPER$PERIODO_POM = " + Convert.ToInt32(Session["periodo"]);
 
             estado = dao.consulta(sql);
             if (estado == 1)
             {
                 tabla = dao.tabla;
                 if (tabla.Rows.Count > 0)
-                
-                    link = tabla.Rows[0]["SPPER$ENLACE1"].ToString() + Convert.ToInt32(Session["pom"])+ "&insto=" + Convert.ToInt32(Session["insto"]) + tabla.Rows[0]["SPPER$ENLACE2"].ToString();
-                
+
+                    link = tabla.Rows[0]["SPPER$ENLACE1"].ToString() + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + tabla.Rows[0]["SPPER$ENLACE2"].ToString();
+
+
                 else
                     link = "";
             }
             else
                 link = "";
-            
-            
-            /*if (Convert.ToInt32(Session["periodo"]) == 21)
-            {
-                //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANDESA&reportUnit=%2Freports%2FSIPLANDESA%2FPOM2226_RESULTADOS&standAlone=true&output=pdf&userLocale=es_GT";
-                link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLAN&reportUnit=%2Freports%2FSIPLAN%2FPOM2226_RESULTADOS&standAlone=true&output=pdf&userLocale=es_GT";
-                ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
-            }
 
-            else if (Convert.ToInt32(Session["periodo"]) == 22)
-            {
-                //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANDESA&reportUnit=%2Freports%2FSIPLANDESA%2FPOMResultados20232027&standAlone=true&output=pdf&userLocale=es_GT";
-                link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLAN&reportUnit=%2Freports%2FSIPLAN%2FPOMResultados20232027&standAlone=true&output=pdf&userLocale=es_GT";
+            if (link != "")
                 ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
-            }
-
-            else if (Convert.ToInt32(Session["periodo"]) == 23)
-            {
-                //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANDESA&reportUnit=%2Freports%2FSIPLANDESA%2FPOMResultados20242028&standAlone=true&output=pdf&userLocale=es_GT";
-                link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLAN&reportUnit=%2Freports%2FSIPLAN%2FPOMResultados20242028&standAlone=true&output=pdf&userLocale=es_GT";
-                ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
-            }
-
-            else if (Convert.ToInt32(Session["periodo"]) == 24)
-            {
-                //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANDESA&reportUnit=%2Freports%2FSIPLANDESA%2FPOMResultados20252029&standAlone=true&output=pdf&userLocale=es_GT";
-                link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLAN&reportUnit=%2Freports%2FSIPLAN%2FPOMResultados20252029&standAlone=true&output=pdf&userLocale=es_GT";
-                ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
-            }
-
-            else if (Convert.ToInt32(Session["periodo"]) == 25)
-            {
-                //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANDESA&reportUnit=%2Freports%2FSIPLANDESA%2FPOMResultados20262028&standAlone=true&output=pdf&userLocale=es_GT";
-                link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLAN&reportUnit=%2Freports%2FSIPLAN%2FPOMResultados20262028&standAlone=true&output=pdf&userLocale=es_GT";
-                ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
-            }*/
-            if(link!= "")
-
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "window.open('" + link + "');", true);
-            //ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "window.open('" + link + "');", true);
             else
-                //ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "Alerta('Reporte no disponible', 2);", true);
-            Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('Reporte no disponible', 2);", true);
+                ScriptManager.RegisterStartupScript(upEstrategicos, upEstrategicos.GetType(), "script", "Alerta('Reporte no disponible', 2);", true);
         }
 
         protected void btnCancelaPOM_Click(object sender, EventArgs e)
@@ -16407,7 +14534,7 @@ FROM
         protected void btnGeneraPOA_Click(object sender, EventArgs e)
         {
 
-            String link;
+
 
             sql = "UPDATE SCHE$SIPLAN20.SP20$POM SET ";
             if (txtAutoridad2.Text != "")
@@ -16430,9 +14557,23 @@ FROM
             }
 
 
-           sql = "SELECT SPPER$ENLACE1, SPPER$ENLACE2 FROM SCHE$SIPLAN20.SP20$ENLACES_REPORTES WHERE SPPER$TIPO = 1 AND SPPER$REPORTE_VIGENTE = 1 AND SPPER$RESTRICTIVA = 'N'";
+            String link;
+            //versiones de reportes de produccion
+
+
+            link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&anio=" + Convert.ToInt32(cbAniPOA.Text) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANV2&reportUnit=%2Freports%2FSIPLANV2%2Fpoa_programacion&standAlone=true&output=pdf&userLocale=es_GT";
+
+            //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&anio=" + Convert.ToInt32(cbAniPOA.Text) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2Finteractive&reportUnit=%2Freports%2Finteractive%2Fpoa_programacion&standAlone=true&output=pdf&userLocale=es_GT";
+
+            //versiones de reportes de desarrollo
+
+
+            //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&anio=" + Convert.ToInt32(cbAniPOA.Text) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2Fsye&reportUnit=%2Freports%2Fsye%2Fpoa_programacion&standAlone=true&output=pdf&userLocale=es_GT";
+            //ScriptManager.RegisterStartupScript(UpdatePanel5, UpdatePanel5.GetType(), "script", "window.open('" + link + "');", true);
+
+            sql = "SELECT SPPER$ENLACE1, SPPER$ENLACE2 FROM SCHE$SIPLAN20.SP20$ENLACES_REPORTES WHERE SPPER$TIPO = 1 AND SPPER$REPORTE_VIGENTE = 1 AND SPPER$RESTRICTIVA = 'N'";
             estado = dao.consulta(sql);
-            if(estado == 1)
+            if (estado == 1)
             {
                 tabla = dao.tabla;
                 if (tabla.Rows.Count > 0)
@@ -16443,22 +14584,12 @@ FROM
             else
                 link = "";
 
-            /*
-            //versiones de reportes de produccion
-
-            link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&anio=" + Convert.ToInt32(cbAniPOA.Text) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2FSIPLANV2&reportUnit=%2Freports%2FSIPLANV2%2Fpoa_programacion&standAlone=true&output=pdf&userLocale=es_GT";
-
-            //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&anio=" + Convert.ToInt32(cbAniPOA.Text) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2Finteractive&reportUnit=%2Freports%2Finteractive%2Fpoa_programacion&standAlone=true&output=pdf&userLocale=es_GT";
-
-            //versiones de reportes de desarrollo
-
-
-            //link = "https://rpts.segeplan.gob.gt:8080/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&pom=" + Convert.ToInt32(Session["pom"]) + "&insto=" + Convert.ToInt32(Session["insto"]) + "&anio=" + Convert.ToInt32(cbAniPOA.Text) + "&j_username=reportes&j_password=reporte&ParentFolderUri=%2Freports%2Fsye&reportUnit=%2Freports%2Fsye%2Fpoa_programacion&standAlone=true&output=pdf&userLocale=es_GT";
-           */
-            if(link!= "")
+            if (link != "")
                 ScriptManager.RegisterStartupScript(UpdatePanel5, UpdatePanel5.GetType(), "script", "window.open('" + link + "');", true);
             else
                 ScriptManager.RegisterStartupScript(UpdatePanel5, UpdatePanel5.GetType(), "script", "Alerta('Reporte no disponible', 2);", true);
+
+
 
         }
 
@@ -16466,9 +14597,6 @@ FROM
         {
             popReportePOA.ShowOnPageLoad = false;
         }
-
-
-
 
         //protected void gvResultados_DataBound(object sender, EventArgs e)
         //{
@@ -16504,1537 +14632,5 @@ FROM
         //    gvProduccion.CollapseAll();
         //}
 
-        protected void btnMetasMuno_Click(object sender, EventArgs e)
-        {
-            DataTable munos = new DataTable();
-            ASPxButton btn = (ASPxButton)sender;           
-            int idSubproducto = Convert.ToInt32(btn.CommandArgument);
-            hfIDSubProducto.Value = idSubproducto.ToString();
-            cargaComboMunos();
-            munos = cargaMetasMunos(idSubproducto,Convert.ToInt32(cbComboAnioMuno.Text));
-            if (munos.Rows.Count > 0)
-            {
-                periodoMuno.Text = munos.Rows[0]["PERIODO"].ToString();
-                SubproductoMuno.Text = munos.Rows[0]["SUBPRODUCTO"].ToString();
-                MedidaMuno.Text = munos.Rows[0]["MEDIDA"].ToString();
-                FisicaMuno.Text = munos.Rows[0]["METAFISICA"].ToString();
-                FinanceraMuno.Text = String.Format("{0:N2}", munos.Rows[0]["METAFINACIERA"].ToString());
-                HfIDPom.Value = munos.Rows[0]["SPPO$ID_POM"].ToString();
-                Session["MUNOS"] = munos;
-                gvMunosMetas.DataSource = munos;
-                gvMunosMetas.DataBind();
-                MultiView1.ActiveViewIndex = 3;
-            }
-            else
-            {
-                mensaje = "No se encontró territorio priorizado por este producto";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + "<br/>',2);", true);
-            }
-
-
-
-            
-        }
-
-
-        protected void btnMetasMuno1_Click(object sender, EventArgs e)
-        {
-            DataTable munos = new DataTable();
-            ASPxButton btn = (ASPxButton)sender;
-            int idSubproducto = Convert.ToInt32(btn.CommandArgument);
-            hfIDSubProducto1.Value = idSubproducto.ToString();        
-            munos = cargaPOAMUNOS(idSubproducto, Convert.ToInt32(cbAniPOA.Text));
-            if (munos.Rows.Count > 0)
-            {
-                if (!munos.Columns.Contains("ID_UNICO"))
-                {
-                    throw new Exception("NO existe ID_UNICO en el DataTable");
-                }
-
-                var duplicados = munos.AsEnumerable()
-    .GroupBy(r => r["ID_UNICO"])
-    .Where(g => g.Count() > 1)
-    .ToList();
-
-                if (duplicados.Count > 0)
-                {
-                    throw new Exception("Hay claves duplicadas");
-                }
-                lblAnioRegistroMuno.Text = munos.Rows[0]["ANIO"].ToString();
-                SubproductoPOAMuno.Text = munos.Rows[0]["SUBPRODUCTO"].ToString();
-                MedidaMunoPOA.Text = munos.Rows[0]["MEDIDA"].ToString();
-                FisicaMunoPOA.Text = munos.Rows[0]["METAFISICA_ANUAL"].ToString();
-                FinanceraMunoPOA.Text = String.Format("{0:N2}", munos.Rows[0]["METAFINANCIERA_ANUAL"].ToString());             
-                Session["MUNOSPOA"] = munos;
-                gvPOAMUNO.DataSource = munos;
-                gvPOAMUNO.DataBind();
-                MultiView1.ActiveViewIndex = 4;
-            }
-            else
-            {
-                mensaje = "No se encontró territorio priorizado por este producto";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + "<br/>',2);", true);
-            }
-
-
-
-
-        }
-
-        protected void BtnRegresaPantalla_Click(object sender, EventArgs e)
-        {
-            btnSuproductos_Click(sender, e);
-        }
-        protected void gvPOAMUNO_BatchUpdate(object sender, DevExpress.Web.Data.ASPxDataBatchUpdateEventArgs e)
-        {
-            int poa = 0;
-            int anio = 0;
-            int id_subMuno = 0;
-            int id_metas = 0;
-            int id_ejecucion = 0;
-            double af1 = 0;
-            double afn1 = 0;
-            double af2 = 0;
-            double afn2 = 0;
-            double af3 = 0;
-            double afn3 = 0;
-            double af4 = 0;
-            double afn4 = 0;
-            double af5 = 0;
-            double afn5 = 0;
-            double af6 = 0;
-            double afn6 = 0;
-            double af7 = 0;
-            double afn7 = 0;
-            double af8 = 0;
-            double afn8 = 0;
-            double af9 = 0;
-            double afn9 = 0;
-            double af10 = 0;
-            double afn10 = 0;
-            double af11 = 0;
-            double afn11 = 0;
-            double af12 = 0;
-            double afn12 = 0;
-            string clave = "";
-
-
-            foreach (var item in e.UpdateValues)
-            {
-                clave = Convert.ToString(item.Keys["ID_UNICO"]);
-                var partes = clave.Split('.');
-                id_subMuno = Convert.ToInt32(partes[0]);
-                id_metas = Convert.ToInt32(partes[1]);
-                id_ejecucion = Convert.ToInt32(partes[2]);
-                poa = Convert.ToInt32(partes[3]);
-                anio = Convert.ToInt32(partes[4]);
-
-
-                af1 = Convert.ToDouble(item.NewValues["ENE_FIS"]);
-                afn1 = Convert.ToDouble(item.NewValues["ENE_FIN"]);
-                af2 = Convert.ToDouble(item.NewValues["FEB_FIS"]);
-                afn2 = Convert.ToDouble(item.NewValues["FEB_FIN"]);
-                af3 = Convert.ToDouble(item.NewValues["MAR_FIS"]);
-                afn3 = Convert.ToDouble(item.NewValues["MAR_FIN"]);
-                af4 = Convert.ToDouble(item.NewValues["ABR_FIS"]);
-                afn4 = Convert.ToDouble(item.NewValues["ABR_FIN"]);
-                af5 = Convert.ToDouble(item.NewValues["JUN_FIS"]);
-                afn5 = Convert.ToDouble(item.NewValues["JUN_FIN"]);
-                af6 = Convert.ToDouble(item.NewValues["JUN_FIS"]);
-                afn6 = Convert.ToDouble(item.NewValues["JUN_FIN"]);
-                af7 = Convert.ToDouble(item.NewValues["JUL_FIS"]);
-                afn7 = Convert.ToDouble(item.NewValues["JUL_FIN"]);
-                af8 = Convert.ToDouble(item.NewValues["AGO_FIS"]);
-                afn8 = Convert.ToDouble(item.NewValues["AGO_FIN"]);
-                af9 = Convert.ToDouble(item.NewValues["SEP_FIS"]);
-                afn9 = Convert.ToDouble(item.NewValues["SEP_FIN"]);
-                af10 = Convert.ToDouble(item.NewValues["OCT_FIS"]);
-                afn10 = Convert.ToDouble(item.NewValues["OCT_FIN"]);
-                af11 = Convert.ToDouble(item.NewValues["NOV_FIS"]);
-                afn11 = Convert.ToDouble(item.NewValues["NOV_FIN"]);
-                af12 = Convert.ToDouble(item.NewValues["DIC_FIS"]);
-                afn12 = Convert.ToDouble(item.NewValues["DIC_FIN"]);
-
-                if (id_metas != -1)
-                {
-                    if (id_ejecucion == -1)
-                    {
-                        estado = insertaAvanceMuno(id_subMuno, poa, anio, af1, afn1, af2, afn2, af3, afn3, af4, afn4, af5, afn5, af6, afn6, af7, afn7, af8, afn8, af9, afn9, af10, afn10, af11, afn11, af12, afn12);
-                        if (estado == 0)
-                        {
-                            gvMunosMetas.JSProperties["cpError"] = "Ha ocurrido un error, por favor intentelo mas tarde, si el error periste contacte al soporte tecnico del sistema";
-                            e.Handled = true;
-                            return; // termina el ciclo y evita guardar
-                        }
-
-                    }
-                    else
-                    {
-                        estado = updateAvanceMuno(id_ejecucion, id_subMuno, poa, anio, af1, afn1, af2, afn2, af3, afn3, af4, afn4, af5, afn5, af6, afn6, af7, afn7, af8, afn8, af9, afn9, af10, afn10, af11, afn11, af12, afn12);
-                        if (estado == 0)
-                        {
-                            gvMunosMetas.JSProperties["cpError"] = "Ha ocurrido un error, por favor intentelo mas tarde, si el error periste contacte al soporte tecnico del sistema";
-                            e.Handled = true;
-                            return; // termina el ciclo y evita guardar
-                        }
-                    }
-
-                }
-
-
-
-            }
-
-            gvMunosMetas.JSProperties["cpError"] = "Metas registradas correctamente";
-            e.Handled = true;
-            recargarMuno(Convert.ToInt32(hfIDSubProducto1.Value), Convert.ToInt32(cbAniPOA.Text));
-        }
-
-
-
-        protected int insertaAvanceMuno(int id_muno, int id_poa, int anio, double af1, double afn1, double af2, double afn2, double af3, double afn3, double af4, double afn4, double af5, double afn5, double af6, double afn6, double af7, double afn7, double af8, double afn8, double af9, double afn9, double af10, double afn10, double af11, double afn11, double af12, double afn12)
-        {
-            int estados = 0;
-            sql = @"INSERT INTO SCHE$SIPLAN20.SP20$SUB_MUNOS_POA(SPP_MUNPOA$ID_MUNO,SPP_MUNPOA$POA,SPP_MUNPOA$ANIO,SPP_MUNPOA$ENE_FIS,SPP_MUNPOA$ENE_FIN,SPP_MUNPOA$FEB_FIS,SPP_MUNPOA$FEB_FIN,SPP_MUNPOA$MAR_FIS,SPP_MUNPOA$MAR_FIN,SPP_MUNPOA$ABR_FIS,SPP_MUNPOA$ABR_FIN,SPP_MUNPOA$MAY_FIS,SPP_MUNPOA$MAY_FIN,SPP_MUNPOA$JUN_FIS,SPP_MUNPOA$JUN_FIN,SPP_MUNPOA$JUL_FIS,SPP_MUNPOA$JUL_FIN,SPP_MUNPOA$AGO_FIS,SPP_MUNPOA$AGO_FIN,SPP_MUNPOA$SEP_FIS,SPP_MUNPOA$SEP_FIN,SPP_MUNPOA$OCT_FIS,SPP_MUNPOA$OCT_FIN,SPP_MUNPOA$NOV_FIS,SPP_MUNPOA$NOV_FIN,SPP_MUNPOA$DIC_FIS,SPP_MUNPOA$DIC_FIN,SPP_MUNPOA$FECHA_INSERTA,SPP_MUNPOA$USUARIO_INSERTA) VALUES (";
-            sql = sql + id_muno + "," + id_poa + "," + anio + "," + af1 + "," + afn1 + "," + af2 + "," + afn2 + "," + af3 + "," + afn3 + "," + af4 + "," + afn4 + "," + af5 + "," + afn5 + "," + af6 + "," + afn6 + "," + af7 + "," + afn7 + "," + af8 + "," + afn8 + "," + af9 + "," + afn9 + "," + af10 + "," + afn10 + "," + af11 + "," + afn11 + "," + af12 + "," + afn12 + ",SYSDATE,'" + Session["USUARIO"].ToString() + "')";
-            estados = dao.comando(sql);
-            return estados;
-        }
-
-        protected int updateAvanceMuno(int id_ejecucion, int id_muno, int id_poa, int anio, double af1, double afn1, double af2, double afn2, double af3, double afn3, double af4, double afn4, double af5, double afn5, double af6, double afn6, double af7, double afn7, double af8, double afn8, double af9, double afn9, double af10, double afn10, double af11, double afn11, double af12, double afn12)
-        {
-
-            int estados = 0;
-            sql = @"UPDATE SCHE$SIPLAN20.SP20$SUB_MUNOS_POA SET SPP_MUNPOA$ENE_FIS = " + af1 + ", SPP_MUNPOA$ENE_FIN = " + afn1 + ", SPP_MUNPOA$FEB_FIS = " + af2 + ", SPP_MUNPOA$FEB_FIN = " + afn2 + ", SPP_MUNPOA$MAR_FIS = " + af3 + ", SPP_MUNPOA$MAR_FIN = " + afn3 + ", SPP_MUNPOA$ABR_FIS = " + af4 + ", SPP_MUNPOA$ABR_FIN = " + afn4 + ", SPP_MUNPOA$MAY_FIS = " + af5 + ", SPP_MUNPOA$MAY_FIN = " + afn5 + ", SPP_MUNPOA$JUN_FIS = " + af6 + ", SPP_MUNPOA$JUN_FIN = " + afn6 + ", SPP_MUNPOA$JUL_FIS = " + af7 + ", SPP_MUNPOA$JUL_FIN = " + afn7 + ", SPP_MUNPOA$AGO_FIS = " + af8 + ", SPP_MUNPOA$AGO_FIN = " + afn8 + ", SPP_MUNPOA$SEP_FIS = " + af9 + ", SPP_MUNPOA$SEP_FIN = " + afn9 + ", SPP_MUNPOA$OCT_FIS = " + af10 + ", SPP_MUNPOA$OCT_FIN = " + afn10 + ", SPP_MUNPOA$NOV_FIS = " + af11 + ", SPP_MUNPOA$NOV_FIN = " + af11 + ", SPP_MUNPOA$DIC_FIS = " + af12 + ", SPP_MUNPOA$DIC_FIN = " + afn12 + ", SPP_MUNPOA$FECHA_ACTUALIZA = SYSDATE, USUARIO_ACTUALIZA ='" + Session["USUARIO"].ToString() + "' WHERE SPP_MUNPOA$ID = " + id_ejecucion;
-            estados = dao.comando(sql);
-            return estados;
-
-        }
-
-
-        protected void recargarMuno(int sub, int anio)
-        {
-            DataTable munos = new DataTable();
-            munos = cargaPOAMUNOS(sub, anio);
-            if (munos.Rows.Count > 0)
-            {
-                if (!munos.Columns.Contains("ID_UNICO"))
-                {
-                    throw new Exception("NO existe ID_UNICO en el DataTable");
-                }
-
-                var duplicados = munos.AsEnumerable()
-    .GroupBy(r => r["ID_UNICO"])
-    .Where(g => g.Count() > 1)
-    .ToList();
-
-                if (duplicados.Count > 0)
-                {
-                    throw new Exception("Hay claves duplicadas");
-                }
-
-                SubproductoMuno.Text = munos.Rows[0]["SUBPRODUCTO"].ToString();
-                MedidaMuno.Text = munos.Rows[0]["MEDIDA"].ToString();
-                FisicaMuno.Text = munos.Rows[0]["METAFISCA_MUNO"].ToString();
-                FinanceraMuno.Text = String.Format("{0:N2}", munos.Rows[0]["METAFINANCIERA_MUNO"].ToString());
-                Session["MUNOSPOA"] = munos;
-                gvPOAMUNO.DataSource = munos;
-                gvPOAMUNO.DataBind();
-                MultiView1.ActiveViewIndex = 4;
-
-            }
-            else
-            {
-                mensaje = "No se encontró territorio priorizado por este producto";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + "<br/>',2);", true);
-            }
-        }
-        protected void gvMunosMetas_CellEditorInitialize(object sender, ASPxGridViewEditorEventArgs e)
-        {
-           
-            if (e.Column.FieldName == "FISICA_MUNICIPIO" || e.Column.FieldName == "FINANCIERA_MUNICIPIO")
-            {
-
-                e.Editor.ClientEnabled = false;
-                e.Editor.BackColor = System.Drawing.Color.LightGray;
-                e.Editor.ForeColor = System.Drawing.Color.Blue;
-                e.Editor.Font.Bold = true;
-
-
-            }
-
-            
-
-
-        }
-
-        protected DataTable cargaMetasMunos(int subproducto, int anio)
-        {
-            DataTable munos = new DataTable();
-            /*sql = @"SELECT
-ROWNUM NUMERO
-,POA
-,ANIO
-,POM.SPPO$ID_POM
-,POM.SPPO$ID_PERIODO
-,POM.SPPO$INICIO||'-'||POM.SPPO$FINAL PERIODO
-,SM.SPSM$ID ID_MUNO_MUNICIPIO
-,G.DEPTO
-,SM.SPSM$GEOGRAFICO
-,SPPSUB$ID_SUBPRODUCTO
-,NVL(MM.SPPSMMA$ID,-1) ID_METAS_MUNICIPIO
-,SUBPRODUCTO
-,MEDIDA
-,(SELECT NOMBRE FROM SINIP.CG_GEOGRAFICO WHERE GEOGRAFICO = G.DEPTO) DEPARTAMENTO
-,G.NOMBRE MUNICIPIO
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIS) METAFISICA
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIN) METAFINACIERA
-,NVL(MM.SPPSMMA$META_FISICA,0) FISICA_MUNICIPIO
-,NVL(MM.SPPSMMA$META_FINANCIERA,0) FINANCIERA_MUNICIPIO
-,0 REGISTRA_FISICA
-,0 REGISTRA_FINANCIERA
-FROM
-(SELECT 
-(SELECT NVL(FF.SPPMFS$ID_POA,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = " + anio+@" GROUP BY FF.SPPMFS$ID_POA) POA
-,(SELECT NVL(FF.SPPMFS$ANIO,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" GROUP BY FF.SPPMFS$ANIO) ANIO
-,S.SPPSUB$ID_SUBPRODUCTO
-,S.SPPSUB$DESCRIPCION SUBPRODUCTO
-,M.NOMBRE MEDIDA
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 0 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIS
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 1 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIN
-,S.SPPSUB$ID_PRODUCTO
-FROM SCHE$SIPLAN20.SP20$SUB_PRODUCTO S 
-INNER JOIN SINIP.CP_UNIDADES_MEDIDA M ON M.UNIDAD_MEDIDA = S.SPPSUB$ID_MEDIDA
-WHERE  S.SPPSUB$RESTRICTIVA = 'N' AND S.SPPSUB$ID_SUBPRODUCTO = "+subproducto+ @") 
-INNER JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS SM ON SM.SPSM$ID_SUB = SPPSUB$ID_SUBPRODUCTO AND SM.SPSM$RESTRICTIVA = 'N'
-INNER JOIN SINIP.CG_GEOGRAFICO G ON G.GEOGRAFICO = SM.SPSM$GEOGRAFICO 
-INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO P ON P.SPPRO$ID_PRODUCTO = SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON POM.SPPO$ID_POM = P.SPPRO$POM AND POM.SPPO$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N'
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS MM ON MM.SPPSMMA$ID_SUBMUNO = SM.SPSM$ID AND MM.SPPSMMA$POA = POA ORDER BY G.DEPTO, G.GEOGRAFICO ASC";*/
-            sql = @"SELECT
-ROWNUM NUMERO
-,POA
-,ANIO
-,SPPO$ID_POM
-,SPPO$ID_PERIODO
-,PERIODO
-,ID_MUNO_MUNICIPIO
-,DEPTO
-,GEOGRAFICO
-,SPPSUB$ID_SUBPRODUCTO
-,ID_METAS_MUNICIPIO
-,SUBPRODUCTO
-,MEDIDA
-,DEPARTAMENTO
-,MUNICIPIO
-,METAFISICA
-,METAFINACIERA
-,FISICA_MUNICIPIO
-,FINANCIERA_MUNICIPIO
-,REGISTRA_FISICA
-,REGISTRA_FINANCIERA
-,RN
-
-FROM
-(SELECT
-POA
-,ANIO
-,POM.SPPO$ID_POM
-,POM.SPPO$ID_PERIODO
-,POM.SPPO$INICIO||'-'||POM.SPPO$FINAL PERIODO
-,SM.SPSM$ID ID_MUNO_MUNICIPIO
-,G.DEPTO
-,SM.SPSM$GEOGRAFICO GEOGRAFICO
-,SPPSUB$ID_SUBPRODUCTO
-,NVL(MM.SPPSMMA$ID,-1) ID_METAS_MUNICIPIO
-,SUBPRODUCTO
-,MEDIDA
-,(SELECT NOMBRE FROM SINIP.CG_GEOGRAFICO WHERE GEOGRAFICO = G.DEPTO) DEPARTAMENTO
-,G.NOMBRE MUNICIPIO
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIS) METAFISICA
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIN) METAFINACIERA
-,NVL(MM.SPPSMMA$META_FISICA,0) FISICA_MUNICIPIO
-,NVL(MM.SPPSMMA$META_FINANCIERA,0) FINANCIERA_MUNICIPIO
-,0 REGISTRA_FISICA
-,0 REGISTRA_FINANCIERA
- ,ROW_NUMBER() OVER (
-            PARTITION BY SM.SPSM$ID 
-            ORDER BY MM.SPPSMMA$ID DESC
-        ) AS RN
-FROM
-(SELECT 
-(SELECT NVL(FF.SPPMFS$ID_POA,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" GROUP BY FF.SPPMFS$ID_POA) POA
-,(SELECT NVL(FF.SPPMFS$ANIO,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" GROUP BY FF.SPPMFS$ANIO) ANIO
-,S.SPPSUB$ID_SUBPRODUCTO
-,S.SPPSUB$DESCRIPCION SUBPRODUCTO
-,M.NOMBRE MEDIDA
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 0 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIS
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 1 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIN
-,S.SPPSUB$ID_PRODUCTO
-FROM SCHE$SIPLAN20.SP20$SUB_PRODUCTO S 
-INNER JOIN SINIP.CP_UNIDADES_MEDIDA M ON M.UNIDAD_MEDIDA = S.SPPSUB$ID_MEDIDA
-WHERE  S.SPPSUB$RESTRICTIVA = 'N' AND S.SPPSUB$ID_SUBPRODUCTO = "+subproducto+@") 
-INNER JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS SM ON SM.SPSM$ID_SUB = SPPSUB$ID_SUBPRODUCTO AND SM.SPSM$RESTRICTIVA = 'N'
-INNER JOIN SINIP.CG_GEOGRAFICO G ON G.GEOGRAFICO = SM.SPSM$GEOGRAFICO 
-INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO P ON P.SPPRO$ID_PRODUCTO = SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON POM.SPPO$ID_POM = P.SPPRO$POM AND POM.SPPO$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N'
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS MM ON MM.SPPSMMA$ID_SUBMUNO = SM.SPSM$ID AND MM.SPPSMMA$POA = POA)
-WHERE RN = 1 ORDER BY DEPTO, GEOGRAFICO ASC
-
-";
-            estado = dao.consulta(sql);
-            if (estado == 1)            
-                munos = dao.tabla;
-            
-            return munos;
-        
-        }
-
-        protected void cargaComboMunos()
-        {
-            Session["carga"] = 4;
-            DataTable POA = new DataTable();
-            if (Session["poa"] != null)
-            {
-                POA = (DataTable)Session["poa"];
-                if (POA.Rows.Count > 0)
-                {
-                    cbComboAnioMuno.DataSource = POA;
-                    cbComboAnioMuno.ValueField = "SPOA$ID_POA";
-                    cbComboAnioMuno.TextField = "SPOA$ANIO";
-                    cbComboAnioMuno.DataBind();
-                    cbComboAnioMuno.SelectedIndex = 0;
-                }
-            }
-        }
-
-        protected void cbComboAnioMuno_ValueChanged(object sender, EventArgs e)
-        {
-            DataTable munos = new DataTable();
-            munos = cargaMetasMunos(Convert.ToInt32(hfIDSubProducto.Value),Convert.ToInt32(cbComboAnioMuno.Text));
-            FisicaMuno.Text = munos.Rows[0]["METAFISICA"].ToString();
-            FinanceraMuno.Text = String.Format("{0:N2}", munos.Rows[0]["METAFINACIERA"].ToString());
-            gvMunosMetas.DataSource = munos;
-            gvMunosMetas.DataBind();
-            MultiView1.ActiveViewIndex = 3;
-
-        }
-
-        protected void gvMunosMetas_BatchUpdate(object sender, DevExpress.Web.Data.ASPxDataBatchUpdateEventArgs e)
-        {
-            int poa;
-            int id_sub_muno;
-            int id_metas_muno;
-            int anio;
-            double metaFisicaold;
-            double metaFinancieraold;
-            double metaFisicanew;
-            double metaFinancieranew;
-            double metaFisicareal;
-            double metaFinancierareal;
-            foreach (var item in e.UpdateValues)
-            { 
-                id_metas_muno = Convert.ToInt32(item.Keys["ID_METAS_MUNICIPIO"]);
-                id_sub_muno = Convert.ToInt32(item.Keys["ID_MUNO_MUNICIPIO"]);
-                poa = Convert.ToInt32(item.Keys["POA"]);
-                anio = Convert.ToInt32(item.Keys["ANIO"]);
-
-                metaFisicaold= Convert.ToDouble(item.Keys["FISICA_MUNICIPIO"]);
-                metaFinancieraold = Convert.ToDouble(item.Keys["FINANCIERA_MUNICIPIO"]);
-                metaFisicanew = Convert.ToDouble(item.NewValues["REGISTRA_FISICA"]);
-                metaFinancieranew = Convert.ToDouble(item.NewValues["REGISTRA_FINANCIERA"]);
-
-                if (metaFisicaold == metaFisicanew)
-                    metaFisicareal = metaFisicanew;
-                else if (metaFisicanew == 0 && metaFisicaold > 0 && id_metas_muno != -1)
-                    metaFisicareal = metaFisicaold;
-                else
-                    metaFisicareal = metaFisicanew;
-
-                if (metaFinancieraold == metaFinancieranew)
-                    metaFinancierareal = metaFinancieranew;
-                else if (metaFinancieranew == 0 && metaFinancieraold > 0 && id_metas_muno != -1)
-                    metaFinancierareal = metaFinancieraold;
-                else
-                    metaFinancierareal = metaFinancieranew;
-
-                if (id_metas_muno != -1)
-                {
-                    sql = "UPDATE SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS SET SPPSMMA$RESTRICTIVA = 'S', SPPSMMA$FECHA_ELIMINA = 'INACTIVA = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "' WHERE SPPSMMA$ID = " + id_metas_muno;
-                    estado = dao.comando(sql);
-                }
-
-                sql = "INSERT INTO SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS (SPPSMMA$ID_SUBMUNO,SPPSMMA$POA,SPPSMMA$ANIO,SPPSMMA$META_FISICA,SPPSMMA$META_FINANCIERA,SPPSMMA$FECHA_INGRESO) VALUES ("+ id_sub_muno + ","+poa+","+anio+","+ metaFisicareal + ","+ metaFinancierareal + ",'INSERTA = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "')";
-                estado = dao.comando(sql);
-                if (estado == 0)
-                {
-                    gvMunosMetas.JSProperties["cpError"] = "Ha ocurrido un error, por favor intentelo mas tarde, si el error periste contacte al soporte tecnico del sistema";
-                    e.Handled = true;
-                    return; // termina el ciclo y evita guardar
-                }
-            }
-           
-            gvMunosMetas.JSProperties["cpError"] = "Metas registradas correctamente";           
-            e.Handled = true;
-            recargaMunos();
-
-        }
-
-        protected void recargaMunos()
-        {
-            DataTable munos = new DataTable();
-            munos = cargaMetasMunos(Convert.ToInt32(hfIDSubProducto.Value), Convert.ToInt32(cbComboAnioMuno.Text));
-            if (munos.Rows.Count > 0)
-            {
-                gvMunosMetas.DataSource = munos;
-                gvMunosMetas.DataBind();
-                MultiView1.ActiveViewIndex = 3;
-            }
-
-        }
-
-        protected void GenerarExcel(int p)
-        {
-            DataTable dt = cargaMunosExcel(Convert.ToInt32(HfIDPom.Value),Convert.ToInt32(cbComboAnioMuno.Text),p);
-
-            using (ExcelPackage pkg = new ExcelPackage())
-            {
-                var ws = pkg.Workbook.Worksheets.Add("Supbroductos");
-
-                // 🧾 ENCABEZADOS
-                ws.Cells[1, 1].Value = "POA";
-                ws.Cells[1, 2].Value = "ANIO";
-                ws.Cells[1, 3].Value = "ID";
-                ws.Cells[1, 4].Value = "ID_METAS";
-                ws.Cells[1, 5].Value = "PRODUCTO";
-                ws.Cells[1, 6].Value = "SUBPRODUCTO";
-                ws.Cells[1, 7].Value = "MEDIDA";
-                ws.Cells[1, 8].Value = "DEPARTAMENTO";
-                ws.Cells[1, 9].Value = "MUNICIPIO";
-                ws.Cells[1, 10].Value = "METAFISICA_SUB";
-                ws.Cells[1, 11].Value = "METAFINANCIERA_SUB";
-                ws.Cells[1, 12].Value = "METAFISICA_REGISTRADA";
-                ws.Cells[1, 13].Value = "METAFINANCIERA_REGISTRADA";
-                ws.Cells[1, 14].Value = "REGISTRO_METAFISICA";
-                ws.Cells[1, 15].Value = "REGISTRO_METAFINANCIERA";
-                // Estilo enc6bezado
-                using (var range = ws.Cells[1, 1, 1, 15])
-                {
-                    range.Style.Font.Bold = true;
-                }
-
-                // 📊 DATOS
-                for (int i = 0; i < dt.Rows.Count; i++)
-                {
-                    ws.Cells[i + 2, 1].Value = dt.Rows[i]["POA"];
-                    ws.Cells[i + 2, 2].Value = dt.Rows[i]["ANIO"];
-                    ws.Cells[i + 2, 3].Value = dt.Rows[i]["ID_MUNO_MUNICIPIO"];
-                    ws.Cells[i + 2, 4].Value = dt.Rows[i]["ID_METAS_MUNICIPIO"];
-                    ws.Cells[i + 2, 5].Value = dt.Rows[i]["PRODUCTO"];
-                    ws.Cells[i + 2, 6].Value = dt.Rows[i]["SUBPRODUCTO"];
-                    ws.Cells[i + 2, 7].Value = dt.Rows[i]["MEDIDA"];
-                    ws.Cells[i + 2, 8].Value = dt.Rows[i]["DEPARTAMENTO"];
-                    ws.Cells[i + 2, 9].Value = dt.Rows[i]["MUNICIPIO"];
-                    ws.Cells[i + 2, 10].Value = dt.Rows[i]["METAFISICA"];
-                    ws.Cells[i + 2, 11].Value = dt.Rows[i]["METAFINANCIERA"];
-                    ws.Cells[i + 2, 12].Value = dt.Rows[i]["FISICA_MUNICIPIO"];
-                    ws.Cells[i + 2, 13].Value = dt.Rows[i]["FINANCIERA_MUNICIPIO"];
-                  
-                    // editables vacíos
-                    ws.Cells[i + 2, 14].Value = "";
-                    ws.Cells[i + 2, 15].Value = "";
-                }
-
-                // 🔒 BLOQUEAR TODO
-                ws.Cells.Style.Locked = true;
-
-                // 🔓 SOLO COLUMNAS EDITABLES
-                ws.Cells["A1:N1"].AutoFilter = true;
-
-                // 3. Bloquear todo
-                ws.Cells.Style.Locked = true;
-
-                // 4. Desbloquear editables
-                ws.Cells[2, 14, 1000, 15].Style.Locked = false;
-                ws.Cells[2, 14, 1000, 15].Style.Locked = false;
-
-                // 5. Proteger con permisos
-                ws.Protection.IsProtected = true;
-                ws.Protection.AllowAutoFilter = true;
-                ws.Protection.AllowSort = true;
-
-                // Ajustar columnas
-                ws.Cells.AutoFitColumns();
-
-                // 📤 DESCARGAR
-                Response.Clear();
-                Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-                Response.AddHeader("content-disposition", "attachment; filename=Subproducto_municipios.xlsx");
-                Response.BinaryWrite(pkg.GetAsByteArray());
-                Response.End();
-            }
-        }
-
-
-        protected DataTable cargaMunosExcel(int pom, int anio, int p)
-        {
-            DataTable munos = new DataTable();
-            sql = @"
-
-select 
-ROWNUM NUMERO
-,POA
-,ANIO
-,SPPO$ID_POM
-,SPPO$ID_PERIODO
-,PERIODO
-,ID_MUNO_MUNICIPIO
-,DEPTO
-,SPSM$GEOGRAFICO
-,SPPSUB$ID_SUBPRODUCTO
-,ID_METAS_MUNICIPIO
-,PRODUCTO
-,SUBPRODUCTO
-,MEDIDA
-,DEPARTAMENTO
-,MUNICIPIO
-,METAFISICA
-,METAFINANCIERA
-,FISICA_MUNICIPIO
-,FINANCIERA_MUNICIPIO
-,REGISTRA_FISICA
-,REGISTRA_FINANCIERA
-from
-
-(SELECT
-ROWNUM NUMERO
-,POA
-,ANIO
-,POM.SPPO$ID_POM
-,POM.SPPO$ID_PERIODO
-,POM.SPPO$INICIO||'-'||POM.SPPO$FINAL PERIODO
-,SM.SPSM$ID ID_MUNO_MUNICIPIO
-,G.DEPTO
-,SM.SPSM$GEOGRAFICO
-,SPPSUB$ID_SUBPRODUCTO
-,NVL(MM.SPPSMMA$ID,-1) ID_METAS_MUNICIPIO
-,P.SPPRO$DESCRIPCION PRODUCTO
-,SUBPRODUCTO
-,MEDIDA
-,(SELECT NOMBRE FROM SINIP.CG_GEOGRAFICO WHERE GEOGRAFICO = G.DEPTO) DEPARTAMENTO
-,G.NOMBRE MUNICIPIO
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIS) METAFISICA
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIN) METAFINANCIERA
-,NVL(MM.SPPSMMA$META_FISICA,0) FISICA_MUNICIPIO
-,NVL(MM.SPPSMMA$META_FINANCIERA,0) FINANCIERA_MUNICIPIO
-,0 REGISTRA_FISICA
-,0 REGISTRA_FINANCIERA
- ,ROW_NUMBER() OVER (
-            PARTITION BY SM.SPSM$ID 
-            ORDER BY MM.SPPSMMA$ID DESC
-        ) AS RN
-FROM
-(SELECT 
-(SELECT NVL(FF.SPPMFS$ID_POA,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = " + anio + @" GROUP BY FF.SPPMFS$ID_POA) POA
-,(SELECT NVL(FF.SPPMFS$ANIO,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = " + anio + @" GROUP BY FF.SPPMFS$ANIO) ANIO
-,S.SPPSUB$ID_SUBPRODUCTO
-,S.SPPSUB$DESCRIPCION SUBPRODUCTO
-,M.NOMBRE MEDIDA
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = " + anio + @" AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 0 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIS
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = " + anio + @" AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 1 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIN
-,S.SPPSUB$ID_PRODUCTO
-FROM SCHE$SIPLAN20.SP20$SUB_PRODUCTO S 
-INNER JOIN SINIP.CP_UNIDADES_MEDIDA M ON M.UNIDAD_MEDIDA = S.SPPSUB$ID_MEDIDA
-WHERE  S.SPPSUB$RESTRICTIVA = 'N'
-";
-            if (p == 1)
-            {
-                sql = sql + " AND S.SPPSUB$ID_SUBPRODUCTO = " + hfIDSubProducto.Value+" ";
-            }
-
-sql = sql + @") 
-INNER JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS SM ON SM.SPSM$ID_SUB = SPPSUB$ID_SUBPRODUCTO AND SM.SPSM$RESTRICTIVA = 'N'
-INNER JOIN SINIP.CG_GEOGRAFICO G ON G.GEOGRAFICO = SM.SPSM$GEOGRAFICO 
-INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO P ON P.SPPRO$ID_PRODUCTO = SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON POM.SPPO$ID_POM = P.SPPRO$POM AND POM.SPPO$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N'
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS MM ON MM.SPPSMMA$ID_SUBMUNO = SM.SPSM$ID AND MM.SPPSMMA$POA = POA
-WHERE POM.SPPO$ID_POM = " + pom+ @")
-
-where rn = 1 order by DEPTO, SPSM$GEOGRAFICO, SPPSUB$ID_SUBPRODUCTO ASC ";
-            estado = dao.consulta(sql);
-            if (estado == 1)
-            {
-                munos = dao.tabla;
-            }
-            return munos;
-        
-        
-        }
-
-        protected void btnTodoExcel_Click(object sender, EventArgs e)
-        {
-            GenerarExcel(0);
-        }
-
-
-        protected void BtnUno_Click(object sender, EventArgs e)
-        {
-            GenerarExcel(1);
-        }
-
-        protected void BtnRegresaPantalla1_Click(object sender, EventArgs e)
-        {
-            btnPOA_Click(sender, e);
-        }
-
-        protected void btnSubir_Click(object sender, EventArgs e)
-        {
-            if (!fuExcel.HasFile)
-                return;
-
-            string rutaCarpeta = Server.MapPath("~/Uploads/");
-
-            // 📁 Crear carpeta si no existe
-            if (!Directory.Exists(rutaCarpeta))
-            {
-                Directory.CreateDirectory(rutaCarpeta);
-            }
-
-            // 🔍 Validar extensión
-            string extension = Path.GetExtension(fuExcel.FileName).ToLower();
-            if (extension != ".xlsx")
-            {
-                // Manejar error (puedes mostrar mensaje)
-                return;
-            }
-
-            // 🆔 Nombre único
-            string nombreArchivo = Guid.NewGuid().ToString() + extension;
-            string path = Path.Combine(rutaCarpeta, nombreArchivo);
-
-            try
-            {
-                // 💾 Guardar archivo
-                fuExcel.SaveAs(path);
-
-                // 📖 Procesar archivo
-                LeerExcel(path);
-                mensaje = "Se ha terminado de procesar el archivo";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
-            }
-            catch (Exception ex)
-            {
-                // 🔥 Manejo de error (log o mensaje)
-                // Ej: lblError.Text = ex.Message;
-                LeerExcel(path);
-                mensaje = "Ha ocurrido un error al procesar el archivo";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-            }
-            finally
-            {
-                // 🧹 Eliminar archivo SIEMPRE
-                try
-                {
-                    if (File.Exists(path))
-                        File.Delete(path);
-                }
-                catch
-                {
-                    // opcional: log de error al eliminar
-                }
-            }
-        }
-
-        public void LeerExcel(string path)
-        {
-            using (ExcelPackage pkg = new ExcelPackage(new FileInfo(path)))
-            {
-                if (pkg.Workbook.Worksheets.Count == 0)
-                {
-                    throw new Exception("El archivo Excel no contiene hojas.");
-                }
-
-                var ws = pkg.Workbook.Worksheets.FirstOrDefault();
-
-                int row = 2;
-
-                while (ws.Cells[row, 1].Value != null)
-                {
-                    int  poa = Convert.ToInt32(ws.Cells[row, 1].Text);
-                    int anio = Convert.ToInt32(ws.Cells[row, 2].Text);
-                    int id = Convert.ToInt32(ws.Cells[row, 3].Text);
-                    int id_meta = Convert.ToInt32(ws.Cells[row, 4].Text);
-                    double metafisicant = Convert.ToDouble(ws.Cells[row, 12].Text);
-                    double metafinante = Convert.ToDouble(ws.Cells[row, 13].Text);
-                    string meta1 = ws.Cells[row, 14].Text;
-                    string meta2 = ws.Cells[row, 15].Text;
-                    // 🔥 VALIDACIÓN
-                    if (!string.IsNullOrEmpty(meta1) || !string.IsNullOrEmpty(meta2))
-                    {
-                        InsertarOracle(poa, anio, id,id_meta, metafisicant, metafinante,meta1,meta2);
-                    }
-
-                    row++;
-                }
-            }
-        }
-        public void InsertarOracle(int poa, int anio, int id, int id_meta, double metafisicant, double metafinante, string fisica, string finan)
-        {
-            double validaFisica = 0;
-            double validaFinanciera = 0;
-            double fisica_real = 0;
-            double financiera_real = 0;
-
-            if (fisica == "")
-                validaFisica = 0;
-            else
-                validaFisica = Convert.ToDouble(fisica);
-            if (finan == "")
-                validaFinanciera = 0;
-            else
-                validaFinanciera = Convert.ToDouble(finan);
-
-            if (validaFisica == metafisicant)
-                fisica_real = validaFisica;
-            else if (validaFisica == 0 && metafisicant > 0 && id_meta > -1)
-                fisica_real = metafisicant;
-            else
-                fisica_real = validaFisica;
-
-
-            if (validaFinanciera == metafinante)
-                financiera_real = validaFinanciera;
-            else if (validaFinanciera == 0 && metafinante > 0 && id_meta > -1)
-                financiera_real = metafinante;
-            else
-                financiera_real = validaFinanciera;
-
-            if (id_meta > -1)
-            {
-                sql = "UPDATE SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS SET SPPSMMA$RESTRICTIVA = 'S', SPPSMMA$FECHA_ELIMINA = 'INACTIVA = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "' WHERE SPPSMMA$ID = " + id_meta;
-                estado = dao.comando(sql);
-            }
-
-
-            if (validaFinanciera != 0 || validaFinanciera != 0)
-            {
-                sql = "INSERT INTO SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS (SPPSMMA$ID_SUBMUNO,SPPSMMA$POA,SPPSMMA$ANIO,SPPSMMA$META_FISICA,SPPSMMA$META_FINANCIERA,SPPSMMA$FECHA_INGRESO) VALUES (" + id + "," + poa + "," + anio + "," + fisica_real + "," + financiera_real + ",'INSERTA = '||TO_CHAR(SYSDATE,'DD/MM/YYYY HH24:MI')||' '||'" + Session["USUARIO"].ToString() + "')";
-                estado = dao.comando(sql);
-            }
-
-
-
-
-        }
-
-
-
-        protected DataTable cargaPOAMUNOS(int sub, int anio)
-        {
-            DataTable munos = new DataTable();
-            /*sql = @"SELECT
-
-ID_UNICO
-,POA
-,ANIO
-,SPPSUB$ID_SUBPRODUCTO
-,ID_MUNOS
-,ID_METAS
-,ID_EJECUCION
-,SUBPRODUCTO
-,MEDIDA
-,DEPARTAMENTO
-,MUNICIPIO
-,METAFISICA_ANUAL
-,METAFINANCIERA_ANUAL
-,METAFISCA_MUNO
-,METAFINANCIERA_MUNO
-,ENE_FIS
-,ENE_FIN
-,FEB_FIS
-,FEB_FIN
-,MAR_FIS
-,MAR_FIN
-,ABR_FIS
-,ABR_FIN
-,CUAFIS1
-,CUAFIN1
-,MAY_FIS
-,MAY_FIN
-,JUN_FIS
-,JUN_FIN
-,JUL_FIS
-,JUL_FIN
-,AGO_FIS
-,AGO_FIN
-,CUAFIS2
-,CUAFIN2
-,SEP_FIS
-,SEP_FIN
-,OCT_FIS
-,OCT_FIN
-,NOV_FIS
-,NOV_FIN
-,DIC_FIS
-,DIC_FIN
-,CUAFIS3
-,CUAFIN3
-,ANUAL_FISICO
-,ANUAL_FINANCIERO
-,0 PORCENTAJE_FISICO
-,0 PORCENTAJE_FINANCIERO
-
-
-FROM
-(SELECT 
-(SM.SPSM$ID || '.' || NVL(MM.SPPSMMA$ID,-1) || '.' || NVL(ME.SPP_MUNPOA$ID,-1)||'.'||POA||'.'||ANIO) AS ID_UNICO
-,POA
-,ANIO
-,SPPSUB$ID_SUBPRODUCTO
-,SM.SPSM$ID ID_MUNOS
-,NVL(MM.SPPSMMA$ID,-1) ID_METAS
-,NVL(ME.SPP_MUNPOA$ID,-1) ID_EJECUCION
-,SUBPRODUCTO
-,MEDIDA
-,(SELECT NOMBRE FROM SINIP.CG_GEOGRAFICO WHERE GEOGRAFICO = G.DEPTO) DEPARTAMENTO
-,G.NOMBRE MUNICIPIO
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIS) METAFISICA_ANUAL
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIN) METAFINANCIERA_ANUAL
-,NVL(MM.SPPSMMA$META_FISICA,0) METAFISCA_MUNO
-,NVL(MM.SPPSMMA$META_FINANCIERA,0) METAFINANCIERA_MUNO
-,NVL(SPP_MUNPOA$ENE_FIS,0) ENE_FIS
-,NVL(SPP_MUNPOA$ENE_FIN,0) ENE_FIN
-,NVL(SPP_MUNPOA$ENE_FIS,0) FEB_FIS
-,NVL(SPP_MUNPOA$ENE_FIN,0) FEB_FIN
-,NVL(SPP_MUNPOA$MAR_FIS,0) MAR_FIS
-,NVL(SPP_MUNPOA$MAR_FIN,0) MAR_FIN
-,NVL(SPP_MUNPOA$ABR_FIS,0) ABR_FIS
-,NVL(SPP_MUNPOA$ABR_FIN,0) ABR_FIN
-,(NVL(SPP_MUNPOA$ENE_FIS,0)+NVL(SPP_MUNPOA$FEB_FIS,0)+NVL(SPP_MUNPOA$MAR_FIS,0)+NVL(SPP_MUNPOA$ABR_FIS,0)) CUAFIS1
-,(NVL(SPP_MUNPOA$ENE_FIN,0)+NVL(SPP_MUNPOA$FEB_FIN,0)+NVL(SPP_MUNPOA$MAR_FIN,0)+NVL(SPP_MUNPOA$ABR_FIN,0)) CUAFIN1
-
-,NVL(SPP_MUNPOA$MAY_FIS,0) MAY_FIS
-,NVL(SPP_MUNPOA$MAY_FIN,0) MAY_FIN
-,NVL(SPP_MUNPOA$JUN_FIS,0) JUN_FIS
-,NVL(SPP_MUNPOA$JUN_FIN,0) JUN_FIN
-,NVL(SPP_MUNPOA$JUL_FIS,0) JUL_FIS
-,NVL(SPP_MUNPOA$JUL_FIN,0) JUL_FIN
-,NVL(SPP_MUNPOA$AGO_FIS,0) AGO_FIS
-,NVL(SPP_MUNPOA$AGO_FIN,0) AGO_FIN
-,NVL(SPP_MUNPOA$SEP_FIS,0) SEP_FIS
-,NVL(SPP_MUNPOA$SEP_FIN,0) SEP_FIN
-,(NVL(SPP_MUNPOA$MAY_FIS,0)+NVL(SPP_MUNPOA$JUN_FIS,0)+NVL(SPP_MUNPOA$JUL_FIS,0)+NVL(SPP_MUNPOA$AGO_FIS,0)) CUAFIS2
-,(NVL(SPP_MUNPOA$MAY_FIN,0)+NVL(SPP_MUNPOA$JUN_FIN,0)+NVL(SPP_MUNPOA$JUL_FIN,0)+NVL(SPP_MUNPOA$AGO_FIN,0)) CUAFIN2
-,NVL(SPP_MUNPOA$OCT_FIS,0) OCT_FIS
-,NVL(SPP_MUNPOA$OCT_FIN,0) OCT_FIN
-,NVL(SPP_MUNPOA$OCT_FIS,0) NOV_FIS
-,NVL(SPP_MUNPOA$OCT_FIN,0) NOV_FIN
-,NVL(SPP_MUNPOA$OCT_FIS,0) DIC_FIS
-,NVL(SPP_MUNPOA$OCT_FIN,0) DIC_FIN
-,(NVL(SPP_MUNPOA$SEP_FIS,0)+NVL(SPP_MUNPOA$OCT_FIS,0)+NVL(SPP_MUNPOA$NOV_FIS,0)+NVL(SPP_MUNPOA$DIC_FIS,0)) CUAFIS3
-,(NVL(SPP_MUNPOA$SEP_FIN,0)+NVL(SPP_MUNPOA$OCT_FIN,0)+NVL(SPP_MUNPOA$NOV_FIN,0)+NVL(SPP_MUNPOA$DIC_FIN,0)) CUAFIN3
-
-,(NVL(SPP_MUNPOA$ENE_FIS,0)+NVL(SPP_MUNPOA$FEB_FIS,0)+NVL(SPP_MUNPOA$MAR_FIS,0)+NVL(SPP_MUNPOA$ABR_FIS,0)) + (NVL(SPP_MUNPOA$MAY_FIS,0)+NVL(SPP_MUNPOA$JUN_FIS,0)+NVL(SPP_MUNPOA$JUL_FIS,0)+NVL(SPP_MUNPOA$AGO_FIS,0)) + (NVL(SPP_MUNPOA$SEP_FIS,0)+NVL(SPP_MUNPOA$OCT_FIS,0)+NVL(SPP_MUNPOA$NOV_FIS,0)+NVL(SPP_MUNPOA$DIC_FIS,0)) ANUAL_FISICO
-,(NVL(SPP_MUNPOA$ENE_FIN,0)+NVL(SPP_MUNPOA$FEB_FIN,0)+NVL(SPP_MUNPOA$MAR_FIN,0)+NVL(SPP_MUNPOA$ABR_FIN,0)) + (NVL(SPP_MUNPOA$MAY_FIN,0)+NVL(SPP_MUNPOA$JUN_FIN,0)+NVL(SPP_MUNPOA$JUL_FIN,0)+NVL(SPP_MUNPOA$AGO_FIN,0)) + (NVL(SPP_MUNPOA$SEP_FIN,0)+NVL(SPP_MUNPOA$OCT_FIN,0)+NVL(SPP_MUNPOA$NOV_FIN,0)+NVL(SPP_MUNPOA$DIC_FIN,0)) ANUAL_FINANCIERO
-FROM
-(SELECT
-(SELECT NVL(FF.SPPMFS$ID_POA,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" GROUP BY FF.SPPMFS$ID_POA) POA
-,(SELECT NVL(FF.SPPMFS$ANIO,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" GROUP BY FF.SPPMFS$ANIO) ANIO
-,S.SPPSUB$ID_SUBPRODUCTO
-,S.SPPSUB$DESCRIPCION SUBPRODUCTO
-
-,M.NOMBRE MEDIDA
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 0 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIS
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 1 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIN
-,S.SPPSUB$ID_PRODUCTO
-FROM SCHE$SIPLAN20.SP20$SUB_PRODUCTO S 
-INNER JOIN SINIP.CP_UNIDADES_MEDIDA M ON M.UNIDAD_MEDIDA = S.SPPSUB$ID_MEDIDA
-WHERE  S.SPPSUB$RESTRICTIVA = 'N' AND S.SPPSUB$ID_SUBPRODUCTO = "+sub+@")
-INNER JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS SM ON SM.SPSM$ID_SUB = SPPSUB$ID_SUBPRODUCTO AND SM.SPSM$RESTRICTIVA = 'N'
-INNER JOIN SINIP.CG_GEOGRAFICO G ON G.GEOGRAFICO = SM.SPSM$GEOGRAFICO 
-INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO P ON P.SPPRO$ID_PRODUCTO = SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON POM.SPPO$ID_POM = P.SPPRO$POM AND POM.SPPO$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POA POA ON POA.SPOA$ID_POA = POA AND POA.SPOA$ANIO = ANIO
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS MM ON MM.SPPSMMA$ID_SUBMUNO = SM.SPSM$ID AND MM.SPPSMMA$RESTRICTIVA = 'N' AND SM.SPSM$RESTRICTIVA = 'N'
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_POA ME ON ME.SPP_MUNPOA$ID_MUNO = SM.SPSM$ID AND ME.SPP_MUNPOA$RESTRICTIVA = 'N' AND SM.SPSM$RESTRICTIVA = 'N') ORDER BY DEPARTAMENTO, MUNICIPIO ASC";*/
-            sql = @"WITH BASE AS (
-    SELECT
-        S.SPPSUB$ID_SUBPRODUCTO,
-        S.SPPSUB$DESCRIPCION SUBPRODUCTO,
-        S.SPPSUB$ID_PRODUCTO,
-        M.NOMBRE MEDIDA,
-
-        MAX(CASE WHEN FF.SPPMFS$TIPO_PROGRAMACION = 0 THEN FF.SPPMFS$ID_PROGRAMACION_FISFIN END) ID_FIS,
-        MAX(CASE WHEN FF.SPPMFS$TIPO_PROGRAMACION = 1 THEN FF.SPPMFS$ID_PROGRAMACION_FISFIN END) ID_FIN,
-
-        MAX(FF.SPPMFS$ID_POA) POA,
-        MAX(FF.SPPMFS$ANIO) ANIO
-
-    FROM SCHE$SIPLAN20.SP20$SUB_PRODUCTO S
-    INNER JOIN SINIP.CP_UNIDADES_MEDIDA M 
-        ON M.UNIDAD_MEDIDA = S.SPPSUB$ID_MEDIDA
-    LEFT JOIN SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF
-        ON FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO
-       AND FF.SPPMFS$ANIO = "+anio+@"
-       AND FF.SPPMFS$RESTRICTIVA = 'N'
-
-    WHERE S.SPPSUB$RESTRICTIVA = 'N'
-      AND S.SPPSUB$ID_SUBPRODUCTO = "+sub+ @"
-
-    GROUP BY 
-        S.SPPSUB$ID_SUBPRODUCTO,
-        S.SPPSUB$DESCRIPCION,
-        S.SPPSUB$ID_PRODUCTO,
-        M.NOMBRE
-),
-
-MM AS (
-    SELECT *
-    FROM (
-        SELECT m.*,
-               ROW_NUMBER() OVER (
-                   PARTITION BY m.SPPSMMA$ID_SUBMUNO 
-                   ORDER BY m.SPPSMMA$ID DESC
-               ) rn
-        FROM SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS m
-        WHERE m.SPPSMMA$RESTRICTIVA = 'N'
-    )
-    WHERE rn = 1
-),
-
-ME AS (
-    SELECT *
-    FROM (
-        SELECT p.*,
-               ROW_NUMBER() OVER (
-                   PARTITION BY p.SPP_MUNPOA$ID_MUNO 
-                   ORDER BY p.SPP_MUNPOA$ID DESC
-               ) rn
-        FROM SCHE$SIPLAN20.SP20$SUB_MUNOS_POA p
-        WHERE p.SPP_MUNPOA$RESTRICTIVA = 'N'
-    )
-    WHERE rn = 1
-)
-
-SELECT
-    (SM.SPSM$ID || '.' || NVL(MM.SPPSMMA$ID,-1) || '.' || NVL(ME.SPP_MUNPOA$ID,-1)||'.'||B.POA||'.'||B.ANIO) AS ID_UNICO,
-    B.POA,
-    B.ANIO,
-    B.SPPSUB$ID_SUBPRODUCTO,
-    SM.SPSM$ID ID_MUNOS,
-    NVL(MM.SPPSMMA$ID,-1) ID_METAS,
-    NVL(ME.SPP_MUNPOA$ID,-1) ID_EJECUCION,
-    B.SUBPRODUCTO,
-    B.MEDIDA,
-
-    D.NOMBRE DEPARTAMENTO,
-    G.NOMBRE MUNICIPIO,
-
-    FIS.SPPMFS$META METAFISICA_ANUAL,
-    FIN.SPPMFS$META METAFINANCIERA_ANUAL,
-
-    NVL(MM.SPPSMMA$META_FISICA,0) METAFISCA_MUNO,
-    NVL(MM.SPPSMMA$META_FINANCIERA,0) METAFINANCIERA_MUNO,
-
-    -- EJEMPLO MESES (puedes completar igual que antes)
-    NVL(ME.SPP_MUNPOA$ENE_FIS,0) ENE_FIS,
-    NVL(ME.SPP_MUNPOA$ENE_FIN,0) ENE_FIN,
-    
-    NVL(ME.SPP_MUNPOA$FEB_FIS,0) FEB_FIS,
-    NVL(ME.SPP_MUNPOA$FEB_FIN,0) FEB_FIN,
-    
-    NVL(ME.SPP_MUNPOA$MAR_FIS,0) MAR_FIS,
-    NVL(ME.SPP_MUNPOA$MAR_FIN,0) MAR_FIN,
-    
-    NVL(ME.SPP_MUNPOA$ABR_FIS,0) ABR_FIS,
-    NVL(ME.SPP_MUNPOA$ABR_FIN,0) ABR_FIN,
-
-    (NVL(SPP_MUNPOA$ENE_FIS,0)+NVL(SPP_MUNPOA$FEB_FIS,0)+NVL(SPP_MUNPOA$MAR_FIS,0)+NVL(SPP_MUNPOA$ABR_FIS,0)) CUAFIS1,
-    (NVL(SPP_MUNPOA$ENE_FIN,0)+NVL(SPP_MUNPOA$FEB_FIN,0)+NVL(SPP_MUNPOA$MAR_FIN,0)+NVL(SPP_MUNPOA$ABR_FIN,0)) CUAFIN1,
-
-    NVL(ME.SPP_MUNPOA$MAY_FIS,0) MAY_FIS,
-    NVL(ME.SPP_MUNPOA$MAY_FIN,0) MAY_FIN,
-    
-    NVL(ME.SPP_MUNPOA$JUN_FIS,0) JUN_FIS,
-    NVL(ME.SPP_MUNPOA$JUN_FIN,0) JUN_FIN,
-    
-    NVL(ME.SPP_MUNPOA$JUL_FIS,0) JUL_FIS,
-    NVL(ME.SPP_MUNPOA$JUL_FIN,0) JUL_FIN,
-    
-    NVL(ME.SPP_MUNPOA$AGO_FIS,0) AGO_FIS,
-    NVL(ME.SPP_MUNPOA$AGO_FIN,0) AGO_FIN,
-    (NVL(SPP_MUNPOA$MAY_FIS,0)+NVL(SPP_MUNPOA$JUN_FIS,0)+NVL(SPP_MUNPOA$JUL_FIS,0)+NVL(SPP_MUNPOA$AGO_FIS,0)) CUAFIS2,
-    (NVL(SPP_MUNPOA$MAY_FIN,0)+NVL(SPP_MUNPOA$JUN_FIN,0)+NVL(SPP_MUNPOA$JUL_FIN,0)+NVL(SPP_MUNPOA$AGO_FIN,0)) CUAFIN2,
-    NVL(ME.SPP_MUNPOA$SEP_FIS,0) SEP_FIS,
-    NVL(ME.SPP_MUNPOA$SEP_FIN,0) SEP_FIN,
-    
-    NVL(ME.SPP_MUNPOA$OCT_FIS,0) OCT_FIS,
-    NVL(ME.SPP_MUNPOA$OCT_FIN,0) OCT_FIN,
-    
-    NVL(ME.SPP_MUNPOA$NOV_FIS,0) NOV_FIS,
-    NVL(ME.SPP_MUNPOA$NOV_FIN,0) NOV_FIN,
-    
-    NVL(ME.SPP_MUNPOA$DIC_FIS,0) DIC_FIS,
-    NVL(ME.SPP_MUNPOA$DIC_FIN,0) DIC_FIN,
-    
-    (NVL(SPP_MUNPOA$SEP_FIS,0)+NVL(SPP_MUNPOA$OCT_FIS,0)+NVL(SPP_MUNPOA$NOV_FIS,0)+NVL(SPP_MUNPOA$DIC_FIS,0)) CUAFIS3
-   ,(NVL(SPP_MUNPOA$SEP_FIN,0)+NVL(SPP_MUNPOA$OCT_FIN,0)+NVL(SPP_MUNPOA$NOV_FIN,0)+NVL(SPP_MUNPOA$DIC_FIN,0)) CUAFIN3
-
-,(NVL(SPP_MUNPOA$ENE_FIS,0)+NVL(SPP_MUNPOA$FEB_FIS,0)+NVL(SPP_MUNPOA$MAR_FIS,0)+NVL(SPP_MUNPOA$ABR_FIS,0)) + (NVL(SPP_MUNPOA$MAY_FIS,0)+NVL(SPP_MUNPOA$JUN_FIS,0)+NVL(SPP_MUNPOA$JUL_FIS,0)+NVL(SPP_MUNPOA$AGO_FIS,0)) + (NVL(SPP_MUNPOA$SEP_FIS,0)+NVL(SPP_MUNPOA$OCT_FIS,0)+NVL(SPP_MUNPOA$NOV_FIS,0)+NVL(SPP_MUNPOA$DIC_FIS,0)) ANUAL_FISICO
-,(NVL(SPP_MUNPOA$ENE_FIN,0)+NVL(SPP_MUNPOA$FEB_FIN,0)+NVL(SPP_MUNPOA$MAR_FIN,0)+NVL(SPP_MUNPOA$ABR_FIN,0)) + (NVL(SPP_MUNPOA$MAY_FIN,0)+NVL(SPP_MUNPOA$JUN_FIN,0)+NVL(SPP_MUNPOA$JUL_FIN,0)+NVL(SPP_MUNPOA$AGO_FIN,0)) + (NVL(SPP_MUNPOA$SEP_FIN,0)+NVL(SPP_MUNPOA$OCT_FIN,0)+NVL(SPP_MUNPOA$NOV_FIN,0)+NVL(SPP_MUNPOA$DIC_FIN,0)) ANUAL_FINANCIERO
-
-FROM BASE B
-
-INNER JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS SM 
-    ON SM.SPSM$ID_SUB = B.SPPSUB$ID_SUBPRODUCTO
-   AND SM.SPSM$RESTRICTIVA = 'N'
-
-INNER JOIN SINIP.CG_GEOGRAFICO G 
-    ON G.GEOGRAFICO = SM.SPSM$GEOGRAFICO
-
-LEFT JOIN SINIP.CG_GEOGRAFICO D 
-    ON D.GEOGRAFICO = G.DEPTO
-
-LEFT JOIN MM 
-    ON MM.SPPSMMA$ID_SUBMUNO = SM.SPSM$ID
-
-LEFT JOIN ME 
-    ON ME.SPP_MUNPOA$ID_MUNO = SM.SPSM$ID
-
-LEFT JOIN SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FIS
-    ON FIS.SPPMFS$ID_PROGRAMACION_FISFIN = B.ID_FIS
-
-LEFT JOIN SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FIN
-    ON FIN.SPPMFS$ID_PROGRAMACION_FISFIN = B.ID_FIN
-
-ORDER BY D.NOMBRE, G.NOMBRE";
-
-            estado = dao.consulta(sql);
-            if (estado == 1)
-                munos = dao.tabla;
-
-            return munos;
-
-        }
-
-        protected void btnTodoExcel1_Click(object sender, EventArgs e)
-        {
-            GenerarExcel1(0);
-        }
-
-        protected void BtnUno1_Click(object sender, EventArgs e)
-        {
-            GenerarExcel1(1);
-        }
-
-        protected void GenerarExcel1(int p)
-        {
-            DataTable dt = cargaMunosExcel2(Convert.ToInt32(Convert.ToInt32(Session["pom"])), Convert.ToInt32(cbAniPOA.Value), p);
-
-            using (ExcelPackage pkg = new ExcelPackage())
-            {
-                var ws = pkg.Workbook.Worksheets.Add("metasPOAMunicipios");
-
-                // 🧾 ENCABEZADOS
-                ws.Cells[1, 1].Value = "POA";
-                ws.Cells[1, 2].Value = "ANIO";
-                ws.Cells[1, 3].Value = "ID_SUBPRODUCTO";
-                ws.Cells[1, 4].Value = "ID_MUNO";
-                ws.Cells[1, 5].Value = "ID_METAS";
-                ws.Cells[1, 6].Value = "ID_METASMUNO";
-                ws.Cells[1, 7].Value = "DEPTO";
-                ws.Cells[1, 8].Value = "ID_MUNICIPIO";
-                ws.Cells[1, 9].Value = "SUBPRODUCTO";
-                ws.Cells[1, 10].Value = "MEDIDA";
-                ws.Cells[1, 11].Value = "DEPARTAMENTO";
-                ws.Cells[1, 12].Value = "META_FISICA_SUB";
-                ws.Cells[1, 13].Value = "META_FINANCIERA_SUB";
-                ws.Cells[1, 14].Value = "METAFISICA_MUNICIPIO";
-                ws.Cells[1, 15].Value = "METAFINANCIERA_MUNICIPIO";
-                ws.Cells[1, 16].Value = "ENE_FISICA";
-                ws.Cells[1, 17].Value = "ENE_FINANCIERA";
-                ws.Cells[1, 18].Value = "FEB_FISICA";
-                ws.Cells[1, 19].Value = "FEB_FINANCIERA";
-                ws.Cells[1, 20].Value = "MAR_FISICA";
-                ws.Cells[1, 21].Value = "MAR_FINANCIERA";
-                ws.Cells[1, 22].Value = "ABR_FISICA";
-                ws.Cells[1, 23].Value = "ABR_FINANCIERA";
-                ws.Cells[1, 24].Value = "MAY_FISICA";
-                ws.Cells[1, 25].Value = "MAY_FINANCIERA";
-                ws.Cells[1, 26].Value = "JUN_FISICA";
-                ws.Cells[1, 27].Value = "JUN_FINANCIERA";
-                ws.Cells[1, 28].Value = "JUL_FISICA";
-                ws.Cells[1, 29].Value = "JUL_FINANCIERA";
-                ws.Cells[1, 30].Value = "AGO_FISICA";
-                ws.Cells[1, 31].Value = "AGO_FINANCIERA";
-                ws.Cells[1, 32].Value = "SEP_FISICA";
-                ws.Cells[1, 33].Value = "SEP_FINANCIERA";
-                ws.Cells[1, 34].Value = "OCT_FISICA";
-                ws.Cells[1, 35].Value = "OCT_FINANCIERA";
-                ws.Cells[1, 36].Value = "NOV_FISICA";
-                ws.Cells[1, 37].Value = "NOV_FINANCIERA";
-                ws.Cells[1, 38].Value = "DIC_FISICA";
-                ws.Cells[1, 39].Value = "DIC_FINANCIERA";
-                // Estilo enc6bezado
-                using (var range = ws.Cells[1, 1, 1, 39])
-                {
-                    range.Style.Font.Bold = true;
-                }
-
-                // 📊 DATOS
-                for (int i = 0; i < dt.Rows.Count; i++)
-                {
-                    ws.Cells[i + 2, 1].Value = dt.Rows[i]["POA"];
-                    ws.Cells[i + 2, 2].Value = dt.Rows[i]["ANIO"];
-                    ws.Cells[i + 2, 3].Value = dt.Rows[i]["ID_SUBPRODUCTO"];
-                    ws.Cells[i + 2, 4].Value = dt.Rows[i]["ID_MUNOS"];
-                    ws.Cells[i + 2, 5].Value = dt.Rows[i]["ID_METAS"];
-                    ws.Cells[i + 2, 6].Value = dt.Rows[i]["ID_METASMUNO"];
-                    ws.Cells[i + 2, 7].Value = dt.Rows[i]["DEPTO"];
-                    ws.Cells[i + 2, 8].Value = dt.Rows[i]["ID_MUNICIPIO"];
-                    ws.Cells[i + 2, 9].Value = dt.Rows[i]["SUBPRODUCTO"];
-                    ws.Cells[i + 2, 10].Value = dt.Rows[i]["MEDIDA"];
-                    ws.Cells[i + 2, 11].Value = dt.Rows[i]["DEPARTAMENTO"];
-                    ws.Cells[i + 2, 12].Value = dt.Rows[i]["MUNICIPIO"];
-                    ws.Cells[i + 2, 13].Value = dt.Rows[i]["METAFISICA_ANUAL"];
-                    ws.Cells[i + 2, 14].Value = dt.Rows[i]["METAFINANCIERA_ANUAL"];
-                    ws.Cells[i + 2, 15].Value = dt.Rows[i]["METAFISCA_MUNO"];
-                    ws.Cells[i + 2, 16].Value = dt.Rows[i]["METAFINANCIERA_MUNO"];
-                    ws.Cells[i + 2, 17].Value = dt.Rows[i]["ENE_FIS"];
-                    ws.Cells[i + 2, 18].Value = dt.Rows[i]["ENE_FIN"];
-                    ws.Cells[i + 2, 19].Value = dt.Rows[i]["FEB_FIS"];
-                    ws.Cells[i + 2, 20].Value = dt.Rows[i]["FEB_FIN"];
-                    ws.Cells[i + 2, 21].Value = dt.Rows[i]["MAR_FIS"];
-                    ws.Cells[i + 2, 22].Value = dt.Rows[i]["MAR_FIN"];
-                    ws.Cells[i + 2, 23].Value = dt.Rows[i]["ABR_FIS"];
-                    ws.Cells[i + 2, 24].Value = dt.Rows[i]["ABR_FIN"];
-                    ws.Cells[i + 2, 25].Value = dt.Rows[i]["MAY_FIS"];
-                    ws.Cells[i + 2, 26].Value = dt.Rows[i]["MAY_FIN"];
-                    ws.Cells[i + 2, 27].Value = dt.Rows[i]["JUN_FIS"];
-                    ws.Cells[i + 2, 28].Value = dt.Rows[i]["JUN_FIN"];
-                    ws.Cells[i + 2, 29].Value = dt.Rows[i]["JUL_FIS"];
-                    ws.Cells[i + 2, 30].Value = dt.Rows[i]["JUL_FIN"];
-                    ws.Cells[i + 2, 31].Value = dt.Rows[i]["AGO_FIS"];
-                    ws.Cells[i + 2, 32].Value = dt.Rows[i]["AGO_FIN"];
-                    ws.Cells[i + 2, 33].Value = dt.Rows[i]["SEP_FIS"];
-                    ws.Cells[i + 2, 34].Value = dt.Rows[i]["SEP_FIN"];
-                    ws.Cells[i + 2, 35].Value = dt.Rows[i]["OCT_FIS"];
-                    ws.Cells[i + 2, 36].Value = dt.Rows[i]["OCT_FIN"];
-                    ws.Cells[i + 2, 37].Value = dt.Rows[i]["NOV_FIS"];
-                    ws.Cells[i + 2, 38].Value = dt.Rows[i]["NOV_FIN"];
-                    ws.Cells[i + 2, 39].Value = dt.Rows[i]["DIC_FIS"];
-                    ws.Cells[i + 2, 40].Value = dt.Rows[i]["DIC_FIN"];
-
-
-                }
-                int totalFilas = dt.Rows.Count + 1;
-
-                // Bloquear todo
-                ws.Cells.Style.Locked = true;
-
-                // Desbloquear editables (meses)
-                ws.Cells[2, 17, totalFilas, 40].Style.Locked = false;
-
-                // Activar filtro SOLO en encabezados
-                ws.Cells[1, 1, 1, 40].AutoFilter = true;
-
-                // Proteger hoja
-                ws.Protection.IsProtected = true;
-
-                // Permisos
-                ws.Protection.AllowAutoFilter = true;
-                ws.Protection.AllowSort = true;
-                ws.Protection.AllowSelectUnlockedCells = true;
-                ws.Protection.AllowSelectLockedCells = false;
-                ws.Protection.AllowFormatCells = true;
-
-                // Ajustar columnas
-                ws.Cells.AutoFitColumns();
-
-                // 📤 DESCARGAR
-                Response.Clear();
-                Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-                Response.AddHeader("content-disposition", "attachment; filename=metasPOAMunicipios.xlsx");
-                Response.BinaryWrite(pkg.GetAsByteArray());
-                Response.End();
-            }
-        }
-
-
-
-
-        protected DataTable cargaMunosExcel2(int pom, int anio, int p)
-        {
-            DataTable munos = new DataTable();
-            sql = @"SELECT
-POA
-,ANIO
-,SPPSUB$ID_SUBPRODUCTO ID_SUBPRODUCTO
-,ID_MUNOS
-,ID_METAS
-,ID_EJECUCION ID_METASMUNO
-,DEPTO
-,ID_MUNICIPIO
-,SUBPRODUCTO
-,MEDIDA
-,DEPARTAMENTO
-,MUNICIPIO
-,METAFISICA_ANUAL
-,METAFINANCIERA_ANUAL
-,METAFISCA_MUNO
-,METAFINANCIERA_MUNO
-,ENE_FIS
-,ENE_FIN
-,FEB_FIS
-,FEB_FIN
-,MAR_FIS
-,MAR_FIN
-,ABR_FIS
-,ABR_FIN
-,CUAFIS1
-,CUAFIN1
-,MAY_FIS
-,MAY_FIN
-,JUN_FIS
-,JUN_FIN
-,JUL_FIS
-,JUL_FIN
-,AGO_FIS
-,AGO_FIN
-,CUAFIS2
-,CUAFIN2
-,SEP_FIS
-,SEP_FIN
-,OCT_FIS
-,OCT_FIN
-,NOV_FIS
-,NOV_FIN
-,DIC_FIS
-,DIC_FIN
-,CUAFIS3
-,CUAFIN3
-,ANUAL_FISICO
-,ANUAL_FINANCIERO
-,CASE WHEN METAFISCA_MUNO = 0 THEN 0 ELSE ((ANUAL_FISICO/METAFISCA_MUNO)*100) END AS PORCENTAJE_FISICO
-,CASE WHEN METAFINANCIERA_MUNO = 0 THEN 0 ELSE ((ANUAL_FINANCIERO/METAFINANCIERA_MUNO)*100) END AS PORCENTAJE_FINANCIERO
-
-
-FROM
-(SELECT 
-
-POA
-,ANIO
-,SPPSUB$ID_SUBPRODUCTO
-,SM.SPSM$ID ID_MUNOS
-,NVL(MM.SPPSMMA$ID,-1) ID_METAS
-,NVL(ME.SPP_MUNPOA$ID,-1) ID_EJECUCION
-,SUBPRODUCTO
-,MEDIDA
-,G.DEPTO
-,G.GEOGRAFICO ID_MUNICIPIO
-,(SELECT NOMBRE FROM SINIP.CG_GEOGRAFICO WHERE GEOGRAFICO = G.DEPTO) DEPARTAMENTO
-,G.NOMBRE MUNICIPIO
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIS) METAFISICA_ANUAL
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIN) METAFINANCIERA_ANUAL
-,NVL(MM.SPPSMMA$META_FISICA,0) METAFISCA_MUNO
-,NVL(MM.SPPSMMA$META_FINANCIERA,0) METAFINANCIERA_MUNO
-,NVL(SPP_MUNPOA$ENE_FIS,0) ENE_FIS
-,NVL(SPP_MUNPOA$ENE_FIN,0) ENE_FIN
-,NVL(SPP_MUNPOA$ENE_FIS,0) FEB_FIS
-,NVL(SPP_MUNPOA$ENE_FIN,0) FEB_FIN
-,NVL(SPP_MUNPOA$MAR_FIS,0) MAR_FIS
-,NVL(SPP_MUNPOA$MAR_FIN,0) MAR_FIN
-,NVL(SPP_MUNPOA$ABR_FIS,0) ABR_FIS
-,NVL(SPP_MUNPOA$ABR_FIN,0) ABR_FIN
-,(NVL(SPP_MUNPOA$ENE_FIS,0)+NVL(SPP_MUNPOA$FEB_FIS,0)+NVL(SPP_MUNPOA$MAR_FIS,0)+NVL(SPP_MUNPOA$ABR_FIS,0)) CUAFIS1
-,(NVL(SPP_MUNPOA$ENE_FIN,0)+NVL(SPP_MUNPOA$FEB_FIN,0)+NVL(SPP_MUNPOA$MAR_FIN,0)+NVL(SPP_MUNPOA$ABR_FIN,0)) CUAFIN1
-
-,NVL(SPP_MUNPOA$MAY_FIS,0) MAY_FIS
-,NVL(SPP_MUNPOA$MAY_FIN,0) MAY_FIN
-,NVL(SPP_MUNPOA$JUN_FIS,0) JUN_FIS
-,NVL(SPP_MUNPOA$JUN_FIN,0) JUN_FIN
-,NVL(SPP_MUNPOA$JUL_FIS,0) JUL_FIS
-,NVL(SPP_MUNPOA$JUL_FIN,0) JUL_FIN
-,NVL(SPP_MUNPOA$AGO_FIS,0) AGO_FIS
-,NVL(SPP_MUNPOA$AGO_FIN,0) AGO_FIN
-,NVL(SPP_MUNPOA$SEP_FIS,0) SEP_FIS
-,NVL(SPP_MUNPOA$SEP_FIN,0) SEP_FIN
-,(NVL(SPP_MUNPOA$MAY_FIS,0)+NVL(SPP_MUNPOA$JUN_FIS,0)+NVL(SPP_MUNPOA$JUL_FIS,0)+NVL(SPP_MUNPOA$AGO_FIS,0)) CUAFIS2
-,(NVL(SPP_MUNPOA$MAY_FIN,0)+NVL(SPP_MUNPOA$JUN_FIN,0)+NVL(SPP_MUNPOA$JUL_FIN,0)+NVL(SPP_MUNPOA$AGO_FIN,0)) CUAFIN2
-,NVL(SPP_MUNPOA$OCT_FIS,0) OCT_FIS
-,NVL(SPP_MUNPOA$OCT_FIN,0) OCT_FIN
-,NVL(SPP_MUNPOA$OCT_FIS,0) NOV_FIS
-,NVL(SPP_MUNPOA$OCT_FIN,0) NOV_FIN
-,NVL(SPP_MUNPOA$OCT_FIS,0) DIC_FIS
-,NVL(SPP_MUNPOA$OCT_FIN,0) DIC_FIN
-,(NVL(SPP_MUNPOA$SEP_FIS,0)+NVL(SPP_MUNPOA$OCT_FIS,0)+NVL(SPP_MUNPOA$NOV_FIS,0)+NVL(SPP_MUNPOA$DIC_FIS,0)) CUAFIS3
-,(NVL(SPP_MUNPOA$SEP_FIN,0)+NVL(SPP_MUNPOA$OCT_FIN,0)+NVL(SPP_MUNPOA$NOV_FIN,0)+NVL(SPP_MUNPOA$DIC_FIN,0)) CUAFIN3
-
-,(NVL(SPP_MUNPOA$ENE_FIS,0)+NVL(SPP_MUNPOA$FEB_FIS,0)+NVL(SPP_MUNPOA$MAR_FIS,0)+NVL(SPP_MUNPOA$ABR_FIS,0)) + (NVL(SPP_MUNPOA$MAY_FIS,0)+NVL(SPP_MUNPOA$JUN_FIS,0)+NVL(SPP_MUNPOA$JUL_FIS,0)+NVL(SPP_MUNPOA$AGO_FIS,0)) + (NVL(SPP_MUNPOA$SEP_FIS,0)+NVL(SPP_MUNPOA$OCT_FIS,0)+NVL(SPP_MUNPOA$NOV_FIS,0)+NVL(SPP_MUNPOA$DIC_FIS,0)) ANUAL_FISICO
-,(NVL(SPP_MUNPOA$ENE_FIN,0)+NVL(SPP_MUNPOA$FEB_FIN,0)+NVL(SPP_MUNPOA$MAR_FIN,0)+NVL(SPP_MUNPOA$ABR_FIN,0)) + (NVL(SPP_MUNPOA$MAY_FIN,0)+NVL(SPP_MUNPOA$JUN_FIN,0)+NVL(SPP_MUNPOA$JUL_FIN,0)+NVL(SPP_MUNPOA$AGO_FIN,0)) + (NVL(SPP_MUNPOA$SEP_FIN,0)+NVL(SPP_MUNPOA$OCT_FIN,0)+NVL(SPP_MUNPOA$NOV_FIN,0)+NVL(SPP_MUNPOA$DIC_FIN,0)) ANUAL_FINANCIERO
-FROM
-(SELECT
-(SELECT NVL(FF.SPPMFS$ID_POA,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = 2027 GROUP BY FF.SPPMFS$ID_POA) POA
-,(SELECT NVL(FF.SPPMFS$ANIO,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = 2027 GROUP BY FF.SPPMFS$ANIO) ANIO
-,S.SPPSUB$ID_SUBPRODUCTO
-,S.SPPSUB$DESCRIPCION SUBPRODUCTO
-
-,M.NOMBRE MEDIDA
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = 2027 AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 0 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIS
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = 2027 AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 1 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIN
-,S.SPPSUB$ID_PRODUCTO
-FROM SCHE$SIPLAN20.SP20$SUB_PRODUCTO S 
-INNER JOIN SINIP.CP_UNIDADES_MEDIDA M ON M.UNIDAD_MEDIDA = S.SPPSUB$ID_MEDIDA
-WHERE  S.SPPSUB$RESTRICTIVA = 'N' 
-";
-            if (p == 1)
-            {
-                sql = sql + @" AND S.SPPSUB$ID_SUBPRODUCTO = " + hfIDSubProducto1.Value;
-            }
-
-            sql = sql + @")
-INNER JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS SM ON SM.SPSM$ID_SUB = SPPSUB$ID_SUBPRODUCTO AND SM.SPSM$RESTRICTIVA = 'N'
-INNER JOIN SINIP.CG_GEOGRAFICO G ON G.GEOGRAFICO = SM.SPSM$GEOGRAFICO 
-INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO P ON P.SPPRO$ID_PRODUCTO = SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON POM.SPPO$ID_POM = P.SPPRO$POM AND POM.SPPO$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POA POA ON POA.SPOA$ID_POA = POA AND POA.SPOA$ANIO = ANIO
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS MM ON MM.SPPSMMA$ID_SUBMUNO = SM.SPSM$ID AND MM.SPPSMMA$RESTRICTIVA = 'N' AND SM.SPSM$RESTRICTIVA = 'N'
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_POA ME ON ME.SPP_MUNPOA$ID_MUNO = SM.SPSM$ID AND ME.SPP_MUNPOA$RESTRICTIVA = 'N' AND SM.SPSM$RESTRICTIVA = 'N' AND POM.SPPO$ID_POM = " + pom + @")
-WHERE ID_METAS != -1
-ORDER BY SPPSUB$ID_SUBPRODUCTO, DEPTO, ID_MUNICIPIO ASC";
-            estado = dao.consulta(sql);
-            if (estado == 1)
-            {
-                munos = dao.tabla;
-            }
-            return munos;
-
-
-        }
-
-
-        protected void btnSubir1_Click(object sender, EventArgs e)
-        {
-            if (!fuExcel1.HasFile)
-                return;
-
-            string rutaCarpeta = Server.MapPath("~/Uploads/");
-
-            // 📁 Crear carpeta si no existe
-            if (!Directory.Exists(rutaCarpeta))
-            {
-                Directory.CreateDirectory(rutaCarpeta);
-            }
-
-            // 🔍 Validar extensión
-            string extension = Path.GetExtension(fuExcel1.FileName).ToLower();
-            if (extension != ".xlsx")
-            {
-                // Manejar error (puedes mostrar mensaje)
-                return;
-            }
-
-            // 🆔 Nombre único
-            string nombreArchivo = Guid.NewGuid().ToString() + extension;
-            string path = Path.Combine(rutaCarpeta, nombreArchivo);
-
-            try
-            {
-                // 💾 Guardar archivo
-                fuExcel1.SaveAs(path);
-
-                // 📖 Procesar archivo
-                LeerExcel1(path);
-                mensaje = "Se ha terminado de procesar el archivo";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
-            }
-            catch (Exception ex)
-            {
-                // 🔥 Manejo de error (log o mensaje)
-                // Ej: lblError.Text = ex.Message;
-                LeerExcel1(path);
-                mensaje = "Ha ocurrido un error al procesar el archivo";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-            }
-            finally
-            {
-                // 🧹 Eliminar archivo SIEMPRE
-                try
-                {
-                    if (File.Exists(path))
-                        File.Delete(path);
-                }
-                catch
-                {
-                    // opcional: log de error al eliminar
-                }
-            }
-        }
-
-        public void LeerExcel1(string path)
-        {
-            using (ExcelPackage pkg = new ExcelPackage(new FileInfo(path)))
-            {
-                if (pkg.Workbook.Worksheets.Count == 0)
-                {
-                    throw new Exception("El archivo Excel no contiene hojas.");
-                }
-
-                var ws = pkg.Workbook.Worksheets.FirstOrDefault();
-
-                int row = 2;
-
-                while (ws.Cells[row, 1].Value != null)
-                {
-                    int poa = Convert.ToInt32(ws.Cells[row, 1].Text);
-                    int anio = Convert.ToInt32(ws.Cells[row, 2].Text);
-                    int id_muno = Convert.ToInt32(ws.Cells[row, 4].Text);
-                    int id_metas = Convert.ToInt32(ws.Cells[row, 5].Text);
-                    int id_ejecucion = Convert.ToInt32(ws.Cells[row, 6].Text);
-
-
-                    double af1 = Convert.ToDouble(ws.Cells[row, 16].Text);
-                    double afn1 = Convert.ToDouble(ws.Cells[row, 17].Text);
-                    double af2 = Convert.ToDouble(ws.Cells[row, 18].Text);
-                    double afn2 = Convert.ToDouble(ws.Cells[row, 19].Text);
-                    double af3 = Convert.ToDouble(ws.Cells[row, 20].Text);
-                    double afn3 = Convert.ToDouble(ws.Cells[row, 21].Text);
-                    double af4 = Convert.ToDouble(ws.Cells[row, 22].Text);
-                    double afn4 = Convert.ToDouble(ws.Cells[row, 23].Text);
-                    double af5 = Convert.ToDouble(ws.Cells[row, 24].Text);
-                    double afn5 = Convert.ToDouble(ws.Cells[row, 25].Text);
-                    double af6 = Convert.ToDouble(ws.Cells[row, 26].Text);
-                    double afn6 = Convert.ToDouble(ws.Cells[row, 27].Text);
-                    double af7 = Convert.ToDouble(ws.Cells[row, 28].Text);
-                    double afn7 = Convert.ToDouble(ws.Cells[row, 29].Text);
-                    double af8 = Convert.ToDouble(ws.Cells[row, 30].Text);
-                    double afn8 = Convert.ToDouble(ws.Cells[row, 31].Text);
-                    double af9 = Convert.ToDouble(ws.Cells[row, 32].Text);
-                    double afn9 = Convert.ToDouble(ws.Cells[row, 33].Text);
-                    double af10 = Convert.ToDouble(ws.Cells[row, 34].Text);
-                    double afn10 = Convert.ToDouble(ws.Cells[row, 35].Text);
-                    double af11 = Convert.ToDouble(ws.Cells[row, 36].Text);
-                    double afn11 = Convert.ToDouble(ws.Cells[row, 37].Text);
-                    double af12 = Convert.ToDouble(ws.Cells[row, 38].Text);
-                    double afn12 = Convert.ToDouble(ws.Cells[row, 39].Text);
-
-                    // 🔥 VALIDACIÓN
-                    if (id_metas != -1)
-                    {
-                        if (id_ejecucion == -1)
-                            estado = insertaAvanceMuno(id_muno, poa, anio, af1, afn1, af2, afn2, af3, afn3, af4, afn4, af5, afn5, af6, afn6, af7, afn7, af8, afn8, af9, afn9, af10, afn10, af11, afn11, af12, afn12);
-                        else
-                            estado = updateAvanceMuno(id_ejecucion, id_muno, poa, anio, af1, afn1, af2, afn2, af3, afn3, af4, afn4, af5, afn5, af6, afn6, af7, afn7, af8, afn8, af9, afn9, af10, afn10, af11, afn11, af12, afn12);
-
-                    }
-
-                    row++;
-                }
-            }
-        }
-
-
     }
-
-
 }

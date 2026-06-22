@@ -48,19 +48,6 @@
         };
 
 
-        function mostrar() {
-            var checkBox = document.getElementById("mostrar_contrasena");
-            if (checkBox.checked == true) {
-                $('#MainContent_txtPass').attr('type', 'text');
-
-            }
-            else {
-                $('#MainContent_txtPass').attr('type', 'password');
-
-            }
-
-        }
-
         function Alerta(mensaje, tipo) {          
             alertify.set('notifier', 'position', 'top-right'); 
             if (tipo == 1)
@@ -83,6 +70,19 @@
         alert('You pressed a "enter" key in somewhere');    
     }
 });
+        }
+
+        function mostrar() {
+            var checkBox = document.getElementById("mostrar_contrasena");
+            if (checkBox.checked == true) {
+                $('#MainContent_txtPass').attr('type', 'text');
+               
+            }
+            else {
+                $('#MainContent_txtPass').attr('type', 'password');
+             
+            }
+
         }
        
     </script>
@@ -108,6 +108,7 @@
                          <asp:TextBox ID="txtPass" runat="server"  CssClass="form-control" placeholder="Contraseña"  TextMode="Password" OnTextChanged="txtPass_TextChanged"></asp:TextBox>
                          
                     <span class="glyphicon glyphicon-lock form-control-feedback text-primary"></span>
+            </div> 
                           <div>
   <label for="password"></label>
   <!-- checkbox que nos permite activar o desactivar la opcion -->
@@ -115,12 +116,19 @@
     <input style="margin-left:0px;" type="checkbox" id="mostrar_contrasena" title="clic para mostrar contraseña" onclick=" mostrar()"/>
     &nbsp;&nbsp;Mostrar contraseña</div>
 </div>
-
-
-
-            </div> 
+                
+        
+        <div>
+  
+ <%-- <div class="form-group has-feedback">
+    <input style="margin-left:0px;" type="button" id="contrasenia" title="¿Ha olvidado su contraseña, presione este enlace?" onclick=" mostrar()"/>
+    &nbsp;&nbsp;Mostrar contraseña</div>--%>
+</div>
+        
+                
                 
 </div> 
+               
             
             <div id="ContentPlaceHolder1_UpdatePanel3">
                     
@@ -128,12 +136,6 @@
                
 </div>         
             
-            <div id="ContentPlaceHolder1_UpdatePanel4">
-                    
-                <p><a href="../Login/Contrasenia">¿Ha olvidado su contraseña? presione este enlace</a></p>
-               
-</div>         
-
         </div>
           
     </div>

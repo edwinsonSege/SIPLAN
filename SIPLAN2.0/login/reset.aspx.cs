@@ -114,7 +114,6 @@ namespace SIPLAN2._0.login
                             }
                             else
                             {
-                                //sql = "ALTER USER " + Session["USUARIO"] + " IDENTIFIED BY \"" + confirma + "\"";
                                 sql = $"ALTER USER {Session["USUARIO"]} IDENTIFIED BY \"{confirma}\"";
                                 estado = dao.comando4(sql);
 
@@ -138,10 +137,12 @@ namespace SIPLAN2._0.login
                                             this.UpdatePanel5,
                                             GetType(),
                                             "script",
-                                            "Alerta('Su contraseña fue actualizada correctamente <br/>',1); setTimeout(function(){ window.top.location='../login/logout.aspx'; }, 2000);",
+                                            "Alerta('Su contraseña fue actualizada correctamente <br/>',1); setTimeout(function(){ window.top.location='../login/logout.aspx'; }, 3000);",
                                             true
                                         );
                                     }
+
+
                                 }
                             }
 

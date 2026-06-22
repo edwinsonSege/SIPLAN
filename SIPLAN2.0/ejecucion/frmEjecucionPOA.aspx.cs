@@ -2,16 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.IO;
 using System.Linq;
-using System.Security.Principal;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DevExpress.Web;
-using DevExpress.XtraRichEdit.Model;
-using OfficeOpenXml;
-using OfficeOpenXml.FormulaParsing.Excel.Functions.DateTime;
 using SIPLAN2._0.DataAccess;
 namespace SIPLAN2._0.ejecucion
 {
@@ -30,6 +25,8 @@ namespace SIPLAN2._0.ejecucion
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
+
             if (Session["Usuario"] == null)
                 Response.Redirect("../login/login.aspx");
 
@@ -41,10 +38,11 @@ namespace SIPLAN2._0.ejecucion
             {
                 //btnGero.Visible = false;
 
-                if (Session["ROL"].ToString() == "ADMIN")
+                if (Session["ROL"].ToString() == "ADMIN")                
                     btnIngresoFechas.Visible = true;
                 else
                     btnIngresoFechas.Visible = false;
+
 
 
                 sql = "SELECT * FROM SCHE$SIPLAN20.SP20$CONFIGURACION_VARIAS WHERE SPCV$TIPO = 1 AND SPV$RESTRICTIVA = 'N'";
@@ -80,20 +78,20 @@ namespace SIPLAN2._0.ejecucion
                     btnGero.Visible = true;
                 else
                     btnGero.Visible = false;
-
+                
                 if (!IsPostBack)
                 {
                     if (Convert.ToBoolean(Session["GERO"]) == true)
                     {
                         popAviso.ShowOnPageLoad = true;
-
+                       
                     }
 
                     else
                     {
                         popAviso.ShowOnPageLoad = false;
                         wConsultaPOA.ShowOnPageLoad = true;
-
+                       
                         loadCombos();
                         //gvEjecucion.ExpandRow(0);
                     }
@@ -138,12 +136,7 @@ namespace SIPLAN2._0.ejecucion
 
                     }
 
-                    if (Session["MUNOS"] != null)
-                    {
-                        gvMunosMetas.DataSource = (DataTable)Session["MUNOS"];
-                        gvMunosMetas.DataBind();
 
-                    }
 
                 }
             }
@@ -181,7 +174,7 @@ namespace SIPLAN2._0.ejecucion
 
 
 
-                query = @"SELECT ENT.ENTIDAD, ENT.NOMBRE||' '||ENT.SIGLA NOMBRE FROM SINIP.CG_ENTIDADES ENT 
+                query = @"SELECT ENT.ENTIDAD, ENT.NOMBRE||' '||ENT.SIGLAS NOMBRE FROM SINIP.CG_ENTIDADES ENT 
                           WHERE ENT.NOMBRE NOT LIKE 'MUNICIPALIDAD%' AND ENT.RESTRICTIVA='N' 
                           ORDER BY ENT.NOMBRE";
 
@@ -285,7 +278,7 @@ namespace SIPLAN2._0.ejecucion
       ,TIPO
       ,ID_RESULTADO
       ,CASE WHEN ID_TIPO = 0 THEN EJE||' '||ACCION||' '||RESULTADO2 WHEN ID_TIPO = 1 THEN RESULTADO1||' '||EJE2||' '||ACCION2 WHEN ID_TIPO = 2  THEN RED END AS RESULTADO
-      ,ID_RPRESUP, RPRESUP||'('||ID_RPRESUP||')' RPRESUP, ID_PRODUCTO, PRODUCTO, POA, AFIS, MFISINICIAL, MFIS, PORFIS, AFIN, MFININCIAL, MFIN
+      ,ID_RPRESUP, RPRESUP, ID_PRODUCTO, PRODUCTO, POA, AFIS, MFISINICIAL, MFIS, PORFIS, AFIN, MFININCIAL, MFIN
       ,CASE WHEN  MFIN = 0 THEN 0||'%' ELSE TO_CHAR(NVL(ROUND(AFIN/MFIN*100,2),0) || '%') END AS PORFIN
       ,CASE WHEN  MFIN = 0 THEN 0 ELSE TO_NUMBER(NVL(ROUND(AFIN/MFIN*100,2),0)) END AS PFINNUMBER
       , PFNUMBER
@@ -343,9 +336,8 @@ namespace SIPLAN2._0.ejecucion
             DataTable dt = new DataTable();
             string query = "";
 
-            query = @"SELECT ID_PROD, ID_SUBP, MUNICIPIOS, CASE WHEN SUBP IS NULL THEN NOMBRE_SNIP ELSE SUBP END AS SUBP, POA, MFISC1, MFISC2, MFISC3, MFISINICIAL, MFIS, MFINC1, MFINC2, MFINC3,  MFININCIAL, MFIN, PORFIS, PORFIN, TFIS, TFIN, AFIS1,AFIN1,SFIS1,SFIN1,  AFIS2,AFIN2,SFIS2,SFIN2,   AFIS3,AFIN3,SFIS3,SFIN3,   AFIS4,AFIN4,SFIS4,SFIN4,  AFIS5,AFIN5,SFIS5,SFIN5,  AFIS6,AFIN6,SFIS6,SFIN6,  AFIS7,AFIN7,SFIS7,SFIN7,  AFIS8,AFIN8,SFIS8,SFIN8,   AFIS9,AFIN9,SFIS9,SFIN9,  AFIS10,AFIN10,SFIS10,SFIN10,  AFIS11,AFIN11,SFIS11,SFIN11,  AFIS12,AFIN12,SFIS12,SFIN12, AFISC1,AFINC1, AFISC2,AFINC2, AFISC3,AFINC3,PORFISNUMBER,PORFINNUMBER
+            query = @"SELECT ID_PROD, ID_SUBP, CASE WHEN SUBP IS NULL THEN NOMBRE_SNIP ELSE SUBP END AS SUBP, POA, MFISC1, MFISC2, MFISC3, MFISINICIAL, MFIS, MFINC1, MFINC2, MFINC3,  MFININCIAL, MFIN, PORFIS, PORFIN, TFIS, TFIN, AFIS1,AFIN1,SFIS1,SFIN1,  AFIS2,AFIN2,SFIS2,SFIN2,   AFIS3,AFIN3,SFIS3,SFIN3,   AFIS4,AFIN4,SFIS4,SFIN4,  AFIS5,AFIN5,SFIS5,SFIN5,  AFIS6,AFIN6,SFIS6,SFIN6,  AFIS7,AFIN7,SFIS7,SFIN7,  AFIS8,AFIN8,SFIS8,SFIN8,   AFIS9,AFIN9,SFIS9,SFIN9,  AFIS10,AFIN10,SFIS10,SFIN10,  AFIS11,AFIN11,SFIS11,SFIN11,  AFIS12,AFIN12,SFIS12,SFIN12, AFISC1,AFINC1, AFISC2,AFINC2, AFISC3,AFINC3,PORFISNUMBER,PORFINNUMBER
                    FROM (SELECT SUBP.SPPSUB$ID_PRODUCTO ID_PROD, SUBP.SPPSUB$ID_SUBPRODUCTO ID_SUBP, SUBP.SPPSUB$DESCRIPCION SUBP, POA.SPOA$ID_POA POA,
-                    (SELECT COUNT(*) CONTEO FROM SCHE$SIPLAN20.SP20$SUB_MUNOS WHERE SPSM$ID_SUB = SUBP.SPPSUB$ID_SUBPRODUCTO AND SPSM$RESTRICTIVA = 'N') MUNICIPIOS,
                     SCHE$SIPLAN20.FNC$POAMETAFISCUATRIMESTRAL(POA.SPOA$ID_POA,POA.SPOA$ANIO,SUBP.SPPSUB$ID_SUBPRODUCTO,1,4) MFISC1,
                     SCHE$SIPLAN20.FNC$POAMETAFISCUATRIMESTRAL(POA.SPOA$ID_POA,POA.SPOA$ANIO,SUBP.SPPSUB$ID_SUBPRODUCTO,5,8) MFISC2,
                     SCHE$SIPLAN20.FNC$POAMETAFISCUATRIMESTRAL(POA.SPOA$ID_POA,POA.SPOA$ANIO,SUBP.SPPSUB$ID_SUBPRODUCTO,9,12) MFISC3,
@@ -524,8 +516,7 @@ namespace SIPLAN2._0.ejecucion
                             Session["VINCULADOS"] = numero_productos;
                             mensaje = "Tiene " + numero_productos + " productos vinculados a la anterior estructura de programa de gobierno 2020-2024, se recomienda actualizar la vinculación de estos productos a la estructura vigente de programa de gobierno 2024-2028, a un Resultado Estrátegico y/o resultado institucional";
 
-                            //ScriptManager.RegisterStartupScript(UpdatePanel2, UpdatePanel2.GetType(), "script", "Alerta('" + mensaje + " ',3);", true);
-                            Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',3);", true);
+                            ScriptManager.RegisterStartupScript(UpdatePanel2, UpdatePanel2.GetType(), "script", "Alerta('" + mensaje + " ',3);", true);
                         }
                     }
 
@@ -577,7 +568,7 @@ namespace SIPLAN2._0.ejecucion
                 anio = "";
             }
 
-            if (Session["ROL"].ToString() == "USER" || Session["ROL"].ToString() == "CAPA" || Session["ROL"].ToString() == "ADMIN")
+            if (Session["ROL"].ToString() == "USER" || Session["ROL"].ToString() == "CAPA")
 
                 gvDetail.Columns[0].Visible = true;
             else
@@ -2460,7 +2451,7 @@ namespace SIPLAN2._0.ejecucion
 
 
 
-            if (Session["ROL"].ToString() == "ENTIDAD")
+            if (Session["ROL"].ToString() == "ADMIN" || Session["ROL"].ToString() == "ENTIDAD")
 
             {
                 //Disabled avance fisico y boton guardar solo consulta
@@ -2994,8 +2985,7 @@ namespace SIPLAN2._0.ejecucion
 
             gvEjecucion.DataSource = loadProductos(Session["PERI"].ToString(), Session["insto"].ToString(), Session["ANIO"].ToString(), Session["pom"].ToString());
             gvEjecucion.DataBind();
-            //ScriptManager.RegisterStartupScript(UpdatePanel3, UpdatePanel3.GetType(), "script", "Alerta('Ejecución guardada exitosamente', 1);", true);
-            Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
+            ScriptManager.RegisterStartupScript(UpdatePanel3, UpdatePanel3.GetType(), "script", "Alerta('Ejecución guardada exitosamente', 1);", true);
             //}
         }
 
@@ -3207,8 +3197,6 @@ namespace SIPLAN2._0.ejecucion
 
             object keyValue = e.KeyValue;
 
-
-
             porfis = Convert.ToDouble(grid.GetRowValuesByKeyValue(keyValue, "PORFISNUMBER"));
             porfin = Convert.ToDouble(grid.GetRowValuesByKeyValue(keyValue, "PORFINNUMBER"));
 
@@ -3322,36 +3310,7 @@ namespace SIPLAN2._0.ejecucion
 
         protected void gvSubProductos_HtmlDataCellPrepared(object sender, ASPxGridViewTableDataCellEventArgs e)
         {
-            ASPxGridView grid = sender as ASPxGridView;
 
-            if (e.DataColumn.Caption == "Metas por territorio")
-            {
-                int municipios = 0;
-
-                if (e.GetValue("MUNICIPIOS") != DBNull.Value)
-                    municipios = Convert.ToInt32(e.GetValue("MUNICIPIOS"));
-
-                var panel = grid.FindRowCellTemplateControl(
-                    e.VisibleIndex,
-                    e.DataColumn,
-                    "pnlBtn"
-                ) as Panel;
-
-                if (panel != null)
-                {
-                    panel.Visible = municipios > 0;
-                    ASPxButton btn = grid.FindRowCellTemplateControl(
-                            e.VisibleIndex,
-                            e.DataColumn,
-                            "btnMetasMuno"
-                    ) as ASPxButton;
-
-                    
-
-                }
-
-
-            }
 
             if (e.DataColumn.FieldName == "SUBP" || e.DataColumn.FieldName == "MFISINICIAL" || e.DataColumn.FieldName == "MFININCIAL" || e.DataColumn.FieldName == "TFIN" || e.DataColumn.FieldName == "MFIS" || e.DataColumn.FieldName == "TFIS" || e.DataColumn.FieldName == "PORFIS" || e.DataColumn.FieldName == "MFIN" || e.DataColumn.FieldName == "TFIN" || e.DataColumn.FieldName == "PORFIN" || e.DataColumn.FieldName == "PORFISNUMBER" || e.DataColumn.FieldName == "PORFINNUMBER")
             {
@@ -3381,9 +3340,7 @@ namespace SIPLAN2._0.ejecucion
 
         }
 
-       
 
-        
 
         protected void btnProgramacion_Click(object sender, EventArgs e)
         {
@@ -3638,8 +3595,7 @@ namespace SIPLAN2._0.ejecucion
                 if (estado == 0)
                 {
                     mensaje = da.mensaje;
-                    //ScriptManager.RegisterStartupScript(this.UpdatePanel4, GetType(), "script", "Alerta('" + mensaje + " <br/>',2);", true);
-                    Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
+                    ScriptManager.RegisterStartupScript(this.UpdatePanel4, GetType(), "script", "Alerta('" + mensaje + " <br/>',2);", true);
                 }
 
                 sql = "SELECT SPPER$ENLACE1, SPPER$ENLACE2  FROM SCHE$SIPLAN20.SP20$ENLACES_REPORTES WHERE SPPER$TIPO = 2 AND  SPPER$CUATRIMESTRE = " + cuatrimestre + " AND SPPER$REPORTE_VIGENTE = 1 AND SPPER$RESTRICTIVA = 'N'";
@@ -3657,11 +3613,11 @@ namespace SIPLAN2._0.ejecucion
 
 
                 if (link != "")
-                    //ScriptManager.RegisterStartupScript(UpdatePanel4, UpdatePanel4.GetType(), "script", "window.open('" + link + "');", true);
-                    Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "window.open('" + link + "');", true);
+                    ScriptManager.RegisterStartupScript(UpdatePanel4, UpdatePanel4.GetType(), "script", "window.open('" + link + "');", true);
                 else
-                    Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('Reporte no disponible', 2);", true);
-                //ScriptManager.RegisterStartupScript(UpdatePanel4, UpdatePanel4.GetType(), "script", "Alerta('Reporte no disponible', 2);", true);
+                    ScriptManager.RegisterStartupScript(UpdatePanel4, UpdatePanel4.GetType(), "script", "Alerta('Reporte no disponible', 2);", true);
+
+
                 /*if (Convert.ToInt32(cbCuatrimestre.Value) == 0)
                 {
                     //versiones de reporte de produccion
@@ -4584,7 +4540,7 @@ FROM
             estadomedida = -1;
             estadoAnioGEro = -1;
 
-            sql = "SELECT SPPO$ID_POM  FROM SCHE$SIPLAN20.SP20$POM WHERE SPPO$ID_INSTITUCION = " + CbInstitucionesGERO.Value + " AND SPPO$ID_PERIODO = " + cbPeriodoGERO.Value + " AND SPPO$RESTRICTIVA = 'N'";
+            sql = "SELECT SPPO$ID_POM  FROM SCHE$SIPLAN20.SP20$POM WHERE SPPO$ID_INSTITUCION = " + CbInstitucionesGERO.Value + " AND SPPO$ID_PERIODO = " + cbPeriodoGERO.Value + " AND SPPO$RESTRICTIVA = 'N'";          
             estado = da.consulta(sql);
             if (estado == 1)
                 tabla = da.tabla;
@@ -4880,7 +4836,7 @@ FROM
             int anio_gero = -1;
             lblAnioVarios.Text = anio.ToString();
 
-            sql = "SELECT * FROM SCHE$SIPLAN20.SP20$POA_SEGUIMIENTOGERO WHERE SPOAG_ID_POA = " + Convert.ToInt32(Session["POA"]) + " AND SPOAG_ID_ANIO =  " + Convert.ToInt32(cbAnioPOAGERO.Value) + " AND SPOAG_ANIO_GERO = " + cbAnioSeguimientoGERO.Value;
+            sql = "SELECT * FROM SCHE$SIPLAN20.SP20$POA_SEGUIMIENTOGERO WHERE SPOAG_ID_POA = " + Convert.ToInt32(Session["POA"]) + " AND SPOAG_ID_ANIO =  " + Convert.ToInt32(cbAnioPOAGERO.Value)+ " AND SPOAG_ANIO_GERO = "+ cbAnioSeguimientoGERO.Value;
             estado = da.consulta(sql);
 
             if (estado == 1)
@@ -6092,7 +6048,7 @@ FROM
             if (estadof1 == 1 && estadofn1 == 1 && estadof2 == 1 && estadofn2 == 1 && estadof3 == 1 && estadofn3 == 1 && estadof4 == 1 && estadofn4 == 1 && estadof5 == 1 && estadofn5 == 1 && estadof6 == 1 && estadofn6 == 1 && estadof7 == 1 && estadofn7 == 1 && estadof8 == 1 && estadofn8 == 1 && estadof9 == 1 && estadofn9 == 1 && estadof10 == 1 && estadofn10 == 1 && estadof11 == 1 && estadofn11 == 1 && estadof12 == 1 && estadofn12 == 1)
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "alert('Avances guardados correctamente')", true);
-                cargaSNIPGERO(Convert.ToInt32(CbInstitucionesGERO.Value), pom, Convert.ToInt32(cbAnioPOAGERO.Value), Convert.ToInt32(cbPeriodoGERO.Value));
+                cargaSNIPGERO(Convert.ToInt32(CbInstitucionesGERO.Value),pom, Convert.ToInt32(cbAnioPOAGERO.Value), Convert.ToInt32(cbPeriodoGERO.Value));
                 popAvanceGERO.ShowOnPageLoad = false;
 
 
@@ -6381,7 +6337,7 @@ FROM
 
         protected void cargaInstoGERO()
         {
-            sql = @"SELECT ENT.ENTIDAD, ENT.NOMBRE||' '||ENT.SIGLA NOMBRE FROM SINIP.CG_ENTIDADES ENT 
+            sql = @"SELECT ENT.ENTIDAD, ENT.NOMBRE||' '||ENT.SIGLAS NOMBRE FROM SINIP.CG_ENTIDADES ENT 
                         INNER JOIN SCHE$SIPLAN20.SP20$GERO_INSTO g on G.SPSG$INSTO = ENT.ENTIDAD AND G.SPSG$RESTRICTIVA = 'N'
                           WHERE ENT.NOMBRE NOT LIKE 'MUNICIPALIDAD%' AND ENT.RESTRICTIVA = 'N'
                           ORDER BY ENT.NOMBRE";
@@ -6571,913 +6527,22 @@ FROM
             }
         }
 
-
-        protected void btnMetasMuno_Click(object sender, EventArgs e)
-        {
-            DataTable munos = new DataTable();
-            ASPxButton btn = (ASPxButton)sender;
-            int idSubproducto = Convert.ToInt32(btn.CommandArgument);
-           hfIDSubProducto.Value = idSubproducto.ToString();
-           
-            munos = cargaEjecucionMunos(idSubproducto, Convert.ToInt32(cbAnioPOA.Value));
-            if (munos.Rows.Count > 0)
-            {
-                if (!munos.Columns.Contains("ID_UNICO"))
-                {
-                    throw new Exception("NO existe ID_UNICO en el DataTable");
-                }
-
-                var duplicados = munos.AsEnumerable()
-    .GroupBy(r => r["ID_UNICO"])
-    .Where(g => g.Count() > 1)
-    .ToList();
-
-                if (duplicados.Count > 0)
-                {
-                    throw new Exception("Hay claves duplicadas");
-                }
-                lblAnioRegistroMuno.Text = munos.Rows[0]["ANIO"].ToString();
-                SubproductoMuno.Text = munos.Rows[0]["SUBPRODUCTO"].ToString();
-                MedidaMuno.Text = munos.Rows[0]["MEDIDA"].ToString();
-                FisicaMuno.Text = munos.Rows[0]["METAFISCA_MUNO"].ToString();
-                FinanceraMuno.Text = String.Format("{0:N2}", munos.Rows[0]["METAFINANCIERA_MUNO"].ToString());
-                Session["MUNOS"] = munos;
-                gvMunosMetas.DataSource = munos;
-                gvMunosMetas.DataBind();              
-                MultiView1.ActiveViewIndex = 3;
-               
-            }
-            else
-            {
-                mensaje = "No se encontró territorio priorizado por este producto";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + "<br/>',2);", true);
-            }
-
-            
-
-
-        }
-
-        protected void recargarMuno(int sub, int anio)
-        {
-            DataTable munos = new DataTable();
-            munos = cargaEjecucionMunos(sub, anio);
-            if (munos.Rows.Count > 0)
-            {
-                if (!munos.Columns.Contains("ID_UNICO"))
-                {
-                    throw new Exception("NO existe ID_UNICO en el DataTable");
-                }
-
-                var duplicados = munos.AsEnumerable()
-    .GroupBy(r => r["ID_UNICO"])
-    .Where(g => g.Count() > 1)
-    .ToList();
-
-                if (duplicados.Count > 0)
-                {
-                    throw new Exception("Hay claves duplicadas");
-                }
-
-                SubproductoMuno.Text = munos.Rows[0]["SUBPRODUCTO"].ToString();
-                MedidaMuno.Text = munos.Rows[0]["MEDIDA"].ToString();
-                FisicaMuno.Text = munos.Rows[0]["METAFISCA_MUNO"].ToString();
-                FinanceraMuno.Text = String.Format("{0:N2}", munos.Rows[0]["METAFINANCIERA_MUNO"].ToString());
-                Session["MUNOS"] = munos;
-                gvMunosMetas.DataSource = munos;
-                gvMunosMetas.DataBind();
-                MultiView1.ActiveViewIndex = 3;
-
-            }
-            else
-            {
-                mensaje = "No se encontró territorio priorizado por este producto";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + "<br/>',2);", true);
-            }
-        }
-        protected DataTable cargaEjecucionMunos(int sub, int anio)
-        {
-            DataTable munos = new DataTable();
-            sql = @"SELECT
-
-ID_UNICO
-,POA
-,ANIO
-,SPPSUB$ID_SUBPRODUCTO
-,ID_MUNOS
-,ID_METAS
-,ID_EJECUCION
-,SUBPRODUCTO
-,MEDIDA
-,DEPARTAMENTO
-,MUNICIPIO
-,METAFISICA_ANUAL
-,METAFINANCIERA_ANUAL
-,METAFISCA_MUNO
-,METAFINANCIERA_MUNO
-,ENE_FIS
-,ENE_FIN
-,FEB_FIS
-,FEB_FIN
-,MAR_FIS
-,MAR_FIN
-,ABR_FIS
-,ABR_FIN
-,CUAFIS1
-,CUAFIN1
-,MAY_FIS
-,MAY_FIN
-,JUN_FIS
-,JUN_FIN
-,JUL_FIS
-,JUL_FIN
-,AGO_FIS
-,AGO_FIN
-,CUAFIS2
-,CUAFIN2
-,SEP_FIS
-,SEP_FIN
-,OCT_FIS
-,OCT_FIN
-,NOV_FIS
-,NOV_FIN
-,DIC_FIS
-,DIC_FIN
-,CUAFIS3
-,CUAFIN3
-,ANUAL_FISICO
-,ANUAL_FINANCIERO
-,CASE WHEN METAFISCA_MUNO = 0 THEN 0 ELSE ((ANUAL_FISICO/METAFISCA_MUNO)*100) END AS PORCENTAJE_FISICO
-,CASE WHEN METAFINANCIERA_MUNO = 0 THEN 0 ELSE ((ANUAL_FINANCIERO/METAFINANCIERA_MUNO)*100) END AS PORCENTAJE_FINANCIERO
-
-
-FROM
-(SELECT 
-(SM.SPSM$ID || '.' || NVL(MM.SPPSMMA$ID,-1) || '.' || NVL(ME.SPP_MUNEJEC$ID,-1)||'.'||POA||'.'||ANIO) AS ID_UNICO
-,POA
-,ANIO
-,SPPSUB$ID_SUBPRODUCTO
-,SM.SPSM$ID ID_MUNOS
-,NVL(MM.SPPSMMA$ID,-1) ID_METAS
-,NVL(ME.SPP_MUNEJEC$ID,-1) ID_EJECUCION
-,SUBPRODUCTO
-,MEDIDA
-,(SELECT NOMBRE FROM SINIP.CG_GEOGRAFICO WHERE GEOGRAFICO = G.DEPTO) DEPARTAMENTO
-,G.NOMBRE MUNICIPIO
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIS) METAFISICA_ANUAL
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIN) METAFINANCIERA_ANUAL
-,NVL(MM.SPPSMMA$META_FISICA,0) METAFISCA_MUNO
-,NVL(MM.SPPSMMA$META_FINANCIERA,0) METAFINANCIERA_MUNO
-,NVL(SPP_MUNEJEC$ENE_FIS,0) ENE_FIS
-,NVL(SPP_MUNEJEC$ENE_FIN,0) ENE_FIN
-,NVL(SPP_MUNEJEC$ENE_FIS,0) FEB_FIS
-,NVL(SPP_MUNEJEC$ENE_FIN,0) FEB_FIN
-,NVL(SPP_MUNEJEC$MAR_FIS,0) MAR_FIS
-,NVL(SPP_MUNEJEC$MAR_FIN,0) MAR_FIN
-,NVL(SPP_MUNEJEC$ABR_FIS,0) ABR_FIS
-,NVL(SPP_MUNEJEC$ABR_FIN,0) ABR_FIN
-,(NVL(SPP_MUNEJEC$ENE_FIS,0)+NVL(SPP_MUNEJEC$FEB_FIS,0)+NVL(SPP_MUNEJEC$MAR_FIS,0)+NVL(SPP_MUNEJEC$ABR_FIS,0)) CUAFIS1
-,(NVL(SPP_MUNEJEC$ENE_FIN,0)+NVL(SPP_MUNEJEC$FEB_FIN,0)+NVL(SPP_MUNEJEC$MAR_FIN,0)+NVL(SPP_MUNEJEC$ABR_FIN,0)) CUAFIN1
-
-,NVL(SPP_MUNEJEC$MAY_FIS,0) MAY_FIS
-,NVL(SPP_MUNEJEC$MAY_FIN,0) MAY_FIN
-,NVL(SPP_MUNEJEC$JUN_FIS,0) JUN_FIS
-,NVL(SPP_MUNEJEC$JUN_FIN,0) JUN_FIN
-,NVL(SPP_MUNEJEC$JUL_FIS,0) JUL_FIS
-,NVL(SPP_MUNEJEC$JUL_FIN,0) JUL_FIN
-,NVL(SPP_MUNEJEC$AGO_FIS,0) AGO_FIS
-,NVL(SPP_MUNEJEC$AGO_FIN,0) AGO_FIN
-,NVL(SPP_MUNEJEC$SEP_FIS,0) SEP_FIS
-,NVL(SPP_MUNEJEC$SEP_FIN,0) SEP_FIN
-,(NVL(SPP_MUNEJEC$MAY_FIS,0)+NVL(SPP_MUNEJEC$JUN_FIS,0)+NVL(SPP_MUNEJEC$JUL_FIS,0)+NVL(SPP_MUNEJEC$AGO_FIS,0)) CUAFIS2
-,(NVL(SPP_MUNEJEC$MAY_FIN,0)+NVL(SPP_MUNEJEC$JUN_FIN,0)+NVL(SPP_MUNEJEC$JUL_FIN,0)+NVL(SPP_MUNEJEC$AGO_FIN,0)) CUAFIN2
-,NVL(SPP_MUNEJEC$OCT_FIS,0) OCT_FIS
-,NVL(SPP_MUNEJEC$OCT_FIN,0) OCT_FIN
-,NVL(SPP_MUNEJEC$OCT_FIS,0) NOV_FIS
-,NVL(SPP_MUNEJEC$OCT_FIN,0) NOV_FIN
-,NVL(SPP_MUNEJEC$OCT_FIS,0) DIC_FIS
-,NVL(SPP_MUNEJEC$OCT_FIN,0) DIC_FIN
-,(NVL(SPP_MUNEJEC$SEP_FIS,0)+NVL(SPP_MUNEJEC$OCT_FIS,0)+NVL(SPP_MUNEJEC$NOV_FIS,0)+NVL(SPP_MUNEJEC$DIC_FIS,0)) CUAFIS3
-,(NVL(SPP_MUNEJEC$SEP_FIN,0)+NVL(SPP_MUNEJEC$OCT_FIN,0)+NVL(SPP_MUNEJEC$NOV_FIN,0)+NVL(SPP_MUNEJEC$DIC_FIN,0)) CUAFIN3
-
-,(NVL(SPP_MUNEJEC$ENE_FIS,0)+NVL(SPP_MUNEJEC$FEB_FIS,0)+NVL(SPP_MUNEJEC$MAR_FIS,0)+NVL(SPP_MUNEJEC$ABR_FIS,0)) + (NVL(SPP_MUNEJEC$MAY_FIS,0)+NVL(SPP_MUNEJEC$JUN_FIS,0)+NVL(SPP_MUNEJEC$JUL_FIS,0)+NVL(SPP_MUNEJEC$AGO_FIS,0)) + (NVL(SPP_MUNEJEC$SEP_FIS,0)+NVL(SPP_MUNEJEC$OCT_FIS,0)+NVL(SPP_MUNEJEC$NOV_FIS,0)+NVL(SPP_MUNEJEC$DIC_FIS,0)) ANUAL_FISICO
-,(NVL(SPP_MUNEJEC$ENE_FIN,0)+NVL(SPP_MUNEJEC$FEB_FIN,0)+NVL(SPP_MUNEJEC$MAR_FIN,0)+NVL(SPP_MUNEJEC$ABR_FIN,0)) + (NVL(SPP_MUNEJEC$MAY_FIN,0)+NVL(SPP_MUNEJEC$JUN_FIN,0)+NVL(SPP_MUNEJEC$JUL_FIN,0)+NVL(SPP_MUNEJEC$AGO_FIN,0)) + (NVL(SPP_MUNEJEC$SEP_FIN,0)+NVL(SPP_MUNEJEC$OCT_FIN,0)+NVL(SPP_MUNEJEC$NOV_FIN,0)+NVL(SPP_MUNEJEC$DIC_FIN,0)) ANUAL_FINANCIERO
-FROM
-(SELECT
-(SELECT NVL(FF.SPPMFS$ID_POA,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = " + anio+@" GROUP BY FF.SPPMFS$ID_POA) POA
-,(SELECT NVL(FF.SPPMFS$ANIO,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" GROUP BY FF.SPPMFS$ANIO) ANIO
-,S.SPPSUB$ID_SUBPRODUCTO
-,S.SPPSUB$DESCRIPCION SUBPRODUCTO
-
-,M.NOMBRE MEDIDA
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 0 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIS
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = "+anio+@" AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 1 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIN
-,S.SPPSUB$ID_PRODUCTO
-FROM SCHE$SIPLAN20.SP20$SUB_PRODUCTO S 
-INNER JOIN SINIP.CP_UNIDADES_MEDIDA M ON M.UNIDAD_MEDIDA = S.SPPSUB$ID_MEDIDA
-WHERE  S.SPPSUB$RESTRICTIVA = 'N' AND S.SPPSUB$ID_SUBPRODUCTO = "+sub+ @")
-INNER JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS SM ON SM.SPSM$ID_SUB = SPPSUB$ID_SUBPRODUCTO AND SM.SPSM$RESTRICTIVA = 'N'
-INNER JOIN SINIP.CG_GEOGRAFICO G ON G.GEOGRAFICO = SM.SPSM$GEOGRAFICO 
-INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO P ON P.SPPRO$ID_PRODUCTO = SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON POM.SPPO$ID_POM = P.SPPRO$POM AND POM.SPPO$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POA POA ON POA.SPOA$ID_POA = POA AND POA.SPOA$ANIO = ANIO
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS MM ON MM.SPPSMMA$ID_SUBMUNO = SM.SPSM$ID AND MM.SPPSMMA$RESTRICTIVA = 'N' AND SM.SPSM$RESTRICTIVA = 'N'
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_EJECUCION ME ON ME.SPP_MUNEJEC$ID_MUNO = SM.SPSM$ID AND ME.SPP_MUNEJEC$RESTRICTIVA = 'N' AND SM.SPSM$RESTRICTIVA = 'N') ORDER BY DEPARTAMENTO, MUNICIPIO ASC";
-            estado = da.consulta(sql);
-            if (estado == 1)
-                munos = da.tabla;
-            
-            return munos;
-
-        }
-
-        protected void BtnRegresaPantalla_Click(object sender, EventArgs e)
-        {
-            MultiView1.ActiveViewIndex = 0;
-        }
-
-
-        protected void gvMunosMetas_CellEditorInitialize(object sender, ASPxGridViewEditorEventArgs e)
-        {
-
-            cargaFechas(Convert.ToInt32(Session["ANIO"]));
-            ASPxGridView grid = sender as ASPxGridView;
-            DateTime fechaIn1er = new DateTime(2015, 1, 1, 0, 0, 0);
-            DateTime fechaCi1er = new DateTime(2015, 1, 1, 0, 0, 0);
-            DateTime fechaIn2do = new DateTime(2015, 1, 1, 0, 0, 0);
-            DateTime fechaCi2do = new DateTime(2015, 1, 1, 0, 0, 0);
-            DateTime fechaIn3er = new DateTime(2015, 1, 1, 0, 0, 0);
-            DateTime fechaCi3er = new DateTime(2015, 1, 1, 0, 0, 0);
-            Double porfis = -1;
-            Double porfin = -1;
-            //fecha = new DateTime(2023, 5, 11, 0, 0, 0);
-
-            object keyValue = e.KeyValue;
-
-
-
-            porfis = Convert.ToDouble(grid.GetRowValuesByKeyValue(keyValue, "PORFISNUMBER"));
-            porfin = Convert.ToDouble(grid.GetRowValuesByKeyValue(keyValue, "PORFINNUMBER"));
-
-
-            Tuple<bool, DateTime> primero = valida_extra(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 1, Convert.ToInt32(Session["ANIO"]));
-            Tuple<bool, DateTime> segundo = valida_extra(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 2, Convert.ToInt32(Session["ANIO"]));
-            Tuple<bool, DateTime> tercero = valida_extra(Convert.ToInt32(Session["pom"]), Convert.ToInt32(Session["insto"]), 3, Convert.ToInt32(Session["ANIO"]));
-
-
-            if (Session["FECHA1INICIO"] != null && Session["FECHA1CIERRE"] != null)
-            {
-                fechaIn1er = DateTime.ParseExact(Session["FECHA1INICIO"].ToString(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-                fechaCi1er = DateTime.ParseExact(Session["FECHA1CIERRE"].ToString(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-            }
-
-            if (Session["FECHA2INICIO"] != null && Session["FECHA2CIERRE"] != null)
-            {
-                fechaIn2do = DateTime.ParseExact(Session["FECHA2INICIO"].ToString(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-                fechaCi2do = DateTime.ParseExact(Session["FECHA2CIERRE"].ToString(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-            }
-
-
-            if (Session["FECHA3INICIO"] != null && Session["FECHA3CIERRE"] != null)
-            {
-                fechaIn3er = DateTime.ParseExact(Session["FECHA3INICIO"].ToString(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-                fechaCi3er = DateTime.ParseExact(Session["FECHA3CIERRE"].ToString(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-            }
-
-            if (e.Column.FieldName == "METAFISICA_ANUAL" || e.Column.FieldName == "METAFINANCIERA_ANUAL" || e.Column.FieldName == "METAFISCA_MUNO" || e.Column.FieldName == "METAFINANCIERA_MUNO" || e.Column.FieldName == "ANUAL_FISICO" || e.Column.FieldName == "PORCENTAJE_FISICO" || e.Column.FieldName == "ANUAL_FINANCIERO" || e.Column.FieldName == "PORCENTAJE_FINANCIERO")
-            {
-                e.Editor.ClientEnabled = false;
-                e.Editor.BackColor = System.Drawing.Color.LightBlue;
-                e.Editor.ForeColor = System.Drawing.Color.Blue;
-                e.Editor.Font.Bold = true;
-            }
-            if (e.Column.FieldName == "CUAFIS1" || e.Column.FieldName == "CUAFIN1" || e.Column.FieldName == "CUAFIS2" || e.Column.FieldName == "CUAFIN2" || e.Column.FieldName == "CUAFIS3" || e.Column.FieldName == "CUAFIN3" )
-            {
-                e.Editor.ClientEnabled = false;
-                e.Editor.BackColor = System.Drawing.Color.LightGray;
-                e.Editor.ForeColor = System.Drawing.Color.Blue;
-                e.Editor.Font.Bold = true;
-            }
-
-
-            if (e.Column.FieldName == "ENE_FIN" || e.Column.FieldName == "ENE_FIS" || e.Column.FieldName == "FEB_FIS" || e.Column.FieldName == "FEB_FIN" || e.Column.FieldName == "MAR_FIS" || e.Column.FieldName == "MAR_FIN" || e.Column.FieldName == "ABR_FIS" || e.Column.FieldName == "ABR_FIN")
-            {
-                if (fecha <= fechaCi1er && fecha >= fechaIn1er)
-                {
-                    e.Editor.ClientEnabled = true;
-                }
-                else if (primero.Item1 == true && fecha <= primero.Item2)
-                {
-                    e.Editor.ClientEnabled = true;
-                }
-                else
-                {
-                    e.Editor.ClientEnabled = false;
-                    e.Editor.BackColor = System.Drawing.Color.LightGray;
-                    e.Editor.ForeColor = System.Drawing.Color.Blue;
-                    e.Editor.Font.Bold = true;
-                }
-
-            }
-
-            else if (e.Column.FieldName == "MAY_FIS" || e.Column.FieldName == "MAY_FIN" || e.Column.FieldName == "JUN_FIS" || e.Column.FieldName == "JUN_FIN" || e.Column.FieldName == "JUL_FIS" || e.Column.FieldName == "JUL_FIN" || e.Column.FieldName == "AGO_FIS" || e.Column.FieldName == "AGO_FIN")
-            {
-                if (fecha <= fechaCi2do && fecha >= fechaIn2do)
-                {
-                    e.Editor.ClientEnabled = true;
-                }
-                else if (segundo.Item1 == true && fecha <= segundo.Item2)
-                {
-                    e.Editor.ClientEnabled = true;
-                }
-                else
-                {
-                    e.Editor.ClientEnabled = false;
-                    e.Editor.BackColor = System.Drawing.Color.LightGray;
-                    e.Editor.ForeColor = System.Drawing.Color.Blue;
-                    e.Editor.Font.Bold = true;
-                }
-            }
-
-            else if (e.Column.FieldName == "SEP_FIS" || e.Column.FieldName == "SEP_FIN" || e.Column.FieldName == "OCT_FIS" || e.Column.FieldName == "OCT_FIN" || e.Column.FieldName == "NOV_FIS" || e.Column.FieldName == "NOV_FIN" || e.Column.FieldName == "DIC_FIS" || e.Column.FieldName == "DIC_FIN")
-            {
-                if (fecha <= fechaCi3er && fecha >= fechaIn3er)
-                {
-                    e.Editor.ClientEnabled = true;
-                }
-                else if (tercero.Item1 == true && fecha <= tercero.Item2)
-                {
-                    e.Editor.ClientEnabled = true;
-                }
-                else
-                {
-                    e.Editor.ClientEnabled = false;
-                    e.Editor.BackColor = System.Drawing.Color.LightGray;
-                    e.Editor.ForeColor = System.Drawing.Color.Blue;
-                    e.Editor.Font.Bold = true;
-                }
-
-            }
-
-
-
-
-           /* if (porfin > 100 || porfis > 100)
-                grid.JSProperties["cpError"] = "Este subproducto tiene un porcentaje de ejecución física/financiera mayor al 100%, se recomienda revisar las metas vigentes del mismo así como el registro de la ejecuciones mensuales";
-            */
-
-        }
-
-        protected void gvMunosMetas_BatchUpdate(object sender, DevExpress.Web.Data.ASPxDataBatchUpdateEventArgs e)
-        {
-            int poa = 0;
-            int anio = 0;
-            int id_subMuno = 0;
-            int id_metas = 0;
-            int id_ejecucion = 0;
-            double af1 = 0;
-            double afn1 = 0;
-            double af2 = 0;
-            double afn2 = 0;
-            double af3 = 0;
-            double afn3 = 0;
-            double af4 = 0;
-            double afn4 = 0;
-            double af5 = 0;
-            double afn5 = 0;
-            double af6 = 0;
-            double afn6 = 0;
-            double af7 = 0;
-            double afn7 = 0;
-            double af8 = 0;
-            double afn8 = 0;
-            double af9 = 0;
-            double afn9 = 0;
-            double af10 = 0;
-            double afn10 = 0;
-            double af11 = 0;
-            double afn11 = 0;
-            double af12 = 0;
-            double afn12 = 0;
-            string clave = "";
-            
-
-            foreach (var item in e.UpdateValues)
-            {
-                clave = Convert.ToString(item.Keys["ID_UNICO"]);
-                var partes = clave.Split('.');
-                id_subMuno = Convert.ToInt32(partes[0]);               
-                id_metas = Convert.ToInt32(partes[1]); 
-                id_ejecucion = Convert.ToInt32(partes[2]); 
-                poa = Convert.ToInt32(partes[3]);
-                anio = Convert.ToInt32(partes[4]);
-
-
-                af1 = Convert.ToDouble(item.NewValues["ENE_FIS"]);
-                afn1 = Convert.ToDouble(item.NewValues["ENE_FIN"]);
-                af2 = Convert.ToDouble(item.NewValues["FEB_FIS"]);
-                afn2 = Convert.ToDouble(item.NewValues["FEB_FIN"]);
-                af3 = Convert.ToDouble(item.NewValues["MAR_FIS"]);
-                afn3 = Convert.ToDouble(item.NewValues["MAR_FIN"]);
-                af4 = Convert.ToDouble(item.NewValues["ABR_FIS"]);
-                afn4 = Convert.ToDouble(item.NewValues["ABR_FIN"]);
-                af5 = Convert.ToDouble(item.NewValues["JUN_FIS"]);
-                afn5 = Convert.ToDouble(item.NewValues["JUN_FIN"]);
-                af6 = Convert.ToDouble(item.NewValues["JUN_FIS"]);
-                afn6 = Convert.ToDouble(item.NewValues["JUN_FIN"]);
-                af7 = Convert.ToDouble(item.NewValues["JUL_FIS"]);
-                afn7 = Convert.ToDouble(item.NewValues["JUL_FIN"]);
-                af8 = Convert.ToDouble(item.NewValues["AGO_FIS"]);
-                afn8 = Convert.ToDouble(item.NewValues["AGO_FIN"]);
-                af9 = Convert.ToDouble(item.NewValues["SEP_FIS"]);
-                afn9 = Convert.ToDouble(item.NewValues["SEP_FIN"]);
-                af10 = Convert.ToDouble(item.NewValues["OCT_FIS"]);
-                afn10 = Convert.ToDouble(item.NewValues["OCT_FIN"]);
-                af11 = Convert.ToDouble(item.NewValues["NOV_FIS"]);
-                afn11 = Convert.ToDouble(item.NewValues["NOV_FIN"]);
-                af12 = Convert.ToDouble(item.NewValues["DIC_FIS"]);
-                afn12 = Convert.ToDouble(item.NewValues["DIC_FIN"]);
-
-                if (id_metas != -1)
-                {
-                    if (id_ejecucion == -1)
-                    {
-                        estado = insertaAvanceMuno(id_subMuno, poa, anio, af1, afn1, af2, afn2, af3, afn3, af4, afn4, af5, afn5, af6, afn6, af7, afn7, af8, afn8, af9, afn9, af10, afn10, af11, afn11, af12, afn12);
-                        if (estado == 0)
-                        {
-                            gvMunosMetas.JSProperties["cpError"] = "Ha ocurrido un error, por favor intentelo mas tarde, si el error periste contacte al soporte tecnico del sistema";
-                            e.Handled = true;
-                            return; // termina el ciclo y evita guardar
-                        }
-
-                    }
-                    else
-                    {
-                        estado = updateAvanceMuno(id_ejecucion, id_subMuno, poa, anio, af1, afn1, af2, afn2, af3, afn3, af4, afn4, af5, afn5, af6, afn6, af7, afn7, af8, afn8, af9, afn9, af10, afn10, af11, afn11, af12, afn12);
-                        if (estado == 0)
-                        {
-                            gvMunosMetas.JSProperties["cpError"] = "Ha ocurrido un error, por favor intentelo mas tarde, si el error periste contacte al soporte tecnico del sistema";
-                            e.Handled = true;
-                            return; // termina el ciclo y evita guardar
-                        }
-                    }
-
-                }
-
-                
-                  
-            }
-
-            gvMunosMetas.JSProperties["cpError"] = "Metas registradas correctamente";
-            e.Handled = true;
-            recargarMuno(Convert.ToInt32(hfIDSubProducto.Value), Convert.ToInt32(cbAnioPOA.Value));
-        }
-
-        protected int insertaAvanceMuno(int id_muno, int id_poa, int anio, double af1, double afn1, double af2, double afn2, double af3, double afn3, double af4, double afn4, double af5, double afn5, double af6, double afn6, double af7, double afn7, double af8, double afn8, double af9, double afn9, double af10, double afn10,double af11,double afn11, double af12, double afn12)
-        {
-            int estados = 0;
-            sql = @"INSERT INTO SCHE$SIPLAN20.SP20$SUB_MUNOS_EJECUCION(SPP_MUNEJEC$ID_MUNO,SPP_MUNEJEC$POA,SPP_MUNEJEC$ANIO,SPP_MUNEJEC$ENE_FIS,SPP_MUNEJEC$ENE_FIN,SPP_MUNEJEC$FEB_FIS,SPP_MUNEJEC$FEB_FIN,SPP_MUNEJEC$MAR_FIS,SPP_MUNEJEC$MAR_FIN,SPP_MUNEJEC$ABR_FIS,SPP_MUNEJEC$ABR_FIN,SPP_MUNEJEC$MAY_FIS,SPP_MUNEJEC$MAY_FIN,SPP_MUNEJEC$JUN_FIS,SPP_MUNEJEC$JUN_FIN,SPP_MUNEJEC$JUL_FIS,SPP_MUNEJEC$JUL_FIN,SPP_MUNEJEC$AGO_FIS,SPP_MUNEJEC$AGO_FIN,SPP_MUNEJEC$SEP_FIS,SPP_MUNEJEC$SEP_FIN,SPP_MUNEJEC$OCT_FIS,SPP_MUNEJEC$OCT_FIN,SPP_MUNEJEC$NOV_FIS,SPP_MUNEJEC$NOV_FIN,SPP_MUNEJEC$DIC_FIS,SPP_MUNEJEC$DIC_FIN,SPP_MUNEJE$FECHA_INSERTA,SPP_MUNEJE$USUARIO_INSERTA) VALUES (";
-            sql = sql + id_muno + "," + id_poa + ","+anio+","+af1+","+afn1+","+af2+","+afn2+","+af3+","+afn3+","+af4+","+afn4+","+af5+","+afn5+","+af6+","+afn6+","+af7+","+afn7+","+af8+","+afn8+","+af9+","+afn9+","+af10+","+afn10+","+af11+","+afn11+","+af12+","+afn12+",SYSDATE,'"+ Session["USUARIO"].ToString() + "')";
-            estados = da.comando(sql);
-            return estados;
-        }
-
-        protected int updateAvanceMuno(int id_ejecucion, int id_muno, int id_poa, int anio, double af1, double afn1, double af2, double afn2, double af3, double afn3, double af4, double afn4, double af5, double afn5, double af6, double afn6, double af7, double afn7, double af8, double afn8, double af9, double afn9, double af10, double afn10, double af11, double afn11, double af12, double afn12)
-        {
-
-            int estados = 0;
-            sql = @"UPDATE SCHE$SIPLAN20.SP20$SUB_MUNOS_EJECUCION SET SPP_MUNEJEC$ENE_FIS = "+af1+ ", SPP_MUNEJEC$ENE_FIN = "+afn1+ ", SPP_MUNEJEC$FEB_FIS = "+af2+ ", SPP_MUNEJEC$FEB_FIN = "+afn2+ ", SPP_MUNEJEC$MAR_FIS = "+af3+ ", SPP_MUNEJEC$MAR_FIN = "+afn3+ ", SPP_MUNEJEC$ABR_FIS = " +af4+ ", SPP_MUNEJEC$ABR_FIN = "+afn4+ ", SPP_MUNEJEC$MAY_FIS = "+af5+ ", SPP_MUNEJEC$MAY_FIN = "+afn5+ ", SPP_MUNEJEC$JUN_FIS = "+af6+ ", SPP_MUNEJEC$JUN_FIN = "+afn6+ ", SPP_MUNEJEC$JUL_FIS = "+af7+ ", SPP_MUNEJEC$JUL_FIN = "+afn7+ ", SPP_MUNEJEC$AGO_FIS = "+af8+ ", SPP_MUNEJEC$AGO_FIN = "+afn8+ ", SPP_MUNEJEC$SEP_FIS = "+af9+ ", SPP_MUNEJEC$SEP_FIN = "+afn9+ ", SPP_MUNEJEC$OCT_FIS = "+af10+ ", SPP_MUNEJEC$OCT_FIN = "+afn10+ ", SPP_MUNEJEC$NOV_FIS = "+af11+ ", SPP_MUNEJEC$NOV_FIN = "+af11+ ", SPP_MUNEJEC$DIC_FIS = "+af12+ ", SPP_MUNEJEC$DIC_FIN = "+afn12+ ", SPP_MUNEJE$FECHA_ACTUALIZA = SYSDATE, USUARIO_ACTUALIZA ='"+ Session["USUARIO"].ToString() + "' WHERE SPP_MUNEJEC$ID = " + id_ejecucion;
-            estados = da.comando(sql);
-            return estados;
-            
-        }
-
-        protected void btnTodoExcel_Click(object sender, EventArgs e)
-        {
-            GenerarExcel(0);
-        }
-
-        protected void BtnUno_Click(object sender, EventArgs e)
-        {
-            GenerarExcel(1);
-        }
-        protected void GenerarExcel(int p)
-        {
-            DataTable dt = cargaMunosExcel(Convert.ToInt32(Convert.ToInt32(Session["pom"])), Convert.ToInt32(cbAnioPOA.Value), p);
-
-            using (ExcelPackage pkg = new ExcelPackage())
-            {
-                var ws = pkg.Workbook.Worksheets.Add("Supbroductos");
-
-                // 🧾 ENCABEZADOS
-                ws.Cells[1, 1].Value = "POA";
-                ws.Cells[1, 2].Value = "ANIO";
-                ws.Cells[1, 3].Value = "ID_SUBPRODUCTO";
-                ws.Cells[1, 4].Value = "ID_MUNO";
-                ws.Cells[1, 5].Value = "ID_METAS";
-                ws.Cells[1, 6].Value = "ID_EJECUCION";
-                ws.Cells[1, 7].Value = "DEPTO";
-                ws.Cells[1, 8].Value = "ID_MUNICIPIO";
-                ws.Cells[1, 9].Value = "SUBPRODUCTO";
-                ws.Cells[1, 10].Value = "MEDIDA";
-                ws.Cells[1, 11].Value = "DEPARTAMENTO";
-                ws.Cells[1, 12].Value = "META_FISICA_SUB";
-                ws.Cells[1, 13].Value = "META_FINANCIERA_SUB";
-                ws.Cells[1, 14].Value = "METAFISICA_MUNICIPIO";
-                ws.Cells[1, 15].Value = "METAFINANCIERA_MUNICIPIO";               
-                ws.Cells[1, 16].Value = "ENE_FISICA";
-                ws.Cells[1, 17].Value = "ENE_FINANCIERA";
-                ws.Cells[1, 18].Value = "FEB_FISICA";
-                ws.Cells[1, 19].Value = "FEB_FINANCIERA";
-                ws.Cells[1, 20].Value = "MAR_FISICA";
-                ws.Cells[1, 21].Value = "MAR_FINANCIERA";
-                ws.Cells[1, 22].Value = "ABR_FISICA";
-                ws.Cells[1, 23].Value = "ABR_FINANCIERA";
-                ws.Cells[1, 24].Value = "MAY_FISICA";
-                ws.Cells[1, 25].Value = "MAY_FINANCIERA";
-                ws.Cells[1, 26].Value = "JUN_FISICA";
-                ws.Cells[1, 27].Value = "JUN_FINANCIERA";
-                ws.Cells[1, 28].Value = "JUL_FISICA";
-                ws.Cells[1, 29].Value = "JUL_FINANCIERA";
-                ws.Cells[1, 30].Value = "AGO_FISICA";
-                ws.Cells[1, 31].Value = "AGO_FINANCIERA";
-                ws.Cells[1, 32].Value = "SEP_FISICA";
-                ws.Cells[1, 33].Value = "SEP_FINANCIERA";
-                ws.Cells[1, 34].Value = "OCT_FISICA";
-                ws.Cells[1, 35].Value = "OCT_FINANCIERA";
-                ws.Cells[1, 36].Value = "NOV_FISICA";
-                ws.Cells[1, 37].Value = "NOV_FINANCIERA";
-                ws.Cells[1, 38].Value = "DIC_FISICA";
-                ws.Cells[1, 39].Value = "DIC_FINANCIERA";
-                // Estilo enc6bezado
-                using (var range = ws.Cells[1, 1, 1, 39])
-                {
-                    range.Style.Font.Bold = true;
-                }
-
-                // 📊 DATOS
-                for (int i = 0; i < dt.Rows.Count; i++)
-                {
-                    ws.Cells[i + 2, 1].Value = dt.Rows[i]["POA"];
-                    ws.Cells[i + 2, 2].Value = dt.Rows[i]["ANIO"];
-                    ws.Cells[i + 2, 3].Value = dt.Rows[i]["ID_SUBPRODUCTO"];
-                    ws.Cells[i + 2, 4].Value = dt.Rows[i]["ID_MUNOS"];
-                    ws.Cells[i + 2, 5].Value = dt.Rows[i]["ID_METAS"];
-                    ws.Cells[i + 2, 6].Value = dt.Rows[i]["ID_EJECUCION"];
-                    ws.Cells[i + 2, 7].Value = dt.Rows[i]["DEPTO"];
-                    ws.Cells[i + 2, 8].Value = dt.Rows[i]["ID_MUNICIPIO"];
-                    ws.Cells[i + 2, 9].Value = dt.Rows[i]["SUBPRODUCTO"];
-                    ws.Cells[i + 2, 10].Value = dt.Rows[i]["MEDIDA"];
-                    ws.Cells[i + 2, 11].Value = dt.Rows[i]["DEPARTAMENTO"];
-                    ws.Cells[i + 2, 12].Value = dt.Rows[i]["MUNICIPIO"];
-                    ws.Cells[i + 2, 13].Value = dt.Rows[i]["METAFISICA_ANUAL"];
-                    ws.Cells[i + 2, 14].Value = dt.Rows[i]["METAFINANCIERA_ANUAL"];
-                    ws.Cells[i + 2, 15].Value = dt.Rows[i]["METAFISCA_MUNO"];
-                    ws.Cells[i + 2, 16].Value = dt.Rows[i]["METAFINANCIERA_MUNO"];
-                    ws.Cells[i + 2, 17].Value = dt.Rows[i]["ENE_FIS"];
-                    ws.Cells[i + 2, 18].Value = dt.Rows[i]["ENE_FIN"];
-                    ws.Cells[i + 2, 19].Value = dt.Rows[i]["FEB_FIS"];
-                    ws.Cells[i + 2, 20].Value = dt.Rows[i]["FEB_FIN"];
-                    ws.Cells[i + 2, 21].Value = dt.Rows[i]["MAR_FIS"];
-                    ws.Cells[i + 2, 22].Value = dt.Rows[i]["MAR_FIN"];
-                    ws.Cells[i + 2, 23].Value = dt.Rows[i]["ABR_FIS"];
-                    ws.Cells[i + 2, 24].Value = dt.Rows[i]["ABR_FIN"];
-                    ws.Cells[i + 2, 25].Value = dt.Rows[i]["MAY_FIS"];
-                    ws.Cells[i + 2, 26].Value = dt.Rows[i]["MAY_FIN"];
-                    ws.Cells[i + 2, 27].Value = dt.Rows[i]["JUN_FIS"];
-                    ws.Cells[i + 2, 28].Value = dt.Rows[i]["JUN_FIN"];
-                    ws.Cells[i + 2, 29].Value = dt.Rows[i]["JUL_FIS"];
-                    ws.Cells[i + 2, 30].Value = dt.Rows[i]["JUL_FIN"];
-                    ws.Cells[i + 2, 31].Value = dt.Rows[i]["AGO_FIS"];
-                    ws.Cells[i + 2, 32].Value = dt.Rows[i]["AGO_FIN"];
-                    ws.Cells[i + 2, 33].Value = dt.Rows[i]["SEP_FIS"];
-                    ws.Cells[i + 2, 34].Value = dt.Rows[i]["SEP_FIN"];
-                    ws.Cells[i + 2, 35].Value = dt.Rows[i]["OCT_FIS"];
-                    ws.Cells[i + 2, 36].Value = dt.Rows[i]["OCT_FIN"];
-                    ws.Cells[i + 2, 37].Value = dt.Rows[i]["NOV_FIS"];
-                    ws.Cells[i + 2, 38].Value = dt.Rows[i]["NOV_FIN"];
-                    ws.Cells[i + 2, 39].Value = dt.Rows[i]["DIC_FIS"];
-                    ws.Cells[i + 2, 40].Value = dt.Rows[i]["DIC_FIN"];
-
-                    
-                }
-                int totalFilas = dt.Rows.Count + 1;
-
-                // Bloquear todo
-                ws.Cells.Style.Locked = true;
-
-                // Desbloquear editables (meses)
-                ws.Cells[2, 17, totalFilas, 40].Style.Locked = false;
-
-                // Activar filtro SOLO en encabezados
-                ws.Cells[1, 1, 1, 40].AutoFilter = true;
-
-                // Proteger hoja
-                ws.Protection.IsProtected = true;
-
-                // Permisos
-                ws.Protection.AllowAutoFilter = true;
-                ws.Protection.AllowSort = true;
-                ws.Protection.AllowSelectUnlockedCells = true;
-                ws.Protection.AllowSelectLockedCells = false;
-                ws.Protection.AllowFormatCells = true;
-
-                // Ajustar columnas
-                ws.Cells.AutoFitColumns();
-
-                // 📤 DESCARGAR
-                Response.Clear();
-                Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-                Response.AddHeader("content-disposition", "attachment; filename=EjecucionMunicipios.xlsx");
-                Response.BinaryWrite(pkg.GetAsByteArray());
-                Response.End();
-            }
-        }
-
-
-        protected DataTable cargaMunosExcel(int pom, int anio, int p)
-        {
-            DataTable munos = new DataTable();
-            sql = @"SELECT
-POA
-,ANIO
-,SPPSUB$ID_SUBPRODUCTO ID_SUBPRODUCTO
-,ID_MUNOS
-,ID_METAS
-,ID_EJECUCION
-,DEPTO
-,ID_MUNICIPIO
-,SUBPRODUCTO
-,MEDIDA
-,DEPARTAMENTO
-,MUNICIPIO
-,METAFISICA_ANUAL
-,METAFINANCIERA_ANUAL
-,METAFISCA_MUNO
-,METAFINANCIERA_MUNO
-,ENE_FIS
-,ENE_FIN
-,FEB_FIS
-,FEB_FIN
-,MAR_FIS
-,MAR_FIN
-,ABR_FIS
-,ABR_FIN
-,CUAFIS1
-,CUAFIN1
-,MAY_FIS
-,MAY_FIN
-,JUN_FIS
-,JUN_FIN
-,JUL_FIS
-,JUL_FIN
-,AGO_FIS
-,AGO_FIN
-,CUAFIS2
-,CUAFIN2
-,SEP_FIS
-,SEP_FIN
-,OCT_FIS
-,OCT_FIN
-,NOV_FIS
-,NOV_FIN
-,DIC_FIS
-,DIC_FIN
-,CUAFIS3
-,CUAFIN3
-,ANUAL_FISICO
-,ANUAL_FINANCIERO
-,CASE WHEN METAFISCA_MUNO = 0 THEN 0 ELSE ((ANUAL_FISICO/METAFISCA_MUNO)*100) END AS PORCENTAJE_FISICO
-,CASE WHEN METAFINANCIERA_MUNO = 0 THEN 0 ELSE ((ANUAL_FINANCIERO/METAFINANCIERA_MUNO)*100) END AS PORCENTAJE_FINANCIERO
-
-
-FROM
-(SELECT 
-
-POA
-,ANIO
-,SPPSUB$ID_SUBPRODUCTO
-,SM.SPSM$ID ID_MUNOS
-,NVL(MM.SPPSMMA$ID,-1) ID_METAS
-,NVL(ME.SPP_MUNEJEC$ID,-1) ID_EJECUCION
-,SUBPRODUCTO
-,MEDIDA
-,G.DEPTO
-,G.GEOGRAFICO ID_MUNICIPIO
-,(SELECT NOMBRE FROM SINIP.CG_GEOGRAFICO WHERE GEOGRAFICO = G.DEPTO) DEPARTAMENTO
-,G.NOMBRE MUNICIPIO
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIS) METAFISICA_ANUAL
-,(SELECT SPPMFS$META FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB WHERE SPPMFS$ID_PROGRAMACION_FISFIN = ID_FIN) METAFINANCIERA_ANUAL
-,NVL(MM.SPPSMMA$META_FISICA,0) METAFISCA_MUNO
-,NVL(MM.SPPSMMA$META_FINANCIERA,0) METAFINANCIERA_MUNO
-,NVL(SPP_MUNEJEC$ENE_FIS,0) ENE_FIS
-,NVL(SPP_MUNEJEC$ENE_FIN,0) ENE_FIN
-,NVL(SPP_MUNEJEC$ENE_FIS,0) FEB_FIS
-,NVL(SPP_MUNEJEC$ENE_FIN,0) FEB_FIN
-,NVL(SPP_MUNEJEC$MAR_FIS,0) MAR_FIS
-,NVL(SPP_MUNEJEC$MAR_FIN,0) MAR_FIN
-,NVL(SPP_MUNEJEC$ABR_FIS,0) ABR_FIS
-,NVL(SPP_MUNEJEC$ABR_FIN,0) ABR_FIN
-,(NVL(SPP_MUNEJEC$ENE_FIS,0)+NVL(SPP_MUNEJEC$FEB_FIS,0)+NVL(SPP_MUNEJEC$MAR_FIS,0)+NVL(SPP_MUNEJEC$ABR_FIS,0)) CUAFIS1
-,(NVL(SPP_MUNEJEC$ENE_FIN,0)+NVL(SPP_MUNEJEC$FEB_FIN,0)+NVL(SPP_MUNEJEC$MAR_FIN,0)+NVL(SPP_MUNEJEC$ABR_FIN,0)) CUAFIN1
-
-,NVL(SPP_MUNEJEC$MAY_FIS,0) MAY_FIS
-,NVL(SPP_MUNEJEC$MAY_FIN,0) MAY_FIN
-,NVL(SPP_MUNEJEC$JUN_FIS,0) JUN_FIS
-,NVL(SPP_MUNEJEC$JUN_FIN,0) JUN_FIN
-,NVL(SPP_MUNEJEC$JUL_FIS,0) JUL_FIS
-,NVL(SPP_MUNEJEC$JUL_FIN,0) JUL_FIN
-,NVL(SPP_MUNEJEC$AGO_FIS,0) AGO_FIS
-,NVL(SPP_MUNEJEC$AGO_FIN,0) AGO_FIN
-,NVL(SPP_MUNEJEC$SEP_FIS,0) SEP_FIS
-,NVL(SPP_MUNEJEC$SEP_FIN,0) SEP_FIN
-,(NVL(SPP_MUNEJEC$MAY_FIS,0)+NVL(SPP_MUNEJEC$JUN_FIS,0)+NVL(SPP_MUNEJEC$JUL_FIS,0)+NVL(SPP_MUNEJEC$AGO_FIS,0)) CUAFIS2
-,(NVL(SPP_MUNEJEC$MAY_FIN,0)+NVL(SPP_MUNEJEC$JUN_FIN,0)+NVL(SPP_MUNEJEC$JUL_FIN,0)+NVL(SPP_MUNEJEC$AGO_FIN,0)) CUAFIN2
-,NVL(SPP_MUNEJEC$OCT_FIS,0) OCT_FIS
-,NVL(SPP_MUNEJEC$OCT_FIN,0) OCT_FIN
-,NVL(SPP_MUNEJEC$OCT_FIS,0) NOV_FIS
-,NVL(SPP_MUNEJEC$OCT_FIN,0) NOV_FIN
-,NVL(SPP_MUNEJEC$OCT_FIS,0) DIC_FIS
-,NVL(SPP_MUNEJEC$OCT_FIN,0) DIC_FIN
-,(NVL(SPP_MUNEJEC$SEP_FIS,0)+NVL(SPP_MUNEJEC$OCT_FIS,0)+NVL(SPP_MUNEJEC$NOV_FIS,0)+NVL(SPP_MUNEJEC$DIC_FIS,0)) CUAFIS3
-,(NVL(SPP_MUNEJEC$SEP_FIN,0)+NVL(SPP_MUNEJEC$OCT_FIN,0)+NVL(SPP_MUNEJEC$NOV_FIN,0)+NVL(SPP_MUNEJEC$DIC_FIN,0)) CUAFIN3
-
-,(NVL(SPP_MUNEJEC$ENE_FIS,0)+NVL(SPP_MUNEJEC$FEB_FIS,0)+NVL(SPP_MUNEJEC$MAR_FIS,0)+NVL(SPP_MUNEJEC$ABR_FIS,0)) + (NVL(SPP_MUNEJEC$MAY_FIS,0)+NVL(SPP_MUNEJEC$JUN_FIS,0)+NVL(SPP_MUNEJEC$JUL_FIS,0)+NVL(SPP_MUNEJEC$AGO_FIS,0)) + (NVL(SPP_MUNEJEC$SEP_FIS,0)+NVL(SPP_MUNEJEC$OCT_FIS,0)+NVL(SPP_MUNEJEC$NOV_FIS,0)+NVL(SPP_MUNEJEC$DIC_FIS,0)) ANUAL_FISICO
-,(NVL(SPP_MUNEJEC$ENE_FIN,0)+NVL(SPP_MUNEJEC$FEB_FIN,0)+NVL(SPP_MUNEJEC$MAR_FIN,0)+NVL(SPP_MUNEJEC$ABR_FIN,0)) + (NVL(SPP_MUNEJEC$MAY_FIN,0)+NVL(SPP_MUNEJEC$JUN_FIN,0)+NVL(SPP_MUNEJEC$JUL_FIN,0)+NVL(SPP_MUNEJEC$AGO_FIN,0)) + (NVL(SPP_MUNEJEC$SEP_FIN,0)+NVL(SPP_MUNEJEC$OCT_FIN,0)+NVL(SPP_MUNEJEC$NOV_FIN,0)+NVL(SPP_MUNEJEC$DIC_FIN,0)) ANUAL_FINANCIERO
-FROM
-(SELECT
-(SELECT NVL(FF.SPPMFS$ID_POA,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = 2027 GROUP BY FF.SPPMFS$ID_POA) POA
-,(SELECT NVL(FF.SPPMFS$ANIO,-1) POA FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = 2027 GROUP BY FF.SPPMFS$ANIO) ANIO
-,S.SPPSUB$ID_SUBPRODUCTO
-,S.SPPSUB$DESCRIPCION SUBPRODUCTO
-
-,M.NOMBRE MEDIDA
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = 2027 AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 0 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIS
-,NVL((SELECT MAX(FF.SPPMFS$ID_PROGRAMACION_FISFIN) ID_FIS FROM SCHE$SIPLAN20.SP20$PROGRAMETA_FI_FIN_SUB FF WHERE  FF.SPPMFS$ID_SUBPRODUCTO = S.SPPSUB$ID_SUBPRODUCTO AND FF.SPPMFS$ANIO = 2027 AND SPPMFS$VIGENTE = 0 AND SPPMFS$TIPO_PROGRAMACION = 1 AND SPPMFS$RESTRICTIVA = 'N'),-1) ID_FIN
-,S.SPPSUB$ID_PRODUCTO
-FROM SCHE$SIPLAN20.SP20$SUB_PRODUCTO S 
-INNER JOIN SINIP.CP_UNIDADES_MEDIDA M ON M.UNIDAD_MEDIDA = S.SPPSUB$ID_MEDIDA
-WHERE  S.SPPSUB$RESTRICTIVA = 'N' 
-";
-            if (p == 1)
-            {
-                sql = sql + @" AND S.SPPSUB$ID_SUBPRODUCTO = " + hfIDSubProducto.Value;
-            }
-
-sql = sql +@")
-INNER JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS SM ON SM.SPSM$ID_SUB = SPPSUB$ID_SUBPRODUCTO AND SM.SPSM$RESTRICTIVA = 'N'
-INNER JOIN SINIP.CG_GEOGRAFICO G ON G.GEOGRAFICO = SM.SPSM$GEOGRAFICO 
-INNER JOIN SCHE$SIPLAN20.SP20$PRODUCTO P ON P.SPPRO$ID_PRODUCTO = SPPSUB$ID_PRODUCTO AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POM POM ON POM.SPPO$ID_POM = P.SPPRO$POM AND POM.SPPO$RESTRICTIVA = 'N' AND P.SPPRO$RESTRICTIVA = 'N'
-INNER JOIN SCHE$SIPLAN20.SP20$POA POA ON POA.SPOA$ID_POA = POA AND POA.SPOA$ANIO = ANIO
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_METAS MM ON MM.SPPSMMA$ID_SUBMUNO = SM.SPSM$ID AND MM.SPPSMMA$RESTRICTIVA = 'N' AND SM.SPSM$RESTRICTIVA = 'N'
-LEFT JOIN SCHE$SIPLAN20.SP20$SUB_MUNOS_EJECUCION ME ON ME.SPP_MUNEJEC$ID_MUNO = SM.SPSM$ID AND ME.SPP_MUNEJEC$RESTRICTIVA = 'N' AND SM.SPSM$RESTRICTIVA = 'N' AND POM.SPPO$ID_POM = "+pom+ @")
-WHERE ID_METAS != -1
-ORDER BY SPPSUB$ID_SUBPRODUCTO, DEPTO, ID_MUNICIPIO ASC";
-            estado = da.consulta(sql);
-            if (estado == 1)
-            {
-                munos = da.tabla;
-            }
-            return munos;
-
-
-        }
-
-        protected void btnSubir_Click(object sender, EventArgs e)
-        {
-            if (!fuExcel.HasFile)
-                return;
-
-            string rutaCarpeta = Server.MapPath("~/Uploads/");
-
-            // 📁 Crear carpeta si no existe
-            if (!Directory.Exists(rutaCarpeta))
-            {
-                Directory.CreateDirectory(rutaCarpeta);
-            }
-
-            // 🔍 Validar extensión
-            string extension = Path.GetExtension(fuExcel.FileName).ToLower();
-            if (extension != ".xlsx")
-            {
-                // Manejar error (puedes mostrar mensaje)
-                return;
-            }
-
-            // 🆔 Nombre único
-            string nombreArchivo = Guid.NewGuid().ToString() + extension;
-            string path = Path.Combine(rutaCarpeta, nombreArchivo);
-
-            try
-            {
-                // 💾 Guardar archivo
-                fuExcel.SaveAs(path);
-
-                // 📖 Procesar archivo
-                LeerExcel(path);
-                mensaje = "Se ha terminado de procesar el archivo";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',1);", true);
-            }
-            catch (Exception ex)
-            {
-                // 🔥 Manejo de error (log o mensaje)
-                // Ej: lblError.Text = ex.Message;
-                LeerExcel(path);
-                mensaje = "Ha ocurrido un error al procesar el archivo";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "script", "Alerta('" + mensaje + " ',2);", true);
-            }
-            finally
-            {
-                // 🧹 Eliminar archivo SIEMPRE
-                try
-                {
-                    if (File.Exists(path))
-                        File.Delete(path);
-                }
-                catch
-                {
-                    // opcional: log de error al eliminar
-                }
-            }
-        }
-
-        public void LeerExcel(string path)
-        {
-            using (ExcelPackage pkg = new ExcelPackage(new FileInfo(path)))
-            {
-                if (pkg.Workbook.Worksheets.Count == 0)
-                {
-                    throw new Exception("El archivo Excel no contiene hojas.");
-                }
-
-                var ws = pkg.Workbook.Worksheets.FirstOrDefault();
-
-                int row = 2;
-
-                while (ws.Cells[row, 1].Value != null)
-                {
-                    int poa = Convert.ToInt32(ws.Cells[row, 1].Text);
-                    int anio = Convert.ToInt32(ws.Cells[row, 2].Text);
-                    int id_muno = Convert.ToInt32(ws.Cells[row, 4].Text);
-                    int id_metas = Convert.ToInt32(ws.Cells[row, 5].Text);
-                    int id_ejecucion = Convert.ToInt32(ws.Cells[row, 6].Text);
-
-                  
-                    double af1 = Convert.ToDouble(ws.Cells[row, 16].Text);
-                    double afn1 = Convert.ToDouble(ws.Cells[row, 17].Text);
-                    double af2= Convert.ToDouble(ws.Cells[row, 18].Text);
-                    double afn2 = Convert.ToDouble(ws.Cells[row, 19].Text);
-                    double af3 = Convert.ToDouble(ws.Cells[row, 20].Text);
-                    double afn3 = Convert.ToDouble(ws.Cells[row, 21].Text);
-                    double af4 = Convert.ToDouble(ws.Cells[row, 22].Text);
-                    double afn4 = Convert.ToDouble(ws.Cells[row, 23].Text);
-                    double af5 = Convert.ToDouble(ws.Cells[row, 24].Text);
-                    double afn5 = Convert.ToDouble(ws.Cells[row, 25].Text);
-                    double af6 = Convert.ToDouble(ws.Cells[row, 26].Text);
-                    double afn6 = Convert.ToDouble(ws.Cells[row, 27].Text);
-                    double af7 = Convert.ToDouble(ws.Cells[row, 28].Text);
-                    double afn7 = Convert.ToDouble(ws.Cells[row, 29].Text);
-                    double af8 = Convert.ToDouble(ws.Cells[row, 30].Text);
-                    double afn8 = Convert.ToDouble(ws.Cells[row, 31].Text);
-                    double af9 = Convert.ToDouble(ws.Cells[row, 32].Text);
-                    double afn9 = Convert.ToDouble(ws.Cells[row, 33].Text);
-                    double af10= Convert.ToDouble(ws.Cells[row, 34].Text);
-                    double afn10 = Convert.ToDouble(ws.Cells[row, 35].Text);
-                    double af11 = Convert.ToDouble(ws.Cells[row, 36].Text);
-                    double afn11 = Convert.ToDouble(ws.Cells[row, 37].Text);
-                    double af12 = Convert.ToDouble(ws.Cells[row, 38].Text);
-                    double afn12 = Convert.ToDouble(ws.Cells[row, 39].Text);
-
-                    // 🔥 VALIDACIÓN
-                    if (id_metas != -1)
-                    {
-                        if(id_ejecucion == -1)
-                            estado = insertaAvanceMuno(id_muno, poa, anio, af1, afn1, af2, afn2, af3, afn3, af4, afn4, af5, afn5, af6, afn6, af7, afn7, af8, afn8, af9, afn9, af10, afn10, af11, afn11, af12, afn12);
-                        else
-                            estado = updateAvanceMuno(id_ejecucion, id_muno, poa, anio, af1, afn1, af2, afn2, af3, afn3, af4, afn4, af5, afn5, af6, afn6, af7, afn7, af8, afn8, af9, afn9, af10, afn10, af11, afn11, af12, afn12);
-
-                    }
-
-                    row++;
-                }
-            }
-        }
+        
         /*protected void gvEjecucion_HtmlRowPrepared(object sender, ASPxGridViewTableRowEventArgs e)
-    {
-    Double porfin = -1;
-    Double porfis = -1;
-    //valor = Convert.ToString(e.GetValue("SPPRE$APROBADO"));
+{
+Double porfin = -1;
+Double porfis = -1;
+//valor = Convert.ToString(e.GetValue("SPPRE$APROBADO"));
 
-    porfin = Convert.ToDouble(e.GetValue("PFINNUMBER"));
-    porfis = Convert.ToDouble(e.GetValue("PFNUMBER")); 
-    if (porfin > 100 || porfis > 100)
-    {
-    e.Row.ForeColor = System.Drawing.Color.Red;
-    //e.Row.BackColor = System.Drawing.Color.MediumSeaGreen;
-    }
-    }
-    */
+porfin = Convert.ToDouble(e.GetValue("PFINNUMBER"));
+porfis = Convert.ToDouble(e.GetValue("PFNUMBER")); 
+if (porfin > 100 || porfis > 100)
+{
+e.Row.ForeColor = System.Drawing.Color.Red;
+//e.Row.BackColor = System.Drawing.Color.MediumSeaGreen;
+}
+}
+*/
     }
 
 }

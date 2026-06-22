@@ -16,20 +16,18 @@ namespace SIPLAN2._0
         DataTable tabla = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
-           sql= "SELECT SPV$ENLACE FROM SCHE$SIPLAN20.SP20$CONFIGURACION_VARIAS WHERE SPV$DESCRIPCION = 'ENLACE DEFAULT' AND SPV$RESTRICTIVA = 'N'";
+            sql = "SELECT SPV$ENLACE FROM SCHE$SIPLAN20.SP20$CONFIGURACION_VARIAS WHERE SPV$DESCRIPCION = 'ENLACE DEFAULT' AND SPV$RESTRICTIVA = 'N'";
             int estado = dao.consulta(sql);
             if (estado == 1)
             {
                 tabla = dao.tabla;
-                if(tabla.Rows.Count > 0)
+                if (tabla.Rows.Count > 0)
                     Response.Redirect(tabla.Rows[0]["SPV$ENLACE"].ToString());
-                
+
             }
 
-            /*
-           Response.Redirect("../siplancapa/login/login.aspx");
-           Response.Redirect("../siplan/login/login.aspx");
-           */
+            /*Response.Redirect("../siplancapa/login/login.aspx");
+            Response.Redirect("../siplan/login/login.aspx");*/
         }
     }
 }

@@ -1,14 +1,51 @@
-﻿using System;
+﻿using SIPLAN2._0.DataAccess;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
-using SIPLAN2._0.DataAccess;
+
 
 namespace SIPLAN2._0.Rutas
 {
     public class Rutas
     {
+        /*
+        public string carpetas()
+        {
+            Caminos.camino = "../../Documentos/";
+            //Caminos.camino = "../../DocumentosCapa/";
+            return Caminos.camino;
+
+        }
+
+        public string full_path()
+        {
+            Caminos.camino = "E:\\Documentos\\";
+            //Caminos.camino = "E:\\DocumentosCapa\\";
+            return Caminos.camino;
+
+
+        }
+
+        public string carpetas_resolucion()
+        {
+            Caminos.camino = "../../Documentos/resoluciones/";
+            //Caminos.camino = "../../DocumentosCapa/resoluciones/";
+            return Caminos.camino;
+
+        }
+
+        public string full_path_resoluciones()
+        {
+            Caminos.camino = "E:\\Documentos\\resoluciones\\";
+            //Caminos.camino = "E:\\DocumentosCapa\\resoluciones\\";
+            return Caminos.camino;
+
+
+        }
+        */
+
         clsAccesoBBDD dao = new clsAccesoBBDD();
         string sql = "";
         int estado = 0;
