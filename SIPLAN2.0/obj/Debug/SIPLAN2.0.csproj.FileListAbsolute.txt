@@ -1,0 +1,1662 @@
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ApplicationInsights.config
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\csc.exe
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\csc.exe.config
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\csc.rsp
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\csi.exe
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\csi.exe.config
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\csi.rsp
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Console.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\vbc.exe
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\vbc.exe.config
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\vbc.rsp
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Antlr3.Runtime.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Newtonsoft.Json.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\System.Web.Optimization.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\WebGrease.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\System.Web.Optimization.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Newtonsoft.Json.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\obj\Debug\SIPLAN2.0.csprojAssemblyReference.cache
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CopyComplete
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ApplicationInsights.config
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\csc.exe
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\csc.exe.config
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\csc.rsp
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\csi.exe
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\csi.exe.config
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\csi.rsp
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Console.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\vbc.exe
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\vbc.exe.config
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\vbc.rsp
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Antlr3.Runtime.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Newtonsoft.Json.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\System.Web.Optimization.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\WebGrease.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\System.Web.Optimization.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Newtonsoft.Json.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csprojAssemblyReference.cache
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CopyComplete
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN2.0(REPRO FISICAS)\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ApplicationInsights.config
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csc.exe
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csc.exe.config
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csc.rsp
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csi.exe
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csi.exe.config
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csi.rsp
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Console.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\vbc.exe
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\vbc.exe.config
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\vbc.rsp
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Antlr3.Runtime.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Newtonsoft.Json.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\System.Web.Optimization.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\WebGrease.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\System.Web.Optimization.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Newtonsoft.Json.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csprojAssemblyReference.cache
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CopyComplete
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ApplicationInsights.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csc.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csc.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csc.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csi.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csi.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\csi.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Console.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\vbc.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\vbc.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\vbc.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Antlr3.Runtime.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Newtonsoft.Json.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\System.Web.Optimization.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\WebGrease.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\System.Web.Optimization.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Newtonsoft.Json.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csprojAssemblyReference.cache
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CopyComplete
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(MIGRACIONES)\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ApplicationInsights.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\csc.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\csc.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\csc.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\csi.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\csi.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\csi.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Console.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\vbc.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\vbc.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\vbc.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Antlr3.Runtime.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Newtonsoft.Json.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\System.Web.Optimization.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\WebGrease.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\System.Web.Optimization.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Newtonsoft.Json.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csprojAssemblyReference.cache
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CopyComplete
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ApplicationInsights.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\csc.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\csc.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\csc.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\csi.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\csi.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\csi.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Console.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\vbc.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\vbc.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\vbc.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Antlr3.Runtime.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Newtonsoft.Json.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\System.Web.Optimization.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\WebGrease.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\System.Web.Optimization.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Newtonsoft.Json.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.csprojAssemblyReference.cache
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CopyComplete
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ApplicationInsights.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csc.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csc.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csc.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csi.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csi.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csi.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Console.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\vbc.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\vbc.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\vbc.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Antlr3.Runtime.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Newtonsoft.Json.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\System.Web.Optimization.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\WebGrease.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\System.Web.Optimization.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Newtonsoft.Json.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.csprojAssemblyReference.cache
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CopyComplete
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ApplicationInsights.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Console.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.rsp
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Antlr3.Runtime.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Newtonsoft.Json.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Web.Optimization.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\WebGrease.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Web.Optimization.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Newtonsoft.Json.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csprojAssemblyReference.cache
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CopyComplete
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+C:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ApplicationInsights.config
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.pdb
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.exe
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.exe.config
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.rsp
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.exe
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.exe.config
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.rsp
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Console.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.exe
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.exe.config
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.rsp
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Antlr3.Runtime.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Newtonsoft.Json.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Oracle.ManagedDataAccess.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Web.Optimization.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\WebGrease.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Web.Optimization.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Newtonsoft.Json.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.AssemblyReference.cache
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.Up2Date
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+D:\Fuentes\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ApplicationInsights.config
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.pdb
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.exe
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.exe.config
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.rsp
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.exe
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.exe.config
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.rsp
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Console.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.exe
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.exe.config
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.rsp
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Antlr3.Runtime.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Newtonsoft.Json.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Oracle.ManagedDataAccess.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Web.Optimization.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\WebGrease.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Web.Optimization.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Newtonsoft.Json.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.AssemblyReference.cache
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.Up2Date
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+D:\Fuentes\SIPLAN\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ApplicationInsights.config
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\SIPLAN2.0.pdb
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.exe
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.exe.config
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csc.rsp
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.exe
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.exe.config
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\csi.rsp
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Console.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.exe
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.exe.config
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\vbc.rsp
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Antlr3.Runtime.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Newtonsoft.Json.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Oracle.ManagedDataAccess.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Web.Optimization.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\WebGrease.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Web.Optimization.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Newtonsoft.Json.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.AssemblyReference.cache
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.Up2Date
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+D:\Fuentes\SIPLAN\PRODUCCION\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE - Copy\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ApplicationInsights.config
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\SIPLAN2.0.dll.config
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\SIPLAN2.0.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\SIPLAN2.0.pdb
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csc.exe
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csc.exe.config
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csc.rsp
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csi.exe
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csi.exe.config
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\csi.rsp
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.AppContext.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Collections.Immutable.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Console.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Diagnostics.Process.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.Compression.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.IO.Pipes.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Reflection.Metadata.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.AccessControl.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Claims.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Threading.Thread.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.ValueTuple.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.XPath.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\vbc.exe
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\vbc.exe.config
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\vbc.rsp
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\roslyn\VBCSCompiler.exe.config
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Antlr3.Runtime.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\AspNet.ScriptManager.jQuery.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Data.v17.2.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.Resources.v17.2.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.v17.2.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\EPPlusFree.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.Web.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.ApplicationInsights.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.Web.Infrastructure.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Newtonsoft.Json.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Oracle.ManagedDataAccess.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\System.Web.Optimization.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\WebGrease.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Images.v17.2.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Data.v17.2.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Printing.v17.2.Core.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.RichEdit.v17.2.Core.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.ASPxTreeList.v17.2.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Web.v17.2.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\EPPlusFree.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\System.Web.Optimization.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Newtonsoft.Json.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Antlr3.Runtime.pdb
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.DependencyCollector.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.WindowsServer.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.AI.Web.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Pdf.v17.2.Core.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\DevExpress.Office.v17.2.Core.xml
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Data.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Web.v17.2.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.AssemblyReference.cache
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll.licenses
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.CoreCompileInputs.cache
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.csproj.Up2Date
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.dll
+D:\Fuentes\SIPLAN\Versión de desarrollo\SIPLAN2.0(VERSION PARA RED PGG SEGUIMIENTO GERO_V2)VIGENTE\SIPLAN2.0\obj\Debug\SIPLAN2.0.pdb
